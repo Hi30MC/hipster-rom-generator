@@ -21,6 +21,10 @@ Example file directory for a given door:
         └── door_1.schem
 ```
 
+To prime the python virtual environment, you will need to run:
+
+`./venv_primer.sh`
+
 To generate a given door's sequence, first run that door's `gen_seq.py` with:
 
 `python3 ./gen/<door name>/gen_seq.py <params, if specified in file>`
@@ -30,3 +34,5 @@ Then run the main `gen_out.py` with:
 `python3 ./gen_out.py <door name> <opt: schem_name>`
 
 This will generate the finalized schematic in `output_schematics/<door_name>/<schem name>.schem`, which defaults to `<door_name>.schem`.
+
+Do note that this codebase was coded to run on a linux-style filesystem, and has not been coded to run on Windows or MacOS. 
