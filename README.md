@@ -1,2 +1,32 @@
 # hipster-rom-generator
 World Edit schematic generator for various types of cart-based ROMs.
+
+Example file directory for a given door:
+
+```
+./
+├── door_meta
+│   └── door_1
+│       ├── key.txt
+│       ├── rom_params.txt
+│       └── sequence.txt
+├── gen
+│   ├── gen_out.py
+│   └── door_1
+│       ├── gen_seq.py
+│       ├── part_1.txt
+│       └── part_2.txt
+└── output_schematics
+    └── door_1
+        └── door_1.schem
+```
+
+To generate a given door's sequence, first run that door's `gen_seq.py` with:
+
+`python3 ./gen/<door name>/gen_seq.py <params, if specified in file>`
+
+Then run the main `gen_out.py` with:
+
+`python3 ./gen_out.py <door name> <opt: schem_name>`
+
+This will generate the finalized schematic in `output_schematics/<door_name>/<schem name>.schem`, which defaults to `<door_name>.schem`.

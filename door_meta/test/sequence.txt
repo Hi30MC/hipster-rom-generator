@@ -1,0 +1,11 @@
+input_a
+input_b
+input_a
+top
+top
+side
+wait
+lb4t
+side
+side
+pink

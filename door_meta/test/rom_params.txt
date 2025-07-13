@@ -1,0 +1,4 @@
+density 27
+min_carts 3
+min_shulkers 27
+min_discs 3
