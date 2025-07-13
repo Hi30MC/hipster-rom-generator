@@ -1,0 +1,17 @@
+{
+    1: "minecraft:music_disc_13",
+    2: "minecraft:music_disc_cat",
+    3: "minecraft:music_disc_blocks",
+    4: "minecraft:music_disc_chirp",
+    5: "minecraft:music_disc_far",
+    6: "minecraft:music_disc_mall",
+    7: "minecraft:music_disc_mellohi",
+    8: "minecraft:music_disc_stal",
+    9: "minecraft:music_disc_strad",
+    10: "minecraft:music_disc_ward",
+    11: "minecraft:music_disc_11",
+    12: "minecraft:music_disc_wait",
+    13: "minecraft:music_disc_pigstep",
+    14: "minecraft:music_disc_otherside",
+    15: "minecraft:music_disc_5"
+}

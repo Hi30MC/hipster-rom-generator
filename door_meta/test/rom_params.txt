@@ -1,4 +1,4 @@
-density 27
+type 27d
 min_carts 3
 min_shulkers 27
 min_discs 3
