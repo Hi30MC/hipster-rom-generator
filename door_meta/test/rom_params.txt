@@ -1,7 +1,7 @@
 {
-    "density": 27,
+    "density": 729,
     "medium": "shulker",
     "min_carts": 3,
     "min_items_per_cart": 27,
-    "min_items_per_shulker": 27
+    "min_items_per_shulker": 3
 }

@@ -138,8 +138,69 @@ def gen_ROM(door_name: String):
         
         
     elif meta.density == 729:
-        print(729)
+        # Ensure "medium", "min_items_per_cart", and "min_items_per_shulker" keys are defined
+        try:
+            _ = meta.medium
+        except:
+            raise Exception(f"No value 'medium' defined in '{door_meta_path}/rom_params.txt'.")
+        try:
+            _ = meta.min_items_per_cart
+        except:
+            raise Exception(f"No value 'min_items_per_cart' defined in '{door_meta_path}/rom_params.txt'.")
+        try:
+            _ = meta.min_items_per_shulker
+        except:
+            raise Exception(f"No value 'min_items_per_shulker' defined in '{door_meta_path}/rom_params.txt'.")
+
+        min_items = meta.min_carts * meta.min_items_per_cart * meta.min_items_per_shulker
+
+        # pad sequence for minimum move count
+        if len(sequence) < min_items:
+            # assign wait move if not already
+            if "wait" not in ss_encode.keys():
+                wait_backups = [x for x in range(1,16) if x not in ss_encode.values()]
+                if len(wait_backups) == 0:
+                    raise Exception(f"No wait move availible to pad moves. Please create manually.")
+                ss_encode.update({"wait": wait_backups[0]})
+            # pad to minimum
+            if sequence[-1] == 0: # pad waits before the STOP command
+                sequence = sequence[:-1] + [ss_encode["wait"]] * (min_items - len(sequence)) + [0]
+            else:
+                sequence += [ss_encode["wait"]] * (min_items - len(sequence))
+
+        cart_list = [gen_cart(pos=meta.pos)]
+        add_item_to_cart(cart_list[-1], gen_shulker_box(0))
+        min_items -= meta.min_items_per_shulker
+        cart_slot = 1
+        box_slot = 0
+        while len(sequence) > 0:
+            if len(cart_list[-1]["Items"][-1]["tag"]["BlockEntityTag"]["Items"]) > 26: # add shulker if full
+                if len(cart_list[-1]["Items"]) > 26: #add cart if cart full AND shulker is full, then continue to add shulker
+                    cart_list.append(gen_cart(pos=meta.pos))
+                    cart_slot = 0
+                add_item_to_cart(cart_list[-1], gen_shulker_box(cart_slot))
+                min_items -= meta.min_items_per_shulker
+                cart_slot += 1
+                box_slot = 0
+            elif len(sequence) > min_items: # add if enough
+                ss = sequence.pop(0)
+                item = gen_ss_disc(box_slot, ss)
+                box = cart_list[-1]["Items"][-1]
+                print(box)
+                new_box_inv = List[Compound](box["tag"]["BlockEntityTag"]["Items"] + [item])
+                box["tag"]["BlockEntityTag"].update({"Items": new_box_inv})
+                box_slot += 1
+            else: # add new box if at minimum remaining
+                if len(cart_list[-1]["Items"]) > 26: #add cart if cart full AND shulker is at min cap, then continue to add shulker
+                    cart_list.append(gen_cart(pos=meta.pos))
+                    cart_slot = 0
+                add_item_to_cart(cart_list[-1], gen_shulker_box(cart_slot))
+                cart_slot += 1
+                min_items -= meta.min_items_per_shulker
+                box_slot = 0
+        return cart_list
     else:
+        print(f"Generating empty ROM, 'density' argument in '{door_meta_path}/rom_params.txt' is not equal to a valid density argument.")
         return []
 
     return -1
