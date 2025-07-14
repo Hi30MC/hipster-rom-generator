@@ -186,7 +186,6 @@ def gen_ROM(door_name: String):
                 ss = sequence.pop(0)
                 item = gen_ss_disc(box_slot, ss)
                 box = cart_list[-1]["Items"][-1]
-                print(box)
                 new_box_inv = List[Compound](box["tag"]["BlockEntityTag"]["Items"] + [item])
                 box["tag"]["BlockEntityTag"].update({"Items": new_box_inv})
                 box_slot += 1
@@ -223,18 +222,6 @@ def gen_file(door_name: String, file_name: String):
     out.save(f"output_schematics/{door_name}/{file_name}.schem")
     
     return out
-
-# # add entity list to file
-# out.update({
-#     "Entities": List([
-#         gen_cart(items=[
-#             gen_ss_sb(0, 1),
-#             gen_ss_sb(1, 9),
-#             gen_ss_disc(2, 8),
-#             gen_ss_disc(3, 4)
-#         ])
-#     ])
-# })
 
 if __name__ == "__main__":
     args = sys.argv[1:]

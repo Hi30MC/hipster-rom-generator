@@ -7,16 +7,19 @@ from ast import literal_eval
 
 with open('gen/conversions/shulker.txt', 'r') as f:
     shulker_data = f.read()
-    
+
 shulker_conversion = literal_eval(shulker_data)
+
 
 def get_shulker_conversion():
     return shulker_conversion
+
 
 with open("gen/conversions/disc.txt", "r") as f:
     disc_data = f.read()
 
 disc_conversion = literal_eval(disc_data)
+
 
 def get_disc_conversion():
     return disc_conversion
@@ -39,11 +42,11 @@ Minecart = schema("Minecart", {
     "Id": String,
     "Invulnerable": Byte,
     "Items": List[Item],
-    "Motion": List[Double], # check
+    "Motion": List[Double],  # check
     "OnGround": Byte,
     "PortalCooldown": Int,
-    "Pos": List[Double], # check
-    "Rotation": List[Float] # check
+    "Pos": List[Double],  # check
+    "Rotation": List[Float]  # check
 })
 
 # Schema for schematic file
@@ -59,7 +62,8 @@ Schematic = schema("Schematic", {
     "PaletteMax": Int,
     "Version": Int,
     "Width": Short
-}) 
+})
+
 
 def gen_base():
     return File(Schematic({
@@ -77,7 +81,8 @@ def gen_base():
         "Width": 1
     }), gzipped=True)
 
-def gen_cart(cart_type: String ="chest", items: List = [], pos: List[Double] = [0.5, 0, 0.5]):
+
+def gen_cart(cart_type: String = "chest", items: List = [], pos: List[Double] = [0.5, 0, 0.5]):
     return Minecart({
         "Air": 300,
         "FallDistance": 0,
@@ -92,13 +97,15 @@ def gen_cart(cart_type: String ="chest", items: List = [], pos: List[Double] = [
         "Rotation": [90, 0]
     })
 
+
 def gen_item(slot: int, name: String, count: int = 1):
     return Item({
         "Count": count,
         "Slot": slot,
         "id": name
     })
-    
+
+
 def gen_shulker_box(slot: int, items: List = []):
     box = Item({
         "Count": 1,
@@ -106,17 +113,19 @@ def gen_shulker_box(slot: int, items: List = []):
         "id": "minecraft:red_shulker_box"
     })
     box.update({"tag": Compound({
-            "BlockEntityTag": Compound({
-              "Items": List[Compound](items),
-              "id": String("minecraft:shulker_box")
-            })
-          }),
-          "id": String("minecraft:red_shulker_box")})
+        "BlockEntityTag": Compound({
+                "Items": List[Compound](items),
+                "id": String("minecraft:shulker_box")
+                })
+    }),
+        "id": String("minecraft:red_shulker_box")})
     return box
+
 
 def add_item_to_cart(cart, item):
     cart.update({"Items": List[Compound](cart["Items"] + [item])})
     return cart
+
 
 def gen_ss_cart(ss: int, pos: [Double] = [0.5, 0, 0.5]):
     if ss == 0:
@@ -124,8 +133,9 @@ def gen_ss_cart(ss: int, pos: [Double] = [0.5, 0, 0.5]):
     items = []
     for i in range(shulker_conversion[ss]):
         items.append(gen_item(i, "minecraft:wooden_shovel", 1))
-    
+
     return gen_cart(items=items, pos=pos)
+
 
 def gen_ss_sb(slot: int, ss: int):
     box = Item({
@@ -133,23 +143,24 @@ def gen_ss_sb(slot: int, ss: int):
         "Slot": slot,
         "id": "minecraft:red_shulker_box"
     })
-    
+
     items = []
-    
+
     for i in range(shulker_conversion[ss]):
         items.append(gen_item(i, "minecraft:wooden_shovel", 1))
-    
+
     # add generated item list to box data
     box.update({"tag": Compound({
-            "BlockEntityTag": Compound({
-              "Items": List[Compound](items),
-              "id": String("minecraft:shulker_box")
-            })
-          }),
-          "id": String("minecraft:red_shulker_box")})
+        "BlockEntityTag": Compound({
+                "Items": List[Compound](items),
+                "id": String("minecraft:shulker_box")
+                })
+    }),
+        "id": String("minecraft:red_shulker_box")})
     return box
 
-def gen_ss_disc(slot:int, ss: int):
+
+def gen_ss_disc(slot: int, ss: int):
     return Item({
         "Count": 1,
         "Slot": slot,
