@@ -10,7 +10,6 @@ top
 side
 foo
 yeet
-stop
 wait
 boomer
 lb4t
@@ -23,4 +22,3 @@ side
 pink
 foo
 yeet
-stop

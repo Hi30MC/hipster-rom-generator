@@ -114,6 +114,10 @@ def gen_shulker_box(slot: int, items: List = []):
           "id": String("minecraft:red_shulker_box")})
     return box
 
+def add_item_to_cart(cart, item):
+    cart.update({"Items": List[Compound](cart["Items"] + [item])})
+    return cart
+
 def gen_ss_cart(ss: int, pos: [Double] = [0.5, 0, 0.5]):
     if ss == 0:
         return gen_cart(cart_type="furnace", pos=pos)
