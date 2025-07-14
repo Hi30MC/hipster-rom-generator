@@ -38,6 +38,51 @@ def gen_ss_sequence(door_name: String) -> list[int]:
     return ss_sequence
 
 def gen_ROM(door_name: String):
+    # generate sequence
+    sequence = gen_ss_sequence(door_name)
+    
+    # get rom metadata
+    door_meta_path = f"door_meta/{door_name}"
+    with open(f"{door_meta_path}/rom_params.txt", "r") as f:
+        rom_params = literal_eval(f.read())
+    meta = SimpleNamespace(**rom_params)
+    
+    # get encoding table
+    ss_encode = get_ss_encode(door_name)
+    
+    try:
+        _ = meta.density
+    except:
+        raise Exception(f"No value 'density' defined in '{door_meta_path}/rom_params.txt'.")
+
+    if meta.density == 1: # 1 cart per move-type ROM
+        
+        # pad sequence for minimum move count
+        try:
+            _ = meta.min_carts
+        except:
+            raise Exception(f"No value 'min_carts' defined in '{door_meta_path}/rom_params.txt'.")
+        
+        if len(sequence) < meta.min_carts:
+            if "wait" not in ss_encode.keys():
+                wait_backups = [x for x in range(1,16) if x not in ss_encode.values()]
+                if len(wait_backups) == 0:
+                    raise Exception(f"No wait move availible to pad moves. Please create manually.")
+                ss_encode.update({"wait": wait_backups[0]})
+            if sequence[-1] == 0: # pad waits before the STOP command
+                sequence = sequence[:-1] + [ss_encode["wait"]] * (meta.min_carts - len(sequence)) + [0]
+            else:
+                sequence += [ss_encode["wait"]] * (meta.min_carts - len(sequence))
+            
+        # convert sequence into cartstack, return
+        return [gen_ss_cart(x) for x in sequence]
+    elif meta.density == 27:
+        print(27)
+    elif meta.density == 729:
+        print(729)
+    else:
+        return []
+
     return -1
 
 def gen_file(door_name: String, file_name: String):
@@ -48,7 +93,7 @@ def gen_file(door_name: String, file_name: String):
     
     # get list of carts
     
-    cart_list = []
+    cart_list = gen_ROM(door_name)
     
     # add entity list to file
     

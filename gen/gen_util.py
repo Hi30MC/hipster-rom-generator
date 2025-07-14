@@ -115,6 +115,8 @@ def gen_shulker_box(slot: int, items: List = []):
     return box
 
 def gen_ss_cart(ss: int, pos: [Double] = [0.5, 0, 0.5]):
+    if ss == 0:
+        return gen_cart(cart_type="furnace", pos=pos)
     items = []
     for i in range(shulker_conversion[ss]):
         items.append(gen_item(i, "minecraft:wooden_shovel", 1))
