@@ -1,4 +1,7 @@
-type 27d
-min_carts 3
-min_shulkers 27
-min_discs 3
+{
+    "density": 1,
+    "medium": "disc",
+    "min_carts": 3,
+    "min_shulkers": 27,
+    "min_discs": 3
+}
