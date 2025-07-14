@@ -11,8 +11,8 @@ Example file directory for a given door:
 │       ├── rom_params.txt
 │       └── sequence.txt
 ├── gen
-│   ├── gen_out.py
 │   └── door_1
+│       ├── __init__.py
 │       ├── gen_seq.py
 │       ├── part_1.txt
 │       └── part_2.txt
@@ -24,6 +24,10 @@ Example file directory for a given door:
 To prime the python virtual environment, you will need to run:
 
 `./venv_primer.sh`
+
+And on any fresh terminal, you will need to activate the environment:
+
+`source .venv/bin/activate`
 
 To generate a given door's sequence, first run that door's `gen_seq.py` with:
 
