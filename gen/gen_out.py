@@ -265,11 +265,17 @@ def gen_ROM_OPTIMIZED(door_name: String):
     # shitty ass way to one-line splitting a list based on wait move    
     sequence = [[int(y) for y in x.split()] for x in " ".join([str(x) for x in sequence]).split(str(wait))]
     queue = []
-    queue += sequence.pop(0)
-    
-    while (len(queue) > 0) or (len(sequence) > 0):
+    print(sequence)
+    queue += sequence.pop(0)    
+    while (len(queue) > 0):
+        print(queue)
+        print(sequence)
+        if len(sequence) == 0:
+            break
         if len(queue) <= 27: # entire queue can fit into one cart
-            if len(queue) > min_items_per_cart: # entire quene can fit into one cart and also cover the minimum
+            if len(queue) > meta.min_items_per_cart: # entire quene can fit into one cart and also cover the minimum
+                if sequence[0] == [] and len(queue) < 27: # if next is empty, and has space, append wait and pop the next []
+                    _ = sequence.pop(0)
                 cart = gen_cart() # gen empty cart
                 for slot in range(len(queue)): # add entire queue to cart slots 0 ... n
                     ss = queue.pop(0)
@@ -284,34 +290,34 @@ def gen_ROM_OPTIMIZED(door_name: String):
             else: # less than minimum present
                 queue.append(wait)
                 queue += sequence.pop(0)
-            elif len(queue) <= 27 + min_items_per_cart: # in the case(s) that subtracting 27 wouldn't leave enough items in next cart to cover minimum
-                cart = gen(cart) # gen new cart
-                for slot in range(len(queue // 2)): # put first floor(len(queue)/2) items in cart slots 0 ... n
-                    ss = queue.pop(0)
-                    if meta.medium == "shulker":
-                        item = gen_ss_sb(slot, ss)
-                    elif meta.medium == "disc":
-                        item = gen_ss_disc(slot, ss)
-                    else:
-                        raise Exception(f"Invalid 'medium' type in {door_meta_path}/rom_params.txt")
-                    add_item_to_cart(cart, item)
-                cart_list.append(cart) # add cart to cart list
-            else: # safe to pop 27 from queue and have enough to cover minimum of next
-                cart = gen(cart) # gen new cart
-                for slot in range(27): # put first 27 items in cart slots 0 ... 26
-                    ss = queue.pop(0)
-                    if meta.medium == "shulker":
-                        item = gen_ss_sb(slot, ss)
-                    elif meta.medium == "disc":
-                        item = gen_ss_disc(slot, ss)
-                    else:
-                        raise Exception(f"Invalid 'medium' type in {door_meta_path}/rom_params.txt")
-                    add_item_to_cart(cart, item)
-                cart_list.append(cart) # add cart to cart list
+        elif len(queue) <= 27 + meta.min_items_per_cart: # in the case(s) that subtracting 27 wouldn't leave enough items in next cart to cover minimum
+            cart = gen(cart) # gen new cart
+            for slot in range(len(queue // 2)): # put first floor(len(queue)/2) items in cart slots 0 ... n
+                ss = queue.pop(0)
+                if meta.medium == "shulker":
+                    item = gen_ss_sb(slot, ss)
+                elif meta.medium == "disc":
+                    item = gen_ss_disc(slot, ss)
+                else:
+                    raise Exception(f"Invalid 'medium' type in {door_meta_path}/rom_params.txt")
+                add_item_to_cart(cart, item)
+            cart_list.append(cart) # add cart to cart list
+        else: # safe to pop 27 from queue and have enough to cover minimum of next
+            cart = gen(cart) # gen new cart
+            for slot in range(27): # put first 27 items in cart slots 0 ... 26
+                ss = queue.pop(0)
+                if meta.medium == "shulker":
+                    item = gen_ss_sb(slot, ss)
+                elif meta.medium == "disc":
+                    item = gen_ss_disc(slot, ss)
+                else:
+                    raise Exception(f"Invalid 'medium' type in {door_meta_path}/rom_params.txt")
+                add_item_to_cart(cart, item)
+            cart_list.append(cart) # add cart to cart list
         if (len(queue) == 0) and len(sequence) > 0: # if queue is empty and sequence is not done
             if sequence[0] == []:
                 queue.append(wait)
-            queue += sequence[0]
+            queue += sequence.pop(0)
 
     return cart_list
 
@@ -323,7 +329,7 @@ def gen_file(door_name: String, file_name: String):
     
     # get list of carts
     
-    cart_list = gen_ROM(door_name)
+    cart_list = gen_ROM_OPTIMIZED(door_name)
     
     # add entity list to file
     
