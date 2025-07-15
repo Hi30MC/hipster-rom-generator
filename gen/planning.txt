@@ -1,0 +1,77 @@
+27x:
+
+prime cart in stack
+adjust minimum
+init cart slot
+
+while sequence not empty:
+    if cart full:
+        add new cart
+        update cart slot
+        update min
+#    elif (wait can be replaced with cart)
+#        pop first item
+#        add new cart
+#        update cart slot
+#        update min
+    elif len sequence > min remaining:
+        pop first item
+        add item to cart
+        update slot
+    else:
+        add cart
+        update min
+        update cart slot
+
+#: current algo:
+
+min: 10 per cart
+
+1. 1 2 3 4 ... 27
+2. 1 2 3 4 ... 10 (wait) 12 13 ... 27
+3. 1 2 3 4 ...
+
+will be cut to:
+
+1. 1 2 3 4 ... 27
+2. 1 2 3 4 ... 10
+3. 12 13 14 ...
+
+by checking if the rest of the sequence is 1) over the minimum and 
+                                           2a) the cart is at or more of its minimum or 
+                                           2b) next move is a wait move.
+
+This will leave out some possible wait moves by not accounting for the following:
+
+min: 10 per cart
+
+1. 1 2 3 4 ... 27
+2. 1 2 3 4 (wait)
+
+will fail to cut the wait by the above criterion. However, you can do:
+1. 1 2 3 4 ... 20
+2. 21 22 ... 27 1 2 3 4 (wait)
+
+can be cut. 
+
+Similarly, you would should be able to cut the following sequence:
+
+1. 1 ... 11
+2. 1 ... 10
+3. 1 ... 10
+...
+n. 1 ... 9 (wait)
+n+1. 1 ...
+...
+
+could be cut to:
+
+1. 1 ... 10
+2. 11 1 ... 9
+3. 10 1 ... 9
+...
+n. 10 1 ... 9
+n+1. 1 ...
+...
+
+Finally, support for replacing up to k wait moves (config'able in rom_params) with similar procedure.
