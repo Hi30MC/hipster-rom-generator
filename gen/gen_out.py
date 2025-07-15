@@ -5,6 +5,7 @@ from gen.gen_util import *
 from ast import literal_eval
 import sys
 from types import SimpleNamespace
+import os
 
 """
 General logic flow of the file:
@@ -19,16 +20,16 @@ General logic flow of the file:
 """
 
 def get_ss_encode(door_name: String) -> {String: int}:
-    door_meta_path = f"door_meta/{door_name}"
-    with open(f"{door_meta_path}/key.txt", "r") as f:
+    door_meta_path = os.path.join(os.getcwd(), "door_meta", door_name) 
+    with open(os.path.join(door_meta_path,"key.txt"), "r") as f:
         key_raw = f.read()
     return {y[0]:int(y[1]) for y in [x.split()[::-1] for x in key_raw.split("\n") if len(x.split()) == 2 and x.split()[1] != ""]}
 
 def gen_ss_sequence(door_name: String) -> list[int]:
     # open sequence file
-    door_meta_path = f"door_meta/{door_name}"
+    door_meta_path = os.path.join(os.getcwd(), "door_meta", door_name) 
     
-    with open(f"{door_meta_path}/sequence.txt", "r") as f:
+    with open(os.path.join(door_meta_path,"sequence.txt"), "r") as f:
         sequence_raw = f.read()
             
     # generate sequence based on encoding and text file
@@ -42,8 +43,9 @@ def gen_ROM(door_name: String):
     sequence = gen_ss_sequence(door_name)
     
     # get rom metadata
-    door_meta_path = f"door_meta/{door_name}"
-    with open(f"{door_meta_path}/rom_params.txt", "r") as f:
+    door_meta_path = os.path.join(os.getcwd(), "door_meta", door_name) 
+
+    with open(ops.path.join(door_meta_path,"rom_params.txt"), "r") as f:
         rom_params = literal_eval(f.read())
     
     # create pos of carts if not specified
@@ -212,8 +214,8 @@ def gen_ROM_OPTIMIZED(door_name: String):
     sequence = gen_ss_sequence(door_name)
     
     # get rom metadata
-    door_meta_path = f"door_meta/{door_name}"
-    with open(f"{door_meta_path}/rom_params.txt", "r") as f:
+    door_meta_path = os.path.join(os.getcwd(), "door_meta", door_name) 
+    with open(os.path.join(door_meta_path,"rom_params.txt"), "r") as f:
         rom_params = literal_eval(f.read())
     
     # create pos of carts if not specified
@@ -322,8 +324,8 @@ def gen_ROM_OPTIMIZED(door_name: String):
     return cart_list
 
 def gen_file(door_name: String, file_name: String):
-    door_meta_path = f"door_meta/{door_name}"
-    door_gen_path = f"gen/{door_name}"
+    door_meta_path = os.path.join(os.getcwd(), "door_meta", door_name)
+    door_gen_path = os.path.join(os.getcwd(), "gen", door_name)
     
     out = gen_base()
     
@@ -332,11 +334,10 @@ def gen_file(door_name: String, file_name: String):
     cart_list = gen_ROM_OPTIMIZED(door_name)
     
     # add entity list to file
-    
     out.update({"Entities": List(cart_list)})
     
     # save file
-    out.save(f"output_schematics/{door_name}/{file_name}.schem")
+    out.save(os.path.join("output_schematics",door_name, f"{file_name}.schem"))
     
     return out
 

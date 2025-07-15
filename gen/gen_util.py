@@ -2,10 +2,11 @@ import nbtlib
 from nbtlib import File, schema
 from nbtlib.tag import *
 from ast import literal_eval
+import os
 
 # Read and import conversion dictionaries
 
-with open('gen/conversions/shulker.txt', 'r') as f:
+with open(os.path.join(os.getcwd(), "gen", "conversions", "shulker.txt"), 'r') as f:
     shulker_data = f.read()
 
 shulker_conversion = literal_eval(shulker_data)
@@ -15,7 +16,7 @@ def get_shulker_conversion():
     return shulker_conversion
 
 
-with open("gen/conversions/disc.txt", "r") as f:
+with open(os.path.join(os.getcwd(), "gen", "conversions", "shulker.txt"), "r") as f:
     disc_data = f.read()
 
 disc_conversion = literal_eval(disc_data)
