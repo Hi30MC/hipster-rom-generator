@@ -39,4 +39,4 @@ Then run the main `gen_out.py` with:
 
 This will generate the finalized schematic in `output_schematics/<door_name>/<schem name>.schem`, which defaults to `<door_name>.schem`.
 
-Do note that this codebase was coded to run on a Linux file system, and has not been coded to run on Windows or macOS. 
+Do note that this codebase was coded on a Linux file system, and has not been tested on either Windows or macOS. Feel free to report any issues. 
