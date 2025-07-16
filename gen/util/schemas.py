@@ -1,18 +1,13 @@
 from nbtlib import schema
 from nbtlib.tag import *
 
-# Schema for Items (in inventory)
-def get_item_schema():
-    return schema("Item", {
+Item = schema("Item", {
         "Count": Byte,
         "Slot": Byte,
         "id": String
     })
 
-# Schema for minecarts
-
-def get_minecart_schema():
-    return schema("Minecart", {
+Minecart = schema("Minecart", {
         "Air": Short,
         "FallDistance": Float,
         "Fire": Short,
@@ -26,10 +21,7 @@ def get_minecart_schema():
         "Rotation": List[Float]  # check
     })
 
-# Schema for schematic file
-
-def get_schematic_schema():
-    return schema("Schematic", {
+Schematic = schema("Schematic", {
         "BlockData": ByteArray,
         "BlockEntities": List[String],
         "DataVersion": Int,

@@ -20,7 +20,7 @@ def gen_ss_sb(slot: int, ss: int):
     return box
 
 def gen_ss_disc(slot: int, ss: int):
-    return schemas.get_item_schema()({
+    return schemas.Item({
         "Count": 1,
         "Slot": slot,
         "id": conversions.get_disc_conversion()[ss]

@@ -1,17 +1,19 @@
 from os import path, getcwd
 from nbtlib.tag import *
-from gen.util import *
+from gen.util import ss_gen, main_gen, item_manip
+from gen.out import ss_encode as enc
+from gen.out import sequence as seq
 from ast import literal_eval
 from types import SimpleNamespace
 
-def gen_ROM(door_name: String):
+def gen_ROM(door_name: str):
     # generate sequence
-    sequence = gen_ss_sequence(door_name)
+    sequence = seq.gen_ss_sequence(door_name)
     
     # get rom metadata
     door_meta_path = path.join(getcwd(), "door_meta", door_name) 
 
-    with open(ops.path.join(door_meta_path,"rom_params.txt"), "r") as f:
+    with open(path.join(door_meta_path,"rom_params.txt"), "r") as f:
         rom_params = literal_eval(f.read())
     
     # create pos of carts if not specified
@@ -21,7 +23,7 @@ def gen_ROM(door_name: String):
     meta = SimpleNamespace(**rom_params)
     
     # get encoding table
-    ss_encode = get_ss_encode(door_name)
+    ss_encode = enc.get_encode(door_name)
     
     # Ensure a couple base params are declared
     try:
@@ -50,7 +52,8 @@ def gen_ROM(door_name: String):
                 sequence += [ss_encode["wait"]] * (meta.min_carts - len(sequence))
         
         # convert sequence into cartstack, return
-        return [gen_ss_cart(x, pos=meta.pos) for x in sequence]
+        return [ss_gen.gen_ss_cart(x, pos=meta.pos) for x in sequence]
+    
     elif meta.density == 27:
         # Ensure "medium" and "min_items_per_cart" keys are defined
         try:
@@ -79,26 +82,26 @@ def gen_ROM(door_name: String):
                 sequence += [ss_encode["wait"]] * (min_items - len(sequence))
         
         
-        cart_list = [gen_cart(pos=meta.pos)]
+        cart_list = [main_gen.gen_cart(pos=meta.pos)]
         min_items -= meta.min_items_per_cart
         slot = 0
         while len(sequence) > 0:
             if len(cart_list[-1]["Items"]) > 26:
-                cart_list.append(gen_cart(pos=meta.pos))
+                cart_list.append(main_gen.gen_cart(pos=meta.pos))
                 min_items -= meta.min_items_per_cart
                 slot = 0
             elif len(sequence) > min_items:
                 ss = sequence.pop(0)
                 if meta.medium == "shulker":
-                    item = gen_ss_sb(slot, ss)
+                    item = ss_gen.gen_ss_sb(slot, ss)
                 elif meta.medium == "disc":
-                    item = gen_ss_disc(slot, ss)
+                    item = ss_gen.gen_ss_disc(slot, ss)
                 else:
                     raise Exception(f"Invalid 'medium' type in {door_meta_path}/rom_params.txt")
-                add_item_to_cart(cart_list[-1], item)
+                item_manip.add_item_to_cart(cart_list[-1], item)
                 slot += 1
             else:
-                cart_list.append(gen_cart(pos=meta.pos))
+                cart_list.append(main_gen.gen_cart(pos=meta.pos))
                 min_items -= meta.min_items_per_cart
                 slot = 0
         return cart_list
@@ -136,8 +139,8 @@ def gen_ROM(door_name: String):
             else:
                 sequence += [ss_encode["wait"]] * (min_items - len(sequence))
 
-        cart_list = [gen_cart(pos=meta.pos)]
-        add_item_to_cart(cart_list[-1], gen_shulker_box(0))
+        cart_list = [main_gen.gen_cart(pos=meta.pos)]
+        item_manip.add_item_to_cart(cart_list[-1], main_gen.gen_shulker_box(0))
         min_items -= meta.min_items_per_shulker
         cart_slot = 1
         box_slot = 0
@@ -146,22 +149,22 @@ def gen_ROM(door_name: String):
                 if len(cart_list[-1]["Items"]) > 26: #add cart if cart full AND shulker is full, then continue to add shulker
                     cart_list.append(gen_cart(pos=meta.pos))
                     cart_slot = 0
-                add_item_to_cart(cart_list[-1], gen_shulker_box(cart_slot))
+                item_manip.add_item_to_cart(cart_list[-1], main_gen.gen_shulker_box(cart_slot))
                 min_items -= meta.min_items_per_shulker
                 cart_slot += 1
                 box_slot = 0
             elif len(sequence) > min_items: # add if enough
                 ss = sequence.pop(0)
-                item = gen_ss_disc(box_slot, ss)
+                item = ss_gen.gen_ss_disc(box_slot, ss)
                 box = cart_list[-1]["Items"][-1]
                 new_box_inv = List[Compound](box["tag"]["BlockEntityTag"]["Items"] + [item])
                 box["tag"]["BlockEntityTag"].update({"Items": new_box_inv})
                 box_slot += 1
             else: # add new box if at minimum remaining
                 if len(cart_list[-1]["Items"]) > 26: #add cart if cart full AND shulker is at min cap, then continue to add shulker
-                    cart_list.append(gen_cart(pos=meta.pos))
+                    cart_list.append(main_gen.gen_cart(pos=meta.pos))
                     cart_slot = 0
-                add_item_to_cart(cart_list[-1], gen_shulker_box(cart_slot))
+                item_mainp.add_item_to_cart(cart_list[-1], gen_shulker_box(cart_slot))
                 cart_slot += 1
                 min_items -= meta.min_items_per_shulker
                 box_slot = 0
@@ -172,12 +175,12 @@ def gen_ROM(door_name: String):
 
     return -1
 
-def gen_ROM_OPTIMIZED(door_name: String):
+def gen_ROM_OPTIMIZED(door_name: str):
     # only for 27x for now
     # assumes you have enough moves to fill min cart count and there is no terminal wait move
 
     # generate sequence
-    sequence = gen_ss_sequence(door_name)
+    sequence = seq.gen_ss_sequence(door_name)
     
     # get rom metadata
     door_meta_path = path.join(getcwd(), "door_meta", door_name) 
@@ -191,7 +194,7 @@ def gen_ROM_OPTIMIZED(door_name: String):
     meta = SimpleNamespace(**rom_params)
     
     # get wait move ss from encoding table
-    ss_encode = get_ss_encode(door_name)
+    ss_encode = enc.get_encode(door_name)
     wait = ss_encode["wait"]
 
     # Ensure a couple base params are declared
@@ -244,43 +247,43 @@ def gen_ROM_OPTIMIZED(door_name: String):
             if len(queue) > meta.min_items_per_cart: # entire quene can fit into one cart and also cover the minimum
                 if sequence[0] == [] and len(queue) < 27: # if next is empty, and has space, append wait and pop the next []
                     _ = sequence.pop(0)
-                cart = gen_cart() # gen empty cart
+                cart = main_gen.gen_cart() # gen empty cart
                 for slot in range(len(queue)): # add entire queue to cart slots 0 ... n
                     ss = queue.pop(0)
                     if meta.medium == "shulker":
-                        item = gen_ss_sb(slot, ss)
+                        item = ss_gen.gen_ss_sb(slot, ss)
                     elif meta.medium == "disc":
-                        item = gen_ss_disc(slot, ss)
+                        item = ss_gen.gen_ss_disc(slot, ss)
                     else:
                         raise Exception(f"Invalid 'medium' type in {door_meta_path}/rom_params.txt")
-                    add_item_to_cart(cart, item)
+                    item_manip.add_item_to_cart(cart, item)
                 cart_list.append(cart) # add cart to cart list
             else: # less than minimum present
                 queue.append(wait)
                 queue += sequence.pop(0)
         elif len(queue) <= 27 + meta.min_items_per_cart: # in the case(s) that subtracting 27 wouldn't leave enough items in next cart to cover minimum
-            cart = gen(cart) # gen new cart
+            cart = main_gen.gen_cart() # gen new cart
             for slot in range(len(queue // 2)): # put first floor(len(queue)/2) items in cart slots 0 ... n
                 ss = queue.pop(0)
                 if meta.medium == "shulker":
-                    item = gen_ss_sb(slot, ss)
+                    item = ss_gen.gen_ss_sb(slot, ss)
                 elif meta.medium == "disc":
-                    item = gen_ss_disc(slot, ss)
+                    item = ss_gen.gen_ss_disc(slot, ss)
                 else:
                     raise Exception(f"Invalid 'medium' type in {door_meta_path}/rom_params.txt")
-                add_item_to_cart(cart, item)
+                item_manip.add_item_to_cart(cart, item)
             cart_list.append(cart) # add cart to cart list
         else: # safe to pop 27 from queue and have enough to cover minimum of next
             cart = gen(cart) # gen new cart
             for slot in range(27): # put first 27 items in cart slots 0 ... 26
                 ss = queue.pop(0)
                 if meta.medium == "shulker":
-                    item = gen_ss_sb(slot, ss)
+                    item = ss_gen.gen_ss_sb(slot, ss)
                 elif meta.medium == "disc":
-                    item = gen_ss_disc(slot, ss)
+                    item = ss_gen.gen_ss_disc(slot, ss)
                 else:
                     raise Exception(f"Invalid 'medium' type in {door_meta_path}/rom_params.txt")
-                add_item_to_cart(cart, item)
+                item_manip.add_item_to_cart(cart, item)
             cart_list.append(cart) # add cart to cart list
         if (len(queue) == 0) and len(sequence) > 0: # if queue is empty and sequence is not done
             if sequence[0] == []:

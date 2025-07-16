@@ -1,7 +1,8 @@
 import sys
 import os
 from nbtlib.tag import *
-from gen.util import *
+from gen.util import main_gen
+from gen.out import rom
 from ast import literal_eval
 from types import SimpleNamespace
 
@@ -21,11 +22,11 @@ def gen_file(door_name: String, file_name: String):
     door_meta_path = os.path.join(os.getcwd(), "door_meta", door_name)
     door_gen_path = os.path.join(os.getcwd(), "gen", door_name)
     
-    out = gen_base()
+    out = main_gen.gen_base()
     
     # get list of carts
     
-    cart_list = gen_ROM_OPTIMIZED(door_name)
+    cart_list = rom.gen_ROM_OPTIMIZED(door_name)
     
     # add entity list to file
     out.update({"Entities": List(cart_list)})
@@ -40,7 +41,7 @@ if __name__ == "__main__":
     if len(args) == 0:
         print("Pass in door name and file name as two separate parameters. \nLeave off file name to simply use door name.")
     elif len(args) == 1:
-        gen_ROM_OPTIMIZED(*args) # change to gen_file once ready
+        rom.gen_ROM(*args) # change to gen_file once ready
     elif len(args) == 2:
         gen_file(*args)
     else:

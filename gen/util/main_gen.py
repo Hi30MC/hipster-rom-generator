@@ -3,7 +3,7 @@ from nbtlib.tag import *
 from gen.util import schemas
 
 def gen_base():
-    return File(schemas.get_schematic_schema()({
+    return File(schemas.Schematic({
         "BlockData": [0],
         "BlockEntities": [],
         "DataVersion": 3337,
@@ -19,7 +19,7 @@ def gen_base():
     }), gzipped=True)
 
 def gen_cart(cart_type: String = "chest", items: List = [], pos: List[Double] = [0.5, 0, 0.5]):
-    return schemas.get_minecart_schema()({
+    return schemas.Minecart({
         "Air": 300,
         "FallDistance": 0,
         "Fire": -1,
@@ -34,7 +34,7 @@ def gen_cart(cart_type: String = "chest", items: List = [], pos: List[Double] = 
     })
 
 def gen_shulker_box(slot: int, items: List = []):
-    box = schemas.get_item_schema({
+    box = schemas.Item({
         "Count": 1,
         "Slot": slot,
         "id": "minecraft:red_shulker_box"
@@ -49,7 +49,7 @@ def gen_shulker_box(slot: int, items: List = []):
     return box
 
 def gen_item(slot: int, name: String, count: int = 1):
-    return schemas.get_item_schema()({
+    return schemas.Item({
         "Count": count,
         "Slot": slot,
         "id": name
