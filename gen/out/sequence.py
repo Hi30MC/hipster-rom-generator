@@ -9,6 +9,7 @@ def gen_ss_sequence(door_name: String) -> list[int]:
         sequence_raw = f.read()
             
     # generate sequence based on encoding and text file
-    ss_sequence = [int(ss_encode.get_encode(door_name)[x]) for x in sequence_raw.split("\n")]
+    ss_encode = ss_encode.get_encode(door_name)
+    ss_sequence = [int(ss_encode[x]) for x in sequence_raw.split("\n")]
     
     return ss_sequence
