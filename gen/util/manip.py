@@ -1,4 +1,4 @@
-from nbtlib import File, schema
+from nbtlib import File
 from nbtlib.tag import *
 
 def add_item_to_cart(cart, item):

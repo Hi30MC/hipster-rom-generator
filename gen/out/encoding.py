@@ -1,6 +1,6 @@
 from os import path, getcwd
 
-def get_encode(door_name: str) -> {str: int}:
+def get(door_name: str) -> {str: int}:
     door_meta_path = path.join(getcwd(), "door_meta", door_name) 
     with open(path.join(door_meta_path,"key.txt"), "r") as f:
         key_raw = f.read()

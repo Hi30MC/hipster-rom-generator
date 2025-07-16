@@ -1,9 +1,9 @@
-from nbtlib import File, schema
+from nbtlib import File
 from nbtlib.tag import *
-from gen.util import schemas
+from gen.util import layouts
 
-def gen_base():
-    return File(schemas.Schematic({
+def base_file():
+    return File(layouts.Schematic({
         "BlockData": [0],
         "BlockEntities": [],
         "DataVersion": 3337,
@@ -18,8 +18,8 @@ def gen_base():
         "Width": 1
     }), gzipped=True)
 
-def gen_cart(cart_type: String = "chest", items: List = [], pos: List[Double] = [0.5, 0, 0.5]):
-    return schemas.Minecart({
+def cart(cart_type: String = "chest", items: List = [], pos: List[Double] = [0.5, 0, 0.5]):
+    return layouts.Minecart({
         "Air": 300,
         "FallDistance": 0,
         "Fire": -1,
@@ -33,8 +33,8 @@ def gen_cart(cart_type: String = "chest", items: List = [], pos: List[Double] = 
         "Rotation": [90, 0]
     })
 
-def gen_shulker_box(slot: int, items: List = []):
-    box = schemas.Item({
+def shulker(slot: int, items: List = []):
+    box = layouts.Item({
         "Count": 1,
         "Slot": slot,
         "id": "minecraft:red_shulker_box"
@@ -48,8 +48,8 @@ def gen_shulker_box(slot: int, items: List = []):
         "id": String("minecraft:red_shulker_box")})
     return box
 
-def gen_item(slot: int, name: String, count: int = 1):
-    return schemas.Item({
+def item(slot: int, name: String, count: int = 1):
+    return layouts.Item({
         "Count": count,
         "Slot": slot,
         "id": name
