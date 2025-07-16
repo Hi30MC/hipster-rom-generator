@@ -20,11 +20,11 @@ General logic flow of the file:
 
 def gen_file(door_name: String, file_name: String):
     
-    out = gen.File()
+    out = gen.base_file()
     
     # get list of carts
     
-    cart_list = rom.gen_ROM_OPTIMIZED(door_name)
+    cart_list = rom.gen_ROM(door_name)
     
     # add entity list to file
     out.update({"Entities": List(cart_list)})
