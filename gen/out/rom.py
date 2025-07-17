@@ -13,6 +13,7 @@ def check_params(namespace, path: String, params: List[str]) -> None:
             raise MissingParameterError(path, p)
 
 def pad_sequence(meta: SimpleNamespace, ss_encode, sequence, minimum) -> List[int]:
+    print(len(sequence))
     if len(sequence) < minimum:
         # assign wait move if not already
         if "wait" not in ss_encode.keys():
@@ -25,7 +26,8 @@ def pad_sequence(meta: SimpleNamespace, ss_encode, sequence, minimum) -> List[in
             sequence = sequence[:-1] + [ss_encode["wait"]] * (meta.min_carts - len(sequence)) + [0]
         else:
             sequence += [ss_encode["wait"]] * (meta.min_carts - len(sequence))
-    return -1
+    print(len(sequence), minimum)
+    return sequence
 
 def gen_ROM(door_name: str):
     # generate sequence
@@ -52,7 +54,7 @@ def gen_ROM(door_name: str):
     if meta.density == 1: # 1 cart per move-type ROM
         
         # pad sequence for minimum move count        
-        pad_sequence(meta, ss_encode, sequence, meta.min_carts)
+        sequence = pad_sequence(meta, ss_encode, sequence, meta.min_carts)
         
         # convert sequence into cartstack, return
         return [gen_ss.cart(x, pos=meta.pos) for x in sequence]
@@ -64,7 +66,7 @@ def gen_ROM(door_name: str):
         min_items = meta.min_carts * meta.min_items_per_cart
         
         # pad sequence for minimum move count
-        pad_sequence(meta, ss_encode, sequence, min_items)
+        sequence = pad_sequence(meta, ss_encode, sequence, min_items)
         
         # put the items in the carts, lil' bro
         cart_list = [gen.cart(pos=meta.pos)]
@@ -98,9 +100,10 @@ def gen_ROM(door_name: str):
         check_params(meta, door_meta_path, ["medium", "min_items_per_cart", "min_items_per_shulker"])
 
         min_items = meta.min_carts * meta.min_items_per_cart * meta.min_items_per_shulker
+        min_shulkers = meta.min_carts * meta.min_items_per_cart
 
         # pad sequence for minimum move count
-        pad_sequence(meta, ss_encode, sequence, min_items)
+        sequence = pad_sequence(meta, ss_encode, sequence, min_items)
 
         # solving the sphere packing problem one disc at a time
         cart_list = [gen.cart(pos=meta.pos)]
