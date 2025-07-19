@@ -13,7 +13,6 @@ def check_params(namespace, path: String, params: List[str]) -> None:
             raise MissingParameterError(path, p)
 
 def pad_sequence(meta: SimpleNamespace, ss_encode, sequence, minimum) -> List[int]:
-    print(len(sequence))
     if len(sequence) < minimum:
         # assign wait move if not already
         if "wait" not in ss_encode.keys():
@@ -26,7 +25,6 @@ def pad_sequence(meta: SimpleNamespace, ss_encode, sequence, minimum) -> List[in
             sequence = sequence[:-1] + [ss_encode["wait"]] * (meta.min_carts - len(sequence)) + [0]
         else:
             sequence += [ss_encode["wait"]] * (meta.min_carts - len(sequence))
-    print(len(sequence), minimum)
     return sequence
 
 def gen_ROM(door_name: str):
@@ -106,9 +104,12 @@ def gen_ROM(door_name: str):
         sequence = pad_sequence(meta, ss_encode, sequence, min_items)
 
         # solving the sphere packing problem one disc at a time
-        cart_list = [gen.cart(pos=meta.pos)]
-        manip.add_item_to_cart(cart_list[-1], gen.shulker(0))
+        cart_list = [gen.cart(pos=meta.pos)] #init with one cart 
+        manip.add_item_to_cart(cart_list[-1], gen.shulker(0)) # init with one shulker
+        # update minima
         min_items -= meta.min_items_per_shulker
+        min_shulkers -= meta.min_items_per_cart
+        # init holding slots
         cart_slot = 1
         box_slot = 0
         while len(sequence) > 0:
@@ -116,6 +117,7 @@ def gen_ROM(door_name: str):
                 if len(cart_list[-1]["Items"]) > 26: #add cart if cart full AND shulker is full, then continue to add shulker
                     cart_list.append(cart(pos=meta.pos))
                     cart_slot = 0
+                    min_shulkers -= min_items_per_cart
                 manip.add_item_to_cart(cart_list[-1], gen.shulker(cart_slot))
                 min_items -= meta.min_items_per_shulker
                 cart_slot += 1
@@ -128,9 +130,14 @@ def gen_ROM(door_name: str):
                 box["tag"]["BlockEntityTag"].update({"Items": new_box_inv})
                 box_slot += 1
             else: # add new box if at minimum remaining
+                if len(sequence) // meta.min_items_per_shulker <= min_shulkers: # check if new cart needs to be added to make minimum carts
+                    cart_list.append(gen.cart(pos=meta.pos))
+                    cart_slot = 0
+                    min_shulkers -= meta.min_items_per_cart
                 if len(cart_list[-1]["Items"]) > 26: #add cart if cart full AND shulker is at min cap, then continue to add shulker
                     cart_list.append(gen.cart(pos=meta.pos))
                     cart_slot = 0
+                    min_shulkers -= meta.min_items_per_cart
                 manip.add_item_to_cart(cart_list[-1], gen.shulker(cart_slot))
                 cart_slot += 1
                 min_items -= meta.min_items_per_shulker
@@ -224,3 +231,8 @@ def gen_ROM_OPTIMIZED(door_name: str):
             queue += sequence.pop(0)
 
     return cart_list
+
+
+def gen_ROM_OPTIMIZED_729(door_name: str):
+
+    return -1
