@@ -11,7 +11,7 @@ def chest():
     return shulker()
 
 def disc():
-    with open(path.join(getcwd(), "gen", "conversions", "shulker.txt"), "r") as f:
+    with open(path.join(getcwd(), "gen", "conversions", "disc.txt"), "r") as f:
         disc_data = f.read()
     disc_conversion = literal_eval(disc_data)
     return disc_conversion

@@ -13,7 +13,6 @@ def check_params(namespace, path: String, params: List[str]) -> None:
             raise MissingParameterError(path, p)
 
 def pad_sequence(meta: SimpleNamespace, ss_encode, sequence, minimum) -> List[int]:
-    print(len(sequence))
     if len(sequence) < minimum:
         # assign wait move if not already
         if "wait" not in ss_encode.keys():
@@ -26,7 +25,6 @@ def pad_sequence(meta: SimpleNamespace, ss_encode, sequence, minimum) -> List[in
             sequence = sequence[:-1] + [ss_encode["wait"]] * (meta.min_carts - len(sequence)) + [0]
         else:
             sequence += [ss_encode["wait"]] * (meta.min_carts - len(sequence))
-    print(len(sequence), minimum)
     return sequence
 
 def gen_ROM(door_name: str):    
@@ -185,9 +183,13 @@ def gen_ROM_UNOPTIMIZED(door_name: str, meta: SimpleNamespace):
                 slot = 0
         return cart_list
         
-        
-        
     elif meta.density == 729:
+        """
+        This code works in 95% of use cases, but fails with min_items_per_cart < 27 and less than full minimum carts (min carts * 729)
+        due to crappy spaghetti logic used below. I will be reworking this algo to be less shit, but don't expect it to be in the final
+        version any time soon. It works for literally everything else, so deal with it. Have you just tried making your sequence longer?
+        """
+
         # Ensure "medium", "min_items_per_cart", and "min_items_per_shulker" keys are defined
         check_params(meta, door_meta_path, ["medium", "min_items_per_cart", "min_items_per_shulker"])
 
@@ -198,9 +200,12 @@ def gen_ROM_UNOPTIMIZED(door_name: str, meta: SimpleNamespace):
         sequence = pad_sequence(meta, ss_encode, sequence, min_items)
 
         # solving the sphere packing problem one disc at a time
-        cart_list = [gen.cart(pos=meta.pos)]
-        manip.add_item_to_cart(cart_list[-1], gen.shulker(0))
+        cart_list = [gen.cart(pos=meta.pos)] #init with one cart 
+        manip.add_item_to_cart(cart_list[-1], gen.shulker(0)) # init with one shulker
+        # update minima
         min_items -= meta.min_items_per_shulker
+        min_shulkers -= meta.min_items_per_cart
+        # init holding slots
         cart_slot = 1
         box_slot = 0
         while len(sequence) > 0:
@@ -208,11 +213,12 @@ def gen_ROM_UNOPTIMIZED(door_name: str, meta: SimpleNamespace):
                 if len(cart_list[-1]["Items"]) > 26: #add cart if cart full AND shulker is full, then continue to add shulker
                     cart_list.append(cart(pos=meta.pos))
                     cart_slot = 0
+                    min_shulkers -= min_items_per_cart
                 manip.add_item_to_cart(cart_list[-1], gen.shulker(cart_slot))
                 min_items -= meta.min_items_per_shulker
                 cart_slot += 1
                 box_slot = 0
-            elif len(sequence) > min_items: # add if enough
+            elif len(sequence) > min_items and len(sequence) / meta.min_items_per_shulker > min_shulkers: # add if enough
                 ss = sequence.pop(0)
                 item = gen_ss.disc(box_slot, ss)
                 box = cart_list[-1]["Items"][-1]
@@ -220,9 +226,11 @@ def gen_ROM_UNOPTIMIZED(door_name: str, meta: SimpleNamespace):
                 box["tag"]["BlockEntityTag"].update({"Items": new_box_inv})
                 box_slot += 1
             else: # add new box if at minimum remaining
-                if len(cart_list[-1]["Items"]) > 26: #add cart if cart full AND shulker is at min cap, then continue to add shulker
+                #add cart if cart full or new cart needs to be added to make minimum carts
+                if len(cart_list[-1]["Items"]) > 26 or len(sequence) // meta.min_items_per_shulker <= min_shulkers:
                     cart_list.append(gen.cart(pos=meta.pos))
                     cart_slot = 0
+                    min_shulkers -= meta.min_items_per_cart
                 manip.add_item_to_cart(cart_list[-1], gen.shulker(cart_slot))
                 cart_slot += 1
                 min_items -= meta.min_items_per_shulker

@@ -21,7 +21,6 @@ General logic flow of the file:
 def gen_file(door_name: String, file_name: String):
     
     out = gen.base_file()
-    print(out)
     
     # get list of carts
     
