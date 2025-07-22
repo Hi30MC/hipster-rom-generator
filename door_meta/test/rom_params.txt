@@ -4,5 +4,6 @@
     "min_carts": 3,
     "min_items_per_cart": 3,
     "min_items_per_shulker": 3,
-    "pos": [0.5, 0, 0.5]
+    "pos": [0.5, 0, 0.5],
+    "cut_wait_moves": False
 }

@@ -29,10 +29,7 @@ def pad_sequence(meta: SimpleNamespace, ss_encode, sequence, minimum) -> List[in
     print(len(sequence), minimum)
     return sequence
 
-def gen_ROM(door_name: str):
-    # generate sequence
-    sequence = seq.gen(door_name)
-    
+def gen_ROM(door_name: str):    
     # get rom metadata
     door_meta_path = path.join(getcwd(), "door_meta", door_name) 
 
@@ -42,14 +39,109 @@ def gen_ROM(door_name: str):
     # create pos of carts if not specified
     if "pos" not in rom_params.keys():
         rom_params.update({"pos": [0.5, 0, 0.5]})
-    
+
     meta = SimpleNamespace(**rom_params)
+
+    check_params(meta, door_meta_path, ["cut_wait_moves"])
+
+    if type(meta.cut_wait_moves) == bool:
+        print("yes")
+
+    # check if cut_wait_move is active, if so, run optimized code
+    if meta.cut_wait_moves:
+        return gen_ROM_OPTIMIZED(door_name, meta)
+    else:
+        return gen_ROM_UNOPTIMIZED(door_name, meta)
     
-    # get encoding table
+
+def gen_ROM_OPTIMIZED(door_name: str, meta: SimpleNamespace):
+    # only for 27x for now
+    # assumes you have enough moves to fill min cart count and there is no terminal wait move
+
+    # generate sequence
+    sequence = seq.gen(door_name)
+
+    # get wait move ss from encoding table
+    ss_encode = encoding.get(door_name)
+    wait = ss_encode["wait"]
+
+    # get meta path
+    door_meta_path = path.join(getcwd(), "door_meta", door_name) 
+
+    # Ensure relevant params are declared
+    check_params(meta, door_meta_path, ["density", "min_carts", "medium", "min_items_per_cart"])     
+
+    cart_list = []
+
+    # shitty ass way to one-line splitting a list based on wait move value
+    sequence = [[int(y) for y in x.split()] for x in " ".join([str(x) for x in sequence]).split(str(wait))]
+    queue = []
+    queue += sequence.pop(0)    
+    while (len(queue) > 0):
+        if len(sequence) == 0:
+            break
+        if len(queue) <= 27: # entire queue can fit into one cart
+            if len(queue) > meta.min_items_per_cart: # entire quene can fit into one cart and also cover the minimum
+                if sequence[0] == [] and len(queue) < 27: # if next is empty, and has space, append wait and pop the next []
+                    _ = sequence.pop(0)
+                cart = gen.cart() # gen empty cart
+                for slot in range(len(queue)): # add entire queue to cart slots 0 ... n
+                    ss = queue.pop(0)
+                    if meta.medium == "shulker":
+                        item = gen_ss.shulker(slot, ss)
+                    elif meta.medium == "disc":
+                        item = gen_ss.disc(slot, ss)
+                    else:
+                        raise ParameterValueError(door_meta_path, "medium")
+                    manip.add_item_to_cart(cart, item)
+                cart_list.append(cart) # add cart to cart list
+            else: # less than minimum present
+                queue.append(wait)
+                queue += sequence.pop(0)
+        elif len(queue) <= 27 + meta.min_items_per_cart: # in the case(s) that subtracting 27 wouldn't leave enough items in next cart to cover minimum
+            cart = gen.cart() # gen new cart
+            for slot in range(len(queue // 2)): # put first floor(len(queue)/2) items in cart slots 0 ... n
+                ss = queue.pop(0)
+                if meta.medium == "shulker":
+                    item = gen_ss.shulker(slot, ss)
+                elif meta.medium == "disc":
+                    item = gen_ss.disc(slot, ss)
+                else:
+                    raise ParameterValueError(door_meta_path, "medium")
+                manip.add_item_to_cart(cart, item)
+            cart_list.append(cart) # add cart to cart list
+        else: # safe to pop 27 from queue and have enough to cover minimum of next
+            cart = gen.cart() # gen new cart
+            for slot in range(27): # put first 27 items in cart slots 0 ... 26
+                ss = queue.pop(0)
+                if meta.medium == "shulker":
+                    item = gen_ss.shulker(slot, ss)
+                elif meta.medium == "disc":
+                    item = gen_ss.disc(slot, ss)
+                else:
+                    raise ParameterValueError(door_meta_path, "medium")
+                manip.add_item_to_cart(cart, item)
+            cart_list.append(cart) # add cart to cart list
+        if (len(queue) == 0) and len(sequence) > 0: # if queue is empty and sequence is not done
+            if sequence[0] == []:
+                queue.append(wait)
+            queue += sequence.pop(0)
+
+    return cart_list
+
+def gen_ROM_UNOPTIMIZED(door_name: str, meta: SimpleNamespace):
+    # generate sequence
+    sequence = seq.gen(door_name)
+
+    # get wait move ss from encoding table
     ss_encode = encoding.get(door_name)
     
+    # get meta path
+    door_meta_path = path.join(getcwd(), "door_meta", door_name) 
+    
     # Ensure a couple base params are declared
-    check_params(meta, door_meta_path, ["density", "min_carts"])     
+    check_params(meta, door_meta_path, ["density", "min_carts"])
+
 
     if meta.density == 1: # 1 cart per move-type ROM
         
@@ -139,88 +231,5 @@ def gen_ROM(door_name: str):
     else:
         print(f"Generating empty ROM, 'density' argument in '{door_meta_path}/rom_params.txt' is not equal to a valid density argument. (1, 27, 729)")
         return []
-
-    return -1
-
-def gen_ROM_OPTIMIZED(door_name: str):
-    # only for 27x for now
-    # assumes you have enough moves to fill min cart count and there is no terminal wait move
-
-    # generate sequence
-    sequence = seq.gen(door_name)
     
-    # get rom metadata
-    door_meta_path = path.join(getcwd(), "door_meta", door_name) 
-    with open(path.join(door_meta_path,"rom_params.txt"), "r") as f:
-        rom_params = literal_eval(f.read())
-    
-    # create pos of carts if not specified
-    if "pos" not in rom_params.keys():
-        rom_params.update({"pos": [0.5, 0, 0.5]})
-    
-    meta = SimpleNamespace(**rom_params)
-    
-    # get wait move ss from encoding table
-    ss_encode = encoding.get(door_name)
-    wait = ss_encode["wait"]
-
-    # Ensure relevant params are declared
-    check_params(meta, door_meta_path, ["density", "min_carts", "medium", "min_items_per_cart"])     
-    
-    cart_list = []
-
-    # shitty ass way to one-line splitting a list based on wait move value
-    sequence = [[int(y) for y in x.split()] for x in " ".join([str(x) for x in sequence]).split(str(wait))]
-    queue = []
-    queue += sequence.pop(0)    
-    while (len(queue) > 0):
-        if len(sequence) == 0:
-            break
-        if len(queue) <= 27: # entire queue can fit into one cart
-            if len(queue) > meta.min_items_per_cart: # entire quene can fit into one cart and also cover the minimum
-                if sequence[0] == [] and len(queue) < 27: # if next is empty, and has space, append wait and pop the next []
-                    _ = sequence.pop(0)
-                cart = gen.cart() # gen empty cart
-                for slot in range(len(queue)): # add entire queue to cart slots 0 ... n
-                    ss = queue.pop(0)
-                    if meta.medium == "shulker":
-                        item = gen_ss.shulker(slot, ss)
-                    elif meta.medium == "disc":
-                        item = gen_ss.disc(slot, ss)
-                    else:
-                        raise ParameterValueError(door_meta_path, "medium")
-                    manip.add_item_to_cart(cart, item)
-                cart_list.append(cart) # add cart to cart list
-            else: # less than minimum present
-                queue.append(wait)
-                queue += sequence.pop(0)
-        elif len(queue) <= 27 + meta.min_items_per_cart: # in the case(s) that subtracting 27 wouldn't leave enough items in next cart to cover minimum
-            cart = gen.cart() # gen new cart
-            for slot in range(len(queue // 2)): # put first floor(len(queue)/2) items in cart slots 0 ... n
-                ss = queue.pop(0)
-                if meta.medium == "shulker":
-                    item = gen_ss.shulker(slot, ss)
-                elif meta.medium == "disc":
-                    item = gen_ss.disc(slot, ss)
-                else:
-                    raise ParameterValueError(door_meta_path, "medium")
-                manip.add_item_to_cart(cart, item)
-            cart_list.append(cart) # add cart to cart list
-        else: # safe to pop 27 from queue and have enough to cover minimum of next
-            cart = gen(cart) # gen new cart
-            for slot in range(27): # put first 27 items in cart slots 0 ... 26
-                ss = queue.pop(0)
-                if meta.medium == "shulker":
-                    item = gen_ss.shulker(slot, ss)
-                elif meta.medium == "disc":
-                    item = gen_ss.disc(slot, ss)
-                else:
-                    raise ParameterValueError(door_meta_path, "medium")
-                manip.add_item_to_cart(cart, item)
-            cart_list.append(cart) # add cart to cart list
-        if (len(queue) == 0) and len(sequence) > 0: # if queue is empty and sequence is not done
-            if sequence[0] == []:
-                queue.append(wait)
-            queue += sequence.pop(0)
-
-    return cart_list
+    return -1 # just in case <3
