@@ -41,10 +41,7 @@ def gen_ROM(door_name: str):
     meta = SimpleNamespace(**rom_params)
 
     check_params(meta, door_meta_path, ["cut_wait_moves"])
-
-    if type(meta.cut_wait_moves) == bool:
-        print("yes")
-
+    
     # check if cut_wait_move is active, if so, run optimized code
     if meta.cut_wait_moves:
         return gen_ROM_OPTIMIZED(door_name, meta)
