@@ -18,7 +18,7 @@ def base_file():
         "Width": 1
     }), gzipped=True)
 
-def cart(cart_type: String = "chest", items: List = [], pos: List[Double] = [0.5, 0, 0.5]):
+def cart(cart_type: str = "chest", items: list = [], pos: list[float] = [0.5, 0.0, 0.5]):
     return layouts.Minecart({
         "Air": 300,
         "FallDistance": 0,
@@ -29,11 +29,11 @@ def cart(cart_type: String = "chest", items: List = [], pos: List[Double] = [0.5
         "Motion": [0, 0, 0],
         "OnGround": 0,
         "PortalCooldown": 0,
-        "Pos": pos,
+        "Pos": List[Double](pos),
         "Rotation": [90, 0]
     })
 
-def shulker(slot: int, items: List = []):
+def shulker(slot: int, items: list = []):
     box = layouts.Item({
         "Count": 1,
         "Slot": slot,
@@ -48,7 +48,7 @@ def shulker(slot: int, items: List = []):
         "id": String("minecraft:red_shulker_box")})
     return box
 
-def item(slot: int, name: String, count: int = 1):
+def item(slot: int, name: str, count: int = 1):
     return layouts.Item({
         "Count": count,
         "Slot": slot,

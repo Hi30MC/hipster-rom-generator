@@ -18,28 +18,30 @@ General logic flow of the file:
 - Add list of carts to base file and export
 """
 
-def gen_file(door_name: String, file_name: String):
-    
+def gen_file(door_name: str, file_name: str):
+
     out = gen.base_file()
-    
+
+    # generate text file of sequence by running gen.<door_name>.<file_name>.py
+
     # get list of carts
-    
+
     cart_list = rom.gen_ROM(door_name)
-    
+
     # add entity list to file
-    out.update({"Entities": List(cart_list)})
-    
+    out.update({"Entities": list(cart_list)})
+
     # save file
     out.save(os.path.join("output_schematics",door_name, f"{file_name}.schem"))
-    
+
     return out
 
 if __name__ == "__main__":
     args = sys.argv[1:]
     if len(args) == 0:
-        print("Pass in door name and file name as two separate parameters. \nLeave off file name to simply use door name.")
+        print("Pass in door name, and file name as three separate parameters. \nLeave off file name to simply use door name.")
     elif len(args) == 1:
-        rom.gen_ROM_OPTIMIZED(*args) # change to gen_file once ready
+        gen_file(*args[0]*2)
     elif len(args) == 2:
         gen_file(*args)
     else:

@@ -2,7 +2,7 @@ from nbtlib import File
 from nbtlib.tag import *
 from gen.util import gen, conversions, layouts, manip
 
-def cart(ss: int, pos: [Double] = [0.5, 0, 0.5]):
+def cart(ss: int, pos: list[float] = [0.5, 0.0, 0.5]):
     if ss == 0:
         return gen.cart(cart_type="furnace", pos=pos)
     cart = gen.cart(pos=pos)

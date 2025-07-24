@@ -29,9 +29,9 @@ And on any fresh terminal, you will need to activate the environment:
 
 `source .venv/bin/activate`
 
-To generate a given door's sequence, first run that door's `gen_seq.py` with:
+To generate a given door's sequence, first run that door's sequence generation file with:
 
-`python3 -m gen.<door name>.gen_seq <params, if specified in file>`
+`python3 -m gen.<door name>.<generation file name> <params, if specified in file>`
 
 Then run the main `gen.py` with:
 
