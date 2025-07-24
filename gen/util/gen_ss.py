@@ -1,5 +1,3 @@
-from nbtlib import File
-from nbtlib.tag import *
 from gen.util import gen, conversions, layouts, manip
 
 def cart(ss: int, pos: list[float] = [0.5, 0.0, 0.5]):

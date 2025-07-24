@@ -3,8 +3,6 @@ import os
 from nbtlib.tag import *
 from gen.util import gen
 from gen.out import rom
-from ast import literal_eval
-from types import SimpleNamespace
 
 """
 General logic flow of the file:
@@ -22,14 +20,12 @@ def gen_file(door_name: str, file_name: str):
 
     out = gen.base_file()
 
-    # generate text file of sequence by running gen.<door_name>.<file_name>.py
-
     # get list of carts
 
     cart_list = rom.gen_ROM(door_name)
 
     # add entity list to file
-    out.update({"Entities": list(cart_list)})
+    out.update({"Entities": List(cart_list)})
 
     # save file
     out.save(os.path.join("output_schematics",door_name, f"{file_name}.schem"))

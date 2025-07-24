@@ -18,7 +18,7 @@ def base_file():
         "Width": 1
     }), gzipped=True)
 
-def cart(cart_type: str = "chest", items: list = [], pos: list[float] = [0.5, 0.0, 0.5]):
+def cart( pos: list[float], cart_type: str = "chest", items: list = []):
     return layouts.Minecart({
         "Air": 300,
         "FallDistance": 0,

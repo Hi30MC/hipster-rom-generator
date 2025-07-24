@@ -36,7 +36,7 @@ def gen_ROM(door_name: str):
 
     # create pos of carts if not specified
     if "pos" not in rom_params.keys():
-        rom_params.update({"pos": [0.5, 0, 0.5]})
+        rom_params.update({"pos": List[Double]([0.5, 0, 0.5])})
 
     meta = SimpleNamespace(**rom_params)
 
@@ -79,7 +79,7 @@ def gen_ROM_OPTIMIZED(door_name: str, meta: SimpleNamespace):
             if len(queue) > meta.min_items_per_cart: # entire quene can fit into one cart and also cover the minimum
                 if sequence[0] == [] and len(queue) < 27: # if next is empty, and has space, append wait and pop the next []
                     _ = sequence.pop(0)
-                cart = gen.cart() # gen empty cart
+                cart = gen.cart(meta.pos) # gen empty cart
                 for slot in range(len(queue)): # add entire queue to cart slots 0 ... n
                     ss = queue.pop(0)
                     if meta.medium == "shulker":
@@ -94,7 +94,7 @@ def gen_ROM_OPTIMIZED(door_name: str, meta: SimpleNamespace):
                 queue.append(wait)
                 queue += sequence.pop(0)
         elif len(queue) <= 27 + meta.min_items_per_cart: # in the case(s) that subtracting 27 wouldn't leave enough items in next cart to cover minimum
-            cart = gen.cart() # gen new cart
+            cart = gen.cart(meta.pos) # gen new cart
             for slot in range(len(queue) // 2): # put first floor(len(queue)/2) items in cart slots 0 ... n
                 ss = queue.pop(0)
                 if meta.medium == "shulker":
@@ -106,7 +106,7 @@ def gen_ROM_OPTIMIZED(door_name: str, meta: SimpleNamespace):
                 manip.add_item_to_cart(cart, item)
             cart_list.append(cart) # add cart to cart list
         else: # safe to pop 27 from queue and have enough to cover minimum of next
-            cart = gen.cart() # gen new cart
+            cart = gen.cart(meta.pos) # gen new cart
             for slot in range(27): # put first 27 items in cart slots 0 ... 26
                 ss = queue.pop(0)
                 if meta.medium == "shulker":

@@ -1,10 +1,10 @@
 0 stop
 1 ssto
-2
+2 fold
 3
 4
-5 E
-6 stoaf
+5 e
+6 a
 7 bobs
 8
 9 c
