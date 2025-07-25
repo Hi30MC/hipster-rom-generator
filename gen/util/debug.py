@@ -36,6 +36,7 @@ def log_method_calls(cls):
     @functools.wraps(original_init)
     def new_init(self, *args, **kwargs):
         self._call_depth = 0
+        self.line_num = 0
         original_init(self, *args, **kwargs)
     cls.__init__ = new_init
 
@@ -50,8 +51,9 @@ def log_method_calls(cls):
                     all_args = ', '.join(filter(None, [args_str, kwargs_str]))
                     indent = get_indent(self._call_depth)
                     color, reset = get_method_color(method_name, bold=True)
-                    print(f"{indent}{color}{method_name}({all_args}){reset}")
+                    print(f"{self.line_num:5}{indent}{color}{method_name}({all_args}){reset}")
                     self._call_depth += 1
+                    self.line_num += 1
                     try:
                         result = original_method(self, *args, **kwargs)
                     finally:

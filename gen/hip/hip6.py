@@ -40,9 +40,8 @@ class HipSeq6:
 
     def __iadd__(self, moves: list[Move] | Move):
         if isinstance(moves, Move):
-            if hasattr(self, "_call_depth"):
-                color, reset = get_method_color(moves.value)
-                print(get_indent(self._call_depth), f"{color}{moves.value}{reset}")
+            color, reset = get_method_color(moves.value)
+            print("     "+get_indent(self._call_depth), f"{color}{moves.value}{reset}")
             self.moves.append(moves)
         elif isinstance(moves, list):
             if hasattr(self, "_call_depth"):
@@ -50,7 +49,7 @@ class HipSeq6:
                 for move in moves:
                     color, reset = get_method_color(move.value)
                     colored_moves.append(f"{color}{move.value}{reset}")
-                print(get_indent(self._call_depth), *colored_moves)
+                print("     "+get_indent(self._call_depth), *colored_moves)
             self.moves.extend(moves)
         return self
 
@@ -69,7 +68,7 @@ class HipSeq6:
         self.moves.pop()
         self.moves.extend(moves)
 
-    def opening(self, tillRow: int):
+    def opening(self):
         self += a
         self.retract(1)
         self += ssto
@@ -77,9 +76,15 @@ class HipSeq6:
         self.full_row(2)
         self.storage_moves(a, b, ssto)
 
-        for row in range(3, tillRow+1):
+        for row in range(3, 5+1):
             self.full_row(row)
             self.storage_moves(a, ssto)
+
+        self.full_row(6)
+        last_5 = self.moves[-5:]
+        assert last_5 == [a, d, c, c, b]
+        self.moves[-5:] = [d, c, c]
+        # print(self.moves[-10:])
 
         self += stop
 
@@ -94,10 +99,14 @@ class HipSeq6:
 
         self.stack_state[layer] = True
 
-        match layer:
-            case 0: self += d
-            case 1: self += e
-            case 2: self += [e, fold]
+        is_jank = self.stack_state[3]
+        is_jank2 = self.stack_state[2] and self.stack_state[1]
+
+        match layer, is_jank, is_jank2:
+            case (0, True, True): self += c
+            case (0, _, _) | (1, True, True): self += d
+            case (1, _, _) | (2, True, _): self += e
+            case (2, False, _) | (3, True, _): self += [e, fold]
             case _:
                 raise NotImplementedError
 
@@ -113,7 +122,16 @@ class HipSeq6:
                 raise ValueError(f"layer {layer-1} is already out.")
             self.stack_state[layer-1] = True
 
+        is_jank_1 = self.stack_state[3] and self.stack_state[2]
         match layer:
+            case 0 if is_jank_1 and self.stack_state[1]:
+                self += c
+            case 1 if is_jank_1:
+                pass
+            case 2 if self.stack_state[3]:
+                pass
+            case 3:
+                pass
             case 0:
                 self += [d, c, c]
             case 1:
@@ -123,15 +141,17 @@ class HipSeq6:
             case _:
                 raise NotImplementedError
 
-    def more_obs(self):
+    def more_obs(self, needs_parity=False):
         if self.num_obs_out >= self.max_obs:
             raise ValueError(f"More than {self.max_obs} observers.")
         self.num_obs_out += 1
-        match self.num_obs_out:
-            case 1:
+        match self.num_obs_out, needs_parity:
+            case 1, _:
                 self += [bobs, bobs]
-            case 2:
+            case 2, True:
                 self += [bobs, ssto, bobs, bobs, a, bobs]
+            case 2, False:
+                self += [bobs, a, bobs]
             case _:
                 raise NotImplementedError
 
@@ -166,10 +186,10 @@ class HipSeq6:
         self.retract(layer)
 
     def full_extend(self, layer: int, pistons_high: bool = False):
-        self.extend(layer, pistons_high)
+        self.extend(layer, pistons_high, needs_parity=True)
         self.extra_pulses(layer, pistons_high)
 
-    def extend(self, layer: int, pistons_high: bool = False):
+    def extend(self, layer: int, pistons_high: bool = False, needs_parity: bool = False):
         match layer:
             case -1: self += b
             case 0: self += a
@@ -181,10 +201,10 @@ class HipSeq6:
                 if not pistons_high:
                     self += b
                 # todo: figure out alg for needs_parity
-                self.more_obs()
+                self.more_obs(needs_parity)
                 if layer >= 3:
                     self.more_pistons((layer-3)//2)
-                self.extend(layer-3)
+                self.extend(layer-3, needs_parity=needs_parity)
             case _:
                 raise NotImplementedError
 
@@ -196,9 +216,15 @@ class HipSeq6:
             case 3, _:
                 self += a
             case 4, _:
-                self += [a, ssto, ssto]
+                self += a
+                if self.num_obs_out == 0:
+                    self += [ssto, ssto]
             case 5, False:
                 self += [b]*5
+            case 5, True:
+                self += [b]*3
+            case 6, False:
+                self += [a]*7
             case _, _:
                 raise NotImplementedError
 
@@ -250,7 +276,6 @@ def write_file(file_path:str, moves: list[str]):
 # python -m gen.hip.hip6.py
 if __name__ == "__main__":
     door = HipSeq6()
-    door.full_row(6)
-    # door.closing()
-    # door.opening(5)
+    door.closing()
+    door.opening()
     write_file(os.path.join(getcwd(), "door_meta", "6x6hip", "sequence.txt"), [m.value for m in door.moves])
