@@ -1,6 +1,8 @@
 from enum import Enum
 from os import getcwd, path
 import functools
+import hashlib
+import os
 
 class Move(Enum):
     STOP = "stop"
@@ -30,6 +32,27 @@ fold = Move.FOLD
 def get_indent(depth):
     return "\u23D0 " * depth
 
+def get_method_color(method_name, bold=False):
+    """Get a consistent 24-bit RGB color for a method name based on its hash"""
+    # Generate RGB values from hash
+    hash_bytes = hashlib.md5(method_name.encode()).digest()
+    r = hash_bytes[0]
+    g = hash_bytes[1]
+    b = hash_bytes[2]
+
+    # Ensure colors are bright enough to be readable
+    r = max(r, 128)
+    g = max(g, 128)
+    b = max(b, 128)
+
+    # 24-bit RGB color format: \033[38;2;R;G;Bm
+    color = f'\033[38;2;{r};{g};{b}m'
+    if bold:
+        color = f'\033[1m{color}'  # Add bold
+
+    reset = '\033[0m'
+    return color, reset
+
 def log_method_calls(cls):
     """Decorator that logs info when any method in the class is called"""
 
@@ -51,7 +74,8 @@ def log_method_calls(cls):
                     kwargs_str = ', '.join(f'{k}={v}' for k, v in kwargs.items())
                     all_args = ', '.join(filter(None, [args_str, kwargs_str]))
                     indent = get_indent(self._call_depth)
-                    print(f"{indent}{cls.__name__}.{method_name}({all_args})")
+                    color, reset = get_method_color(method_name, bold=True)
+                    print(f"{indent}{color}{method_name}({all_args}){reset}")
                     self._call_depth += 1
                     try:
                         result = original_method(self, *args, **kwargs)
@@ -76,19 +100,18 @@ class HipSeq6:
     def __iadd__(self, moves: list[Move] | Move):
         if isinstance(moves, Move):
             if hasattr(self, "_call_depth"):
-                print(get_indent(self._call_depth), moves.value)
+                color, reset = get_method_color(moves.value)
+                print(get_indent(self._call_depth), f"{color}{moves.value}{reset}")
             self.moves.append(moves)
         elif isinstance(moves, list):
             if hasattr(self, "_call_depth"):
-                print(get_indent(self._call_depth), *[move.value for move in moves])
+                colored_moves = []
+                for move in moves:
+                    color, reset = get_method_color(move.value)
+                    colored_moves.append(f"{color}{move.value}{reset}")
+                print(get_indent(self._call_depth), *colored_moves)
             self.moves.extend(moves)
         return self
-
-    def toFile(self):
-        with open(path.join(getcwd(), "door_meta", "6x6hip", "sequence.txt"), "w") as f:
-            for move in self.moves:
-                f.write(move.value + "\n")
-        return -1
 
     def closing(self):
         self += [
@@ -99,6 +122,11 @@ class HipSeq6:
         self.more_pistons(0)
         self.extend(1)
         self += stop
+
+    def storage_moves(self, *moves: Move):
+        assert self.moves[-1] == b
+        self.moves.pop()
+        self.moves.extend(moves)
 
     def opening(self, tillRow: int):
         self += a
@@ -111,13 +139,6 @@ class HipSeq6:
         for row in range(3, tillRow+1):
             self.full_row(row)
             self.storage_moves(a, ssto)
-
-        self += stop
-
-    def storage_moves(self, *moves: Move):
-        assert self.moves[-1] == b
-        self.moves.pop()
-        self.moves.extend(moves)
 
     def more_pistons(self, layer: int):
         """
@@ -166,14 +187,21 @@ class HipSeq6:
         match self.num_obs_out:
             case 1:
                 self += bobs
+            case 2:
+                self += [ bobs, bobs, ssto, bobs, bobs, a, bobs ]
+            case _:
+                raise NotImplementedError
+
 
     def less_obs(self):
         if self.num_obs_out <= 0:
             raise ValueError(f"Less than {self.max_obs} observers.")
         self.num_obs_out -= 1
         match self.num_obs_out:
-            case 0:
-                self += [ssto, ssto]
+            case 0 | 1:
+                self += [bobs, ssto, ssto]
+            case _:
+                raise NotImplementedError
 
     def full_row(self, layer: int):
         """
@@ -209,6 +237,7 @@ class HipSeq6:
             case _ if layer >= 2:
                 if not pistons_high:
                     self += b
+                # todo: figure out alg for needs_parity
                 self.more_obs()
                 if layer >= 3:
                     self.more_pistons((layer-3)//2)
@@ -217,15 +246,17 @@ class HipSeq6:
                 raise NotImplementedError
 
     def extra_pulses(self, layer: int, pistons_very_high: bool = False):
-        match layer:
-            case -1 | 0| 1: return
-            case 2:
+        match layer, pistons_very_high:
+            case (-1, _) | (0, _) | (1, _): return
+            case 2, _:
                 self += b
-            case 3:
+            case 3, _:
                 self += a
-            case 4:
+            case 4, _:
                 self += [a, ssto, ssto]
-            case _:
+            case 5, False:
+                self += [b]*7
+            case _, _:
                 raise NotImplementedError
 
     def retract(self, layer: int):
@@ -254,20 +285,29 @@ class HipSeq6:
 
         self.more_pistons(layer // 2)
         self.full_extend(layer)
+
+        # retract layer below (obs)
+        self.retract(layer - 3)
         if layer >= 2:
             self.less_obs()
-        self.retract(layer - 3)
+
+        # remove pistons
         self.full_row(layer-2)
         for layer in range(layer//2, -1, -1):
             self.shift_pistons(layer)
 
 
+def write_file(file_path:str, moves: list[str]):
+    with open(file_path, "w") as f:
+        for move in moves:
+            f.write(move+ "\n")
+    return -1
+
+
 # python -m gen.hip.hip6.py
 if __name__ == "__main__":
-    # write_file("hip6x6_sequence.txt")
     door = HipSeq6()
     door.closing()
-    # door.full_row(4)
-    door.opening(4)
-    door.toFile()
+    door.opening(5)
+    write_file(os.path.join(getcwd(), "door_meta", "6x6hip", "sequence.txt"), [m.value for m in door.moves])
     # print(door.moves)
