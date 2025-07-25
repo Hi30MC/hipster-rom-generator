@@ -140,6 +140,8 @@ class HipSeq6:
             self.full_row(row)
             self.storage_moves(a, ssto)
 
+        self += stop
+
     def more_pistons(self, layer: int):
         """
         Adds another layer of pistons on top, spits it above to allow.
