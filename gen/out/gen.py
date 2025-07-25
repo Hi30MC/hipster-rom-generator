@@ -37,7 +37,7 @@ if __name__ == "__main__":
     if len(args) == 0:
         print("Pass in door name, and file name as three separate parameters. \nLeave off file name to simply use door name.")
     elif len(args) == 1:
-        gen_file(*args[0]*2)
+        gen_file(*[args[0]]*2)
     elif len(args) == 2:
         gen_file(*args)
     else:
