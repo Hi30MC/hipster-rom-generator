@@ -99,14 +99,14 @@ class HipSeq6:
 
         self.stack_state[layer] = True
 
-        is_jank = self.stack_state[3]
-        is_jank2 = self.stack_state[2] and self.stack_state[1]
+        if all(self.stack_state[layer+1:]):
+            layer -= 1
 
-        match layer, is_jank, is_jank2:
-            case (0, True, True): self += c
-            case (0, _, _) | (1, True, True): self += d
-            case (1, _, _) | (2, True, _): self += e
-            case (2, False, _) | (3, True, _): self += [e, fold]
+        match layer:
+            case -1: self += c
+            case 0: self += d
+            case 1: self += e
+            case 2 | 3: self += [e, fold]
             case _:
                 raise NotImplementedError
 
@@ -122,22 +122,19 @@ class HipSeq6:
                 raise ValueError(f"layer {layer-1} is already out.")
             self.stack_state[layer-1] = True
 
-        is_jank_1 = self.stack_state[3] and self.stack_state[2]
-        match layer:
-            case 0 if is_jank_1 and self.stack_state[1]:
+        if all(self.stack_state[layer+1:]):
+            if layer == 0:
                 self += c
-            case 1 if is_jank_1:
-                pass
-            case 2 if self.stack_state[3]:
-                pass
-            case 3:
-                pass
+            return
+
+        match layer:
             case 0:
                 self += [d, c, c]
             case 1:
                 self += [e, d]
             case 2:
                 self += fold
+            case 3: pass
             case _:
                 raise NotImplementedError
 
