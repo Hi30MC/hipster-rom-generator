@@ -1,6 +1,6 @@
 {
-    "density": 729,
-    "medium": "disc",
+    "density": 1,
+    "medium": "shulker",
     "min_carts": 3,
     "min_items_per_cart": 27,
     "min_items_per_shulker": 3,
