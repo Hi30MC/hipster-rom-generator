@@ -24,13 +24,13 @@ def cart( pos: list[float], cart_type: str = "chest", items: list = []):
         "FallDistance": 0,
         "Fire": -1,
         "Id": f"{cart_type}_minecart",
-        "Invulnerable": 0,
+        "Invulnerable": 1,
         "Items": List[Compound](items),
         "Motion": [0, 0, 0],
         "OnGround": 0,
         "PortalCooldown": 0,
         "Pos": List[Double](pos),
-        "Rotation": [90, 0]
+        "Rotation": [90, 0],
     })
 
 def shulker(slot: int, items: list = []):

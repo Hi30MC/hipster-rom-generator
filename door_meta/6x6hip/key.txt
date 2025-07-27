@@ -1,7 +1,7 @@
 0 stop
-1 ssto
-2 fold
-3
+1
+2 ssto
+3 fold
 4
 5 e
 6 a

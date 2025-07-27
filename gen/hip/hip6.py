@@ -56,7 +56,11 @@ class HipSeq6:
     def closing(self):
         self += [
             wait,
-            *[ssto, b, worm]*4,
+            ssto, b, worm,
+            e, e, d, d, c, c, # reset stack after jank pulses
+            ssto, b, worm,
+            ssto, b, worm, worm,
+            ssto, b,
             a, ssto,
         ]
         self.more_pistons(0)

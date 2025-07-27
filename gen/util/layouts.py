@@ -18,7 +18,7 @@ Minecart = schema("Minecart", {
         "OnGround": Byte,
         "PortalCooldown": Int,
         "Pos": List[Double],  # check
-        "Rotation": List[Float]  # check
+        "Rotation": List[Float],  # check
     })
 
 Schematic = schema("Schematic", {
