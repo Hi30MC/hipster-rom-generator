@@ -61,7 +61,8 @@ class HipSeq7:
         self += stop
 
     def closing(self):
-        self += [ ssto, b, worm]*4
+        self += [ssto, worm, d, d, c, c, b] *3
+        self += [ ssto, worm, b ]
         self += [ ssto, b, a, ssto ]
         self.more_pistons(0)
         self.extend(1)
@@ -263,4 +264,4 @@ def write_file(file_path:str, moves: list[str]):
 if __name__ == "__main__":
     door = HipSeq7()
     door.the_whole_shebang()
-    # write_file(os.path.join(getcwd(), "door_meta", "7x7hip", "sequence.txt"), [m.value for m in door.moves])
+    write_file(os.path.join(getcwd(), "door_meta", "7x7hip", "sequence.txt"), [m.value for m in door.moves])
