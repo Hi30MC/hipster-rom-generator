@@ -29,7 +29,7 @@ worm = Move.WORM
 fold = Move.FOLD
 
 @log_method_calls
-class HipSeq6:
+class HipSeq7:
     piston_stack_depth = 4
     max_obs = 2
     _call_depth: int
@@ -53,19 +53,18 @@ class HipSeq6:
             self.moves.extend(moves)
         return self
 
+    def the_whole_shebang(self):
+        self += wait
+        self.closing()
+        self += stop
+        self.opening()
+        self += stop
+
     def closing(self):
-        self += [
-            wait,
-            ssto, b, worm,
-            e, e, d, d, c, c, # reset stack after jank pulses
-            ssto, b, worm,
-            ssto, b, worm, worm,
-            ssto, b,
-            a, ssto,
-        ]
+        self += [ ssto, b, worm]*4
+        self += [ ssto, b, a, ssto ]
         self.more_pistons(0)
         self.extend(1)
-        self += stop
 
     def storage_moves(self, *moves: Move):
         assert self.moves[-1] == b
@@ -80,17 +79,15 @@ class HipSeq6:
         self.full_row(2)
         self.storage_moves(a, b, ssto)
 
-        for row in range(3, 5+1):
+        for row in range(3, 6+1):
             self.full_row(row)
             self.storage_moves(a, ssto)
 
-        self.full_row(6)
-        last_5 = self.moves[-5:]
-        assert last_5 == [a, d, c, c, b]
-        self.moves[-5:] = [d, c, c]
-        # print(self.moves[-10:])
-
-        self += stop
+        self.full_row(7)
+        # todo: floor block
+        last_6 = self.moves[-6:]
+        assert last_6 == [a, b, a, c, b, b]
+        self.moves[-6:] = [a, b, c, b]
 
     def more_pistons(self, layer: int):
         if any(self.stack_state[:layer]):
@@ -100,20 +97,15 @@ class HipSeq6:
 
         self.stack_state[layer] = True
 
-        if all(self.stack_state[layer+1:]):
-            layer -= 1
-
         match layer:
-            case -1: self += c
-            case 0: self += d
-            case 1: self += e
-            case 2 | 3: self += [e, fold]
+            case 0: self += c
+            case 1: self += d
+            case 2: self += e
+            case 3: self += [e, fold]
             case _:
                 raise NotImplementedError
 
     def shift_pistons(self, layer: int):
-        # layer: True -> False
-        # layer-1: False -> True
         if not self.stack_state[layer]:
             raise ValueError(f"layer {layer} not out")
         self.stack_state[layer] = False
@@ -123,19 +115,15 @@ class HipSeq6:
                 raise ValueError(f"layer {layer-1} is already out.")
             self.stack_state[layer-1] = True
 
-        if all(self.stack_state[layer+1:]):
-            if layer == 0:
-                self += c
-            return
-
         match layer:
             case 0:
-                self += [d, c, c]
+                self += [c, b]
             case 1:
-                self += [e, d]
+                self += [d, c]
             case 2:
+                self += [e, d]
+            case 3:
                 self += fold
-            case 3: pass
             case _:
                 raise NotImplementedError
 
@@ -152,7 +140,6 @@ class HipSeq6:
                 self += [bobs, a, bobs]
             case _:
                 raise NotImplementedError
-
 
     def less_obs(self):
         if self.num_obs_out <= 0:
@@ -221,8 +208,10 @@ class HipSeq6:
                 self += [b]*5
             case 5, True:
                 self += [b]*3
-            case 6, False:
+            case (6, False) | (7, False):
                 self += [a]*7
+            case 6, True:
+                self += [a]*3
             case _, _:
                 raise NotImplementedError
 
@@ -271,9 +260,7 @@ def write_file(file_path:str, moves: list[str]):
     return -1
 
 
-# python -m gen.hip.hip6.py
 if __name__ == "__main__":
-    door = HipSeq6()
-    door.closing()
-    door.opening()
-    write_file(os.path.join(getcwd(), "door_meta", "6x6hip", "sequence.txt"), [m.value for m in door.moves])
+    door = HipSeq7()
+    door.the_whole_shebang()
+    # write_file(os.path.join(getcwd(), "door_meta", "7x7hip", "sequence.txt"), [m.value for m in door.moves])
