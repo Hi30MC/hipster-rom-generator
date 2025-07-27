@@ -14,7 +14,8 @@ class Move(Enum):
     STO = "sto"
     BOBS = "bobs"
     WORM = "worm"
-    FOLD = "fold"
+    FOLD1 = "fold1"
+    FOLD2 = "fold2"
 
 stop = Move.STOP
 wait = Move.WAIT
@@ -26,12 +27,13 @@ e = Move.E
 sto = Move.STO
 bobs = Move.BOBS
 worm = Move.WORM
-fold = Move.FOLD
+fold1 = Move.FOLD1
+fold2 = Move.FOLD2
 
 @log_method_calls
-class HipSeq7:
-    piston_stack_depth = 4
-    max_obs = 2
+class HipSeq8:
+    piston_stack_depth = 5
+    max_obs = 3
     _call_depth: int
     def __init__(self):
         self.moves: list[Move] = []
@@ -61,9 +63,10 @@ class HipSeq7:
         self += stop
 
     def closing(self):
-        self += [sto, worm, d, d, c, c, b] *3
-        self += [ sto, worm, b ]
-        self += [ sto, b, a, sto ]
+        self += [sto, worm, e, e, d, d, c, c, b]*2
+        self += [sto, worm, worm, d, d, c, c, b]
+        self += [sto, worm, d, d, c, c, b]
+        self += [sto, worm, b, sto, b, a, sto]
         self.more_pistons(0)
         self.extend(1)
 
@@ -80,11 +83,11 @@ class HipSeq7:
         self.full_row(2)
         self.storage_moves(a, b, sto)
 
-        for row in range(3, 6+1):
+        for row in range(3, 7+1):
             self.full_row(row)
             self.storage_moves(a, sto)
 
-        self.full_row(7)
+        self.full_row(8)
         last_6 = self.moves[-6:]
         assert last_6 == [a, b, a, c, b, b]
         self.moves[-6:] = [a, b, c, b]
@@ -97,11 +100,17 @@ class HipSeq7:
 
         self.stack_state[layer] = True
 
-        match layer:
-            case 0: self += c
-            case 1: self += d
-            case 2: self += e
-            case 3: self += [e, fold]
+        double_folded = self.stack_state[4]
+
+        match layer, double_folded:
+            case 0, _: self += c
+            case 1, _: self += d
+            case 2, False: self += e
+            case 3, False: self += [e, fold1]
+
+            case 2, True: self += [d, fold2]
+            case 3, True: self += e
+            case 4, _: self += [e, fold1]
             case _:
                 raise NotImplementedError
 
@@ -115,15 +124,17 @@ class HipSeq7:
                 raise ValueError(f"layer {layer-1} is already out.")
             self.stack_state[layer-1] = True
 
-        match layer:
-            case 0:
-                self += [c, b]
-            case 1:
-                self += [d, c]
-            case 2:
-                self += [e, d]
-            case 3:
-                self += fold
+        double_folded = self.stack_state[4]
+
+        match layer, double_folded:
+            case 0, _: self += [c, b]
+            case 1, _: self += [d, c]
+            case 2, False: self += [e, d]
+            case 3, False: self += fold1
+
+            case 2, True: self += fold2
+            case 3, True: self += [e, d]
+            case 4, _: pass
             case _:
                 raise NotImplementedError
 
@@ -138,6 +149,8 @@ class HipSeq7:
                 self += [bobs, sto, bobs, bobs, a, bobs]
             case 2, False:
                 self += [bobs, a, bobs]
+            case 3, _:
+                self += sto
             case _:
                 raise NotImplementedError
 
@@ -148,6 +161,8 @@ class HipSeq7:
         match self.num_obs_out:
             case 0 | 1:
                 self += [sto, sto]
+            case 2:
+                self += [b, sto]
             case _:
                 raise NotImplementedError
 
@@ -208,10 +223,16 @@ class HipSeq7:
                 self += [b]*5
             case 5, True:
                 self += [b]*3
-            case (6, False) | (7, False):
+            case 6, False:
                 self += [a]*7
             case 6, True:
                 self += [a]*3
+            case 7, False:
+                self += [a]*7
+            case 7, True:
+                self += [a]*3
+            case 8, False:
+                self += [a]*8
             case _, _:
                 raise NotImplementedError
 
@@ -261,6 +282,6 @@ def write_file(file_path:str, moves: list[str]):
 
 
 if __name__ == "__main__":
-    door = HipSeq7()
+    door = HipSeq8()
     door.the_whole_shebang()
-    write_file(os.path.join(getcwd(), "door_meta", "7x7hip", "sequence.txt"), [m.value for m in door.moves])
+    write_file(os.path.join(getcwd(), "door_meta", "8x8hip", "sequence.txt"), [m.value for m in door.moves])

@@ -1,0 +1,6 @@
+{
+    "density": 1,
+    "min_carts": 1,
+    "pos": [0.25, 0, 0.25],
+    "cut_wait_moves": False
+}
