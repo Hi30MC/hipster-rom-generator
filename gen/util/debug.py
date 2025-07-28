@@ -37,8 +37,17 @@ def log_method_calls(cls):
     def new_init(self, *args, **kwargs):
         self._call_depth = 0
         self.line_num = 0
+        self._next_call_no_indent = False
+        self.call_log = []
         original_init(self, *args, **kwargs)
     cls.__init__ = new_init
+
+    def dedent(self):
+        """Mark the next method call to not increase indent"""
+        self._next_call_no_indent = True
+        return self
+
+    cls.dedent = dedent
 
     for attr_name in dir(cls):
         attr = getattr(cls, attr_name)
@@ -49,15 +58,28 @@ def log_method_calls(cls):
                     args_str = ', '.join(str(arg) for arg in args)
                     kwargs_str = ', '.join(f'{k}={v}' for k, v in kwargs.items())
                     all_args = ', '.join(filter(None, [args_str, kwargs_str]))
+
+                    # Check if this call should not increase indent
+                    no_indent = getattr(self, '_next_call_no_indent', False)
+                    if no_indent:
+                        self._next_call_no_indent = False
+
                     indent = get_indent(self._call_depth)
                     color, reset = get_method_color(method_name, bold=True)
-                    print(f"{self.line_num:5}{indent}{color}{method_name}({all_args}){reset}")
-                    self._call_depth += 1
+                    msg_no_format = f"{self.line_num:5}{indent}{method_name}({all_args})"
+                    self.call_log.append(msg_no_format)
+                    msg = f"{self.line_num:5}{indent}{color}{method_name}({all_args}){reset}"
+                    print(msg)
+
+                    # Only increase depth if not marked for no indent
+                    if not no_indent:
+                        self._call_depth += 1
                     self.line_num += 1
                     try:
                         result = original_method(self, *args, **kwargs)
                     finally:
-                        self._call_depth -= 1
+                        if not no_indent:
+                            self._call_depth -= 1
                     return result
                 return wrapper
 

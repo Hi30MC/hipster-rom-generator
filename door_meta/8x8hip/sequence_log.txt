@@ -1,0 +1,3729 @@
+    0dedent()
+    1the_whole_shebang()
+     wait
+    2closing()
+     ⏐ sto worm wait e e d d c c b sto worm wait e e d d c c b
+     ⏐ sto worm wait worm wait d d c c b
+     ⏐ sto worm wait d d c c b
+     ⏐ sto worm wait b sto b a sto
+    3⏐ more_pistons(0)
+     ⏐ ⏐ c
+    4⏐ extend(1)
+     ⏐ ⏐ b
+     ⏐ ⏐ a
+     stop
+    5opening()
+     ⏐ a
+    6⏐ retract(1)
+    7⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ b
+    8⏐ ⏐ dedent()
+    9⏐ ⏐ row_high(0, True)
+   10⏐ ⏐ full_extend(0, True)
+   11⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ a
+   12⏐ ⏐ ⏐ extra_pulses(0, True)
+   13⏐ ⏐ dedent()
+   14⏐ ⏐ retract(0)
+   15⏐ ⏐ pull(-2)
+   16⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ c b
+   17⏐ ⏐ dedent()
+   18⏐ ⏐ row_high(-1, True)
+   19⏐ ⏐ full_extend(-1, True)
+   20⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ b
+   21⏐ ⏐ ⏐ extra_pulses(-1, True)
+   22⏐ ⏐ dedent()
+   23⏐ ⏐ retract(-1)
+     ⏐ sto
+   24⏐ full_row(2)
+   25⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ d
+   26⏐ ⏐ dedent()
+   27⏐ ⏐ row_high(2)
+   28⏐ ⏐ full_extend(2, False)
+   29⏐ ⏐ ⏐ extend(2, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ b
+   30⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+   31⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+   32⏐ ⏐ ⏐ extra_pulses(2, False)
+     ⏐ ⏐ ⏐ ⏐ b
+   33⏐ ⏐ dedent()
+   34⏐ ⏐ retract(2)
+   35⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ sto sto
+   36⏐ ⏐ pull(0)
+   37⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c
+   38⏐ ⏐ ⏐ full_extend(0)
+   39⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+   40⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+   41⏐ ⏐ ⏐ retract(-3)
+   42⏐ ⏐ ⏐ full_row(-2)
+   43⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+   44⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ d c
+   45⏐ ⏐ dedent()
+   46⏐ ⏐ row_high(1, True)
+   47⏐ ⏐ full_extend(1, True)
+   48⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ a
+   49⏐ ⏐ ⏐ extra_pulses(1, True)
+   50⏐ ⏐ dedent()
+   51⏐ ⏐ retract(1)
+   52⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ b
+   53⏐ ⏐ dedent()
+   54⏐ ⏐ row_high(0, True)
+   55⏐ ⏐ full_extend(0, True)
+   56⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ a
+   57⏐ ⏐ ⏐ extra_pulses(0, True)
+   58⏐ ⏐ dedent()
+   59⏐ ⏐ retract(0)
+   60⏐ ⏐ pull(-2)
+   61⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ c b
+   62⏐ ⏐ dedent()
+   63⏐ ⏐ row_high(-1, True)
+   64⏐ ⏐ full_extend(-1, True)
+   65⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ b
+   66⏐ ⏐ ⏐ extra_pulses(-1, True)
+   67⏐ ⏐ dedent()
+   68⏐ ⏐ retract(-1)
+   69⏐ storage_moves(Move.A, Move.B, Move.STO)
+   70⏐ full_row(3)
+   71⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ d
+   72⏐ ⏐ dedent()
+   73⏐ ⏐ row_high(3)
+   74⏐ ⏐ full_extend(3, False)
+   75⏐ ⏐ ⏐ extend(3, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ b
+   76⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+   77⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+   78⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+   79⏐ ⏐ ⏐ extra_pulses(3, False)
+     ⏐ ⏐ ⏐ ⏐ a
+   80⏐ ⏐ dedent()
+   81⏐ ⏐ retract(3)
+   82⏐ ⏐ retract(0)
+   83⏐ ⏐ ⏐ pull(-2)
+   84⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+   85⏐ ⏐ ⏐ dedent()
+   86⏐ ⏐ ⏐ row_high(-1, True)
+   87⏐ ⏐ ⏐ full_extend(-1, True)
+   88⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+   89⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+   90⏐ ⏐ ⏐ dedent()
+   91⏐ ⏐ ⏐ retract(-1)
+   92⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ sto sto
+   93⏐ ⏐ pull(1)
+   94⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c
+   95⏐ ⏐ ⏐ full_extend(1)
+   96⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+   97⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
+   98⏐ ⏐ ⏐ retract(-2)
+   99⏐ ⏐ ⏐ full_row(-1)
+  100⏐ ⏐ ⏐ ⏐ dedent()
+  101⏐ ⏐ ⏐ ⏐ row_high(-1)
+  102⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
+  103⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+  104⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
+  105⏐ ⏐ ⏐ ⏐ dedent()
+  106⏐ ⏐ ⏐ ⏐ retract(-1)
+  107⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+  108⏐ ⏐ dedent()
+  109⏐ ⏐ row_high(2, True)
+  110⏐ ⏐ full_extend(2, True)
+  111⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
+  112⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+  113⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  114⏐ ⏐ ⏐ extra_pulses(2, True)
+     ⏐ ⏐ ⏐ ⏐ b
+  115⏐ ⏐ dedent()
+  116⏐ ⏐ retract(2)
+  117⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ sto sto
+  118⏐ ⏐ pull(0)
+  119⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c
+  120⏐ ⏐ ⏐ full_extend(0)
+  121⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+  122⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+  123⏐ ⏐ ⏐ retract(-3)
+  124⏐ ⏐ ⏐ full_row(-2)
+  125⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+  126⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ d c
+  127⏐ ⏐ dedent()
+  128⏐ ⏐ row_high(1, True)
+  129⏐ ⏐ full_extend(1, True)
+  130⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ a
+  131⏐ ⏐ ⏐ extra_pulses(1, True)
+  132⏐ ⏐ dedent()
+  133⏐ ⏐ retract(1)
+  134⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ b
+  135⏐ ⏐ dedent()
+  136⏐ ⏐ row_high(0, True)
+  137⏐ ⏐ full_extend(0, True)
+  138⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ a
+  139⏐ ⏐ ⏐ extra_pulses(0, True)
+  140⏐ ⏐ dedent()
+  141⏐ ⏐ retract(0)
+  142⏐ ⏐ pull(-2)
+  143⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ c b
+  144⏐ ⏐ dedent()
+  145⏐ ⏐ row_high(-1, True)
+  146⏐ ⏐ full_extend(-1, True)
+  147⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ b
+  148⏐ ⏐ ⏐ extra_pulses(-1, True)
+  149⏐ ⏐ dedent()
+  150⏐ ⏐ retract(-1)
+  151⏐ storage_moves(Move.A, Move.STO)
+  152⏐ full_row(4)
+  153⏐ ⏐ more_pistons(2)
+     ⏐ ⏐ ⏐ e
+  154⏐ ⏐ dedent()
+  155⏐ ⏐ row_high(4)
+  156⏐ ⏐ full_extend(4, False)
+  157⏐ ⏐ ⏐ extend(4, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ b
+  158⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+  159⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+  160⏐ ⏐ ⏐ ⏐ extend(1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+  161⏐ ⏐ ⏐ extra_pulses(4, False)
+     ⏐ ⏐ ⏐ ⏐ a
+  162⏐ ⏐ dedent()
+  163⏐ ⏐ retract(4)
+  164⏐ ⏐ retract(1)
+  165⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ b
+  166⏐ ⏐ ⏐ dedent()
+  167⏐ ⏐ ⏐ row_high(0, True)
+  168⏐ ⏐ ⏐ full_extend(0, True)
+  169⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+  170⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+  171⏐ ⏐ ⏐ dedent()
+  172⏐ ⏐ ⏐ retract(0)
+  173⏐ ⏐ ⏐ pull(-2)
+  174⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+  175⏐ ⏐ ⏐ dedent()
+  176⏐ ⏐ ⏐ row_high(-1, True)
+  177⏐ ⏐ ⏐ full_extend(-1, True)
+  178⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  179⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+  180⏐ ⏐ ⏐ dedent()
+  181⏐ ⏐ ⏐ retract(-1)
+  182⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ sto sto
+  183⏐ ⏐ pull(2)
+  184⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d
+  185⏐ ⏐ ⏐ full_extend(2)
+  186⏐ ⏐ ⏐ ⏐ extend(2, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  187⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+  188⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+  189⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  190⏐ ⏐ ⏐ retract(-1)
+  191⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+  192⏐ ⏐ ⏐ full_row(0)
+  193⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+  194⏐ ⏐ ⏐ ⏐ dedent()
+  195⏐ ⏐ ⏐ ⏐ row_high(0)
+  196⏐ ⏐ ⏐ ⏐ full_extend(0, False)
+  197⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+  198⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+  199⏐ ⏐ ⏐ ⏐ dedent()
+  200⏐ ⏐ ⏐ ⏐ retract(0)
+  201⏐ ⏐ ⏐ ⏐ pull(-2)
+  202⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+  203⏐ ⏐ ⏐ ⏐ dedent()
+  204⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+  205⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+  206⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+  207⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+  208⏐ ⏐ ⏐ ⏐ dedent()
+  209⏐ ⏐ ⏐ ⏐ retract(-1)
+  210⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d c
+  211⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+  212⏐ ⏐ shift_pistons(2)
+     ⏐ ⏐ ⏐ e d
+  213⏐ ⏐ dedent()
+  214⏐ ⏐ row_high(3, True)
+  215⏐ ⏐ full_extend(3, True)
+  216⏐ ⏐ ⏐ extend(3, True, needs_parity=True)
+  217⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+  218⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+  219⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+  220⏐ ⏐ ⏐ extra_pulses(3, True)
+     ⏐ ⏐ ⏐ ⏐ a
+  221⏐ ⏐ dedent()
+  222⏐ ⏐ retract(3)
+  223⏐ ⏐ retract(0)
+  224⏐ ⏐ ⏐ pull(-2)
+  225⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+  226⏐ ⏐ ⏐ dedent()
+  227⏐ ⏐ ⏐ row_high(-1, True)
+  228⏐ ⏐ ⏐ full_extend(-1, True)
+  229⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  230⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+  231⏐ ⏐ ⏐ dedent()
+  232⏐ ⏐ ⏐ retract(-1)
+  233⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ sto sto
+  234⏐ ⏐ pull(1)
+  235⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c
+  236⏐ ⏐ ⏐ full_extend(1)
+  237⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+  238⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
+  239⏐ ⏐ ⏐ retract(-2)
+  240⏐ ⏐ ⏐ full_row(-1)
+  241⏐ ⏐ ⏐ ⏐ dedent()
+  242⏐ ⏐ ⏐ ⏐ row_high(-1)
+  243⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
+  244⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+  245⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
+  246⏐ ⏐ ⏐ ⏐ dedent()
+  247⏐ ⏐ ⏐ ⏐ retract(-1)
+  248⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+  249⏐ ⏐ dedent()
+  250⏐ ⏐ row_high(2, True)
+  251⏐ ⏐ full_extend(2, True)
+  252⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
+  253⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+  254⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  255⏐ ⏐ ⏐ extra_pulses(2, True)
+     ⏐ ⏐ ⏐ ⏐ b
+  256⏐ ⏐ dedent()
+  257⏐ ⏐ retract(2)
+  258⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ sto sto
+  259⏐ ⏐ pull(0)
+  260⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c
+  261⏐ ⏐ ⏐ full_extend(0)
+  262⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+  263⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+  264⏐ ⏐ ⏐ retract(-3)
+  265⏐ ⏐ ⏐ full_row(-2)
+  266⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+  267⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ d c
+  268⏐ ⏐ dedent()
+  269⏐ ⏐ row_high(1, True)
+  270⏐ ⏐ full_extend(1, True)
+  271⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ a
+  272⏐ ⏐ ⏐ extra_pulses(1, True)
+  273⏐ ⏐ dedent()
+  274⏐ ⏐ retract(1)
+  275⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ b
+  276⏐ ⏐ dedent()
+  277⏐ ⏐ row_high(0, True)
+  278⏐ ⏐ full_extend(0, True)
+  279⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ a
+  280⏐ ⏐ ⏐ extra_pulses(0, True)
+  281⏐ ⏐ dedent()
+  282⏐ ⏐ retract(0)
+  283⏐ ⏐ pull(-2)
+  284⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ c b
+  285⏐ ⏐ dedent()
+  286⏐ ⏐ row_high(-1, True)
+  287⏐ ⏐ full_extend(-1, True)
+  288⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ b
+  289⏐ ⏐ ⏐ extra_pulses(-1, True)
+  290⏐ ⏐ dedent()
+  291⏐ ⏐ retract(-1)
+  292⏐ storage_moves(Move.A, Move.STO)
+  293⏐ full_row(5)
+  294⏐ ⏐ more_pistons(2)
+     ⏐ ⏐ ⏐ e
+  295⏐ ⏐ dedent()
+  296⏐ ⏐ row_high(5)
+  297⏐ ⏐ full_extend(5, False)
+  298⏐ ⏐ ⏐ extend(5, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ b
+  299⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+  300⏐ ⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d
+  301⏐ ⏐ ⏐ ⏐ extend(2, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  302⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+  303⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+  304⏐ ⏐ ⏐ extra_pulses(5, False)
+     ⏐ ⏐ ⏐ ⏐ b b b b b
+  305⏐ ⏐ dedent()
+  306⏐ ⏐ retract(5)
+  307⏐ ⏐ retract(2)
+  308⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+  309⏐ ⏐ ⏐ pull(0)
+  310⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+  311⏐ ⏐ ⏐ ⏐ full_extend(0)
+  312⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+  313⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+  314⏐ ⏐ ⏐ ⏐ retract(-3)
+  315⏐ ⏐ ⏐ ⏐ full_row(-2)
+  316⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+  317⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d c
+  318⏐ ⏐ ⏐ dedent()
+  319⏐ ⏐ ⏐ row_high(1, True)
+  320⏐ ⏐ ⏐ full_extend(1, True)
+  321⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+  322⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
+  323⏐ ⏐ ⏐ dedent()
+  324⏐ ⏐ ⏐ retract(1)
+  325⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ b
+  326⏐ ⏐ ⏐ dedent()
+  327⏐ ⏐ ⏐ row_high(0, True)
+  328⏐ ⏐ ⏐ full_extend(0, True)
+  329⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+  330⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+  331⏐ ⏐ ⏐ dedent()
+  332⏐ ⏐ ⏐ retract(0)
+  333⏐ ⏐ ⏐ pull(-2)
+  334⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+  335⏐ ⏐ ⏐ dedent()
+  336⏐ ⏐ ⏐ row_high(-1, True)
+  337⏐ ⏐ ⏐ full_extend(-1, True)
+  338⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  339⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+  340⏐ ⏐ ⏐ dedent()
+  341⏐ ⏐ ⏐ retract(-1)
+  342⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ sto sto
+  343⏐ ⏐ pull(3)
+  344⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d
+  345⏐ ⏐ ⏐ full_extend(3)
+  346⏐ ⏐ ⏐ ⏐ extend(3, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  347⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+  348⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+  349⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+  350⏐ ⏐ ⏐ ⏐ extra_pulses(3, False)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+  351⏐ ⏐ ⏐ retract(0)
+  352⏐ ⏐ ⏐ ⏐ pull(-2)
+  353⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+  354⏐ ⏐ ⏐ ⏐ dedent()
+  355⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+  356⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+  357⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+  358⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+  359⏐ ⏐ ⏐ ⏐ dedent()
+  360⏐ ⏐ ⏐ ⏐ retract(-1)
+  361⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+  362⏐ ⏐ ⏐ full_row(1)
+  363⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+  364⏐ ⏐ ⏐ ⏐ dedent()
+  365⏐ ⏐ ⏐ ⏐ row_high(1)
+  366⏐ ⏐ ⏐ ⏐ full_extend(1, False)
+  367⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+  368⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
+  369⏐ ⏐ ⏐ ⏐ dedent()
+  370⏐ ⏐ ⏐ ⏐ retract(1)
+  371⏐ ⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  372⏐ ⏐ ⏐ ⏐ dedent()
+  373⏐ ⏐ ⏐ ⏐ row_high(0, True)
+  374⏐ ⏐ ⏐ ⏐ full_extend(0, True)
+  375⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+  376⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+  377⏐ ⏐ ⏐ ⏐ dedent()
+  378⏐ ⏐ ⏐ ⏐ retract(0)
+  379⏐ ⏐ ⏐ ⏐ pull(-2)
+  380⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+  381⏐ ⏐ ⏐ ⏐ dedent()
+  382⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+  383⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+  384⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+  385⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+  386⏐ ⏐ ⏐ ⏐ dedent()
+  387⏐ ⏐ ⏐ ⏐ retract(-1)
+  388⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d c
+  389⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+  390⏐ ⏐ dedent()
+  391⏐ ⏐ row_high(4, True)
+  392⏐ ⏐ full_extend(4, True)
+  393⏐ ⏐ ⏐ extend(4, True, needs_parity=True)
+  394⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+  395⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+  396⏐ ⏐ ⏐ ⏐ extend(1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+  397⏐ ⏐ ⏐ extra_pulses(4, True)
+     ⏐ ⏐ ⏐ ⏐ a
+  398⏐ ⏐ dedent()
+  399⏐ ⏐ retract(4)
+  400⏐ ⏐ retract(1)
+  401⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ b
+  402⏐ ⏐ ⏐ dedent()
+  403⏐ ⏐ ⏐ row_high(0, True)
+  404⏐ ⏐ ⏐ full_extend(0, True)
+  405⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+  406⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+  407⏐ ⏐ ⏐ dedent()
+  408⏐ ⏐ ⏐ retract(0)
+  409⏐ ⏐ ⏐ pull(-2)
+  410⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+  411⏐ ⏐ ⏐ dedent()
+  412⏐ ⏐ ⏐ row_high(-1, True)
+  413⏐ ⏐ ⏐ full_extend(-1, True)
+  414⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  415⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+  416⏐ ⏐ ⏐ dedent()
+  417⏐ ⏐ ⏐ retract(-1)
+  418⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ sto sto
+  419⏐ ⏐ pull(2)
+  420⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d
+  421⏐ ⏐ ⏐ full_extend(2)
+  422⏐ ⏐ ⏐ ⏐ extend(2, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  423⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+  424⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+  425⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  426⏐ ⏐ ⏐ retract(-1)
+  427⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+  428⏐ ⏐ ⏐ full_row(0)
+  429⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+  430⏐ ⏐ ⏐ ⏐ dedent()
+  431⏐ ⏐ ⏐ ⏐ row_high(0)
+  432⏐ ⏐ ⏐ ⏐ full_extend(0, False)
+  433⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+  434⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+  435⏐ ⏐ ⏐ ⏐ dedent()
+  436⏐ ⏐ ⏐ ⏐ retract(0)
+  437⏐ ⏐ ⏐ ⏐ pull(-2)
+  438⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+  439⏐ ⏐ ⏐ ⏐ dedent()
+  440⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+  441⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+  442⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+  443⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+  444⏐ ⏐ ⏐ ⏐ dedent()
+  445⏐ ⏐ ⏐ ⏐ retract(-1)
+  446⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d c
+  447⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+  448⏐ ⏐ shift_pistons(2)
+     ⏐ ⏐ ⏐ e d
+  449⏐ ⏐ dedent()
+  450⏐ ⏐ row_high(3, True)
+  451⏐ ⏐ full_extend(3, True)
+  452⏐ ⏐ ⏐ extend(3, True, needs_parity=True)
+  453⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+  454⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+  455⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+  456⏐ ⏐ ⏐ extra_pulses(3, True)
+     ⏐ ⏐ ⏐ ⏐ a
+  457⏐ ⏐ dedent()
+  458⏐ ⏐ retract(3)
+  459⏐ ⏐ retract(0)
+  460⏐ ⏐ ⏐ pull(-2)
+  461⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+  462⏐ ⏐ ⏐ dedent()
+  463⏐ ⏐ ⏐ row_high(-1, True)
+  464⏐ ⏐ ⏐ full_extend(-1, True)
+  465⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  466⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+  467⏐ ⏐ ⏐ dedent()
+  468⏐ ⏐ ⏐ retract(-1)
+  469⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ sto sto
+  470⏐ ⏐ pull(1)
+  471⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c
+  472⏐ ⏐ ⏐ full_extend(1)
+  473⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+  474⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
+  475⏐ ⏐ ⏐ retract(-2)
+  476⏐ ⏐ ⏐ full_row(-1)
+  477⏐ ⏐ ⏐ ⏐ dedent()
+  478⏐ ⏐ ⏐ ⏐ row_high(-1)
+  479⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
+  480⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+  481⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
+  482⏐ ⏐ ⏐ ⏐ dedent()
+  483⏐ ⏐ ⏐ ⏐ retract(-1)
+  484⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+  485⏐ ⏐ dedent()
+  486⏐ ⏐ row_high(2, True)
+  487⏐ ⏐ full_extend(2, True)
+  488⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
+  489⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+  490⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  491⏐ ⏐ ⏐ extra_pulses(2, True)
+     ⏐ ⏐ ⏐ ⏐ b
+  492⏐ ⏐ dedent()
+  493⏐ ⏐ retract(2)
+  494⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ sto sto
+  495⏐ ⏐ pull(0)
+  496⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c
+  497⏐ ⏐ ⏐ full_extend(0)
+  498⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+  499⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+  500⏐ ⏐ ⏐ retract(-3)
+  501⏐ ⏐ ⏐ full_row(-2)
+  502⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+  503⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ d c
+  504⏐ ⏐ dedent()
+  505⏐ ⏐ row_high(1, True)
+  506⏐ ⏐ full_extend(1, True)
+  507⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ a
+  508⏐ ⏐ ⏐ extra_pulses(1, True)
+  509⏐ ⏐ dedent()
+  510⏐ ⏐ retract(1)
+  511⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ b
+  512⏐ ⏐ dedent()
+  513⏐ ⏐ row_high(0, True)
+  514⏐ ⏐ full_extend(0, True)
+  515⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ a
+  516⏐ ⏐ ⏐ extra_pulses(0, True)
+  517⏐ ⏐ dedent()
+  518⏐ ⏐ retract(0)
+  519⏐ ⏐ pull(-2)
+  520⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ c b
+  521⏐ ⏐ dedent()
+  522⏐ ⏐ row_high(-1, True)
+  523⏐ ⏐ full_extend(-1, True)
+  524⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ b
+  525⏐ ⏐ ⏐ extra_pulses(-1, True)
+  526⏐ ⏐ dedent()
+  527⏐ ⏐ retract(-1)
+  528⏐ storage_moves(Move.A, Move.STO)
+  529⏐ full_row(6)
+  530⏐ ⏐ more_pistons(3)
+     ⏐ ⏐ ⏐ e fold1
+  531⏐ ⏐ dedent()
+  532⏐ ⏐ row_high(6)
+  533⏐ ⏐ full_extend(6, False)
+  534⏐ ⏐ ⏐ extend(6, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ b
+  535⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+  536⏐ ⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d
+  537⏐ ⏐ ⏐ ⏐ extend(3, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  538⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+  539⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+  540⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+  541⏐ ⏐ ⏐ extra_pulses(6, False)
+     ⏐ ⏐ ⏐ ⏐ a a a a a a a
+  542⏐ ⏐ dedent()
+  543⏐ ⏐ retract(6)
+  544⏐ ⏐ retract(3)
+  545⏐ ⏐ ⏐ retract(0)
+  546⏐ ⏐ ⏐ ⏐ pull(-2)
+  547⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+  548⏐ ⏐ ⏐ ⏐ dedent()
+  549⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+  550⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+  551⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+  552⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+  553⏐ ⏐ ⏐ ⏐ dedent()
+  554⏐ ⏐ ⏐ ⏐ retract(-1)
+  555⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+  556⏐ ⏐ ⏐ pull(1)
+  557⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+  558⏐ ⏐ ⏐ ⏐ full_extend(1)
+  559⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+  560⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
+  561⏐ ⏐ ⏐ ⏐ retract(-2)
+  562⏐ ⏐ ⏐ ⏐ full_row(-1)
+  563⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+  564⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
+  565⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
+  566⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+  567⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
+  568⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+  569⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
+  570⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+  571⏐ ⏐ ⏐ dedent()
+  572⏐ ⏐ ⏐ row_high(2, True)
+  573⏐ ⏐ ⏐ full_extend(2, True)
+  574⏐ ⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
+  575⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+  576⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+  577⏐ ⏐ ⏐ ⏐ extra_pulses(2, True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  578⏐ ⏐ ⏐ dedent()
+  579⏐ ⏐ ⏐ retract(2)
+  580⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+  581⏐ ⏐ ⏐ pull(0)
+  582⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+  583⏐ ⏐ ⏐ ⏐ full_extend(0)
+  584⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+  585⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+  586⏐ ⏐ ⏐ ⏐ retract(-3)
+  587⏐ ⏐ ⏐ ⏐ full_row(-2)
+  588⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+  589⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d c
+  590⏐ ⏐ ⏐ dedent()
+  591⏐ ⏐ ⏐ row_high(1, True)
+  592⏐ ⏐ ⏐ full_extend(1, True)
+  593⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+  594⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
+  595⏐ ⏐ ⏐ dedent()
+  596⏐ ⏐ ⏐ retract(1)
+  597⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ b
+  598⏐ ⏐ ⏐ dedent()
+  599⏐ ⏐ ⏐ row_high(0, True)
+  600⏐ ⏐ ⏐ full_extend(0, True)
+  601⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+  602⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+  603⏐ ⏐ ⏐ dedent()
+  604⏐ ⏐ ⏐ retract(0)
+  605⏐ ⏐ ⏐ pull(-2)
+  606⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+  607⏐ ⏐ ⏐ dedent()
+  608⏐ ⏐ ⏐ row_high(-1, True)
+  609⏐ ⏐ ⏐ full_extend(-1, True)
+  610⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  611⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+  612⏐ ⏐ ⏐ dedent()
+  613⏐ ⏐ ⏐ retract(-1)
+  614⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ sto sto
+  615⏐ ⏐ pull(4)
+  616⏐ ⏐ ⏐ more_pistons(2)
+     ⏐ ⏐ ⏐ ⏐ e
+  617⏐ ⏐ ⏐ full_extend(4)
+  618⏐ ⏐ ⏐ ⏐ extend(4, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  619⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+  620⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+  621⏐ ⏐ ⏐ ⏐ ⏐ extend(1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+  622⏐ ⏐ ⏐ ⏐ extra_pulses(4, False)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+  623⏐ ⏐ ⏐ retract(1)
+  624⏐ ⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  625⏐ ⏐ ⏐ ⏐ dedent()
+  626⏐ ⏐ ⏐ ⏐ row_high(0, True)
+  627⏐ ⏐ ⏐ ⏐ full_extend(0, True)
+  628⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+  629⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+  630⏐ ⏐ ⏐ ⏐ dedent()
+  631⏐ ⏐ ⏐ ⏐ retract(0)
+  632⏐ ⏐ ⏐ ⏐ pull(-2)
+  633⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+  634⏐ ⏐ ⏐ ⏐ dedent()
+  635⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+  636⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+  637⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+  638⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+  639⏐ ⏐ ⏐ ⏐ dedent()
+  640⏐ ⏐ ⏐ ⏐ retract(-1)
+  641⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+  642⏐ ⏐ ⏐ full_row(2)
+  643⏐ ⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d
+  644⏐ ⏐ ⏐ ⏐ dedent()
+  645⏐ ⏐ ⏐ ⏐ row_high(2)
+  646⏐ ⏐ ⏐ ⏐ full_extend(2, False)
+  647⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+  648⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+  649⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+  650⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+  651⏐ ⏐ ⏐ ⏐ dedent()
+  652⏐ ⏐ ⏐ ⏐ retract(2)
+  653⏐ ⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
+  654⏐ ⏐ ⏐ ⏐ pull(0)
+  655⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+  656⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
+  657⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+  658⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+  659⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
+  660⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
+  661⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
+  662⏐ ⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d c
+  663⏐ ⏐ ⏐ ⏐ dedent()
+  664⏐ ⏐ ⏐ ⏐ row_high(1, True)
+  665⏐ ⏐ ⏐ ⏐ full_extend(1, True)
+  666⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+  667⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
+  668⏐ ⏐ ⏐ ⏐ dedent()
+  669⏐ ⏐ ⏐ ⏐ retract(1)
+  670⏐ ⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  671⏐ ⏐ ⏐ ⏐ dedent()
+  672⏐ ⏐ ⏐ ⏐ row_high(0, True)
+  673⏐ ⏐ ⏐ ⏐ full_extend(0, True)
+  674⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+  675⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+  676⏐ ⏐ ⏐ ⏐ dedent()
+  677⏐ ⏐ ⏐ ⏐ retract(0)
+  678⏐ ⏐ ⏐ ⏐ pull(-2)
+  679⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+  680⏐ ⏐ ⏐ ⏐ dedent()
+  681⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+  682⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+  683⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+  684⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+  685⏐ ⏐ ⏐ ⏐ dedent()
+  686⏐ ⏐ ⏐ ⏐ retract(-1)
+  687⏐ ⏐ ⏐ shift_pistons(2)
+     ⏐ ⏐ ⏐ ⏐ e d
+  688⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d c
+  689⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+  690⏐ ⏐ shift_pistons(3)
+     ⏐ ⏐ ⏐ fold1
+  691⏐ ⏐ dedent()
+  692⏐ ⏐ row_high(5, True)
+  693⏐ ⏐ full_extend(5, True)
+  694⏐ ⏐ ⏐ extend(5, True, needs_parity=True)
+  695⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+  696⏐ ⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d
+  697⏐ ⏐ ⏐ ⏐ extend(2, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  698⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+  699⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+  700⏐ ⏐ ⏐ extra_pulses(5, True)
+     ⏐ ⏐ ⏐ ⏐ b b b
+  701⏐ ⏐ dedent()
+  702⏐ ⏐ retract(5)
+  703⏐ ⏐ retract(2)
+  704⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+  705⏐ ⏐ ⏐ pull(0)
+  706⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+  707⏐ ⏐ ⏐ ⏐ full_extend(0)
+  708⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+  709⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+  710⏐ ⏐ ⏐ ⏐ retract(-3)
+  711⏐ ⏐ ⏐ ⏐ full_row(-2)
+  712⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+  713⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d c
+  714⏐ ⏐ ⏐ dedent()
+  715⏐ ⏐ ⏐ row_high(1, True)
+  716⏐ ⏐ ⏐ full_extend(1, True)
+  717⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+  718⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
+  719⏐ ⏐ ⏐ dedent()
+  720⏐ ⏐ ⏐ retract(1)
+  721⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ b
+  722⏐ ⏐ ⏐ dedent()
+  723⏐ ⏐ ⏐ row_high(0, True)
+  724⏐ ⏐ ⏐ full_extend(0, True)
+  725⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+  726⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+  727⏐ ⏐ ⏐ dedent()
+  728⏐ ⏐ ⏐ retract(0)
+  729⏐ ⏐ ⏐ pull(-2)
+  730⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+  731⏐ ⏐ ⏐ dedent()
+  732⏐ ⏐ ⏐ row_high(-1, True)
+  733⏐ ⏐ ⏐ full_extend(-1, True)
+  734⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  735⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+  736⏐ ⏐ ⏐ dedent()
+  737⏐ ⏐ ⏐ retract(-1)
+  738⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ sto sto
+  739⏐ ⏐ pull(3)
+  740⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d
+  741⏐ ⏐ ⏐ full_extend(3)
+  742⏐ ⏐ ⏐ ⏐ extend(3, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  743⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+  744⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+  745⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+  746⏐ ⏐ ⏐ ⏐ extra_pulses(3, False)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+  747⏐ ⏐ ⏐ retract(0)
+  748⏐ ⏐ ⏐ ⏐ pull(-2)
+  749⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+  750⏐ ⏐ ⏐ ⏐ dedent()
+  751⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+  752⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+  753⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+  754⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+  755⏐ ⏐ ⏐ ⏐ dedent()
+  756⏐ ⏐ ⏐ ⏐ retract(-1)
+  757⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+  758⏐ ⏐ ⏐ full_row(1)
+  759⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+  760⏐ ⏐ ⏐ ⏐ dedent()
+  761⏐ ⏐ ⏐ ⏐ row_high(1)
+  762⏐ ⏐ ⏐ ⏐ full_extend(1, False)
+  763⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+  764⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
+  765⏐ ⏐ ⏐ ⏐ dedent()
+  766⏐ ⏐ ⏐ ⏐ retract(1)
+  767⏐ ⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  768⏐ ⏐ ⏐ ⏐ dedent()
+  769⏐ ⏐ ⏐ ⏐ row_high(0, True)
+  770⏐ ⏐ ⏐ ⏐ full_extend(0, True)
+  771⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+  772⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+  773⏐ ⏐ ⏐ ⏐ dedent()
+  774⏐ ⏐ ⏐ ⏐ retract(0)
+  775⏐ ⏐ ⏐ ⏐ pull(-2)
+  776⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+  777⏐ ⏐ ⏐ ⏐ dedent()
+  778⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+  779⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+  780⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+  781⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+  782⏐ ⏐ ⏐ ⏐ dedent()
+  783⏐ ⏐ ⏐ ⏐ retract(-1)
+  784⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d c
+  785⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+  786⏐ ⏐ dedent()
+  787⏐ ⏐ row_high(4, True)
+  788⏐ ⏐ full_extend(4, True)
+  789⏐ ⏐ ⏐ extend(4, True, needs_parity=True)
+  790⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+  791⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+  792⏐ ⏐ ⏐ ⏐ extend(1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+  793⏐ ⏐ ⏐ extra_pulses(4, True)
+     ⏐ ⏐ ⏐ ⏐ a
+  794⏐ ⏐ dedent()
+  795⏐ ⏐ retract(4)
+  796⏐ ⏐ retract(1)
+  797⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ b
+  798⏐ ⏐ ⏐ dedent()
+  799⏐ ⏐ ⏐ row_high(0, True)
+  800⏐ ⏐ ⏐ full_extend(0, True)
+  801⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+  802⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+  803⏐ ⏐ ⏐ dedent()
+  804⏐ ⏐ ⏐ retract(0)
+  805⏐ ⏐ ⏐ pull(-2)
+  806⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+  807⏐ ⏐ ⏐ dedent()
+  808⏐ ⏐ ⏐ row_high(-1, True)
+  809⏐ ⏐ ⏐ full_extend(-1, True)
+  810⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  811⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+  812⏐ ⏐ ⏐ dedent()
+  813⏐ ⏐ ⏐ retract(-1)
+  814⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ sto sto
+  815⏐ ⏐ pull(2)
+  816⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d
+  817⏐ ⏐ ⏐ full_extend(2)
+  818⏐ ⏐ ⏐ ⏐ extend(2, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  819⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+  820⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+  821⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  822⏐ ⏐ ⏐ retract(-1)
+  823⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+  824⏐ ⏐ ⏐ full_row(0)
+  825⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+  826⏐ ⏐ ⏐ ⏐ dedent()
+  827⏐ ⏐ ⏐ ⏐ row_high(0)
+  828⏐ ⏐ ⏐ ⏐ full_extend(0, False)
+  829⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+  830⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+  831⏐ ⏐ ⏐ ⏐ dedent()
+  832⏐ ⏐ ⏐ ⏐ retract(0)
+  833⏐ ⏐ ⏐ ⏐ pull(-2)
+  834⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+  835⏐ ⏐ ⏐ ⏐ dedent()
+  836⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+  837⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+  838⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+  839⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+  840⏐ ⏐ ⏐ ⏐ dedent()
+  841⏐ ⏐ ⏐ ⏐ retract(-1)
+  842⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d c
+  843⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+  844⏐ ⏐ shift_pistons(2)
+     ⏐ ⏐ ⏐ e d
+  845⏐ ⏐ dedent()
+  846⏐ ⏐ row_high(3, True)
+  847⏐ ⏐ full_extend(3, True)
+  848⏐ ⏐ ⏐ extend(3, True, needs_parity=True)
+  849⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+  850⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+  851⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+  852⏐ ⏐ ⏐ extra_pulses(3, True)
+     ⏐ ⏐ ⏐ ⏐ a
+  853⏐ ⏐ dedent()
+  854⏐ ⏐ retract(3)
+  855⏐ ⏐ retract(0)
+  856⏐ ⏐ ⏐ pull(-2)
+  857⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+  858⏐ ⏐ ⏐ dedent()
+  859⏐ ⏐ ⏐ row_high(-1, True)
+  860⏐ ⏐ ⏐ full_extend(-1, True)
+  861⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  862⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+  863⏐ ⏐ ⏐ dedent()
+  864⏐ ⏐ ⏐ retract(-1)
+  865⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ sto sto
+  866⏐ ⏐ pull(1)
+  867⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c
+  868⏐ ⏐ ⏐ full_extend(1)
+  869⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+  870⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
+  871⏐ ⏐ ⏐ retract(-2)
+  872⏐ ⏐ ⏐ full_row(-1)
+  873⏐ ⏐ ⏐ ⏐ dedent()
+  874⏐ ⏐ ⏐ ⏐ row_high(-1)
+  875⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
+  876⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+  877⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
+  878⏐ ⏐ ⏐ ⏐ dedent()
+  879⏐ ⏐ ⏐ ⏐ retract(-1)
+  880⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+  881⏐ ⏐ dedent()
+  882⏐ ⏐ row_high(2, True)
+  883⏐ ⏐ full_extend(2, True)
+  884⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
+  885⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+  886⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  887⏐ ⏐ ⏐ extra_pulses(2, True)
+     ⏐ ⏐ ⏐ ⏐ b
+  888⏐ ⏐ dedent()
+  889⏐ ⏐ retract(2)
+  890⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ sto sto
+  891⏐ ⏐ pull(0)
+  892⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c
+  893⏐ ⏐ ⏐ full_extend(0)
+  894⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+  895⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+  896⏐ ⏐ ⏐ retract(-3)
+  897⏐ ⏐ ⏐ full_row(-2)
+  898⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+  899⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ d c
+  900⏐ ⏐ dedent()
+  901⏐ ⏐ row_high(1, True)
+  902⏐ ⏐ full_extend(1, True)
+  903⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ a
+  904⏐ ⏐ ⏐ extra_pulses(1, True)
+  905⏐ ⏐ dedent()
+  906⏐ ⏐ retract(1)
+  907⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ b
+  908⏐ ⏐ dedent()
+  909⏐ ⏐ row_high(0, True)
+  910⏐ ⏐ full_extend(0, True)
+  911⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ a
+  912⏐ ⏐ ⏐ extra_pulses(0, True)
+  913⏐ ⏐ dedent()
+  914⏐ ⏐ retract(0)
+  915⏐ ⏐ pull(-2)
+  916⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ c b
+  917⏐ ⏐ dedent()
+  918⏐ ⏐ row_high(-1, True)
+  919⏐ ⏐ full_extend(-1, True)
+  920⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ b
+  921⏐ ⏐ ⏐ extra_pulses(-1, True)
+  922⏐ ⏐ dedent()
+  923⏐ ⏐ retract(-1)
+  924⏐ storage_moves(Move.A, Move.STO)
+  925⏐ full_row(7)
+  926⏐ ⏐ more_pistons(3)
+     ⏐ ⏐ ⏐ e fold1
+  927⏐ ⏐ dedent()
+  928⏐ ⏐ row_high(7)
+  929⏐ ⏐ full_extend(7, False)
+  930⏐ ⏐ ⏐ extend(7, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ b
+  931⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+  932⏐ ⏐ ⏐ ⏐ more_pistons(2)
+     ⏐ ⏐ ⏐ ⏐ ⏐ e
+  933⏐ ⏐ ⏐ ⏐ extend(4, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  934⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+  935⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+  936⏐ ⏐ ⏐ ⏐ ⏐ extend(1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+  937⏐ ⏐ ⏐ extra_pulses(7, False)
+     ⏐ ⏐ ⏐ ⏐ a a a a a a a
+  938⏐ ⏐ dedent()
+  939⏐ ⏐ retract(7)
+  940⏐ ⏐ retract(4)
+  941⏐ ⏐ ⏐ retract(1)
+  942⏐ ⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+  943⏐ ⏐ ⏐ ⏐ dedent()
+  944⏐ ⏐ ⏐ ⏐ row_high(0, True)
+  945⏐ ⏐ ⏐ ⏐ full_extend(0, True)
+  946⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+  947⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+  948⏐ ⏐ ⏐ ⏐ dedent()
+  949⏐ ⏐ ⏐ ⏐ retract(0)
+  950⏐ ⏐ ⏐ ⏐ pull(-2)
+  951⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+  952⏐ ⏐ ⏐ ⏐ dedent()
+  953⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+  954⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+  955⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+  956⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+  957⏐ ⏐ ⏐ ⏐ dedent()
+  958⏐ ⏐ ⏐ ⏐ retract(-1)
+  959⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+  960⏐ ⏐ ⏐ pull(2)
+  961⏐ ⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d
+  962⏐ ⏐ ⏐ ⏐ full_extend(2)
+  963⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+  964⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+  965⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+  966⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+  967⏐ ⏐ ⏐ ⏐ retract(-1)
+  968⏐ ⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
+  969⏐ ⏐ ⏐ ⏐ full_row(0)
+  970⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+  971⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+  972⏐ ⏐ ⏐ ⏐ ⏐ row_high(0)
+  973⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, False)
+  974⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+  975⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+  976⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+  977⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
+  978⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
+  979⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
+  980⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+  981⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+  982⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+  983⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+  984⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+  985⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+  986⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
+  987⏐ ⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d c
+  988⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+  989⏐ ⏐ ⏐ shift_pistons(2)
+     ⏐ ⏐ ⏐ ⏐ e d
+  990⏐ ⏐ ⏐ dedent()
+  991⏐ ⏐ ⏐ row_high(3, True)
+  992⏐ ⏐ ⏐ full_extend(3, True)
+  993⏐ ⏐ ⏐ ⏐ extend(3, True, needs_parity=True)
+  994⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+  995⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+  996⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+  997⏐ ⏐ ⏐ ⏐ extra_pulses(3, True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+  998⏐ ⏐ ⏐ dedent()
+  999⏐ ⏐ ⏐ retract(3)
+ 1000⏐ ⏐ ⏐ retract(0)
+ 1001⏐ ⏐ ⏐ ⏐ pull(-2)
+ 1002⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1003⏐ ⏐ ⏐ ⏐ dedent()
+ 1004⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 1005⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 1006⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1007⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 1008⏐ ⏐ ⏐ ⏐ dedent()
+ 1009⏐ ⏐ ⏐ ⏐ retract(-1)
+ 1010⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+ 1011⏐ ⏐ ⏐ pull(1)
+ 1012⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1013⏐ ⏐ ⏐ ⏐ full_extend(1)
+ 1014⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1015⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
+ 1016⏐ ⏐ ⏐ ⏐ retract(-2)
+ 1017⏐ ⏐ ⏐ ⏐ full_row(-1)
+ 1018⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1019⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
+ 1020⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
+ 1021⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1022⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
+ 1023⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1024⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
+ 1025⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1026⏐ ⏐ ⏐ dedent()
+ 1027⏐ ⏐ ⏐ row_high(2, True)
+ 1028⏐ ⏐ ⏐ full_extend(2, True)
+ 1029⏐ ⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
+ 1030⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+ 1031⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1032⏐ ⏐ ⏐ ⏐ extra_pulses(2, True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1033⏐ ⏐ ⏐ dedent()
+ 1034⏐ ⏐ ⏐ retract(2)
+ 1035⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+ 1036⏐ ⏐ ⏐ pull(0)
+ 1037⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1038⏐ ⏐ ⏐ ⏐ full_extend(0)
+ 1039⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1040⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+ 1041⏐ ⏐ ⏐ ⏐ retract(-3)
+ 1042⏐ ⏐ ⏐ ⏐ full_row(-2)
+ 1043⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1044⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d c
+ 1045⏐ ⏐ ⏐ dedent()
+ 1046⏐ ⏐ ⏐ row_high(1, True)
+ 1047⏐ ⏐ ⏐ full_extend(1, True)
+ 1048⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1049⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
+ 1050⏐ ⏐ ⏐ dedent()
+ 1051⏐ ⏐ ⏐ retract(1)
+ 1052⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ b
+ 1053⏐ ⏐ ⏐ dedent()
+ 1054⏐ ⏐ ⏐ row_high(0, True)
+ 1055⏐ ⏐ ⏐ full_extend(0, True)
+ 1056⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1057⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+ 1058⏐ ⏐ ⏐ dedent()
+ 1059⏐ ⏐ ⏐ retract(0)
+ 1060⏐ ⏐ ⏐ pull(-2)
+ 1061⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+ 1062⏐ ⏐ ⏐ dedent()
+ 1063⏐ ⏐ ⏐ row_high(-1, True)
+ 1064⏐ ⏐ ⏐ full_extend(-1, True)
+ 1065⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1066⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 1067⏐ ⏐ ⏐ dedent()
+ 1068⏐ ⏐ ⏐ retract(-1)
+ 1069⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ sto sto
+ 1070⏐ ⏐ pull(5)
+ 1071⏐ ⏐ ⏐ more_pistons(2)
+     ⏐ ⏐ ⏐ ⏐ e
+ 1072⏐ ⏐ ⏐ full_extend(5)
+ 1073⏐ ⏐ ⏐ ⏐ extend(5, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1074⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 1075⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
+ 1076⏐ ⏐ ⏐ ⏐ ⏐ extend(2, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1077⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+ 1078⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1079⏐ ⏐ ⏐ ⏐ extra_pulses(5, False)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b b b b b
+ 1080⏐ ⏐ ⏐ retract(2)
+ 1081⏐ ⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
+ 1082⏐ ⏐ ⏐ ⏐ pull(0)
+ 1083⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1084⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
+ 1085⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1086⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+ 1087⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
+ 1088⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
+ 1089⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1090⏐ ⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d c
+ 1091⏐ ⏐ ⏐ ⏐ dedent()
+ 1092⏐ ⏐ ⏐ ⏐ row_high(1, True)
+ 1093⏐ ⏐ ⏐ ⏐ full_extend(1, True)
+ 1094⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1095⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
+ 1096⏐ ⏐ ⏐ ⏐ dedent()
+ 1097⏐ ⏐ ⏐ ⏐ retract(1)
+ 1098⏐ ⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1099⏐ ⏐ ⏐ ⏐ dedent()
+ 1100⏐ ⏐ ⏐ ⏐ row_high(0, True)
+ 1101⏐ ⏐ ⏐ ⏐ full_extend(0, True)
+ 1102⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1103⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+ 1104⏐ ⏐ ⏐ ⏐ dedent()
+ 1105⏐ ⏐ ⏐ ⏐ retract(0)
+ 1106⏐ ⏐ ⏐ ⏐ pull(-2)
+ 1107⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1108⏐ ⏐ ⏐ ⏐ dedent()
+ 1109⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 1110⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 1111⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1112⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 1113⏐ ⏐ ⏐ ⏐ dedent()
+ 1114⏐ ⏐ ⏐ ⏐ retract(-1)
+ 1115⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+ 1116⏐ ⏐ ⏐ full_row(3)
+ 1117⏐ ⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d
+ 1118⏐ ⏐ ⏐ ⏐ dedent()
+ 1119⏐ ⏐ ⏐ ⏐ row_high(3)
+ 1120⏐ ⏐ ⏐ ⏐ full_extend(3, False)
+ 1121⏐ ⏐ ⏐ ⏐ ⏐ extend(3, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1122⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 1123⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1124⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1125⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(3, False)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1126⏐ ⏐ ⏐ ⏐ dedent()
+ 1127⏐ ⏐ ⏐ ⏐ retract(3)
+ 1128⏐ ⏐ ⏐ ⏐ retract(0)
+ 1129⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
+ 1130⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1131⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1132⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 1133⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 1134⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1135⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 1136⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1137⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
+ 1138⏐ ⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
+ 1139⏐ ⏐ ⏐ ⏐ pull(1)
+ 1140⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1141⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1)
+ 1142⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1143⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
+ 1144⏐ ⏐ ⏐ ⏐ ⏐ retract(-2)
+ 1145⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
+ 1146⏐ ⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1147⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
+ 1148⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
+ 1149⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1150⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
+ 1151⏐ ⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1152⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
+ 1153⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1154⏐ ⏐ ⏐ ⏐ dedent()
+ 1155⏐ ⏐ ⏐ ⏐ row_high(2, True)
+ 1156⏐ ⏐ ⏐ ⏐ full_extend(2, True)
+ 1157⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
+ 1158⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 1159⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1160⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1161⏐ ⏐ ⏐ ⏐ dedent()
+ 1162⏐ ⏐ ⏐ ⏐ retract(2)
+ 1163⏐ ⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
+ 1164⏐ ⏐ ⏐ ⏐ pull(0)
+ 1165⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1166⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
+ 1167⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1168⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+ 1169⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
+ 1170⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
+ 1171⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1172⏐ ⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d c
+ 1173⏐ ⏐ ⏐ ⏐ dedent()
+ 1174⏐ ⏐ ⏐ ⏐ row_high(1, True)
+ 1175⏐ ⏐ ⏐ ⏐ full_extend(1, True)
+ 1176⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1177⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
+ 1178⏐ ⏐ ⏐ ⏐ dedent()
+ 1179⏐ ⏐ ⏐ ⏐ retract(1)
+ 1180⏐ ⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1181⏐ ⏐ ⏐ ⏐ dedent()
+ 1182⏐ ⏐ ⏐ ⏐ row_high(0, True)
+ 1183⏐ ⏐ ⏐ ⏐ full_extend(0, True)
+ 1184⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1185⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+ 1186⏐ ⏐ ⏐ ⏐ dedent()
+ 1187⏐ ⏐ ⏐ ⏐ retract(0)
+ 1188⏐ ⏐ ⏐ ⏐ pull(-2)
+ 1189⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1190⏐ ⏐ ⏐ ⏐ dedent()
+ 1191⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 1192⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 1193⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1194⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 1195⏐ ⏐ ⏐ ⏐ dedent()
+ 1196⏐ ⏐ ⏐ ⏐ retract(-1)
+ 1197⏐ ⏐ ⏐ shift_pistons(2)
+     ⏐ ⏐ ⏐ ⏐ e d
+ 1198⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d c
+ 1199⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+ 1200⏐ ⏐ dedent()
+ 1201⏐ ⏐ row_high(6, True)
+ 1202⏐ ⏐ full_extend(6, True)
+ 1203⏐ ⏐ ⏐ extend(6, True, needs_parity=True)
+ 1204⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 1205⏐ ⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d
+ 1206⏐ ⏐ ⏐ ⏐ extend(3, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1207⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+ 1208⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1209⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1210⏐ ⏐ ⏐ extra_pulses(6, True)
+     ⏐ ⏐ ⏐ ⏐ a a a
+ 1211⏐ ⏐ dedent()
+ 1212⏐ ⏐ retract(6)
+ 1213⏐ ⏐ retract(3)
+ 1214⏐ ⏐ ⏐ retract(0)
+ 1215⏐ ⏐ ⏐ ⏐ pull(-2)
+ 1216⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1217⏐ ⏐ ⏐ ⏐ dedent()
+ 1218⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 1219⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 1220⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1221⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 1222⏐ ⏐ ⏐ ⏐ dedent()
+ 1223⏐ ⏐ ⏐ ⏐ retract(-1)
+ 1224⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+ 1225⏐ ⏐ ⏐ pull(1)
+ 1226⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1227⏐ ⏐ ⏐ ⏐ full_extend(1)
+ 1228⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1229⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
+ 1230⏐ ⏐ ⏐ ⏐ retract(-2)
+ 1231⏐ ⏐ ⏐ ⏐ full_row(-1)
+ 1232⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1233⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
+ 1234⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
+ 1235⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1236⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
+ 1237⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1238⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
+ 1239⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1240⏐ ⏐ ⏐ dedent()
+ 1241⏐ ⏐ ⏐ row_high(2, True)
+ 1242⏐ ⏐ ⏐ full_extend(2, True)
+ 1243⏐ ⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
+ 1244⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+ 1245⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1246⏐ ⏐ ⏐ ⏐ extra_pulses(2, True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1247⏐ ⏐ ⏐ dedent()
+ 1248⏐ ⏐ ⏐ retract(2)
+ 1249⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+ 1250⏐ ⏐ ⏐ pull(0)
+ 1251⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1252⏐ ⏐ ⏐ ⏐ full_extend(0)
+ 1253⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1254⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+ 1255⏐ ⏐ ⏐ ⏐ retract(-3)
+ 1256⏐ ⏐ ⏐ ⏐ full_row(-2)
+ 1257⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1258⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d c
+ 1259⏐ ⏐ ⏐ dedent()
+ 1260⏐ ⏐ ⏐ row_high(1, True)
+ 1261⏐ ⏐ ⏐ full_extend(1, True)
+ 1262⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1263⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
+ 1264⏐ ⏐ ⏐ dedent()
+ 1265⏐ ⏐ ⏐ retract(1)
+ 1266⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ b
+ 1267⏐ ⏐ ⏐ dedent()
+ 1268⏐ ⏐ ⏐ row_high(0, True)
+ 1269⏐ ⏐ ⏐ full_extend(0, True)
+ 1270⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1271⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+ 1272⏐ ⏐ ⏐ dedent()
+ 1273⏐ ⏐ ⏐ retract(0)
+ 1274⏐ ⏐ ⏐ pull(-2)
+ 1275⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+ 1276⏐ ⏐ ⏐ dedent()
+ 1277⏐ ⏐ ⏐ row_high(-1, True)
+ 1278⏐ ⏐ ⏐ full_extend(-1, True)
+ 1279⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1280⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 1281⏐ ⏐ ⏐ dedent()
+ 1282⏐ ⏐ ⏐ retract(-1)
+ 1283⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ sto sto
+ 1284⏐ ⏐ pull(4)
+ 1285⏐ ⏐ ⏐ more_pistons(2)
+     ⏐ ⏐ ⏐ ⏐ e
+ 1286⏐ ⏐ ⏐ full_extend(4)
+ 1287⏐ ⏐ ⏐ ⏐ extend(4, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1288⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 1289⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1290⏐ ⏐ ⏐ ⏐ ⏐ extend(1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1291⏐ ⏐ ⏐ ⏐ extra_pulses(4, False)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1292⏐ ⏐ ⏐ retract(1)
+ 1293⏐ ⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1294⏐ ⏐ ⏐ ⏐ dedent()
+ 1295⏐ ⏐ ⏐ ⏐ row_high(0, True)
+ 1296⏐ ⏐ ⏐ ⏐ full_extend(0, True)
+ 1297⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1298⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+ 1299⏐ ⏐ ⏐ ⏐ dedent()
+ 1300⏐ ⏐ ⏐ ⏐ retract(0)
+ 1301⏐ ⏐ ⏐ ⏐ pull(-2)
+ 1302⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1303⏐ ⏐ ⏐ ⏐ dedent()
+ 1304⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 1305⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 1306⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1307⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 1308⏐ ⏐ ⏐ ⏐ dedent()
+ 1309⏐ ⏐ ⏐ ⏐ retract(-1)
+ 1310⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+ 1311⏐ ⏐ ⏐ full_row(2)
+ 1312⏐ ⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d
+ 1313⏐ ⏐ ⏐ ⏐ dedent()
+ 1314⏐ ⏐ ⏐ ⏐ row_high(2)
+ 1315⏐ ⏐ ⏐ ⏐ full_extend(2, False)
+ 1316⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1317⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 1318⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1319⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1320⏐ ⏐ ⏐ ⏐ dedent()
+ 1321⏐ ⏐ ⏐ ⏐ retract(2)
+ 1322⏐ ⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
+ 1323⏐ ⏐ ⏐ ⏐ pull(0)
+ 1324⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1325⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
+ 1326⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1327⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+ 1328⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
+ 1329⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
+ 1330⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1331⏐ ⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d c
+ 1332⏐ ⏐ ⏐ ⏐ dedent()
+ 1333⏐ ⏐ ⏐ ⏐ row_high(1, True)
+ 1334⏐ ⏐ ⏐ ⏐ full_extend(1, True)
+ 1335⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1336⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
+ 1337⏐ ⏐ ⏐ ⏐ dedent()
+ 1338⏐ ⏐ ⏐ ⏐ retract(1)
+ 1339⏐ ⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1340⏐ ⏐ ⏐ ⏐ dedent()
+ 1341⏐ ⏐ ⏐ ⏐ row_high(0, True)
+ 1342⏐ ⏐ ⏐ ⏐ full_extend(0, True)
+ 1343⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1344⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+ 1345⏐ ⏐ ⏐ ⏐ dedent()
+ 1346⏐ ⏐ ⏐ ⏐ retract(0)
+ 1347⏐ ⏐ ⏐ ⏐ pull(-2)
+ 1348⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1349⏐ ⏐ ⏐ ⏐ dedent()
+ 1350⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 1351⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 1352⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1353⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 1354⏐ ⏐ ⏐ ⏐ dedent()
+ 1355⏐ ⏐ ⏐ ⏐ retract(-1)
+ 1356⏐ ⏐ ⏐ shift_pistons(2)
+     ⏐ ⏐ ⏐ ⏐ e d
+ 1357⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d c
+ 1358⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+ 1359⏐ ⏐ shift_pistons(3)
+     ⏐ ⏐ ⏐ fold1
+ 1360⏐ ⏐ dedent()
+ 1361⏐ ⏐ row_high(5, True)
+ 1362⏐ ⏐ full_extend(5, True)
+ 1363⏐ ⏐ ⏐ extend(5, True, needs_parity=True)
+ 1364⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 1365⏐ ⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d
+ 1366⏐ ⏐ ⏐ ⏐ extend(2, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1367⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+ 1368⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1369⏐ ⏐ ⏐ extra_pulses(5, True)
+     ⏐ ⏐ ⏐ ⏐ b b b
+ 1370⏐ ⏐ dedent()
+ 1371⏐ ⏐ retract(5)
+ 1372⏐ ⏐ retract(2)
+ 1373⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+ 1374⏐ ⏐ ⏐ pull(0)
+ 1375⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1376⏐ ⏐ ⏐ ⏐ full_extend(0)
+ 1377⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1378⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+ 1379⏐ ⏐ ⏐ ⏐ retract(-3)
+ 1380⏐ ⏐ ⏐ ⏐ full_row(-2)
+ 1381⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1382⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d c
+ 1383⏐ ⏐ ⏐ dedent()
+ 1384⏐ ⏐ ⏐ row_high(1, True)
+ 1385⏐ ⏐ ⏐ full_extend(1, True)
+ 1386⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1387⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
+ 1388⏐ ⏐ ⏐ dedent()
+ 1389⏐ ⏐ ⏐ retract(1)
+ 1390⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ b
+ 1391⏐ ⏐ ⏐ dedent()
+ 1392⏐ ⏐ ⏐ row_high(0, True)
+ 1393⏐ ⏐ ⏐ full_extend(0, True)
+ 1394⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1395⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+ 1396⏐ ⏐ ⏐ dedent()
+ 1397⏐ ⏐ ⏐ retract(0)
+ 1398⏐ ⏐ ⏐ pull(-2)
+ 1399⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+ 1400⏐ ⏐ ⏐ dedent()
+ 1401⏐ ⏐ ⏐ row_high(-1, True)
+ 1402⏐ ⏐ ⏐ full_extend(-1, True)
+ 1403⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1404⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 1405⏐ ⏐ ⏐ dedent()
+ 1406⏐ ⏐ ⏐ retract(-1)
+ 1407⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ sto sto
+ 1408⏐ ⏐ pull(3)
+ 1409⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d
+ 1410⏐ ⏐ ⏐ full_extend(3)
+ 1411⏐ ⏐ ⏐ ⏐ extend(3, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1412⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 1413⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1414⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1415⏐ ⏐ ⏐ ⏐ extra_pulses(3, False)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1416⏐ ⏐ ⏐ retract(0)
+ 1417⏐ ⏐ ⏐ ⏐ pull(-2)
+ 1418⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1419⏐ ⏐ ⏐ ⏐ dedent()
+ 1420⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 1421⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 1422⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1423⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 1424⏐ ⏐ ⏐ ⏐ dedent()
+ 1425⏐ ⏐ ⏐ ⏐ retract(-1)
+ 1426⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+ 1427⏐ ⏐ ⏐ full_row(1)
+ 1428⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1429⏐ ⏐ ⏐ ⏐ dedent()
+ 1430⏐ ⏐ ⏐ ⏐ row_high(1)
+ 1431⏐ ⏐ ⏐ ⏐ full_extend(1, False)
+ 1432⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1433⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
+ 1434⏐ ⏐ ⏐ ⏐ dedent()
+ 1435⏐ ⏐ ⏐ ⏐ retract(1)
+ 1436⏐ ⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1437⏐ ⏐ ⏐ ⏐ dedent()
+ 1438⏐ ⏐ ⏐ ⏐ row_high(0, True)
+ 1439⏐ ⏐ ⏐ ⏐ full_extend(0, True)
+ 1440⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1441⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+ 1442⏐ ⏐ ⏐ ⏐ dedent()
+ 1443⏐ ⏐ ⏐ ⏐ retract(0)
+ 1444⏐ ⏐ ⏐ ⏐ pull(-2)
+ 1445⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1446⏐ ⏐ ⏐ ⏐ dedent()
+ 1447⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 1448⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 1449⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1450⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 1451⏐ ⏐ ⏐ ⏐ dedent()
+ 1452⏐ ⏐ ⏐ ⏐ retract(-1)
+ 1453⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d c
+ 1454⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+ 1455⏐ ⏐ dedent()
+ 1456⏐ ⏐ row_high(4, True)
+ 1457⏐ ⏐ full_extend(4, True)
+ 1458⏐ ⏐ ⏐ extend(4, True, needs_parity=True)
+ 1459⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 1460⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1461⏐ ⏐ ⏐ ⏐ extend(1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1462⏐ ⏐ ⏐ extra_pulses(4, True)
+     ⏐ ⏐ ⏐ ⏐ a
+ 1463⏐ ⏐ dedent()
+ 1464⏐ ⏐ retract(4)
+ 1465⏐ ⏐ retract(1)
+ 1466⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ b
+ 1467⏐ ⏐ ⏐ dedent()
+ 1468⏐ ⏐ ⏐ row_high(0, True)
+ 1469⏐ ⏐ ⏐ full_extend(0, True)
+ 1470⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1471⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+ 1472⏐ ⏐ ⏐ dedent()
+ 1473⏐ ⏐ ⏐ retract(0)
+ 1474⏐ ⏐ ⏐ pull(-2)
+ 1475⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+ 1476⏐ ⏐ ⏐ dedent()
+ 1477⏐ ⏐ ⏐ row_high(-1, True)
+ 1478⏐ ⏐ ⏐ full_extend(-1, True)
+ 1479⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1480⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 1481⏐ ⏐ ⏐ dedent()
+ 1482⏐ ⏐ ⏐ retract(-1)
+ 1483⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ sto sto
+ 1484⏐ ⏐ pull(2)
+ 1485⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d
+ 1486⏐ ⏐ ⏐ full_extend(2)
+ 1487⏐ ⏐ ⏐ ⏐ extend(2, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1488⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 1489⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1490⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1491⏐ ⏐ ⏐ retract(-1)
+ 1492⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+ 1493⏐ ⏐ ⏐ full_row(0)
+ 1494⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1495⏐ ⏐ ⏐ ⏐ dedent()
+ 1496⏐ ⏐ ⏐ ⏐ row_high(0)
+ 1497⏐ ⏐ ⏐ ⏐ full_extend(0, False)
+ 1498⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1499⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+ 1500⏐ ⏐ ⏐ ⏐ dedent()
+ 1501⏐ ⏐ ⏐ ⏐ retract(0)
+ 1502⏐ ⏐ ⏐ ⏐ pull(-2)
+ 1503⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1504⏐ ⏐ ⏐ ⏐ dedent()
+ 1505⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 1506⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 1507⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1508⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 1509⏐ ⏐ ⏐ ⏐ dedent()
+ 1510⏐ ⏐ ⏐ ⏐ retract(-1)
+ 1511⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d c
+ 1512⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+ 1513⏐ ⏐ shift_pistons(2)
+     ⏐ ⏐ ⏐ e d
+ 1514⏐ ⏐ dedent()
+ 1515⏐ ⏐ row_high(3, True)
+ 1516⏐ ⏐ full_extend(3, True)
+ 1517⏐ ⏐ ⏐ extend(3, True, needs_parity=True)
+ 1518⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 1519⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1520⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1521⏐ ⏐ ⏐ extra_pulses(3, True)
+     ⏐ ⏐ ⏐ ⏐ a
+ 1522⏐ ⏐ dedent()
+ 1523⏐ ⏐ retract(3)
+ 1524⏐ ⏐ retract(0)
+ 1525⏐ ⏐ ⏐ pull(-2)
+ 1526⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+ 1527⏐ ⏐ ⏐ dedent()
+ 1528⏐ ⏐ ⏐ row_high(-1, True)
+ 1529⏐ ⏐ ⏐ full_extend(-1, True)
+ 1530⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1531⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 1532⏐ ⏐ ⏐ dedent()
+ 1533⏐ ⏐ ⏐ retract(-1)
+ 1534⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ sto sto
+ 1535⏐ ⏐ pull(1)
+ 1536⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c
+ 1537⏐ ⏐ ⏐ full_extend(1)
+ 1538⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1539⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
+ 1540⏐ ⏐ ⏐ retract(-2)
+ 1541⏐ ⏐ ⏐ full_row(-1)
+ 1542⏐ ⏐ ⏐ ⏐ dedent()
+ 1543⏐ ⏐ ⏐ ⏐ row_high(-1)
+ 1544⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
+ 1545⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1546⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
+ 1547⏐ ⏐ ⏐ ⏐ dedent()
+ 1548⏐ ⏐ ⏐ ⏐ retract(-1)
+ 1549⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+ 1550⏐ ⏐ dedent()
+ 1551⏐ ⏐ row_high(2, True)
+ 1552⏐ ⏐ full_extend(2, True)
+ 1553⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
+ 1554⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 1555⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1556⏐ ⏐ ⏐ extra_pulses(2, True)
+     ⏐ ⏐ ⏐ ⏐ b
+ 1557⏐ ⏐ dedent()
+ 1558⏐ ⏐ retract(2)
+ 1559⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ sto sto
+ 1560⏐ ⏐ pull(0)
+ 1561⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c
+ 1562⏐ ⏐ ⏐ full_extend(0)
+ 1563⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1564⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+ 1565⏐ ⏐ ⏐ retract(-3)
+ 1566⏐ ⏐ ⏐ full_row(-2)
+ 1567⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+ 1568⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ d c
+ 1569⏐ ⏐ dedent()
+ 1570⏐ ⏐ row_high(1, True)
+ 1571⏐ ⏐ full_extend(1, True)
+ 1572⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ a
+ 1573⏐ ⏐ ⏐ extra_pulses(1, True)
+ 1574⏐ ⏐ dedent()
+ 1575⏐ ⏐ retract(1)
+ 1576⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ b
+ 1577⏐ ⏐ dedent()
+ 1578⏐ ⏐ row_high(0, True)
+ 1579⏐ ⏐ full_extend(0, True)
+ 1580⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ a
+ 1581⏐ ⏐ ⏐ extra_pulses(0, True)
+ 1582⏐ ⏐ dedent()
+ 1583⏐ ⏐ retract(0)
+ 1584⏐ ⏐ pull(-2)
+ 1585⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ c b
+ 1586⏐ ⏐ dedent()
+ 1587⏐ ⏐ row_high(-1, True)
+ 1588⏐ ⏐ full_extend(-1, True)
+ 1589⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ b
+ 1590⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 1591⏐ ⏐ dedent()
+ 1592⏐ ⏐ retract(-1)
+ 1593⏐ storage_moves(Move.A, Move.STO)
+ 1594⏐ full_row(8)
+ 1595⏐ ⏐ more_pistons(4)
+     ⏐ ⏐ ⏐ e fold1
+ 1596⏐ ⏐ dedent()
+ 1597⏐ ⏐ row_high(8)
+ 1598⏐ ⏐ full_extend(8, False)
+ 1599⏐ ⏐ ⏐ extend(8, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ b
+ 1600⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 1601⏐ ⏐ ⏐ ⏐ more_pistons(2)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d fold2
+ 1602⏐ ⏐ ⏐ ⏐ extend(5, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1603⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+ 1604⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
+ 1605⏐ ⏐ ⏐ ⏐ ⏐ extend(2, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1606⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto
+ 1607⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1608⏐ ⏐ ⏐ extra_pulses(8, False)
+     ⏐ ⏐ ⏐ ⏐ a a a a a a a a
+ 1609⏐ ⏐ dedent()
+ 1610⏐ ⏐ retract(8)
+ 1611⏐ ⏐ retract(5)
+ 1612⏐ ⏐ ⏐ retract(2)
+ 1613⏐ ⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ ⏐ b sto
+ 1614⏐ ⏐ ⏐ ⏐ pull(0)
+ 1615⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1616⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
+ 1617⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1618⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+ 1619⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
+ 1620⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
+ 1621⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1622⏐ ⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d c
+ 1623⏐ ⏐ ⏐ ⏐ dedent()
+ 1624⏐ ⏐ ⏐ ⏐ row_high(1, True)
+ 1625⏐ ⏐ ⏐ ⏐ full_extend(1, True)
+ 1626⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1627⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
+ 1628⏐ ⏐ ⏐ ⏐ dedent()
+ 1629⏐ ⏐ ⏐ ⏐ retract(1)
+ 1630⏐ ⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1631⏐ ⏐ ⏐ ⏐ dedent()
+ 1632⏐ ⏐ ⏐ ⏐ row_high(0, True)
+ 1633⏐ ⏐ ⏐ ⏐ full_extend(0, True)
+ 1634⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1635⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+ 1636⏐ ⏐ ⏐ ⏐ dedent()
+ 1637⏐ ⏐ ⏐ ⏐ retract(0)
+ 1638⏐ ⏐ ⏐ ⏐ pull(-2)
+ 1639⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1640⏐ ⏐ ⏐ ⏐ dedent()
+ 1641⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 1642⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 1643⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1644⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 1645⏐ ⏐ ⏐ ⏐ dedent()
+ 1646⏐ ⏐ ⏐ ⏐ retract(-1)
+ 1647⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+ 1648⏐ ⏐ ⏐ pull(3)
+ 1649⏐ ⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d
+ 1650⏐ ⏐ ⏐ ⏐ full_extend(3)
+ 1651⏐ ⏐ ⏐ ⏐ ⏐ extend(3, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1652⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+ 1653⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1654⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1655⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(3, False)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1656⏐ ⏐ ⏐ ⏐ retract(0)
+ 1657⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
+ 1658⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1659⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1660⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 1661⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 1662⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1663⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 1664⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1665⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
+ 1666⏐ ⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
+ 1667⏐ ⏐ ⏐ ⏐ full_row(1)
+ 1668⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1669⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1670⏐ ⏐ ⏐ ⏐ ⏐ row_high(1)
+ 1671⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, False)
+ 1672⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1673⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
+ 1674⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1675⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
+ 1676⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1677⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1678⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
+ 1679⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
+ 1680⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1681⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+ 1682⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1683⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
+ 1684⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
+ 1685⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1686⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1687⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 1688⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 1689⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1690⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 1691⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1692⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
+ 1693⏐ ⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d c
+ 1694⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1695⏐ ⏐ ⏐ dedent()
+ 1696⏐ ⏐ ⏐ row_high(4, True)
+ 1697⏐ ⏐ ⏐ full_extend(4, True)
+ 1698⏐ ⏐ ⏐ ⏐ extend(4, True, needs_parity=True)
+ 1699⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+ 1700⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1701⏐ ⏐ ⏐ ⏐ ⏐ extend(1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1702⏐ ⏐ ⏐ ⏐ extra_pulses(4, True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1703⏐ ⏐ ⏐ dedent()
+ 1704⏐ ⏐ ⏐ retract(4)
+ 1705⏐ ⏐ ⏐ retract(1)
+ 1706⏐ ⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1707⏐ ⏐ ⏐ ⏐ dedent()
+ 1708⏐ ⏐ ⏐ ⏐ row_high(0, True)
+ 1709⏐ ⏐ ⏐ ⏐ full_extend(0, True)
+ 1710⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1711⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+ 1712⏐ ⏐ ⏐ ⏐ dedent()
+ 1713⏐ ⏐ ⏐ ⏐ retract(0)
+ 1714⏐ ⏐ ⏐ ⏐ pull(-2)
+ 1715⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1716⏐ ⏐ ⏐ ⏐ dedent()
+ 1717⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 1718⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 1719⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1720⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 1721⏐ ⏐ ⏐ ⏐ dedent()
+ 1722⏐ ⏐ ⏐ ⏐ retract(-1)
+ 1723⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+ 1724⏐ ⏐ ⏐ pull(2)
+ 1725⏐ ⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d
+ 1726⏐ ⏐ ⏐ ⏐ full_extend(2)
+ 1727⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1728⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+ 1729⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1730⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1731⏐ ⏐ ⏐ ⏐ retract(-1)
+ 1732⏐ ⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
+ 1733⏐ ⏐ ⏐ ⏐ full_row(0)
+ 1734⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1735⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1736⏐ ⏐ ⏐ ⏐ ⏐ row_high(0)
+ 1737⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, False)
+ 1738⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1739⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+ 1740⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1741⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
+ 1742⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
+ 1743⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1744⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1745⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 1746⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 1747⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1748⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 1749⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1750⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
+ 1751⏐ ⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d c
+ 1752⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1753⏐ ⏐ ⏐ shift_pistons(2)
+     ⏐ ⏐ ⏐ ⏐ fold2
+ 1754⏐ ⏐ ⏐ dedent()
+ 1755⏐ ⏐ ⏐ row_high(3, True)
+ 1756⏐ ⏐ ⏐ full_extend(3, True)
+ 1757⏐ ⏐ ⏐ ⏐ extend(3, True, needs_parity=True)
+ 1758⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+ 1759⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1760⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1761⏐ ⏐ ⏐ ⏐ extra_pulses(3, True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1762⏐ ⏐ ⏐ dedent()
+ 1763⏐ ⏐ ⏐ retract(3)
+ 1764⏐ ⏐ ⏐ retract(0)
+ 1765⏐ ⏐ ⏐ ⏐ pull(-2)
+ 1766⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1767⏐ ⏐ ⏐ ⏐ dedent()
+ 1768⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 1769⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 1770⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1771⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 1772⏐ ⏐ ⏐ ⏐ dedent()
+ 1773⏐ ⏐ ⏐ ⏐ retract(-1)
+ 1774⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+ 1775⏐ ⏐ ⏐ pull(1)
+ 1776⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1777⏐ ⏐ ⏐ ⏐ full_extend(1)
+ 1778⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1779⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
+ 1780⏐ ⏐ ⏐ ⏐ retract(-2)
+ 1781⏐ ⏐ ⏐ ⏐ full_row(-1)
+ 1782⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1783⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
+ 1784⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
+ 1785⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1786⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
+ 1787⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1788⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
+ 1789⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1790⏐ ⏐ ⏐ dedent()
+ 1791⏐ ⏐ ⏐ row_high(2, True)
+ 1792⏐ ⏐ ⏐ full_extend(2, True)
+ 1793⏐ ⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
+ 1794⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+ 1795⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1796⏐ ⏐ ⏐ ⏐ extra_pulses(2, True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1797⏐ ⏐ ⏐ dedent()
+ 1798⏐ ⏐ ⏐ retract(2)
+ 1799⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+ 1800⏐ ⏐ ⏐ pull(0)
+ 1801⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1802⏐ ⏐ ⏐ ⏐ full_extend(0)
+ 1803⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1804⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+ 1805⏐ ⏐ ⏐ ⏐ retract(-3)
+ 1806⏐ ⏐ ⏐ ⏐ full_row(-2)
+ 1807⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1808⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d c
+ 1809⏐ ⏐ ⏐ dedent()
+ 1810⏐ ⏐ ⏐ row_high(1, True)
+ 1811⏐ ⏐ ⏐ full_extend(1, True)
+ 1812⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1813⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
+ 1814⏐ ⏐ ⏐ dedent()
+ 1815⏐ ⏐ ⏐ retract(1)
+ 1816⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ b
+ 1817⏐ ⏐ ⏐ dedent()
+ 1818⏐ ⏐ ⏐ row_high(0, True)
+ 1819⏐ ⏐ ⏐ full_extend(0, True)
+ 1820⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1821⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+ 1822⏐ ⏐ ⏐ dedent()
+ 1823⏐ ⏐ ⏐ retract(0)
+ 1824⏐ ⏐ ⏐ pull(-2)
+ 1825⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+ 1826⏐ ⏐ ⏐ dedent()
+ 1827⏐ ⏐ ⏐ row_high(-1, True)
+ 1828⏐ ⏐ ⏐ full_extend(-1, True)
+ 1829⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1830⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 1831⏐ ⏐ ⏐ dedent()
+ 1832⏐ ⏐ ⏐ retract(-1)
+ 1833⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ sto sto
+ 1834⏐ ⏐ pull(6)
+ 1835⏐ ⏐ ⏐ more_pistons(3)
+     ⏐ ⏐ ⏐ ⏐ e
+ 1836⏐ ⏐ ⏐ full_extend(6)
+ 1837⏐ ⏐ ⏐ ⏐ extend(6, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1838⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 1839⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
+ 1840⏐ ⏐ ⏐ ⏐ ⏐ extend(3, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1841⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+ 1842⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1843⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1844⏐ ⏐ ⏐ ⏐ extra_pulses(6, False)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a a a a a a a
+ 1845⏐ ⏐ ⏐ retract(3)
+ 1846⏐ ⏐ ⏐ ⏐ retract(0)
+ 1847⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
+ 1848⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1849⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1850⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 1851⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 1852⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1853⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 1854⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1855⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
+ 1856⏐ ⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
+ 1857⏐ ⏐ ⏐ ⏐ pull(1)
+ 1858⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1859⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1)
+ 1860⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1861⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
+ 1862⏐ ⏐ ⏐ ⏐ ⏐ retract(-2)
+ 1863⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
+ 1864⏐ ⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1865⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
+ 1866⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
+ 1867⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1868⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
+ 1869⏐ ⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1870⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
+ 1871⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1872⏐ ⏐ ⏐ ⏐ dedent()
+ 1873⏐ ⏐ ⏐ ⏐ row_high(2, True)
+ 1874⏐ ⏐ ⏐ ⏐ full_extend(2, True)
+ 1875⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
+ 1876⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+ 1877⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1878⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1879⏐ ⏐ ⏐ ⏐ dedent()
+ 1880⏐ ⏐ ⏐ ⏐ retract(2)
+ 1881⏐ ⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
+ 1882⏐ ⏐ ⏐ ⏐ pull(0)
+ 1883⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1884⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
+ 1885⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1886⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+ 1887⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
+ 1888⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
+ 1889⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1890⏐ ⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d c
+ 1891⏐ ⏐ ⏐ ⏐ dedent()
+ 1892⏐ ⏐ ⏐ ⏐ row_high(1, True)
+ 1893⏐ ⏐ ⏐ ⏐ full_extend(1, True)
+ 1894⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1895⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
+ 1896⏐ ⏐ ⏐ ⏐ dedent()
+ 1897⏐ ⏐ ⏐ ⏐ retract(1)
+ 1898⏐ ⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1899⏐ ⏐ ⏐ ⏐ dedent()
+ 1900⏐ ⏐ ⏐ ⏐ row_high(0, True)
+ 1901⏐ ⏐ ⏐ ⏐ full_extend(0, True)
+ 1902⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1903⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+ 1904⏐ ⏐ ⏐ ⏐ dedent()
+ 1905⏐ ⏐ ⏐ ⏐ retract(0)
+ 1906⏐ ⏐ ⏐ ⏐ pull(-2)
+ 1907⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1908⏐ ⏐ ⏐ ⏐ dedent()
+ 1909⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 1910⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 1911⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1912⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 1913⏐ ⏐ ⏐ ⏐ dedent()
+ 1914⏐ ⏐ ⏐ ⏐ retract(-1)
+ 1915⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+ 1916⏐ ⏐ ⏐ full_row(4)
+ 1917⏐ ⏐ ⏐ ⏐ more_pistons(2)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d fold2
+ 1918⏐ ⏐ ⏐ ⏐ dedent()
+ 1919⏐ ⏐ ⏐ ⏐ row_high(4)
+ 1920⏐ ⏐ ⏐ ⏐ full_extend(4, False)
+ 1921⏐ ⏐ ⏐ ⏐ ⏐ extend(4, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1922⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 1923⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1924⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1925⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(4, False)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1926⏐ ⏐ ⏐ ⏐ dedent()
+ 1927⏐ ⏐ ⏐ ⏐ retract(4)
+ 1928⏐ ⏐ ⏐ ⏐ retract(1)
+ 1929⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1930⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1931⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
+ 1932⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
+ 1933⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1934⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+ 1935⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1936⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
+ 1937⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
+ 1938⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1939⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1940⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 1941⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 1942⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1943⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 1944⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1945⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
+ 1946⏐ ⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
+ 1947⏐ ⏐ ⏐ ⏐ pull(2)
+ 1948⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
+ 1949⏐ ⏐ ⏐ ⏐ ⏐ full_extend(2)
+ 1950⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1951⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 1952⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1953⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1954⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
+ 1955⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
+ 1956⏐ ⏐ ⏐ ⏐ ⏐ full_row(0)
+ 1957⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1958⏐ ⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1959⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0)
+ 1960⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, False)
+ 1961⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1962⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+ 1963⏐ ⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1964⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
+ 1965⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
+ 1966⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1967⏐ ⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1968⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 1969⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 1970⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1971⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 1972⏐ ⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1973⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
+ 1974⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
+ 1975⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1976⏐ ⏐ ⏐ ⏐ shift_pistons(2)
+     ⏐ ⏐ ⏐ ⏐ ⏐ fold2
+ 1977⏐ ⏐ ⏐ ⏐ dedent()
+ 1978⏐ ⏐ ⏐ ⏐ row_high(3, True)
+ 1979⏐ ⏐ ⏐ ⏐ full_extend(3, True)
+ 1980⏐ ⏐ ⏐ ⏐ ⏐ extend(3, True, needs_parity=True)
+ 1981⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 1982⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 1983⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1984⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(3, True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 1985⏐ ⏐ ⏐ ⏐ dedent()
+ 1986⏐ ⏐ ⏐ ⏐ retract(3)
+ 1987⏐ ⏐ ⏐ ⏐ retract(0)
+ 1988⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
+ 1989⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 1990⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1991⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 1992⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 1993⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 1994⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 1995⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 1996⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
+ 1997⏐ ⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
+ 1998⏐ ⏐ ⏐ ⏐ pull(1)
+ 1999⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 2000⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1)
+ 2001⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2002⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
+ 2003⏐ ⏐ ⏐ ⏐ ⏐ retract(-2)
+ 2004⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
+ 2005⏐ ⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 2006⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
+ 2007⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
+ 2008⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2009⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
+ 2010⏐ ⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 2011⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
+ 2012⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 2013⏐ ⏐ ⏐ ⏐ dedent()
+ 2014⏐ ⏐ ⏐ ⏐ row_high(2, True)
+ 2015⏐ ⏐ ⏐ ⏐ full_extend(2, True)
+ 2016⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
+ 2017⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 2018⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2019⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2020⏐ ⏐ ⏐ ⏐ dedent()
+ 2021⏐ ⏐ ⏐ ⏐ retract(2)
+ 2022⏐ ⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
+ 2023⏐ ⏐ ⏐ ⏐ pull(0)
+ 2024⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 2025⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
+ 2026⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2027⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+ 2028⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
+ 2029⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
+ 2030⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 2031⏐ ⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d c
+ 2032⏐ ⏐ ⏐ ⏐ dedent()
+ 2033⏐ ⏐ ⏐ ⏐ row_high(1, True)
+ 2034⏐ ⏐ ⏐ ⏐ full_extend(1, True)
+ 2035⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2036⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
+ 2037⏐ ⏐ ⏐ ⏐ dedent()
+ 2038⏐ ⏐ ⏐ ⏐ retract(1)
+ 2039⏐ ⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2040⏐ ⏐ ⏐ ⏐ dedent()
+ 2041⏐ ⏐ ⏐ ⏐ row_high(0, True)
+ 2042⏐ ⏐ ⏐ ⏐ full_extend(0, True)
+ 2043⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2044⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+ 2045⏐ ⏐ ⏐ ⏐ dedent()
+ 2046⏐ ⏐ ⏐ ⏐ retract(0)
+ 2047⏐ ⏐ ⏐ ⏐ pull(-2)
+ 2048⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 2049⏐ ⏐ ⏐ ⏐ dedent()
+ 2050⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 2051⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 2052⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2053⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 2054⏐ ⏐ ⏐ ⏐ dedent()
+ 2055⏐ ⏐ ⏐ ⏐ retract(-1)
+ 2056⏐ ⏐ ⏐ shift_pistons(3)
+     ⏐ ⏐ ⏐ ⏐ e d fold2
+ 2057⏐ ⏐ ⏐ shift_pistons(2)
+     ⏐ ⏐ ⏐ ⏐ fold2
+ 2058⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d c
+ 2059⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+ 2060⏐ ⏐ shift_pistons(4)
+ 2061⏐ ⏐ dedent()
+ 2062⏐ ⏐ row_high(7, True)
+ 2063⏐ ⏐ full_extend(7, True)
+ 2064⏐ ⏐ ⏐ extend(7, True, needs_parity=True)
+ 2065⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 2066⏐ ⏐ ⏐ ⏐ more_pistons(2)
+     ⏐ ⏐ ⏐ ⏐ ⏐ e
+ 2067⏐ ⏐ ⏐ ⏐ extend(4, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2068⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+ 2069⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 2070⏐ ⏐ ⏐ ⏐ ⏐ extend(1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2071⏐ ⏐ ⏐ extra_pulses(7, True)
+     ⏐ ⏐ ⏐ ⏐ a a a
+ 2072⏐ ⏐ dedent()
+ 2073⏐ ⏐ retract(7)
+ 2074⏐ ⏐ retract(4)
+ 2075⏐ ⏐ ⏐ retract(1)
+ 2076⏐ ⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2077⏐ ⏐ ⏐ ⏐ dedent()
+ 2078⏐ ⏐ ⏐ ⏐ row_high(0, True)
+ 2079⏐ ⏐ ⏐ ⏐ full_extend(0, True)
+ 2080⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2081⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+ 2082⏐ ⏐ ⏐ ⏐ dedent()
+ 2083⏐ ⏐ ⏐ ⏐ retract(0)
+ 2084⏐ ⏐ ⏐ ⏐ pull(-2)
+ 2085⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 2086⏐ ⏐ ⏐ ⏐ dedent()
+ 2087⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 2088⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 2089⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2090⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 2091⏐ ⏐ ⏐ ⏐ dedent()
+ 2092⏐ ⏐ ⏐ ⏐ retract(-1)
+ 2093⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+ 2094⏐ ⏐ ⏐ pull(2)
+ 2095⏐ ⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d
+ 2096⏐ ⏐ ⏐ ⏐ full_extend(2)
+ 2097⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2098⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+ 2099⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2100⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2101⏐ ⏐ ⏐ ⏐ retract(-1)
+ 2102⏐ ⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
+ 2103⏐ ⏐ ⏐ ⏐ full_row(0)
+ 2104⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 2105⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 2106⏐ ⏐ ⏐ ⏐ ⏐ row_high(0)
+ 2107⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, False)
+ 2108⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2109⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+ 2110⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 2111⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
+ 2112⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
+ 2113⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 2114⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 2115⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 2116⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 2117⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2118⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 2119⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 2120⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
+ 2121⏐ ⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d c
+ 2122⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 2123⏐ ⏐ ⏐ shift_pistons(2)
+     ⏐ ⏐ ⏐ ⏐ e d
+ 2124⏐ ⏐ ⏐ dedent()
+ 2125⏐ ⏐ ⏐ row_high(3, True)
+ 2126⏐ ⏐ ⏐ full_extend(3, True)
+ 2127⏐ ⏐ ⏐ ⏐ extend(3, True, needs_parity=True)
+ 2128⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+ 2129⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 2130⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2131⏐ ⏐ ⏐ ⏐ extra_pulses(3, True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2132⏐ ⏐ ⏐ dedent()
+ 2133⏐ ⏐ ⏐ retract(3)
+ 2134⏐ ⏐ ⏐ retract(0)
+ 2135⏐ ⏐ ⏐ ⏐ pull(-2)
+ 2136⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 2137⏐ ⏐ ⏐ ⏐ dedent()
+ 2138⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 2139⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 2140⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2141⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 2142⏐ ⏐ ⏐ ⏐ dedent()
+ 2143⏐ ⏐ ⏐ ⏐ retract(-1)
+ 2144⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+ 2145⏐ ⏐ ⏐ pull(1)
+ 2146⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 2147⏐ ⏐ ⏐ ⏐ full_extend(1)
+ 2148⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2149⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
+ 2150⏐ ⏐ ⏐ ⏐ retract(-2)
+ 2151⏐ ⏐ ⏐ ⏐ full_row(-1)
+ 2152⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 2153⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
+ 2154⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
+ 2155⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2156⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
+ 2157⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 2158⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
+ 2159⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 2160⏐ ⏐ ⏐ dedent()
+ 2161⏐ ⏐ ⏐ row_high(2, True)
+ 2162⏐ ⏐ ⏐ full_extend(2, True)
+ 2163⏐ ⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
+ 2164⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+ 2165⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2166⏐ ⏐ ⏐ ⏐ extra_pulses(2, True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2167⏐ ⏐ ⏐ dedent()
+ 2168⏐ ⏐ ⏐ retract(2)
+ 2169⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+ 2170⏐ ⏐ ⏐ pull(0)
+ 2171⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 2172⏐ ⏐ ⏐ ⏐ full_extend(0)
+ 2173⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2174⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+ 2175⏐ ⏐ ⏐ ⏐ retract(-3)
+ 2176⏐ ⏐ ⏐ ⏐ full_row(-2)
+ 2177⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 2178⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d c
+ 2179⏐ ⏐ ⏐ dedent()
+ 2180⏐ ⏐ ⏐ row_high(1, True)
+ 2181⏐ ⏐ ⏐ full_extend(1, True)
+ 2182⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2183⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
+ 2184⏐ ⏐ ⏐ dedent()
+ 2185⏐ ⏐ ⏐ retract(1)
+ 2186⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ b
+ 2187⏐ ⏐ ⏐ dedent()
+ 2188⏐ ⏐ ⏐ row_high(0, True)
+ 2189⏐ ⏐ ⏐ full_extend(0, True)
+ 2190⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2191⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+ 2192⏐ ⏐ ⏐ dedent()
+ 2193⏐ ⏐ ⏐ retract(0)
+ 2194⏐ ⏐ ⏐ pull(-2)
+ 2195⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+ 2196⏐ ⏐ ⏐ dedent()
+ 2197⏐ ⏐ ⏐ row_high(-1, True)
+ 2198⏐ ⏐ ⏐ full_extend(-1, True)
+ 2199⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2200⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 2201⏐ ⏐ ⏐ dedent()
+ 2202⏐ ⏐ ⏐ retract(-1)
+ 2203⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ sto sto
+ 2204⏐ ⏐ pull(5)
+ 2205⏐ ⏐ ⏐ more_pistons(2)
+     ⏐ ⏐ ⏐ ⏐ e
+ 2206⏐ ⏐ ⏐ full_extend(5)
+ 2207⏐ ⏐ ⏐ ⏐ extend(5, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2208⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 2209⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
+ 2210⏐ ⏐ ⏐ ⏐ ⏐ extend(2, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2211⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+ 2212⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2213⏐ ⏐ ⏐ ⏐ extra_pulses(5, False)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b b b b b
+ 2214⏐ ⏐ ⏐ retract(2)
+ 2215⏐ ⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
+ 2216⏐ ⏐ ⏐ ⏐ pull(0)
+ 2217⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 2218⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
+ 2219⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2220⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+ 2221⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
+ 2222⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
+ 2223⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 2224⏐ ⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d c
+ 2225⏐ ⏐ ⏐ ⏐ dedent()
+ 2226⏐ ⏐ ⏐ ⏐ row_high(1, True)
+ 2227⏐ ⏐ ⏐ ⏐ full_extend(1, True)
+ 2228⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2229⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
+ 2230⏐ ⏐ ⏐ ⏐ dedent()
+ 2231⏐ ⏐ ⏐ ⏐ retract(1)
+ 2232⏐ ⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2233⏐ ⏐ ⏐ ⏐ dedent()
+ 2234⏐ ⏐ ⏐ ⏐ row_high(0, True)
+ 2235⏐ ⏐ ⏐ ⏐ full_extend(0, True)
+ 2236⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2237⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+ 2238⏐ ⏐ ⏐ ⏐ dedent()
+ 2239⏐ ⏐ ⏐ ⏐ retract(0)
+ 2240⏐ ⏐ ⏐ ⏐ pull(-2)
+ 2241⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 2242⏐ ⏐ ⏐ ⏐ dedent()
+ 2243⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 2244⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 2245⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2246⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 2247⏐ ⏐ ⏐ ⏐ dedent()
+ 2248⏐ ⏐ ⏐ ⏐ retract(-1)
+ 2249⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+ 2250⏐ ⏐ ⏐ full_row(3)
+ 2251⏐ ⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d
+ 2252⏐ ⏐ ⏐ ⏐ dedent()
+ 2253⏐ ⏐ ⏐ ⏐ row_high(3)
+ 2254⏐ ⏐ ⏐ ⏐ full_extend(3, False)
+ 2255⏐ ⏐ ⏐ ⏐ ⏐ extend(3, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2256⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 2257⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 2258⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2259⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(3, False)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2260⏐ ⏐ ⏐ ⏐ dedent()
+ 2261⏐ ⏐ ⏐ ⏐ retract(3)
+ 2262⏐ ⏐ ⏐ ⏐ retract(0)
+ 2263⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
+ 2264⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 2265⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 2266⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 2267⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 2268⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2269⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 2270⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 2271⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
+ 2272⏐ ⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
+ 2273⏐ ⏐ ⏐ ⏐ pull(1)
+ 2274⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 2275⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1)
+ 2276⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2277⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
+ 2278⏐ ⏐ ⏐ ⏐ ⏐ retract(-2)
+ 2279⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
+ 2280⏐ ⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 2281⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
+ 2282⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
+ 2283⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2284⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
+ 2285⏐ ⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 2286⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
+ 2287⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 2288⏐ ⏐ ⏐ ⏐ dedent()
+ 2289⏐ ⏐ ⏐ ⏐ row_high(2, True)
+ 2290⏐ ⏐ ⏐ ⏐ full_extend(2, True)
+ 2291⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
+ 2292⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 2293⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2294⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2295⏐ ⏐ ⏐ ⏐ dedent()
+ 2296⏐ ⏐ ⏐ ⏐ retract(2)
+ 2297⏐ ⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
+ 2298⏐ ⏐ ⏐ ⏐ pull(0)
+ 2299⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 2300⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
+ 2301⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2302⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+ 2303⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
+ 2304⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
+ 2305⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 2306⏐ ⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d c
+ 2307⏐ ⏐ ⏐ ⏐ dedent()
+ 2308⏐ ⏐ ⏐ ⏐ row_high(1, True)
+ 2309⏐ ⏐ ⏐ ⏐ full_extend(1, True)
+ 2310⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2311⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
+ 2312⏐ ⏐ ⏐ ⏐ dedent()
+ 2313⏐ ⏐ ⏐ ⏐ retract(1)
+ 2314⏐ ⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2315⏐ ⏐ ⏐ ⏐ dedent()
+ 2316⏐ ⏐ ⏐ ⏐ row_high(0, True)
+ 2317⏐ ⏐ ⏐ ⏐ full_extend(0, True)
+ 2318⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2319⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+ 2320⏐ ⏐ ⏐ ⏐ dedent()
+ 2321⏐ ⏐ ⏐ ⏐ retract(0)
+ 2322⏐ ⏐ ⏐ ⏐ pull(-2)
+ 2323⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 2324⏐ ⏐ ⏐ ⏐ dedent()
+ 2325⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 2326⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 2327⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2328⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 2329⏐ ⏐ ⏐ ⏐ dedent()
+ 2330⏐ ⏐ ⏐ ⏐ retract(-1)
+ 2331⏐ ⏐ ⏐ shift_pistons(2)
+     ⏐ ⏐ ⏐ ⏐ e d
+ 2332⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d c
+ 2333⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+ 2334⏐ ⏐ dedent()
+ 2335⏐ ⏐ row_high(6, True)
+ 2336⏐ ⏐ full_extend(6, True)
+ 2337⏐ ⏐ ⏐ extend(6, True, needs_parity=True)
+ 2338⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 2339⏐ ⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d
+ 2340⏐ ⏐ ⏐ ⏐ extend(3, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2341⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+ 2342⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 2343⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2344⏐ ⏐ ⏐ extra_pulses(6, True)
+     ⏐ ⏐ ⏐ ⏐ a a a
+ 2345⏐ ⏐ dedent()
+ 2346⏐ ⏐ retract(6)
+ 2347⏐ ⏐ retract(3)
+ 2348⏐ ⏐ ⏐ retract(0)
+ 2349⏐ ⏐ ⏐ ⏐ pull(-2)
+ 2350⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 2351⏐ ⏐ ⏐ ⏐ dedent()
+ 2352⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 2353⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 2354⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2355⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 2356⏐ ⏐ ⏐ ⏐ dedent()
+ 2357⏐ ⏐ ⏐ ⏐ retract(-1)
+ 2358⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+ 2359⏐ ⏐ ⏐ pull(1)
+ 2360⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 2361⏐ ⏐ ⏐ ⏐ full_extend(1)
+ 2362⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2363⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
+ 2364⏐ ⏐ ⏐ ⏐ retract(-2)
+ 2365⏐ ⏐ ⏐ ⏐ full_row(-1)
+ 2366⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 2367⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
+ 2368⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
+ 2369⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2370⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
+ 2371⏐ ⏐ ⏐ ⏐ ⏐ dedent()
+ 2372⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
+ 2373⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 2374⏐ ⏐ ⏐ dedent()
+ 2375⏐ ⏐ ⏐ row_high(2, True)
+ 2376⏐ ⏐ ⏐ full_extend(2, True)
+ 2377⏐ ⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
+ 2378⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+ 2379⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2380⏐ ⏐ ⏐ ⏐ extra_pulses(2, True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2381⏐ ⏐ ⏐ dedent()
+ 2382⏐ ⏐ ⏐ retract(2)
+ 2383⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+ 2384⏐ ⏐ ⏐ pull(0)
+ 2385⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 2386⏐ ⏐ ⏐ ⏐ full_extend(0)
+ 2387⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2388⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+ 2389⏐ ⏐ ⏐ ⏐ retract(-3)
+ 2390⏐ ⏐ ⏐ ⏐ full_row(-2)
+ 2391⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 2392⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d c
+ 2393⏐ ⏐ ⏐ dedent()
+ 2394⏐ ⏐ ⏐ row_high(1, True)
+ 2395⏐ ⏐ ⏐ full_extend(1, True)
+ 2396⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2397⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
+ 2398⏐ ⏐ ⏐ dedent()
+ 2399⏐ ⏐ ⏐ retract(1)
+ 2400⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ b
+ 2401⏐ ⏐ ⏐ dedent()
+ 2402⏐ ⏐ ⏐ row_high(0, True)
+ 2403⏐ ⏐ ⏐ full_extend(0, True)
+ 2404⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2405⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+ 2406⏐ ⏐ ⏐ dedent()
+ 2407⏐ ⏐ ⏐ retract(0)
+ 2408⏐ ⏐ ⏐ pull(-2)
+ 2409⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+ 2410⏐ ⏐ ⏐ dedent()
+ 2411⏐ ⏐ ⏐ row_high(-1, True)
+ 2412⏐ ⏐ ⏐ full_extend(-1, True)
+ 2413⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2414⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 2415⏐ ⏐ ⏐ dedent()
+ 2416⏐ ⏐ ⏐ retract(-1)
+ 2417⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ sto sto
+ 2418⏐ ⏐ pull(4)
+ 2419⏐ ⏐ ⏐ more_pistons(2)
+     ⏐ ⏐ ⏐ ⏐ e
+ 2420⏐ ⏐ ⏐ full_extend(4)
+ 2421⏐ ⏐ ⏐ ⏐ extend(4, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2422⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 2423⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 2424⏐ ⏐ ⏐ ⏐ ⏐ extend(1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2425⏐ ⏐ ⏐ ⏐ extra_pulses(4, False)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2426⏐ ⏐ ⏐ retract(1)
+ 2427⏐ ⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2428⏐ ⏐ ⏐ ⏐ dedent()
+ 2429⏐ ⏐ ⏐ ⏐ row_high(0, True)
+ 2430⏐ ⏐ ⏐ ⏐ full_extend(0, True)
+ 2431⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2432⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+ 2433⏐ ⏐ ⏐ ⏐ dedent()
+ 2434⏐ ⏐ ⏐ ⏐ retract(0)
+ 2435⏐ ⏐ ⏐ ⏐ pull(-2)
+ 2436⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 2437⏐ ⏐ ⏐ ⏐ dedent()
+ 2438⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 2439⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 2440⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2441⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 2442⏐ ⏐ ⏐ ⏐ dedent()
+ 2443⏐ ⏐ ⏐ ⏐ retract(-1)
+ 2444⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+ 2445⏐ ⏐ ⏐ full_row(2)
+ 2446⏐ ⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d
+ 2447⏐ ⏐ ⏐ ⏐ dedent()
+ 2448⏐ ⏐ ⏐ ⏐ row_high(2)
+ 2449⏐ ⏐ ⏐ ⏐ full_extend(2, False)
+ 2450⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2451⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 2452⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2453⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2454⏐ ⏐ ⏐ ⏐ dedent()
+ 2455⏐ ⏐ ⏐ ⏐ retract(2)
+ 2456⏐ ⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
+ 2457⏐ ⏐ ⏐ ⏐ pull(0)
+ 2458⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 2459⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
+ 2460⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2461⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+ 2462⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
+ 2463⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
+ 2464⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 2465⏐ ⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d c
+ 2466⏐ ⏐ ⏐ ⏐ dedent()
+ 2467⏐ ⏐ ⏐ ⏐ row_high(1, True)
+ 2468⏐ ⏐ ⏐ ⏐ full_extend(1, True)
+ 2469⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2470⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
+ 2471⏐ ⏐ ⏐ ⏐ dedent()
+ 2472⏐ ⏐ ⏐ ⏐ retract(1)
+ 2473⏐ ⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2474⏐ ⏐ ⏐ ⏐ dedent()
+ 2475⏐ ⏐ ⏐ ⏐ row_high(0, True)
+ 2476⏐ ⏐ ⏐ ⏐ full_extend(0, True)
+ 2477⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2478⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+ 2479⏐ ⏐ ⏐ ⏐ dedent()
+ 2480⏐ ⏐ ⏐ ⏐ retract(0)
+ 2481⏐ ⏐ ⏐ ⏐ pull(-2)
+ 2482⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 2483⏐ ⏐ ⏐ ⏐ dedent()
+ 2484⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 2485⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 2486⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2487⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 2488⏐ ⏐ ⏐ ⏐ dedent()
+ 2489⏐ ⏐ ⏐ ⏐ retract(-1)
+ 2490⏐ ⏐ ⏐ shift_pistons(2)
+     ⏐ ⏐ ⏐ ⏐ e d
+ 2491⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d c
+ 2492⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+ 2493⏐ ⏐ shift_pistons(3)
+     ⏐ ⏐ ⏐ fold1
+ 2494⏐ ⏐ dedent()
+ 2495⏐ ⏐ row_high(5, True)
+ 2496⏐ ⏐ full_extend(5, True)
+ 2497⏐ ⏐ ⏐ extend(5, True, needs_parity=True)
+ 2498⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 2499⏐ ⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ d
+ 2500⏐ ⏐ ⏐ ⏐ extend(2, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2501⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+ 2502⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2503⏐ ⏐ ⏐ extra_pulses(5, True)
+     ⏐ ⏐ ⏐ ⏐ b b b
+ 2504⏐ ⏐ dedent()
+ 2505⏐ ⏐ retract(5)
+ 2506⏐ ⏐ retract(2)
+ 2507⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+ 2508⏐ ⏐ ⏐ pull(0)
+ 2509⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 2510⏐ ⏐ ⏐ ⏐ full_extend(0)
+ 2511⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2512⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+ 2513⏐ ⏐ ⏐ ⏐ retract(-3)
+ 2514⏐ ⏐ ⏐ ⏐ full_row(-2)
+ 2515⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 2516⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d c
+ 2517⏐ ⏐ ⏐ dedent()
+ 2518⏐ ⏐ ⏐ row_high(1, True)
+ 2519⏐ ⏐ ⏐ full_extend(1, True)
+ 2520⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2521⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
+ 2522⏐ ⏐ ⏐ dedent()
+ 2523⏐ ⏐ ⏐ retract(1)
+ 2524⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ b
+ 2525⏐ ⏐ ⏐ dedent()
+ 2526⏐ ⏐ ⏐ row_high(0, True)
+ 2527⏐ ⏐ ⏐ full_extend(0, True)
+ 2528⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2529⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+ 2530⏐ ⏐ ⏐ dedent()
+ 2531⏐ ⏐ ⏐ retract(0)
+ 2532⏐ ⏐ ⏐ pull(-2)
+ 2533⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+ 2534⏐ ⏐ ⏐ dedent()
+ 2535⏐ ⏐ ⏐ row_high(-1, True)
+ 2536⏐ ⏐ ⏐ full_extend(-1, True)
+ 2537⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2538⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 2539⏐ ⏐ ⏐ dedent()
+ 2540⏐ ⏐ ⏐ retract(-1)
+ 2541⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ sto sto
+ 2542⏐ ⏐ pull(3)
+ 2543⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d
+ 2544⏐ ⏐ ⏐ full_extend(3)
+ 2545⏐ ⏐ ⏐ ⏐ extend(3, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2546⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 2547⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 2548⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2549⏐ ⏐ ⏐ ⏐ extra_pulses(3, False)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2550⏐ ⏐ ⏐ retract(0)
+ 2551⏐ ⏐ ⏐ ⏐ pull(-2)
+ 2552⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 2553⏐ ⏐ ⏐ ⏐ dedent()
+ 2554⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 2555⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 2556⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2557⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 2558⏐ ⏐ ⏐ ⏐ dedent()
+ 2559⏐ ⏐ ⏐ ⏐ retract(-1)
+ 2560⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+ 2561⏐ ⏐ ⏐ full_row(1)
+ 2562⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 2563⏐ ⏐ ⏐ ⏐ dedent()
+ 2564⏐ ⏐ ⏐ ⏐ row_high(1)
+ 2565⏐ ⏐ ⏐ ⏐ full_extend(1, False)
+ 2566⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2567⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
+ 2568⏐ ⏐ ⏐ ⏐ dedent()
+ 2569⏐ ⏐ ⏐ ⏐ retract(1)
+ 2570⏐ ⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2571⏐ ⏐ ⏐ ⏐ dedent()
+ 2572⏐ ⏐ ⏐ ⏐ row_high(0, True)
+ 2573⏐ ⏐ ⏐ ⏐ full_extend(0, True)
+ 2574⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2575⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+ 2576⏐ ⏐ ⏐ ⏐ dedent()
+ 2577⏐ ⏐ ⏐ ⏐ retract(0)
+ 2578⏐ ⏐ ⏐ ⏐ pull(-2)
+ 2579⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 2580⏐ ⏐ ⏐ ⏐ dedent()
+ 2581⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 2582⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 2583⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2584⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 2585⏐ ⏐ ⏐ ⏐ dedent()
+ 2586⏐ ⏐ ⏐ ⏐ retract(-1)
+ 2587⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d c
+ 2588⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+ 2589⏐ ⏐ dedent()
+ 2590⏐ ⏐ row_high(4, True)
+ 2591⏐ ⏐ full_extend(4, True)
+ 2592⏐ ⏐ ⏐ extend(4, True, needs_parity=True)
+ 2593⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 2594⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 2595⏐ ⏐ ⏐ ⏐ extend(1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2596⏐ ⏐ ⏐ extra_pulses(4, True)
+     ⏐ ⏐ ⏐ ⏐ a
+ 2597⏐ ⏐ dedent()
+ 2598⏐ ⏐ retract(4)
+ 2599⏐ ⏐ retract(1)
+ 2600⏐ ⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ ⏐ b
+ 2601⏐ ⏐ ⏐ dedent()
+ 2602⏐ ⏐ ⏐ row_high(0, True)
+ 2603⏐ ⏐ ⏐ full_extend(0, True)
+ 2604⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2605⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
+ 2606⏐ ⏐ ⏐ dedent()
+ 2607⏐ ⏐ ⏐ retract(0)
+ 2608⏐ ⏐ ⏐ pull(-2)
+ 2609⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+ 2610⏐ ⏐ ⏐ dedent()
+ 2611⏐ ⏐ ⏐ row_high(-1, True)
+ 2612⏐ ⏐ ⏐ full_extend(-1, True)
+ 2613⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2614⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 2615⏐ ⏐ ⏐ dedent()
+ 2616⏐ ⏐ ⏐ retract(-1)
+ 2617⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ sto sto
+ 2618⏐ ⏐ pull(2)
+ 2619⏐ ⏐ ⏐ more_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d
+ 2620⏐ ⏐ ⏐ full_extend(2)
+ 2621⏐ ⏐ ⏐ ⏐ extend(2, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2622⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 2623⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2624⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2625⏐ ⏐ ⏐ retract(-1)
+ 2626⏐ ⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ ⏐ sto sto
+ 2627⏐ ⏐ ⏐ full_row(0)
+ 2628⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 2629⏐ ⏐ ⏐ ⏐ dedent()
+ 2630⏐ ⏐ ⏐ ⏐ row_high(0)
+ 2631⏐ ⏐ ⏐ ⏐ full_extend(0, False)
+ 2632⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2633⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+ 2634⏐ ⏐ ⏐ ⏐ dedent()
+ 2635⏐ ⏐ ⏐ ⏐ retract(0)
+ 2636⏐ ⏐ ⏐ ⏐ pull(-2)
+ 2637⏐ ⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c b
+ 2638⏐ ⏐ ⏐ ⏐ dedent()
+ 2639⏐ ⏐ ⏐ ⏐ row_high(-1, True)
+ 2640⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
+ 2641⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2642⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 2643⏐ ⏐ ⏐ ⏐ dedent()
+ 2644⏐ ⏐ ⏐ ⏐ retract(-1)
+ 2645⏐ ⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ ⏐ d c
+ 2646⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+ 2647⏐ ⏐ shift_pistons(2)
+     ⏐ ⏐ ⏐ e d
+ 2648⏐ ⏐ dedent()
+ 2649⏐ ⏐ row_high(3, True)
+ 2650⏐ ⏐ full_extend(3, True)
+ 2651⏐ ⏐ ⏐ extend(3, True, needs_parity=True)
+ 2652⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 2653⏐ ⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ ⏐ c
+ 2654⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2655⏐ ⏐ ⏐ extra_pulses(3, True)
+     ⏐ ⏐ ⏐ ⏐ a
+ 2656⏐ ⏐ dedent()
+ 2657⏐ ⏐ retract(3)
+ 2658⏐ ⏐ retract(0)
+ 2659⏐ ⏐ ⏐ pull(-2)
+ 2660⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+ 2661⏐ ⏐ ⏐ dedent()
+ 2662⏐ ⏐ ⏐ row_high(-1, True)
+ 2663⏐ ⏐ ⏐ full_extend(-1, True)
+ 2664⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2665⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 2666⏐ ⏐ ⏐ dedent()
+ 2667⏐ ⏐ ⏐ retract(-1)
+ 2668⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ sto sto
+ 2669⏐ ⏐ pull(1)
+ 2670⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c
+ 2671⏐ ⏐ ⏐ full_extend(1)
+ 2672⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2673⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
+ 2674⏐ ⏐ ⏐ retract(-2)
+ 2675⏐ ⏐ ⏐ full_row(-1)
+ 2676⏐ ⏐ ⏐ ⏐ dedent()
+ 2677⏐ ⏐ ⏐ ⏐ row_high(-1)
+ 2678⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
+ 2679⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2680⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
+ 2681⏐ ⏐ ⏐ ⏐ dedent()
+ 2682⏐ ⏐ ⏐ ⏐ retract(-1)
+ 2683⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+ 2684⏐ ⏐ dedent()
+ 2685⏐ ⏐ row_high(2, True)
+ 2686⏐ ⏐ full_extend(2, True)
+ 2687⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
+ 2688⏐ ⏐ ⏐ ⏐ more_obs(True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
+ 2689⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ b
+ 2690⏐ ⏐ ⏐ extra_pulses(2, True)
+     ⏐ ⏐ ⏐ ⏐ b
+ 2691⏐ ⏐ dedent()
+ 2692⏐ ⏐ retract(2)
+ 2693⏐ ⏐ less_obs()
+     ⏐ ⏐ ⏐ sto sto
+ 2694⏐ ⏐ pull(0)
+ 2695⏐ ⏐ ⏐ more_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c
+ 2696⏐ ⏐ ⏐ full_extend(0)
+ 2697⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ ⏐ a
+ 2698⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
+ 2699⏐ ⏐ ⏐ retract(-3)
+ 2700⏐ ⏐ ⏐ full_row(-2)
+ 2701⏐ ⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ ⏐ c b
+ 2702⏐ ⏐ shift_pistons(1)
+     ⏐ ⏐ ⏐ d c
+ 2703⏐ ⏐ dedent()
+ 2704⏐ ⏐ row_high(1, True)
+ 2705⏐ ⏐ full_extend(1, True)
+ 2706⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ a
+ 2707⏐ ⏐ ⏐ extra_pulses(1, True)
+ 2708⏐ ⏐ dedent()
+ 2709⏐ ⏐ retract(1)
+ 2710⏐ ⏐ pull(-1)
+     ⏐ ⏐ ⏐ b
+ 2711⏐ ⏐ dedent()
+ 2712⏐ ⏐ row_high(0, True)
+ 2713⏐ ⏐ full_extend(0, True)
+ 2714⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ a
+ 2715⏐ ⏐ ⏐ extra_pulses(0, True)
+ 2716⏐ ⏐ dedent()
+ 2717⏐ ⏐ retract(0)
+ 2718⏐ ⏐ pull(-2)
+ 2719⏐ ⏐ shift_pistons(0)
+     ⏐ ⏐ ⏐ c b
+ 2720⏐ ⏐ dedent()
+ 2721⏐ ⏐ row_high(-1, True)
+ 2722⏐ ⏐ full_extend(-1, True)
+ 2723⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+     ⏐ ⏐ ⏐ ⏐ b
+ 2724⏐ ⏐ ⏐ extra_pulses(-1, True)
+ 2725⏐ ⏐ dedent()
+ 2726⏐ ⏐ retract(-1)
+     stop
