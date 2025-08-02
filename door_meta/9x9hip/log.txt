@@ -1,5 +1,4 @@
 wait
-b
 closing()
 ⏐ sto b a sto b
 ⏐ worm worm sto b worm a sto d d worm c c b

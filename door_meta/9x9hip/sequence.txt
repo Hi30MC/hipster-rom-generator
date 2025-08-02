@@ -1,5 +1,4 @@
 wait
-b
 sto
 b
 a

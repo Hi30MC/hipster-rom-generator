@@ -298,7 +298,6 @@ if __name__ == "__main__":
     # closing
     door = HipSeq9()
     door += wait
-    door += b
     door.closing()
     door._write_sequence("door_meta/9x9hip/sequence.txt")
     door._write_log("door_meta/9x9hip/log.txt")
