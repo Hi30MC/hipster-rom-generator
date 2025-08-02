@@ -1,6 +1,25 @@
 wait
 sto
 worm
+e
+e
+d
+d
+c
+c
+b
+sto
+worm
+e
+e
+d
+d
+c
+c
+b
+sto
+worm
+worm
 wait
 e
 e
@@ -20,6 +39,7 @@ c
 c
 b
 sto
+<<<<<<< HEAD
 worm
 wait
 worm
@@ -30,6 +50,8 @@ c
 c
 b
 sto
+=======
+>>>>>>> efe4236 (Enhanced the debug stuff)
 worm
 wait
 d
@@ -38,10 +60,13 @@ c
 c
 b
 sto
+<<<<<<< HEAD
 worm
 wait
 b
 sto
+=======
+>>>>>>> efe4236 (Enhanced the debug stuff)
 b
 a
 sto
@@ -1194,6 +1219,10 @@ b
 b
 e
 d
+<<<<<<< HEAD
+=======
+fold2
+>>>>>>> efe4236 (Enhanced the debug stuff)
 d
 c
 c
