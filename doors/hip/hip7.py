@@ -1,7 +1,9 @@
-from enum import Enum
 from os import getcwd
+
 import os
-from gen.util.debug import log_method_calls, get_method_color, get_indent
+from enum import Enum
+from doors.hip.basic_hip import BasicHip
+
 
 class Move(Enum):
     STOP = "stop"
@@ -16,6 +18,7 @@ class Move(Enum):
     WORM = "worm"
     FOLD = "fold"
 
+
 stop = Move.STOP
 wait = Move.WAIT
 a = Move.A
@@ -28,30 +31,11 @@ bobs = Move.BOBS
 worm = Move.WORM
 fold = Move.FOLD
 
-@log_method_calls
-class HipSeq7:
+
+class HipSeq7(BasicHip[Move]):
     piston_stack_depth = 4
     max_obs = 2
     _call_depth: int
-    def __init__(self):
-        self.moves: list[Move] = []
-        self.stack_state = [False] * self.piston_stack_depth
-        self.num_obs_out = 0
-
-    def __iadd__(self, moves: list[Move] | Move):
-        if isinstance(moves, Move):
-            color, reset = get_method_color(moves.value)
-            print("     "+get_indent(self._call_depth), f"{color}{moves.value}{reset}")
-            self.moves.append(moves)
-        elif isinstance(moves, list):
-            if hasattr(self, "_call_depth"):
-                colored_moves = []
-                for move in moves:
-                    color, reset = get_method_color(move.value)
-                    colored_moves.append(f"{color}{move.value}{reset}")
-                print("     "+get_indent(self._call_depth), *colored_moves)
-            self.moves.extend(moves)
-        return self
 
     def the_whole_shebang(self):
         self += wait
@@ -61,9 +45,9 @@ class HipSeq7:
         self += stop
 
     def closing(self):
-        self += [sto, worm, d, d, c, c, b] *3
-        self += [ sto, worm, b ]
-        self += [ sto, b, a, sto ]
+        self += [sto, worm, d, d, c, c, b] * 3
+        self += [sto, worm, b]
+        self += [sto, b, a, sto]
         self.more_pistons(0)
         self.extend(1)
 
@@ -80,7 +64,7 @@ class HipSeq7:
         self.full_row(2)
         self.storage_moves(a, b, sto)
 
-        for row in range(3, 6+1):
+        for row in range(3, 6 + 1):
             self.full_row(row)
             self.storage_moves(a, sto)
 
@@ -98,10 +82,14 @@ class HipSeq7:
         self.stack_state[layer] = True
 
         match layer:
-            case 0: self += c
-            case 1: self += d
-            case 2: self += e
-            case 3: self += [e, fold]
+            case 0:
+                self += c
+            case 1:
+                self += d
+            case 2:
+                self += e
+            case 3:
+                self += [e, fold]
             case _:
                 raise NotImplementedError
 
@@ -111,9 +99,9 @@ class HipSeq7:
         self.stack_state[layer] = False
 
         if layer > 0:
-            if self.stack_state[layer-1]:
-                raise ValueError(f"layer {layer-1} is already out.")
-            self.stack_state[layer-1] = True
+            if self.stack_state[layer - 1]:
+                raise ValueError(f"layer {layer - 1} is already out.")
+            self.stack_state[layer - 1] = True
 
         match layer:
             case 0:
@@ -174,10 +162,14 @@ class HipSeq7:
         self.extend(layer, pistons_high, needs_parity=True)
         self.extra_pulses(layer, pistons_high)
 
-    def extend(self, layer: int, pistons_high: bool = False, needs_parity: bool = False):
+    def extend(
+        self, layer: int, pistons_high: bool = False, needs_parity: bool = False
+    ):
         match layer:
-            case -1: self += b
-            case 0: self += a
+            case -1:
+                self += b
+            case 0:
+                self += a
             case 1:
                 if not pistons_high:
                     self += b
@@ -188,14 +180,15 @@ class HipSeq7:
                 # todo: figure out alg for needs_parity
                 self.more_obs(needs_parity)
                 if layer >= 3:
-                    self.more_pistons((layer-3)//2)
-                self.extend(layer-3, needs_parity=needs_parity)
+                    self.more_pistons((layer - 3) // 2)
+                self.extend(layer - 3, needs_parity=needs_parity)
             case _:
                 raise NotImplementedError
 
     def extra_pulses(self, layer: int, pistons_high: bool = False):
         match layer, pistons_high:
-            case (-1, _) | (0, _) | (1, _): return
+            case (-1, _) | (0, _) | (1, _):
+                return
             case 2, _:
                 self += b
             case 3, _:
@@ -205,13 +198,13 @@ class HipSeq7:
                 if self.num_obs_out == 0:
                     self += [sto, sto]
             case 5, False:
-                self += [b]*5
+                self += [b] * 5
             case 5, True:
-                self += [b]*3
+                self += [b] * 3
             case (6, False) | (7, False):
-                self += [a]*7
+                self += [a] * 7
             case 6, True:
-                self += [a]*3
+                self += [a] * 3
             case _, _:
                 raise NotImplementedError
 
@@ -219,7 +212,7 @@ class HipSeq7:
         if layer <= -1:
             return
         if layer >= 3:
-            self.retract(layer-3)
+            self.retract(layer - 3)
         if layer >= 2:
             self.less_obs()
 
@@ -248,19 +241,22 @@ class HipSeq7:
             self.less_obs()
 
         # remove pistons
-        self.full_row(layer-2)
-        for layer in range(layer//2, -1, -1):
+        self.full_row(layer - 2)
+        for layer in range(layer // 2, -1, -1):
             self.shift_pistons(layer)
 
 
-def write_file(file_path:str, moves: list[str]):
+def write_file(file_path: str, moves: list[str]):
     with open(file_path, "w") as f:
         for move in moves:
-            f.write(move+ "\n")
+            f.write(move + "\n")
     return -1
 
 
 if __name__ == "__main__":
     door = HipSeq7()
     door.the_whole_shebang()
-    write_file(os.path.join(getcwd(), "door_meta", "7x7hip", "sequence.txt"), [m.value for m in door.moves])
+    write_file(
+        os.path.join(getcwd(), "door_meta", "7x7hip", "sequence.txt"),
+        [m.value for m in door.moves],
+    )

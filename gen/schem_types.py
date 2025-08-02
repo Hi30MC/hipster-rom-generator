@@ -1,16 +1,6 @@
 from nbtlib import CompoundSchema
-from nbtlib.tag import (
-    Byte,
-    Short,
-    Float,
-    String,
-    List,
-    Double,
-    Int,
-    ByteArray,
-    Compound,
-)
-from typing import Sequence, Literal
+from nbtlib.tag import (Byte, ByteArray, Compound, Double, Float, Int, List, Short, String)
+from typing import Literal, Sequence
 
 
 class Item(CompoundSchema):
@@ -60,10 +50,10 @@ class Minecart(CompoundSchema):
 
     @classmethod
     def simple(
-        cls,
-        cart_type: CartType = "chest",
-        pos: Sequence[float] = (0, 0.5, 0),
-        items: Sequence[Item] = (),
+            cls,
+            cart_type: CartType = "chest",
+            pos: Sequence[float] = (0, 0.5, 0),
+            items: Sequence[Item] = (),
     ):
         return Minecart(
             {
