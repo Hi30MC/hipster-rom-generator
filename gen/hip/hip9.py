@@ -270,5 +270,5 @@ if __name__ == "__main__":
     door = HipSeq9()
     door.dedent().the_whole_shebang()
 
-    write_file(os.path.join(getcwd(), "door_meta", "8x8hip", "sequence.txt"), [m.value for m in door.moves])
-    write_file(os.path.join(getcwd(), "door_meta", "8x8hip", "sequence_log.txt"), door.call_log)
+    write_file(os.path.join(getcwd(), "door_meta", "9x9hip", "sequence.txt"), [m.value for m in door.moves])
+    write_file(os.path.join(getcwd(), "door_meta", "9x9hip", "sequence_log.txt"), door.call_log)
