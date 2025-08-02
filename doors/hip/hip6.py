@@ -85,9 +85,6 @@ class HipSeq6(BasicHip[Move]):
         last_5 = self.moves[-5:]
         assert last_5 == [a, d, c, c, b]
         self.moves[-5:] = [d, c, c]
-        # print(self.moves[-10:])
-
-        self += stop
 
     def more_pistons(self, layer: int):
         if any(self.stack_state[:layer]):
@@ -277,12 +274,9 @@ def write_file(file_path: str, moves: list[str]):
     return -1
 
 
-# python -m gen.hip.hip6.py
 if __name__ == "__main__":
     door = HipSeq6()
     door.closing()
     door.opening()
-    write_file(
-        os.path.join(getcwd(), "door_meta", "6x6hip", "sequence.txt"),
-        [m.value for m in door.moves],
-    )
+    door._write_sequence("door_meta/6x6hip/sequence.txt")
+    door._write_log("door_meta/6x6hip/log.txt")

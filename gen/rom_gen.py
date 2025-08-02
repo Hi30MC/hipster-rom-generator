@@ -25,10 +25,14 @@ def carts_schem(carts: list[Minecart]) -> File:
 
 def gen_rom1(sequence: Sequence, params: Rom1) -> File:
     ss_list = sequence.with_min_items(params.min_carts)
-    carts = encode_rom1(ss_list, cart_pos=params.cart_pos)
+    carts = encode_rom1(
+        ss_list, cart_pos=params.cart_pos, add_stop_move=params.add_stop_move
+    )
     return carts_schem(carts)
 
+
 # TODO: everything below here is yet untested
+
 
 def gen_rom27(sequence: Sequence, params: Rom27) -> File:
     ss_list = sequence.with_min_items(params.min_items())
@@ -78,7 +82,7 @@ def split_list[T](inp: list[T], split_on: T) -> list[list[T]]:
 
 
 def partition_rom27_optimized(
-        ss_list: list[int], wait_move: int | None, params: Rom27
+    ss_list: list[int], wait_move: int | None, params: Rom27
 ) -> list[list[int]]:
     if wait_move is None:
         raise ValueError("Wait move must be supplied for optimized rom")
@@ -132,7 +136,7 @@ def partition_rom729(sequence: Sequence, params: Rom729) -> list[list[list[int]]
     """
 
     min_remaining_items = (
-            params.min_carts * params.min_shulkers_per_cart * params.min_discs_per_shulker
+        params.min_carts * params.min_shulkers_per_cart * params.min_discs_per_shulker
     )
     min_remaining_shulkers = params.min_carts * params.min_shulkers_per_cart
 
@@ -143,16 +147,16 @@ def partition_rom729(sequence: Sequence, params: Rom729) -> list[list[list[int]]
 
     while queue:
         if (
-                len(carts[-1][-1]) < 27
-                and len(queue) > min_remaining_items
-                and len(queue) / params.min_discs_per_shulker >= min_remaining_shulkers
+            len(carts[-1][-1]) < 27
+            and len(queue) > min_remaining_items
+            and len(queue) / params.min_discs_per_shulker >= min_remaining_shulkers
         ):
             carts[-1][-1].append(queue.popleft())
         else:
             # new box
             if (
-                    len(carts[-1]) == 27
-                    or len(queue) // params.min_discs_per_shulker <= min_remaining_shulkers
+                len(carts[-1]) == 27
+                or len(queue) // params.min_discs_per_shulker <= min_remaining_shulkers
             ):
                 # new cart
                 carts.append([])

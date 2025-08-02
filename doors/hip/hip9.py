@@ -43,7 +43,6 @@ class HipSeq9(BasicHip[Move]):
         self.closing()
         self += stop
         self.opening()
-        self += stop
 
     def closing(self):
         self += [sto, worm, e, e, d, d, c, c, b] * 2
@@ -276,21 +275,9 @@ class HipSeq9(BasicHip[Move]):
             self.shift_pistons(layer)
 
 
-def write_file(file_path: str, moves: list[str]):
-    with open(file_path, "w") as f:
-        for move in moves:
-            f.write(move + "\n")
-    return -1
-
-
 if __name__ == "__main__":
     door = HipSeq9()
-    door.the_whole_shebang()
-
-    write_file(
-        os.path.join(getcwd(), "door_meta", "9x9hip", "sequence.txt"),
-        [m.value for m in door.moves],
-    )
-    write_file(
-        os.path.join(getcwd(), "door_meta", "9x9hip", "sequence_log.txt"), door.call_log
-    )
+    door.closing()
+    door.opening()
+    door._write_sequence("door_meta/9x9hip/sequence.txt")
+    door._write_log("door_meta/9x9hip/log.txt")

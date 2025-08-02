@@ -6,12 +6,12 @@ from typing import Annotated, Literal
 
 class CartRomParams(BaseModel):
     cart_pos: list[float] = [0.5, 0, 0.5]
-    min_carts: int = 0
+    min_carts: int = 1
 
 
 class Rom1(CartRomParams):
     rom_type: Literal["cart1"]
-    add_stop_move: bool = False
+    add_stop_move: bool = True
 
 
 class Rom27(CartRomParams):
@@ -46,7 +46,7 @@ def parse_encoding(contents: str) -> dict[str, int]:
         if len(line.split()) == 2 and line.split()[1] != ""
     ]
 
-    return {name: int(ss) for name, ss in lines}
+    return {name: int(ss) for ss, name in lines}
 
 
 def parse_move_list(contents: str) -> list[str]:
@@ -62,7 +62,9 @@ class Sequence:
         if len(self.ss_list) >= min_length:
             return self.ss_list
         if self.wait_move is None:
-            raise ValueError("Sequence is not long enough, and no wait move is defined.")
+            raise ValueError(
+                "Sequence is not long enough, and no wait move is defined."
+            )
         return self.ss_list + [self.wait_move] * (min_length - len(self.ss_list))
 
     @classmethod

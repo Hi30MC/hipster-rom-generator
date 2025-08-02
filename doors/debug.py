@@ -1,5 +1,6 @@
 import functools
 import hashlib
+import re
 
 
 def get_indent(depth):
@@ -29,7 +30,6 @@ def colored_str(name, bold=False) -> str:
 
 
 def wrap_function(fn, method_name: str):
-
     @functools.wraps(fn)
     def wrapper(self: SeqDebug, *args, **kwargs):
         no_indent = self._next_call_no_indent
@@ -85,6 +85,7 @@ class SeqDebug(metaclass=DebugMeta):
         self._call_depth = 0
         self._line_num = 0
         self._next_call_no_indent = False
+        self._msg_log = []
 
     def _dedent(self):
         self._next_call_no_indent = True
@@ -92,8 +93,22 @@ class SeqDebug(metaclass=DebugMeta):
 
     def _print_line(self, msg: str):
         indent = get_indent(self._call_depth)
-        print(f"{self._line_num:5} {indent}{msg}")
+        msg = f"{self._line_num:5} {indent}{msg}"
+        self._msg_log += strip_color(msg)
+        print(msg)
         self._line_num += 1
 
     def _log(self, *msgs: str):
         self._print_line(" ".join(colored_str(msg) for msg in msgs))
+
+    def _write_log(self, path: str):
+        with open(path, "w") as f:
+            f.write("\n".join(self._msg_log))
+
+
+ansi_escape = re.compile(r"\x1B(?:[@-Z\\-_]|\[[0-?]*[ -/]*[@-~])")
+
+
+def strip_color(text: str) -> str:
+    """Remove ANSI color codes from a string."""
+    return ansi_escape.sub("", text)

@@ -9,7 +9,7 @@ Example file directory for a given door:
 ├── door_meta
 │   └── door_1
 │       ├── key.txt
-│       ├── rom_params.txt
+│       ├── params.json
 │       └── sequence.txt
 ├── gen
 │   └── door_1

@@ -32,3 +32,7 @@ class BasicHip[Move: MoveProtocol](SeqDebug, ABC, metaclass=DebugABCMeta):
         self.moves.extend(moves)
         self._log(*[move.value for move in moves])
         return self
+
+    def _write_sequence(self, path: str):
+        with open(path, "w") as f:
+            f.write("\n".join(move.value for move in self.moves))

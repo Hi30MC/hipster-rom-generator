@@ -7,7 +7,11 @@ class Item(CompoundSchema):
     schema = {"Count": Byte, "Slot": Byte, "id": String}
 
     def __init__(self, count: int, name: str, slot: int):
-        super().__init__(Count=count, Slot=slot, id=name)
+        super().__init__({
+            "Count": Byte(count),
+            "Slot": Byte(slot),
+            "id": String(name),
+        })
 
     @classmethod
     def shulker(cls, slot: int, items: list["Item"] = []):
@@ -48,28 +52,25 @@ class Minecart(CompoundSchema):
         "Rotation": List[Float],  # check
     }
 
-    @classmethod
-    def simple(
-            cls,
+    def __init__(
+            self,
             cart_type: CartType = "chest",
             pos: Sequence[float] = (0, 0.5, 0),
             items: Sequence[Item] = (),
     ):
-        return Minecart(
-            {
-                "Air": 300,
-                "FallDistance": 0,
-                "Fire": -1,
-                "Id": f"{cart_type}_minecart",
-                "Invulnerable": 1,
-                "Items": List[Compound](items),
-                "Motion": [0, 0, 0],
-                "OnGround": 0,
-                "PortalCooldown": 0,
-                "Pos": List[Double](pos),
-                "Rotation": [90, 0],
-            }
-        )
+        super().__init__({
+            "Air": 300,
+            "FallDistance": 0,
+            "Fire": -1,
+            "Id": f"{cart_type}_minecart",
+            "Invulnerable": 1,
+            "Items": List[Compound](items),
+            "Motion": [0, 0, 0],
+            "OnGround": 0,
+            "PortalCooldown": 0,
+            "Pos": List[Double](pos),
+            "Rotation": [90, 0],
+        })
 
     def add_item(self, item: Item):
         self["Items"].append(item)

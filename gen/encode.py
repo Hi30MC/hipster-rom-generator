@@ -61,29 +61,32 @@ def encode_as_disc(ss: int, slot: int) -> Item:
     return Item(slot=slot, name=ss_to_disc[ss], count=1)
 
 
-def encode_list_as_items(ss: list[int], medium: Literal["shulker", "disc"]) -> list[Item]:
+def encode_list_as_items(
+    ss: list[int], medium: Literal["shulker", "disc"]
+) -> list[Item]:
     gen_fn = encode_as_shulker if medium == "shulker" else encode_as_disc
     return [gen_fn(item, pos) for pos, item in enumerate(ss)]
 
 
-def encode_rom1(carts: list[int], cart_pos: list[float]) -> list[Minecart]:
-    return [
-        encode_as_cart(ss, cart_pos)
-        for ss in carts
-    ]
+def encode_rom1(
+    carts: list[int], cart_pos: list[float], add_stop_move: bool
+) -> list[Minecart]:
+    carts = carts if not add_stop_move else carts + [0]
+    return [encode_as_cart(ss, cart_pos) for ss in carts]
 
 
-def encode_rom27(carts: list[list[int]], cart_pos: list[float], medium: Literal["shulker", "disc"]) -> list[Minecart]:
+def encode_rom27(
+    carts: list[list[int]], cart_pos: list[float], medium: Literal["shulker", "disc"]
+) -> list[Minecart]:
     return [
-        Minecart(
-            pos=cart_pos,
-            items=encode_list_as_items(cart, medium=medium)
-        )
+        Minecart(pos=cart_pos, items=encode_list_as_items(cart, medium=medium))
         for cart in carts
     ]
 
 
-def encode_rom729(carts: list[list[list[int]]], cart_pos: list[float]) -> list[Minecart]:
+def encode_rom729(
+    carts: list[list[list[int]]], cart_pos: list[float]
+) -> list[Minecart]:
     return [
         Minecart(
             pos=cart_pos,
