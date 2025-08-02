@@ -93,9 +93,9 @@ class SeqDebug(metaclass=DebugMeta):
 
     def _print_line(self, msg: str):
         indent = get_indent(self._call_depth)
-        msg = f"{self._line_num:5} {indent}{msg}"
-        self._msg_log += strip_color(msg)
-        print(msg)
+        msg_r = f"{indent}{msg}"
+        print(f"{self._line_num:5} {msg_r}")
+        self._msg_log.append(strip_color(msg_r))
         self._line_num += 1
 
     def _log(self, *msgs: str):

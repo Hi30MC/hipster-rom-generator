@@ -36,7 +36,7 @@ RomParamsAnnotated = Annotated[RomParams, Field(discriminator="rom_type")]
 
 def parse_params(contents: str) -> RomParams:
     """Parse the parameters from a string."""
-    return TypeAdapter(RomParamsAnnotated).validate_json(contents)
+    return TypeAdapter(RomParamsAnnotated).validate_json(contents, strict=True)
 
 
 def parse_encoding(contents: str) -> dict[str, int]:
