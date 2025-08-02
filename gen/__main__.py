@@ -46,8 +46,9 @@ def main(door_name: str, schem_file_name: str | None):
         schem_file_name += ".schem"
     import os
 
-    print("Wrote file to", os.path.abspath(schem_file_name))
+    os.makedirs(path.dirname(schem_file_name), exist_ok=True)
     schem.save(schem_file_name)
+    print("Wrote file to", os.path.abspath(schem_file_name))
 
 
 if __name__ == "__main__":

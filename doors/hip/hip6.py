@@ -1,6 +1,3 @@
-from os import getcwd
-
-import os
 from enum import Enum
 from doors.hip.basic_hip import BasicHip
 
@@ -35,6 +32,12 @@ fold = Move.FOLD
 class HipSeq6(BasicHip[Move]):
     piston_stack_depth = 4
     max_obs = 2
+
+    def the_whole_shebang(self):
+        self += wait
+        self.closing()
+        self += stop
+        self.opening()
 
     def closing(self):
         self += [
@@ -276,7 +279,6 @@ def write_file(file_path: str, moves: list[str]):
 
 if __name__ == "__main__":
     door = HipSeq6()
-    door.closing()
-    door.opening()
+    door.the_whole_shebang()
     door._write_sequence("door_meta/6x6hip/sequence.txt")
     door._write_log("door_meta/6x6hip/log.txt")

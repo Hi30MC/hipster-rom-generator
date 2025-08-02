@@ -1,6 +1,3 @@
-from os import getcwd
-
-import os
 from enum import Enum
 from doors.hip.basic_hip import BasicHip
 
@@ -247,7 +244,6 @@ class HipSeq7(BasicHip[Move]):
 
 if __name__ == "__main__":
     door = HipSeq7()
-    door.closing()
-    door.opening()
+    door.the_whole_shebang()
     door._write_sequence("door_meta/7x7hip/sequence.txt")
     door._write_log("door_meta/7x7hip/log.txt")

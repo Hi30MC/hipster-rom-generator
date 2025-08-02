@@ -1,6 +1,3 @@
-from os import getcwd
-
-import os
 from enum import Enum
 from doors.hip.basic_hip import BasicHip
 
@@ -40,15 +37,15 @@ class HipSeq9(BasicHip[Move]):
 
     def the_whole_shebang(self):
         self += wait
-        self.closing()
+        self._dedent().closing()
         self += stop
-        self.opening()
+        self._dedent().opening()
 
     def closing(self):
-        self += [sto, worm, e, e, d, d, c, c, b] * 2
-        self += [sto, worm, worm, d, d, c, c, b]
-        self += [sto, worm, d, d, c, c, b]
-        self += [sto, worm, b, sto, b, a, sto]
+        self += [sto, b, a, sto, b]
+        self += [worm, worm, sto, b, worm, a, sto, d, d, worm, c, c, b]
+        self += [sto, b, worm, a, sto, c, c, b]
+        self += [sto, b, a, sto]
         self.more_pistons(0)
         self.extend(1)
 
@@ -65,14 +62,23 @@ class HipSeq9(BasicHip[Move]):
         self.full_row(2)
         self.storage_moves(a, b, sto)
 
-        for row in range(3, 7 + 1):
+        for row in range(3, 6 + 1):
             self.full_row(row)
             self.storage_moves(a, sto)
-        self.full_row(8)
 
+        self.full_row(7)
+        self.jank_7()
+
+        self.full_row(8)
+        self.storage_moves(a, sto)
+
+        self.full_row(9)
         last_6 = self.moves[-6:]
         assert last_6 == [a, b, a, c, b, b]
         self.moves[-6:] = [a, b, c, b]
+
+    def jank_7(self):
+        self.storage_moves(a, b, worm, a, sto, worm, wait, wait, d, d, c, c, b)
 
     def more_pistons(self, layer: int):
         if any(self.stack_state[:layer]):
@@ -197,14 +203,20 @@ class HipSeq9(BasicHip[Move]):
                 if not pistons_high:
                     self += b
                 self += a
-            case _ if layer >= 2:
+            case _ if 2 <= layer < 9:
                 if not pistons_high:
                     self += b
-                # todo: figure out alg for needs_parity
                 self.more_obs(needs_parity)
                 if layer >= 3:
                     self.more_pistons((layer - 3) // 2)
                 self.extend(layer - 3, needs_parity=needs_parity)
+            case 9:
+                if not pistons_high:
+                    self += b
+                self.more_obs(needs_parity)
+                self.more_pistons((layer - 3) // 2)
+                self.extend(layer - 4, True)
+                self += [b, sto]
             case _:
                 raise NotImplementedError
 
@@ -276,8 +288,22 @@ class HipSeq9(BasicHip[Move]):
 
 
 if __name__ == "__main__":
+    # jank_7
+    # door = HipSeq9()
+    # door += wait
+    # door += b
+    # door.jank_7()
+    # door._write_sequence("door_meta/9x9hip/jank7.txt")
+    # door._write_log("door_meta/9x9hip/log_jank7.txt")
+    # closing
     door = HipSeq9()
+    door += wait
+    door += b
     door.closing()
-    door.opening()
     door._write_sequence("door_meta/9x9hip/sequence.txt")
     door._write_log("door_meta/9x9hip/log.txt")
+    # the whole shebang
+    # door = HipSeq9()
+    # door._dedent().the_whole_shebang()
+    # door._write_sequence("door_meta/9x9hip/sequence.txt")
+    # door._write_log("door_meta/9x9hip/log.txt")
