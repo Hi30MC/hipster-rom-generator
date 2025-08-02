@@ -35,7 +35,7 @@ To generate a given door's sequence, first run that door's sequence generation f
 
 Then run the main `gen.py` with:
 
-`python3 -m gen.out.gen <door name> <opt: schem_name>`
+`python3 -m gen.out.main <door name> <opt: schem_name>`
 
 This will generate the finalized schematic in `output_schematics/<door_name>/<schem name>.schem`, which defaults to `<door_name>.schem`.
 
