@@ -37,7 +37,7 @@ def gen_rom1(sequence: Sequence, params: Rom1) -> File:
 def gen_rom27(sequence: Sequence, params: Rom27) -> File:
     ss_list = sequence.with_min_items(params.min_items())
     if params.cut_wait_moves:
-        partitions = partition_rom27_optimized(ss_list, sequence.wait_move, params)
+        partitions = partition_rom27_optimized(ss_list, sequence.wait_move)
     else:
         partitions = partition_rom27(ss_list, params)
 
@@ -61,8 +61,7 @@ def partition_rom27(ss_list: list[int], params: Rom27) -> list[list[int]]:
             result.append([])
             min_items -= params.min_items_per_cart
         else:
-            ss = queue.popleft()
-            result[-1].append(ss)
+            result[-1].append(queue.popleft())
     return result
 
 
@@ -82,7 +81,10 @@ def split_list[T](inp: list[T], split_on: T) -> list[list[T]]:
 
 
 def partition_rom27_optimized(
-    ss_list: list[int], wait_move: int | None, params: Rom27
+    ss_list: list[int],
+    wait_move: int | None,
+    max_cart_len: int = 27,
+    min_items_per_cart: int = 3,
 ) -> list[list[int]]:
     if wait_move is None:
         raise ValueError("Wait move must be supplied for optimized rom")
@@ -97,29 +99,29 @@ def partition_rom27_optimized(
     # TODO: this can probably be optimized more
 
     while segments or queue:
-        if len(queue) <= 27:
+        if len(queue) < max_cart_len:
             # entire queue can fit into one cart
-            #
+
             # pack as many extra wait moves as we can
-            while len(queue) < 27 and segments and segments[0] == []:
+            while len(queue) < max_cart_len and segments and segments[0] == []:
                 queue.append(wait_move)
                 segments.popleft()
 
-            if len(queue) > params.min_items_per_cart:
+            if len(queue) > min_items_per_cart:
                 result.append(queue)
             else:
                 # need to add more items
                 queue.append(wait_move)
                 queue += segments.popleft()
-        elif len(queue) <= 27 + params.min_items_per_cart:
+        elif len(queue) < max_cart_len + min_items_per_cart:
             # in the case(s) that subtracting 27 wouldn't leave enough items in next cart to cover minimum
             split_pos = len(queue) // 2
             result.append(queue[:split_pos])
             queue = queue[split_pos:]
         else:
             # safe to pop 27 from queue
-            result.append(queue[:27])
-            queue = queue[27:]
+            result.append(queue[:max_cart_len])
+            queue = queue[max_cart_len:]
         if not queue and segments:
             if not segments[0]:
                 queue.append(wait_move)

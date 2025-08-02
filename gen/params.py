@@ -67,14 +67,10 @@ class Sequence:
             )
         return self.ss_list + [self.wait_move] * (min_length - len(self.ss_list))
 
-    @classmethod
-    def decode(cls, moves: list[str], key: dict[str, int]) -> "Sequence":
-        ss_list = [key[move] for move in moves]
-        wait_move = key.get("wait")
-        return Sequence(ss_list, wait_move)
-
 
 def parse_sequence(encoding_file: str, sequence_file: str) -> Sequence:
-    encoding = parse_encoding(encoding_file)
+    key = parse_encoding(encoding_file)
     moves = parse_move_list(sequence_file)
-    return Sequence.decode(moves, encoding)
+    ss_list = [key[move] for move in moves]
+    wait_move = key.get("wait")
+    return Sequence(ss_list, wait_move)
