@@ -333,12 +333,12 @@ def main():
     # door._write_log("door_meta/9x9hip/log.txt")
 
     # row 9
-    door = HipSeq9()
-    door += wait
-    door.full_row(9)
-    print(len(door.moves))
-    door._write_sequence("door_meta/9x9hip/sequence.txt")
-    door._write_log("door_meta/9x9hip/log_row9.txt")
+    # door = HipSeq9()
+    # door += wait
+    # door.full_row(9)
+    # print(len(door.moves))
+    # door._write_sequence("door_meta/9x9hip/sequence.txt")
+    # door._write_log("door_meta/9x9hip/log_row9.txt")
 
     # pull 7
     # door = HipSeq9()
@@ -350,11 +350,11 @@ def main():
     # door._write_log("door_meta/9x9hip/log_pull7.txt")
 
     # the whole shebang
-    # door = HipSeq9()
-    # door._dedent().the_whole_shebang()
-    # print(len(door.moves))
-    # door._write_sequence("door_meta/9x9hip/sequence.txt")
-    # door._write_log("door_meta/9x9hip/log.txt")
+    door = HipSeq9()
+    door._dedent().the_whole_shebang()
+    print(len(door.moves))
+    door._write_sequence("door_meta/9x9hip/sequence.txt")
+    door._write_log("door_meta/9x9hip/log.txt")
 
 
 if __name__ == "__main__":
