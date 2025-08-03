@@ -1,4 +1,4 @@
-from nbtlib import CompoundSchema
+from nbtlib import CompoundSchema, schema
 from nbtlib.tag import (
     Byte,
     ByteArray,
@@ -15,10 +15,13 @@ from typing import Literal, Sequence
 
 class ShulkerItem(CompoundSchema):
     schema = {
-        "item": {
-            "count": Int,
-            "id": String,
-        },
+        "item": schema(
+            "",
+            {
+                "count": Int,
+                "id": String,
+            },
+        ),
         "slot": Int,
     }
 
@@ -62,20 +65,23 @@ CartType = Literal["chest", "furnace", "hopper"]
 
 class Minecart(CompoundSchema):
     schema = {
-        "Data": {
-            "Motion": List[Double],
-            "Invulnerable": Byte,
-            "Air": Short,
-            "OnGround": Byte,
-            "PortalCooldown": Int,
-            "Rotation": List[Float],
-            "FallDistance": Float,
-            "Pos": List[Double],
-            "Fire": Short,
-            "Items": List[CartItem],
-            "FlippedRotation": Byte,
-            "HasTicked": Byte,
-        },
+        "Data": schema(
+            "",
+            {
+                "Motion": List[Double],
+                "Invulnerable": Byte,
+                "Air": Short,
+                "OnGround": Byte,
+                "PortalCooldown": Int,
+                "Rotation": List[Float],
+                "FallDistance": Float,
+                "Pos": List[Double],
+                "Fire": Short,
+                "Items": List[CartItem],
+                "FlippedRotation": Byte,
+                "HasTicked": Byte,
+            },
+        ),
         "Id": String,
         "Pos": List[Double],
     }
@@ -113,19 +119,27 @@ class Minecart(CompoundSchema):
 
 class Schematic(CompoundSchema):
     schema = {
-        "Version": Int,
-        "DataVersion": Int,
-        "Metadata": Compound,
-        "Width": Short,
-        "Height": Short,
-        "Length": Short,
-        "Offset": List[Int],
-        "Blocks": {
-            "Palette": Compound,
-            "Data": ByteArray,
-            "BlockEntities": List[Compound],
-        },
-        "Entities": List[Minecart],
+        "Schematic": schema(
+            "",
+            {
+                "Version": Int,
+                "DataVersion": Int,
+                "Metadata": Compound,
+                "Width": Short,
+                "Height": Short,
+                "Length": Short,
+                "Offset": List[Int],
+                "Blocks": schema(
+                    "",
+                    {
+                        "Palette": Compound,
+                        "Data": ByteArray,
+                        "BlockEntities": List[Compound],
+                    },
+                ),
+                "Entities": List[Minecart],
+            },
+        ),
     }
 
     @classmethod

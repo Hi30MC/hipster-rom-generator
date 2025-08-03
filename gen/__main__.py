@@ -10,9 +10,9 @@ def read_file(path: str) -> str:
         return f.read()
 
 
-@click.command()
-@click.argument("door_name")
-@click.argument("schem_file_name", required=False)
+# @click.command()
+# @click.argument("door_name")
+# @click.argument("schem_file_name", required=False)
 def main(door_name: str, schem_file_name: str | None):
     """
     Generate ROM from door information.
@@ -51,4 +51,4 @@ def main(door_name: str, schem_file_name: str | None):
 
 
 if __name__ == "__main__":
-    main()
+    main(door_name="9x9hip", schem_file_name="output_schematics/9x9hip/9x9hip.schem")
