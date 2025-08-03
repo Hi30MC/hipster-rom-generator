@@ -123,9 +123,12 @@ class HipSeq8(BasicHip[Move]):
                 self += fold1
 
             case 2, True:
-                self += fold2
+                if self.moves[-1] == fold2:
+                    self.moves.pop()
+                else:
+                    self += fold2
             case 3, True:
-                self += [e, d]
+                self += [e, d, fold2]
             case 4, _:
                 pass
             case _:

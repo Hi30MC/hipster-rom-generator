@@ -16,6 +16,9 @@ class Move(Enum):
     FOLD1 = "fold1"
     FOLD2 = "fold2"
 
+    def __str__(self):
+        return self.value
+
 
 stop = Move.STOP
 wait = Move.WAIT
@@ -42,10 +45,12 @@ class HipSeq9(BasicHip[Move]):
         self._dedent().opening()
 
     def closing(self):
-        self += [sto, b, a, sto, b]
-        self += [worm, worm, sto, b, worm, a, sto, d, d, worm, c, c, b]
-        self += [sto, b, worm, a, sto, c, c, b]
-        self += [sto, b, a, sto]
+        self += [sto, b, a, sto, worm, worm, b]
+        self += [sto, worm, b, a, sto, wait]
+        self += [d, worm, d, c, c, b]
+        self += [sto, worm, b, a, sto, wait]
+        self += [c, c, b, sto, b, a, sto]
+
         self.more_pistons(0)
         self.extend(1)
 
@@ -78,7 +83,7 @@ class HipSeq9(BasicHip[Move]):
         self.moves[-6:] = [a, b, c, b]
 
     def jank_7(self):
-        self.storage_moves(a, b, worm, a, sto, worm, wait, wait, d, d, c, c, b)
+        self.storage_moves(a, worm, b, a, sto, worm, *[wait] * 5)
 
     def more_pistons(self, layer: int):
         if any(self.stack_state[:layer]):
@@ -132,9 +137,12 @@ class HipSeq9(BasicHip[Move]):
                 self += fold1
 
             case 2, True:
-                self += fold2
+                if self.moves[-1] == fold2:
+                    self.moves.pop()
+                else:
+                    self += fold2
             case 3, True:
-                self += [e, d]
+                self += [e, d, fold2]
             case 4, _:
                 pass
             case _:
@@ -142,7 +150,7 @@ class HipSeq9(BasicHip[Move]):
 
     def more_obs(self, needs_parity=False):
         if self.num_obs_out >= self.max_obs:
-            raise ValueError(f"More than {self.max_obs} observers.")
+            raise ValueError("Not enough observers.")
         self.num_obs_out += 1
         match self.num_obs_out, needs_parity:
             case 1, _:
@@ -158,7 +166,7 @@ class HipSeq9(BasicHip[Move]):
 
     def less_obs(self):
         if self.num_obs_out <= 0:
-            raise ValueError(f"Less than {self.max_obs} observers.")
+            raise ValueError("Retracting more observers than there are.")
         self.num_obs_out -= 1
         match self.num_obs_out:
             case 0 | 1:
@@ -188,12 +196,10 @@ class HipSeq9(BasicHip[Move]):
         self._dedent().retract(layer)
 
     def full_extend(self, layer: int, pistons_high: bool = False):
-        self.extend(layer, pistons_high, needs_parity=True)
+        self.extend(layer, pistons_high)
         self.extra_pulses(layer, pistons_high)
 
-    def extend(
-        self, layer: int, pistons_high: bool = False, needs_parity: bool = False
-    ):
+    def extend(self, layer: int, pistons_high: bool = False):
         match layer:
             case -1:
                 self += b
@@ -206,17 +212,21 @@ class HipSeq9(BasicHip[Move]):
             case _ if 2 <= layer < 9:
                 if not pistons_high:
                     self += b
-                self.more_obs(needs_parity)
+                self.more_obs(needs_parity=not pistons_high)
                 if layer >= 3:
                     self.more_pistons((layer - 3) // 2)
-                self.extend(layer - 3, needs_parity=needs_parity)
+                self.extend(layer - 3)
             case 9:
                 if not pistons_high:
                     self += b
-                self.more_obs(needs_parity)
+                self.more_obs()  # deploy sandwich
                 self.more_pistons((layer - 3) // 2)
-                self.extend(layer - 4, True)
-                self += [b, sto]
+                self += [b, sto, b]
+                self.more_obs(True)
+                self.more_pistons(2 // 2)
+                self += b
+                self.more_obs()
+                self += b
             case _:
                 raise NotImplementedError
 
@@ -235,7 +245,10 @@ class HipSeq9(BasicHip[Move]):
             case 5, False:
                 self += [b] * 5
             case 5, True:
-                self += [b] * 3
+                if self.num_obs_out == 3:
+                    self += [a] * 2
+                else:
+                    self += [b] * 3
             case 6, False:
                 self += [a] * 7
             case 6, True:
@@ -246,15 +259,31 @@ class HipSeq9(BasicHip[Move]):
                 self += [a] * 3
             case 8, False:
                 self += [a] * 8
+            case 8, True:
+                self += [a] * 4
+            case 9, False:
+                self += [a] * 8
             case _, _:
                 raise NotImplementedError
 
-    def retract(self, layer: int):
+    def retract(self, layer: int, no_recurse_first=False):
         if layer <= -1:
             return
-        if layer >= 3:
-            self.retract(layer - 3)
-        if layer >= 2:
+
+        if layer == 9:
+            # special retraction
+            assert self.num_obs_out == 3
+            self.retract(2)  # piston-obs
+            self.less_obs()  # first obs
+            self.full_row(3)  # remove the sandwich
+            self.storage_moves(a, b, sto)  # and eat it
+        elif layer > 9:
+            raise NotImplementedError
+
+        if layer >= 3 and not no_recurse_first:
+            self.retract(layer - 3, no_recurse_first=layer == 9)
+
+        if layer >= 2 and not no_recurse_first:
             self.less_obs()
 
         self.pull(layer - 2)
@@ -287,22 +316,46 @@ class HipSeq9(BasicHip[Move]):
             self.shift_pistons(layer)
 
 
-if __name__ == "__main__":
+def main():
     # jank_7
     # door = HipSeq9()
     # door += wait
     # door += b
     # door.jank_7()
-    # door._write_sequence("door_meta/9x9hip/jank7.txt")
+    # door.full_row(8)
+    # door._write_sequence("door_meta/9x9hip/sequence.txt")
     # door._write_log("door_meta/9x9hip/log_jank7.txt")
     # closing
+    # door = HipSeq9()
+    # door += wait
+    # door.closing()
+    # door._write_sequence("door_meta/9x9hip/sequence.txt")
+    # door._write_log("door_meta/9x9hip/log.txt")
+
+    # row 9
+    # door = HipSeq9()
+    # door += wait
+    # door.full_row(9)
+    # print(len(door.moves))
+    # door._write_sequence("door_meta/9x9hip/sequence.txt")
+    # door._write_log("door_meta/9x9hip/log_row9.txt")
+
+    # pull 7
     door = HipSeq9()
     door += wait
-    door.closing()
+    door.stack_state[-1] = True
+    door.pull(7)
+    print(len(door.moves))
     door._write_sequence("door_meta/9x9hip/sequence.txt")
-    door._write_log("door_meta/9x9hip/log.txt")
+    door._write_log("door_meta/9x9hip/log_pull7.txt")
+
     # the whole shebang
     # door = HipSeq9()
     # door._dedent().the_whole_shebang()
+    # print(len(door.moves))
     # door._write_sequence("door_meta/9x9hip/sequence.txt")
     # door._write_log("door_meta/9x9hip/log.txt")
+
+
+if __name__ == "__main__":
+    main()

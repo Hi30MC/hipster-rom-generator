@@ -1,6 +1,6 @@
 from collections import deque
 
-from nbtlib import File, tag
+from nbtlib import File
 
 from gen.encode import encode_rom1, encode_rom27, encode_rom729
 from gen.schem_types import Minecart, Schematic
@@ -18,9 +18,9 @@ def gen_rom(sequence: Sequence, params: RomParams) -> File:
 
 
 def carts_schem(carts: list[Minecart]) -> File:
-    out = File(Schematic.empty(), gzipped=True)
-    out.update({"Entities": tag.List(carts)})
-    return out
+    out = Schematic.empty()
+    out.set_entities(carts)
+    return File(out, gzipped=True)
 
 
 def gen_rom1(sequence: Sequence, params: Rom1) -> File:

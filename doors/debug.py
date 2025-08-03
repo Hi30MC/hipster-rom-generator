@@ -88,7 +88,7 @@ class SeqDebug(metaclass=DebugMeta):
         self._msg_log = []
 
     def _dedent(self):
-        self._next_call_no_indent = True
+        # self._next_call_no_indent = True
         return self
 
     def _print_line(self, msg: str):

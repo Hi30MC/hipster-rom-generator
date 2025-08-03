@@ -39,8 +39,6 @@ def main(door_name: str, schem_file_name: str | None):
         sequence_file=read_file(path.join(info_dir, "sequence.txt")),
     )
     params = parse_params(read_file(path.join(info_dir, "params.json")))
-    print(params)
-
     schem = gen_rom(sequence, params)
 
     if not schem_file_name.endswith(".schem"):

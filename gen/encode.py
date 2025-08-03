@@ -1,6 +1,8 @@
 from typing import Literal
 
-from .schem_types import Item, Minecart
+from .schem_types import Minecart
+from gen.schem_types import ShulkerItem
+from gen.schem_types import CartItem
 
 ss_to_num_stacks = {
     1: 1,
@@ -43,28 +45,32 @@ def encode_as_cart(ss: int, pos: list[float]) -> Minecart:
     if ss == 0:
         return Minecart(cart_type="furnace", pos=pos)
     items = [
-        Item(slot=slot, name="minecraft:wooden_shovel", count=1)
+        CartItem(slot=slot, name="minecraft:wooden_shovel", count=1)
         for slot in range(ss_to_num_stacks[ss])
     ]
     return Minecart(pos=pos, items=items)
 
 
-def encode_as_shulker(ss: int, slot: int) -> Item:
+def encode_as_shulker(ss: int, slot: int) -> CartItem:
     items = [
-        Item(slot=slot, name="minecraft:wooden_shovel", count=1)
+        ShulkerItem(slot=slot, name="minecraft:wooden_shovel", count=1)
         for slot in range(ss_to_num_stacks[ss])
     ]
-    return Item.shulker(slot, items)
+    return CartItem.shulker(slot=slot, items=items)
 
 
-def encode_as_disc(ss: int, slot: int) -> Item:
-    return Item(slot=slot, name=ss_to_disc[ss], count=1)
+def encode_as_cart_disc(ss: int, slot: int) -> CartItem:
+    return CartItem(slot=slot, name=ss_to_disc[ss], count=1)
+
+
+def encode_as_disc_shulker(ss: int, slot: int) -> ShulkerItem:
+    return ShulkerItem(slot=slot, name=ss_to_disc[ss], count=1)
 
 
 def encode_list_as_items(
     ss: list[int], medium: Literal["shulker", "disc"]
-) -> list[Item]:
-    gen_fn = encode_as_shulker if medium == "shulker" else encode_as_disc
+) -> list[CartItem]:
+    gen_fn = encode_as_shulker if medium == "shulker" else encode_as_cart_disc
     return [gen_fn(item, pos) for pos, item in enumerate(ss)]
 
 
@@ -91,7 +97,13 @@ def encode_rom729(
         Minecart(
             pos=cart_pos,
             items=[
-                Item.shulker(shulker_idx, encode_list_as_items(shulker, "disc"))
+                CartItem.shulker(
+                    shulker_idx,
+                    [
+                        encode_as_disc_shulker(ss, slot)
+                        for slot, ss in enumerate(shulker)
+                    ],
+                )
                 for shulker_idx, shulker in enumerate(cart)
             ],
         )
