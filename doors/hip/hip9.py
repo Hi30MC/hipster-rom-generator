@@ -349,6 +349,15 @@ def main():
     # door._write_sequence("door_meta/9x9hip/sequence.txt")
     # door._write_log("door_meta/9x9hip/log_pull7.txt")
 
+    # row 8, True
+    # door = HipSeq9()
+    # door += wait
+    # door.stack_state[-1] = True
+    # door.row_high(8, True)
+    # print(len(door.moves))
+    # door._write_sequence("door_meta/9x9hip/sequence.txt")
+    # door._write_log("door_meta/9x9hip/log_pull7.txt")
+
     # the whole shebang
     door = HipSeq9()
     door._dedent().the_whole_shebang()
