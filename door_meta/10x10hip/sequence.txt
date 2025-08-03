@@ -1,0 +1,12 @@
+wait
+a
+b
+c
+d
+e
+f
+fold1
+fold2
+sto
+bobs
+worm

@@ -1,0 +1,16 @@
+0 stop
+1 wait
+2 a
+3 b
+4 c
+5 d
+6 e
+7 f
+8 fold1
+9 fold2
+10 bobs
+11 sto
+12 worm
+13
+14
+15
