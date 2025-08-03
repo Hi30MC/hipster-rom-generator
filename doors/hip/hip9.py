@@ -333,21 +333,21 @@ def main():
     # door._write_log("door_meta/9x9hip/log.txt")
 
     # row 9
-    # door = HipSeq9()
-    # door += wait
-    # door.full_row(9)
-    # print(len(door.moves))
-    # door._write_sequence("door_meta/9x9hip/sequence.txt")
-    # door._write_log("door_meta/9x9hip/log_row9.txt")
-
-    # pull 7
     door = HipSeq9()
     door += wait
-    door.stack_state[-1] = True
-    door.pull(7)
+    door.full_row(9)
     print(len(door.moves))
     door._write_sequence("door_meta/9x9hip/sequence.txt")
-    door._write_log("door_meta/9x9hip/log_pull7.txt")
+    door._write_log("door_meta/9x9hip/log_row9.txt")
+
+    # pull 7
+    # door = HipSeq9()
+    # door += wait
+    # door.stack_state[-1] = True
+    # door.pull(7)
+    # print(len(door.moves))
+    # door._write_sequence("door_meta/9x9hip/sequence.txt")
+    # door._write_log("door_meta/9x9hip/log_pull7.txt")
 
     # the whole shebang
     # door = HipSeq9()
