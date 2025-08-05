@@ -149,7 +149,8 @@ class HipSeq6(BasicHip[Move]):
             case 1, _:
                 self += [bobs, bobs]
             case 2, True:
-                self += [bobs, ssto, bobs, bobs, a, bobs]
+                self += [bobs, ssto, bobs, bobs, a, bobs, bobs, bobs] # use this for contained fix
+                # self += [bobs, ssto, bobs, bobs, a, bobs]
             case 2, False:
                 self += [bobs, a, bobs]
             case _:

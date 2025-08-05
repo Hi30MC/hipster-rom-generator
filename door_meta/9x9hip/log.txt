@@ -362,7 +362,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(5, False)
@@ -643,7 +643,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
@@ -837,7 +837,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(5, True)
@@ -1118,7 +1118,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(4)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1)
@@ -1155,7 +1155,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
@@ -1292,7 +1292,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(5, False)
@@ -1448,7 +1448,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
@@ -1642,7 +1642,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(5, True)
@@ -1924,7 +1924,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(5)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2)
@@ -1985,7 +1985,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
@@ -2075,7 +2075,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
@@ -2212,7 +2212,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
@@ -2484,7 +2484,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(4)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1)
@@ -2521,7 +2521,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
@@ -2658,7 +2658,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(5, False)
@@ -2814,7 +2814,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
@@ -3008,7 +3008,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(5, True)
@@ -3288,7 +3288,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ e
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b sto b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -3347,7 +3347,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
@@ -3442,7 +3442,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(4, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1)
@@ -3478,7 +3478,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
@@ -3594,7 +3594,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
@@ -3684,7 +3684,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
@@ -3821,7 +3821,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(4)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1)
@@ -3857,7 +3857,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
@@ -3995,7 +3995,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(5, False)
@@ -4278,7 +4278,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(5)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2)
@@ -4339,7 +4339,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
@@ -4429,7 +4429,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
@@ -4566,7 +4566,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
@@ -4838,7 +4838,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(4)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1)
@@ -4875,7 +4875,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
@@ -5012,7 +5012,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(5, False)
@@ -5168,7 +5168,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
@@ -5362,7 +5362,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(5, True)

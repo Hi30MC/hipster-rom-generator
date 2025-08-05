@@ -119,7 +119,7 @@ class HipSeq7(BasicHip[Move]):
             case 1, _:
                 self += [bobs, bobs]
             case 2, True:
-                self += [bobs, sto, bobs, bobs, a, bobs]
+                self += [bobs, sto, bobs, bobs, a, bobs, bobs, bobs]
             case 2, False:
                 self += [bobs, a, bobs]
             case _:
