@@ -1,4 +1,5 @@
 from abc import ABC, ABCMeta
+import os
 from typing import Protocol
 from doors.debug import SeqDebug, DebugMeta
 
@@ -13,11 +14,6 @@ class DebugABCMeta(DebugMeta, ABCMeta):
 
 
 class BasicHip[Move: MoveProtocol](SeqDebug, ABC, metaclass=DebugABCMeta):
-    """
-    Basic Hip class that provides common functionality for hip sequence generators.
-    Generic on Move type to allow different move enums in subclasses.
-    """
-
     piston_stack_depth: int
     max_obs: int
 
@@ -34,5 +30,8 @@ class BasicHip[Move: MoveProtocol](SeqDebug, ABC, metaclass=DebugABCMeta):
         return self
 
     def _write_sequence(self, path: str):
+
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+
         with open(path, "w") as f:
             f.write("\n".join(move.value for move in self.moves))

@@ -1,6 +1,6 @@
-the_whole_shebang()
+the_whole_shebang9()
 ⏐ wait
-⏐ closing()
+⏐ closing9()
 ⏐ ⏐ sto b a sto worm worm b
 ⏐ ⏐ sto worm b a sto wait
 ⏐ ⏐ d worm d c c b
@@ -12,7 +12,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ a
 ⏐ stop
-⏐ opening()
+⏐ opening9()
 ⏐ ⏐ a
 ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ pull(-1)

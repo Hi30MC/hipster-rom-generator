@@ -1,6 +1,6 @@
-the_whole_shebang()
+the_whole_shebang8()
 ⏐ wait
-⏐ closing()
+⏐ closing8()
 ⏐ ⏐ sto worm e e d d c c b sto worm e e d d c c b
 ⏐ ⏐ sto worm worm d d c c b
 ⏐ ⏐ sto worm d d c c b
@@ -11,14 +11,14 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ a
 ⏐ stop
-⏐ opening()
+⏐ opening8()
 ⏐ ⏐ a
 ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -27,7 +27,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -37,11 +37,11 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ d
 ⏐ ⏐ ⏐ row_high(2)
 ⏐ ⏐ ⏐ ⏐ full_extend(2, False)
-⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -52,7 +52,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
@@ -63,7 +63,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
@@ -71,7 +71,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -80,34 +80,34 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
-⏐ ⏐ storage_moves(Move.A, Move.B, Move.STO)
+⏐ ⏐ storage_moves(a, b, sto)
 ⏐ ⏐ full_row(3)
 ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ d
 ⏐ ⏐ ⏐ row_high(3)
 ⏐ ⏐ ⏐ ⏐ full_extend(3, False)
-⏐ ⏐ ⏐ ⏐ ⏐ extend(3, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ extend(3, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(3, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ retract(3)
-⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
+⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -117,7 +117,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
@@ -125,7 +125,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -133,10 +133,10 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(2, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -147,7 +147,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
@@ -158,7 +158,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
@@ -166,7 +166,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -175,34 +175,34 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
-⏐ ⏐ storage_moves(Move.A, Move.STO)
+⏐ ⏐ storage_moves(a, sto)
 ⏐ ⏐ full_row(4)
 ⏐ ⏐ ⏐ more_pistons(2)
 ⏐ ⏐ ⏐ ⏐ e
 ⏐ ⏐ ⏐ row_high(4)
 ⏐ ⏐ ⏐ ⏐ full_extend(4, False)
-⏐ ⏐ ⏐ ⏐ ⏐ extend(4, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ extend(4, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(4, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ retract(4)
-⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
+⏐ ⏐ ⏐ ⏐ ⏐ retract(1, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -211,7 +211,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -221,11 +221,11 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(2)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -237,7 +237,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -246,7 +246,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -258,23 +258,23 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ e d
 ⏐ ⏐ ⏐ ⏐ ⏐ row_high(3, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(3, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(3, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -284,7 +284,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
@@ -292,7 +292,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -300,10 +300,10 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(2, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -314,7 +314,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
@@ -325,7 +325,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
@@ -333,7 +333,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -342,39 +342,39 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
-⏐ ⏐ storage_moves(Move.A, Move.STO)
+⏐ ⏐ storage_moves(a, sto)
 ⏐ ⏐ full_row(5)
 ⏐ ⏐ ⏐ more_pistons(2)
 ⏐ ⏐ ⏐ ⏐ e
 ⏐ ⏐ ⏐ row_high(5)
 ⏐ ⏐ ⏐ ⏐ full_extend(5, False)
-⏐ ⏐ ⏐ ⏐ ⏐ extend(5, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ extend(5, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(5, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b b b b b
 ⏐ ⏐ ⏐ ⏐ retract(5)
-⏐ ⏐ ⏐ ⏐ ⏐ retract(2)
+⏐ ⏐ ⏐ ⏐ ⏐ retract(2, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
@@ -385,7 +385,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
@@ -393,7 +393,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -402,7 +402,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -412,13 +412,13 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(3, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
@@ -428,7 +428,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -439,7 +439,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
@@ -448,7 +448,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -457,7 +457,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -467,23 +467,23 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ row_high(4, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(4, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(4, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(4, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(4, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(4)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -492,7 +492,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -502,11 +502,11 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(2)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -518,7 +518,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -527,7 +527,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -539,23 +539,23 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ e d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(3, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(3, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(3, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -565,7 +565,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
@@ -573,7 +573,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -581,10 +581,10 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(2, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -595,7 +595,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
@@ -606,7 +606,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
@@ -614,7 +614,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -623,41 +623,41 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
-⏐ ⏐ storage_moves(Move.A, Move.STO)
+⏐ ⏐ storage_moves(a, sto)
 ⏐ ⏐ full_row(6)
 ⏐ ⏐ ⏐ more_pistons(3)
 ⏐ ⏐ ⏐ ⏐ e fold1
 ⏐ ⏐ ⏐ row_high(6)
 ⏐ ⏐ ⏐ ⏐ full_extend(6, False)
-⏐ ⏐ ⏐ ⏐ ⏐ extend(6, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ extend(6, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(6, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a a a a a a a
 ⏐ ⏐ ⏐ ⏐ retract(6)
-⏐ ⏐ ⏐ ⏐ ⏐ retract(3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
+⏐ ⏐ ⏐ ⏐ ⏐ retract(3, no_recurse_first=False)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -667,7 +667,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
@@ -675,7 +675,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -683,10 +683,10 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(2, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -697,7 +697,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
@@ -708,7 +708,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
@@ -716,7 +716,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -725,7 +725,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -735,13 +735,13 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ e
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(4)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(4, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(4, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(4, False)
@@ -751,7 +751,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -760,7 +760,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -771,11 +771,11 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(2, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -786,7 +786,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
@@ -797,7 +797,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
@@ -805,7 +805,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -814,7 +814,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -828,28 +828,28 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ fold1
 ⏐ ⏐ ⏐ ⏐ ⏐ row_high(5, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(5, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(5, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(5, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(5, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b b b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(5)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(2)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(2, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
@@ -860,7 +860,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
@@ -868,7 +868,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -877,7 +877,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -887,13 +887,13 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(3, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
@@ -903,7 +903,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -914,7 +914,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
@@ -923,7 +923,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -932,7 +932,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -942,23 +942,23 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(4, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(4, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(4, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(4, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(4, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(4)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -967,7 +967,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -977,11 +977,11 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(2)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -993,7 +993,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -1002,7 +1002,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -1014,23 +1014,23 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ e d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(3, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(3, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(3, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -1040,7 +1040,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
@@ -1048,7 +1048,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -1056,10 +1056,10 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(2, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -1070,7 +1070,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
@@ -1081,7 +1081,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
@@ -1089,7 +1089,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -1098,41 +1098,41 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
-⏐ ⏐ storage_moves(Move.A, Move.STO)
+⏐ ⏐ storage_moves(a, sto)
 ⏐ ⏐ full_row(7)
 ⏐ ⏐ ⏐ more_pistons(3)
 ⏐ ⏐ ⏐ ⏐ e fold1
 ⏐ ⏐ ⏐ row_high(7)
 ⏐ ⏐ ⏐ ⏐ full_extend(7, False)
-⏐ ⏐ ⏐ ⏐ ⏐ extend(7, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ extend(7, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ e
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(4, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(4)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(7, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a a a a a a a
 ⏐ ⏐ ⏐ ⏐ retract(7)
-⏐ ⏐ ⏐ ⏐ ⏐ retract(4)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
+⏐ ⏐ ⏐ ⏐ ⏐ retract(4, no_recurse_first=False)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -1141,7 +1141,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -1151,11 +1151,11 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(2)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -1167,7 +1167,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -1176,7 +1176,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -1188,23 +1188,23 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ e d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(3, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(3, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs a bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(3, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -1214,7 +1214,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
@@ -1222,7 +1222,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -1230,10 +1230,10 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(2, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -1244,7 +1244,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
@@ -1255,7 +1255,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
@@ -1263,7 +1263,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -1272,7 +1272,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -1282,17 +1282,17 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ e
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(5)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(5, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(5, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(5, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b b b b b
@@ -1303,7 +1303,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
@@ -1314,7 +1314,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
@@ -1322,7 +1322,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -1331,7 +1331,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -1342,24 +1342,24 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(3)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(3, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(3, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -1369,7 +1369,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
@@ -1377,7 +1377,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -1385,10 +1385,10 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(2, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -1399,7 +1399,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
@@ -1410,7 +1410,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
@@ -1418,7 +1418,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -1427,7 +1427,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -1439,30 +1439,30 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ row_high(6, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(6, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(6, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(6, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(6, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a a a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(6)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3, no_recurse_first=False)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -1472,7 +1472,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
@@ -1480,7 +1480,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -1488,10 +1488,10 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(2, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -1502,7 +1502,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
@@ -1513,7 +1513,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
@@ -1521,7 +1521,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -1530,7 +1530,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -1540,13 +1540,13 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ e
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(4)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(4, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(4, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(4, False)
@@ -1556,7 +1556,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -1565,7 +1565,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -1576,11 +1576,11 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(2, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -1591,7 +1591,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
@@ -1602,7 +1602,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
@@ -1610,7 +1610,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -1619,7 +1619,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -1633,28 +1633,28 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ fold1
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(5, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(5, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(5, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(5, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(5, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b b b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(5)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(2)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(2, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
@@ -1665,7 +1665,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
@@ -1673,7 +1673,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -1682,7 +1682,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -1692,13 +1692,13 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(3, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
@@ -1708,7 +1708,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -1719,7 +1719,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
@@ -1728,7 +1728,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -1737,7 +1737,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -1747,23 +1747,23 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(4, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(4, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(4, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(4, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(4, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(4)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -1772,7 +1772,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -1782,11 +1782,11 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(2)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -1798,7 +1798,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -1807,7 +1807,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -1819,23 +1819,23 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ e d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(3, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(3, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(3, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -1845,7 +1845,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
@@ -1853,7 +1853,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -1861,10 +1861,10 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(2, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -1875,7 +1875,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
@@ -1886,7 +1886,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
@@ -1894,7 +1894,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -1903,46 +1903,46 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
-⏐ ⏐ storage_moves(Move.A, Move.STO)
+⏐ ⏐ storage_moves(a, sto)
 ⏐ ⏐ full_row(8)
 ⏐ ⏐ ⏐ more_pistons(4)
 ⏐ ⏐ ⏐ ⏐ e fold1
 ⏐ ⏐ ⏐ row_high(8)
 ⏐ ⏐ ⏐ ⏐ full_extend(8, False)
-⏐ ⏐ ⏐ ⏐ ⏐ extend(8, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ extend(8, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d fold2
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(5, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(5)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(8, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a a a a a a a a
 ⏐ ⏐ ⏐ ⏐ retract(8)
-⏐ ⏐ ⏐ ⏐ ⏐ retract(5)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(2)
+⏐ ⏐ ⏐ ⏐ ⏐ retract(5, no_recurse_first=False)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(2, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
@@ -1953,7 +1953,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
@@ -1961,7 +1961,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -1970,7 +1970,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -1980,13 +1980,13 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(3, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
@@ -1996,7 +1996,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -2007,7 +2007,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
@@ -2016,7 +2016,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -2025,7 +2025,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -2035,23 +2035,23 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(4, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(4, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(4, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(4, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs a bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(4, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(4)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -2060,7 +2060,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -2070,11 +2070,11 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(2)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -2086,7 +2086,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -2095,7 +2095,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -2107,23 +2107,23 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ fold2
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(3, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(3, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs a bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(3, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -2133,7 +2133,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
@@ -2141,7 +2141,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -2149,10 +2149,10 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(2, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -2163,7 +2163,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
@@ -2174,7 +2174,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
@@ -2182,7 +2182,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -2191,7 +2191,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -2201,30 +2201,30 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(3)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ e
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(6)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(6, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(6, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(6, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a a a a a a a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -2234,7 +2234,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
@@ -2242,7 +2242,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -2250,10 +2250,10 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(2, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -2264,7 +2264,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
@@ -2275,7 +2275,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
@@ -2283,7 +2283,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -2292,7 +2292,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -2303,24 +2303,24 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d fold2
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(4)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(4, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(4, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(4, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(4, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(4)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -2329,7 +2329,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -2339,11 +2339,11 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(2)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -2355,7 +2355,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -2364,7 +2364,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -2376,23 +2376,23 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ fold2
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(3, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(3, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(3, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -2402,7 +2402,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
@@ -2410,7 +2410,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -2418,10 +2418,10 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(2, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -2432,7 +2432,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
@@ -2443,7 +2443,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
@@ -2451,7 +2451,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -2460,7 +2460,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -2474,30 +2474,30 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(4)
 ⏐ ⏐ ⏐ ⏐ ⏐ row_high(7, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(7, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(7, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(7, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ e
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(4, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(4)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(7, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a a a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(7)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(4)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(4, no_recurse_first=False)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -2506,7 +2506,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -2516,11 +2516,11 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(2)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -2532,7 +2532,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -2541,7 +2541,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -2553,23 +2553,23 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ e d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(3, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(3, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs a bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(3, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -2579,7 +2579,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
@@ -2587,7 +2587,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -2595,10 +2595,10 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(2, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -2609,7 +2609,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
@@ -2620,7 +2620,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
@@ -2628,7 +2628,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -2637,7 +2637,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -2647,17 +2647,17 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ e
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(5)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(5, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(5, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(5, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b b b b b
@@ -2668,7 +2668,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
@@ -2679,7 +2679,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
@@ -2687,7 +2687,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -2696,7 +2696,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -2707,24 +2707,24 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(3)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(3, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(3, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -2734,7 +2734,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
@@ -2742,7 +2742,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -2750,10 +2750,10 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(2, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -2764,7 +2764,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
@@ -2775,7 +2775,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
@@ -2783,7 +2783,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -2792,7 +2792,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -2804,30 +2804,30 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(6, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(6, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(6, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(6, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(6, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a a a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(6)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3, no_recurse_first=False)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -2837,7 +2837,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
@@ -2845,7 +2845,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -2853,10 +2853,10 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(2, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs a bobs
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -2867,7 +2867,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
@@ -2878,7 +2878,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
@@ -2886,7 +2886,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -2895,7 +2895,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -2905,13 +2905,13 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ e
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(4)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(4, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(4, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(4, False)
@@ -2921,7 +2921,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -2930,7 +2930,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -2941,11 +2941,11 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(2, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -2956,7 +2956,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
@@ -2967,7 +2967,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
@@ -2975,7 +2975,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -2984,7 +2984,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -2998,28 +2998,28 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ fold1
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(5, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(5, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(5, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(5, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs sto bobs bobs a bobs bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(5, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b b b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(5)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(2)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(2, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
@@ -3030,7 +3030,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
@@ -3038,7 +3038,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -3047,7 +3047,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -3057,13 +3057,13 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(3, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
@@ -3073,7 +3073,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -3084,7 +3084,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
@@ -3093,7 +3093,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -3102,7 +3102,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -3112,23 +3112,23 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(4, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(4, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(4, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(4, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(4, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(4)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -3137,7 +3137,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -3147,11 +3147,11 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(2)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -3163,7 +3163,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -3172,7 +3172,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -3184,23 +3184,23 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ e d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(3, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(3, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(3, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(3, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -3210,7 +3210,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
@@ -3218,7 +3218,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
@@ -3226,10 +3226,10 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(2, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True, needs_parity=True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(2, True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_obs(needs_parity=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ bobs bobs
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -3240,7 +3240,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ more_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
@@ -3251,7 +3251,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
@@ -3259,7 +3259,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
@@ -3268,7 +3268,7 @@ the_whole_shebang()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True, needs_parity=True)
+⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)

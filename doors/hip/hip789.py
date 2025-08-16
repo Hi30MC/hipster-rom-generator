@@ -34,17 +34,44 @@ fold1 = Move.FOLD1
 fold2 = Move.FOLD2
 
 
-class HipSeq9(BasicHip[Move]):
+class HipSeq789(BasicHip[Move]):
     piston_stack_depth = 5
     max_obs = 3
 
-    def the_whole_shebang(self):
+    def the_whole_shebang7(self):
         self += wait
-        self._dedent().closing()
+        self._dedent().closing7()
         self += stop
-        self._dedent().opening()
+        self._dedent().opening7()
 
-    def closing(self):
+    def the_whole_shebang8(self):
+        self += wait
+        self._dedent().closing8()
+        self += stop
+        self._dedent().opening8()
+
+    def the_whole_shebang9(self):
+        self += wait
+        self._dedent().closing9()
+        self += stop
+        self._dedent().opening9()
+
+    def closing7(self):
+        self += [sto, worm, d, d, c, c, b] * 3
+        self += [sto, worm, b]
+        self += [sto, b, a, sto]
+        self.more_pistons(0)
+        self.extend(1)
+
+    def closing8(self):
+        self += [sto, worm, e, e, d, d, c, c, b] * 2
+        self += [sto, worm, worm, d, d, c, c, b]
+        self += [sto, worm, d, d, c, c, b]
+        self += [sto, worm, b, sto, b, a, sto]
+        self.more_pistons(0)
+        self.extend(1)
+
+    def closing9(self):
         self += [sto, b, a, sto, worm, worm, b]
         self += [sto, worm, b, a, sto, wait]
         self += [d, worm, d, c, c, b]
@@ -59,7 +86,41 @@ class HipSeq9(BasicHip[Move]):
         self.moves.pop()
         self.moves.extend(moves)
 
-    def opening(self):
+    def opening7(self):
+        self += a
+        self.retract(1)
+        self += sto
+
+        self.full_row(2)
+        self.storage_moves(a, b, sto)
+
+        for row in range(3, 6 + 1):
+            self.full_row(row)
+            self.storage_moves(a, sto)
+
+        self.full_row(7)
+        last_6 = self.moves[-6:]
+        assert last_6 == [a, b, a, c, b, b]
+        self.moves[-6:] = [a, b, c, b]
+
+    def opening8(self):
+        self += a
+        self.retract(1)
+        self += sto
+
+        self.full_row(2)
+        self.storage_moves(a, b, sto)
+
+        for row in range(3, 7 + 1):
+            self.full_row(row)
+            self.storage_moves(a, sto)
+        self.full_row(8)
+
+        last_6 = self.moves[-6:]
+        assert last_6 == [a, b, a, c, b, b]
+        self.moves[-6:] = [a, b, c, b]
+
+    def opening9(self):
         self += a
         self.retract(1)
         self += sto
@@ -86,6 +147,8 @@ class HipSeq9(BasicHip[Move]):
         self.storage_moves(a, worm, b, a, sto, worm, *[wait] * 5)
 
     def more_pistons(self, layer: int):
+        if not (0 <= layer < self.piston_stack_depth):
+            raise ValueError(f"layer {layer} is out of range.")
         if any(self.stack_state[:layer]):
             raise ValueError(f"not all layers below {layer} are False.")
         if self.stack_state[layer]:
@@ -156,7 +219,16 @@ class HipSeq9(BasicHip[Move]):
             case 1, _:
                 self += [bobs, bobs]
             case 2, True:
-                self += [bobs, sto, bobs, bobs, a, bobs, bobs, bobs] # use this for contained fix
+                self += [
+                    bobs,
+                    sto,
+                    bobs,
+                    bobs,
+                    a,
+                    bobs,
+                    bobs,
+                    bobs,
+                ]  # use this for contained fix
                 # self += [bobs, sto, bobs, bobs, a, bobs]
             case 2, False:
                 self += [bobs, a, bobs]
@@ -318,53 +390,20 @@ class HipSeq9(BasicHip[Move]):
 
 
 def main():
-    # jank_7
-    # door = HipSeq9()
-    # door += wait
-    # door += b
-    # door.jank_7()
-    # door.full_row(8)
-    # door._write_sequence("door_meta/9x9hip/sequence.txt")
-    # door._write_log("door_meta/9x9hip/log_jank7.txt")
-    # closing
-    # door = HipSeq9()
-    # door += wait
-    # door.closing()
-    # door._write_sequence("door_meta/9x9hip/sequence.txt")
-    # door._write_log("door_meta/9x9hip/log.txt")
+    def make_file(method: str, seq_path: str, log_path: str, piston_stack_depth=5):
+        door = HipSeq789()
+        door.piston_stack_depth = piston_stack_depth
+        getattr(door, method)()
+        door._write_sequence(f"door_meta/{seq_path}")
+        door._write_log(f"door_meta/{log_path}")
 
-    # row 9
-    # door = HipSeq9()
-    # door += wait
-    # door.full_row(9)
-    # print(len(door.moves))
-    # door._write_sequence("door_meta/9x9hip/sequence.txt")
-    # door._write_log("door_meta/9x9hip/log_row9.txt")
-
-    # pull 7
-    # door = HipSeq9()
-    # door += wait
-    # door.stack_state[-1] = True
-    # door.pull(7)
-    # print(len(door.moves))
-    # door._write_sequence("door_meta/9x9hip/sequence.txt")
-    # door._write_log("door_meta/9x9hip/log_pull7.txt")
-
-    # row 8, True
-    # door = HipSeq9()
-    # door += wait
-    # door.stack_state[-1] = True
-    # door.row_high(8, True)
-    # print(len(door.moves))
-    # door._write_sequence("door_meta/9x9hip/sequence.txt")
-    # door._write_log("door_meta/9x9hip/log_pull7.txt")
-
-    # the whole shebang
-    door = HipSeq9()
-    door._dedent().the_whole_shebang()
-    print(len(door.moves))
-    door._write_sequence("door_meta/9x9hip/sequence.txt")
-    door._write_log("door_meta/9x9hip/log.txt")
+    for i in (7, 8, 9):
+        make_file(
+            f"the_whole_shebang{i}",
+            f"{i}x{i}hip/sequence.txt",
+            f"{i}x{i}hip/log.txt",
+            4 if i == 7 else 5,
+        )
 
 
 if __name__ == "__main__":
