@@ -10,20 +10,18 @@ def write_file(path: str, content: str):
         f.write(content)
 
 
-class BasicHip[Move: str](metaclass=AutoLog):
-    piston_stack_depth: int
-    max_obs: int
-
+class BasicDoor[Move: str](metaclass=AutoLog):
     def __init__(self):
-        self.call_tree = CallTree()
         self.moves: list[Move] = []
-        self.stack_state = [False] * self.piston_stack_depth
-        self.num_obs_out = 0
+        self.call_tree = CallTree()
+
+    def _add(self, *moves: Move):
+        self.moves.extend(moves)
+        self.call_tree.add_message(" ".join(moves))
 
     def __iadd__(self, moves: list[Move] | Move):
-        moves_list: list[Move] = moves if isinstance(moves, list) else [moves]
-        self.moves.extend(moves_list)
-        self.call_tree.add_message(" ".join(str(msg) for msg in moves_list))
+        moves = moves if isinstance(moves, list) else [moves]
+        self._add(*moves)
         return self
 
     def _write_call_tree(self, path: str):
@@ -31,6 +29,17 @@ class BasicHip[Move: str](metaclass=AutoLog):
             path += ".yaml"
         content = self.call_tree.to_string(FormatOptions.yaml())
         write_file(path, content)
+        return content
 
     def _write_sequence(self, path: str):
         write_file(path, "\n".join(self.moves))
+
+
+class BasicHip[Move: str](BasicDoor[Move]):
+    piston_stack_depth: int
+    max_obs: int
+
+    def __init__(self):
+        super().__init__()
+        self.num_obs_out = 0
+        self.stack_state = [False] * self.piston_stack_depth
