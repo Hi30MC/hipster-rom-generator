@@ -29,7 +29,7 @@ def colored_str(name, bold=False) -> str:
     return f"{color}{name}{reset}"
 
 
-def wrap_function(fn, method_name: str):
+def log_calls(fn, method_name: str):
     @functools.wraps(fn)
     def wrapper(self: SeqDebug, *args, **kwargs):
         no_indent = self._next_call_no_indent
@@ -39,31 +39,40 @@ def wrap_function(fn, method_name: str):
         args_str = [str(arg) for arg in args] + [f"{k}={v}" for k, v in kwargs.items()]
         all_args_str = ", ".join(args_str)
         method_str = colored_str(method_name, bold=True)
-        self._print_line(f"{method_str}({all_args_str})")
+        method_call_msg = f"{method_str}({all_args_str})"
 
+        # Track if this method should be printed (lazy printing)
         if no_indent:
+            # If no indent, print immediately and execute
+            self._print_line(method_call_msg)
             return fn(self, *args, **kwargs)
+
+        # Set up lazy printing state - store the method call for potential printing
+        self._pending_methods.append((self._call_depth, method_call_msg))
 
         self._call_depth += 1
         try:
             result = fn(self, *args, **kwargs)
         finally:
             self._call_depth -= 1
+            # Remove the pending method after execution
+            if self._pending_methods:
+                self._pending_methods.pop()
+
         return result
 
     return wrapper
 
 
-class DebugMeta(type):
-    """Metaclass that automatically wraps methods for debugging"""
+class AutoLogMethods(type):
+    """Metaclass that automatically wraps methods in log_calls"""
 
     def __new__(mcs, name, bases, namespace, **kwargs):
         # Create the class first
         cls = super().__new__(mcs, name, bases, namespace, **kwargs)
 
-        if not any(isinstance(base, DebugMeta) for base in bases):
-            return cls
-        # Only apply debugging to classes that inherit from SeqDebug
+        if not any(issubclass(base, SeqDebug) for base in bases):
+            raise TypeError("Class must inherit from SeqDebug")
 
         # Wrap all public methods for debugging
         for attr_name in dir(cls):
@@ -73,28 +82,47 @@ class DebugMeta(type):
                 and not attr_name.startswith("_")
                 and attr_name != "dedent"
             ):
-                setattr(cls, attr_name, wrap_function(attr, attr_name))
+                setattr(cls, attr_name, log_calls(attr, attr_name))
 
         return cls
 
 
-class SeqDebug(metaclass=DebugMeta):
-    """Base class for sequence debugging. Classes inheriting from this will automatically log method calls."""
+class SeqDebug:
+    """Base class for sequence debugging. Must inherit this class to use @log_calls"""
 
     def __init__(self):
         self._call_depth = 0
         self._line_num = 0
         self._next_call_no_indent = False
         self._msg_log = []
+        self._pending_methods = []
 
     def _dedent(self):
         # self._next_call_no_indent = True
         return self
 
+    def _print_pending_methods_if_needed(self):
+        """Print all pending method calls if any exist"""
+        if self._pending_methods:
+            # Print all pending methods in order (deepest first)
+            methods_to_print = self._pending_methods.copy()
+            self._pending_methods.clear()
+
+            for call_depth, method_msg in methods_to_print:
+                # Print the method call with proper indentation
+                indent = get_indent(call_depth)
+                msg_r = f"{indent}{method_msg}"
+                print(f"{self._line_num:5d} {msg_r}")
+                self._msg_log.append(strip_color(msg_r))
+                self._line_num += 1
+
     def _print_line(self, msg: str):
+        # If there are pending method calls, print them first
+        self._print_pending_methods_if_needed()
+
         indent = get_indent(self._call_depth)
         msg_r = f"{indent}{msg}"
-        print(f"{self._line_num:5} {msg_r}")
+        print(f"{self._line_num:5d} {msg_r}")
         self._msg_log.append(strip_color(msg_r))
         self._line_num += 1
 

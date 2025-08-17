@@ -1,39 +1,24 @@
-from enum import Enum
 from doors.hip.basic_hip import BasicHip
+from typing import NewType
 
+Move = NewType(
+    "Move",
+    str,
+)
 
-class Move(Enum):
-    STOP = "stop"
-    WAIT = "wait"
-    A = "a"
-    B = "b"
-    C = "c"
-    D = "d"
-    E = "e"
-    F = "f"
-    STO = "sto"
-    BOBS = "bobs"
-    WORM = "worm"
-    FOLD1 = "fold1"
-    FOLD2 = "fold2"
-
-    def __str__(self):
-        return self.value
-
-
-stop = Move.STOP
-wait = Move.WAIT
-a = Move.A
-b = Move.B
-c = Move.C
-d = Move.D
-e = Move.E
-f = Move.F
-sto = Move.STO
-bobs = Move.BOBS
-worm = Move.WORM
-fold1 = Move.FOLD1
-fold2 = Move.FOLD2
+stop = Move("stop")
+wait = Move("wait")
+a = Move("a")
+b = Move("b")
+c = Move("c")
+d = Move("d")
+e = Move("e")
+f = Move("f")
+sto = Move("sto")
+bobs = Move("bobs")
+worm = Move("worm")
+fold1 = Move("fold1")
+fold2 = Move("fold2")
 
 
 class HipSeq10(BasicHip[Move]):

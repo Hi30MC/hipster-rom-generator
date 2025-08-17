@@ -1,9 +1,9 @@
 from abc import ABC, ABCMeta
 import os
-from doors.debug import SeqDebug, DebugMeta
+from doors.debug import SeqDebug, AutoLogMethods
 
 
-class DebugABCMeta(DebugMeta, ABCMeta):
+class DebugABCMeta(AutoLogMethods, ABCMeta):
     pass
 
 

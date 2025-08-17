@@ -20,17 +20,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ sto
 ⏐ ⏐ full_row(2)
 ⏐ ⏐ ⏐ more_pistons(1)
@@ -54,9 +50,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -65,7 +58,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -73,18 +65,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
-⏐ ⏐ storage_moves(a, b, sto)
 ⏐ ⏐ full_row(3)
 ⏐ ⏐ ⏐ more_pistons(1)
 ⏐ ⏐ ⏐ ⏐ d
@@ -102,15 +89,12 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ retract(3)
 ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ pull(1)
@@ -120,15 +104,11 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
@@ -149,9 +129,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -160,7 +137,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -168,18 +144,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
-⏐ ⏐ storage_moves(a, sto)
 ⏐ ⏐ full_row(4)
 ⏐ ⏐ ⏐ more_pistons(2)
 ⏐ ⏐ ⏐ ⏐ e
@@ -204,17 +175,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ pull(2)
@@ -229,7 +196,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(0)
@@ -239,17 +205,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
@@ -269,15 +231,12 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(1)
@@ -287,15 +246,11 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
@@ -316,9 +271,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -327,7 +279,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -335,18 +286,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
-⏐ ⏐ storage_moves(a, sto)
 ⏐ ⏐ full_row(5)
 ⏐ ⏐ ⏐ more_pistons(2)
 ⏐ ⏐ ⏐ ⏐ e
@@ -376,9 +322,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -387,7 +330,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -395,17 +337,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ pull(3)
@@ -423,15 +361,12 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(3, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(1)
@@ -442,7 +377,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -450,17 +384,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
@@ -485,17 +415,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(2)
@@ -510,7 +436,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(0)
@@ -520,17 +445,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
@@ -550,15 +471,12 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(1)
@@ -568,15 +486,11 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
@@ -597,9 +511,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -608,7 +519,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -616,18 +526,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
-⏐ ⏐ storage_moves(a, sto)
 ⏐ ⏐ full_row(6)
 ⏐ ⏐ ⏐ more_pistons(3)
 ⏐ ⏐ ⏐ ⏐ e fold1
@@ -652,15 +557,12 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ retract(6)
 ⏐ ⏐ ⏐ ⏐ ⏐ retract(3, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(1)
@@ -670,15 +572,11 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
@@ -699,9 +597,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -710,7 +605,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -718,17 +612,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ pull(4)
@@ -753,17 +643,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(2)
@@ -788,9 +674,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -799,7 +682,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -807,17 +689,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ e d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -851,9 +729,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -862,7 +737,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -870,17 +744,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(3)
@@ -898,15 +768,12 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(3, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(1)
@@ -917,7 +784,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -925,17 +791,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
@@ -960,17 +822,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(2)
@@ -985,7 +843,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(0)
@@ -995,17 +852,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
@@ -1025,15 +878,12 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(1)
@@ -1043,15 +893,11 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
@@ -1072,9 +918,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -1083,7 +926,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -1091,18 +933,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
-⏐ ⏐ storage_moves(a, sto)
 ⏐ ⏐ full_row(7)
 ⏐ ⏐ ⏐ more_pistons(3)
 ⏐ ⏐ ⏐ ⏐ e fold1
@@ -1134,17 +971,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(2)
@@ -1159,7 +992,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(0)
@@ -1169,17 +1001,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
@@ -1199,15 +1027,12 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(1)
@@ -1217,15 +1042,11 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
@@ -1246,9 +1067,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -1257,7 +1075,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -1265,17 +1082,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ pull(5)
@@ -1305,9 +1118,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -1316,7 +1126,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -1324,17 +1133,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(3)
@@ -1354,15 +1159,12 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(1)
@@ -1372,15 +1174,11 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
@@ -1401,9 +1199,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -1412,7 +1207,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -1420,17 +1214,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ e d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -1457,15 +1247,12 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(6)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(1)
@@ -1475,15 +1262,11 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
@@ -1504,9 +1287,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -1515,7 +1295,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -1523,17 +1302,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(4)
@@ -1558,17 +1333,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(2)
@@ -1593,9 +1364,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -1604,7 +1372,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -1612,17 +1379,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ e d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -1656,9 +1419,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -1667,7 +1427,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -1675,17 +1434,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(3)
@@ -1703,15 +1458,12 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(3, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(1)
@@ -1722,7 +1474,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -1730,17 +1481,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
@@ -1765,17 +1512,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(2)
@@ -1790,7 +1533,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(0)
@@ -1800,17 +1542,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
@@ -1830,15 +1568,12 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(1)
@@ -1848,15 +1583,11 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
@@ -1877,9 +1608,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -1888,7 +1616,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -1896,18 +1623,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
-⏐ ⏐ storage_moves(a, sto)
 ⏐ ⏐ full_row(8)
 ⏐ ⏐ ⏐ more_pistons(4)
 ⏐ ⏐ ⏐ ⏐ e fold1
@@ -1944,9 +1666,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -1955,7 +1674,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -1963,17 +1681,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(3)
@@ -1991,15 +1705,12 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(3, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(1)
@@ -2010,7 +1721,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -2018,17 +1728,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
@@ -2053,17 +1759,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(2)
@@ -2078,7 +1780,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(0)
@@ -2088,17 +1789,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
@@ -2118,15 +1815,12 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(1)
@@ -2136,15 +1830,11 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
@@ -2165,9 +1855,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -2176,7 +1863,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -2184,17 +1870,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ pull(6)
@@ -2219,15 +1901,12 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a a a a a a a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(1)
@@ -2237,15 +1916,11 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
@@ -2266,9 +1941,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -2277,7 +1949,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -2285,17 +1956,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(4)
@@ -2322,17 +1989,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(2)
@@ -2347,7 +2010,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(0)
@@ -2357,17 +2019,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
@@ -2387,15 +2045,12 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(1)
@@ -2405,15 +2060,11 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
@@ -2434,9 +2085,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -2445,7 +2093,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -2453,25 +2100,19 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(3)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ e d fold2
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
-⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(4)
 ⏐ ⏐ ⏐ ⏐ ⏐ row_high(7, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(7, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(7, True)
@@ -2499,17 +2140,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(2)
@@ -2524,7 +2161,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(0)
@@ -2534,17 +2170,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
@@ -2564,15 +2196,12 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(1)
@@ -2582,15 +2211,11 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
@@ -2611,9 +2236,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -2622,7 +2244,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -2630,17 +2251,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(5)
@@ -2670,9 +2287,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -2681,7 +2295,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -2689,17 +2302,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(3)
@@ -2719,15 +2328,12 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(1)
@@ -2737,15 +2343,11 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
@@ -2766,9 +2368,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -2777,7 +2376,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -2785,17 +2383,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ e d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -2822,15 +2416,12 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(6)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3, no_recurse_first=False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(1)
@@ -2840,15 +2431,11 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
@@ -2869,9 +2456,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -2880,7 +2464,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -2888,17 +2471,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(4)
@@ -2923,17 +2502,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(2)
@@ -2958,9 +2533,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -2969,7 +2541,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -2977,17 +2548,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ e d
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -3021,9 +2588,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -3032,7 +2596,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -3040,17 +2603,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(3)
@@ -3068,15 +2627,12 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(3, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(1)
@@ -3087,7 +2643,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -3095,17 +2650,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
@@ -3130,17 +2681,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(2)
@@ -3155,7 +2702,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(2, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(0)
@@ -3165,17 +2711,13 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ d c
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
@@ -3195,15 +2737,12 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(3)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0, no_recurse_first=False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ less_obs()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ sto sto
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(1)
@@ -3213,15 +2752,11 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(2, True)
@@ -3242,9 +2777,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, False)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, False)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-3)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_row(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(1)
@@ -3253,7 +2785,6 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-1)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
@@ -3261,14 +2792,10 @@ the_whole_shebang8()
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ a
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(0, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(0)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ pull(-2)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ shift_pistons(0)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ c b
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ row_high(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ full_extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extend(-1, True)
 ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ b
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ extra_pulses(-1, True)
-⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ ⏐ retract(-1)

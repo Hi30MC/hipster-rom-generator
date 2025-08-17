@@ -1,0 +1,6 @@
+complex_nested()
+⏐ Starting complex operation
+⏐ logging_method()
+⏐ ⏐ Inside logging_method
+⏐ Middle of operation
+⏐ Ending complex operation
