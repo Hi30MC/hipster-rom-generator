@@ -34,21 +34,21 @@ class HipSeq789(BasicHip[Move]):
 
     def the_whole_shebang7(self):
         self += wait
-        self._dedent().closing7()
+        self.closing7()
         self += stop
-        self._dedent().opening7()
+        self.opening7()
 
     def the_whole_shebang8(self):
         self += wait
-        self._dedent().closing8()
+        self.closing8()
         self += stop
-        self._dedent().opening8()
+        self.opening8()
 
     def the_whole_shebang9(self):
         self += wait
-        self._dedent().closing9()
+        self.closing9()
         self += stop
-        self._dedent().opening9()
+        self.opening9()
 
     def closing7(self):
         self += [sto, worm, d, d, c, c, b] * 3
@@ -252,7 +252,7 @@ class HipSeq789(BasicHip[Move]):
             return
         if layer >= 0:
             self.more_pistons(layer // 2)
-        self._dedent().row_high(layer)
+        self.row_high(layer)
 
     def row_high(self, layer: int, pistons_high: bool = False):
         """
@@ -260,7 +260,7 @@ class HipSeq789(BasicHip[Move]):
             _P___B -> B_____
         """
         self.full_extend(layer, pistons_high)
-        self._dedent().retract(layer)
+        self.retract(layer)
 
     def full_extend(self, layer: int, pistons_high: bool = False):
         self.extend(layer, pistons_high)
@@ -356,7 +356,7 @@ class HipSeq789(BasicHip[Move]):
         self.pull(layer - 2)
         if layer % 2 == 0:
             self.shift_pistons(layer // 2)
-        self._dedent().row_high(layer - 1, True)
+        self.row_high(layer - 1, True)
 
     def pull(self, layer: int):
         """
@@ -389,13 +389,13 @@ def main():
         door.piston_stack_depth = piston_stack_depth
         getattr(door, method)()
         door._write_sequence(f"door_meta/{seq_path}")
-        door._write_log(f"door_meta/{log_path}")
+        door._write_call_tree(f"door_meta/{log_path}")
 
     for i in (7, 8, 9):
         make_file(
             f"the_whole_shebang{i}",
             f"{i}x{i}hip/sequence.txt",
-            f"{i}x{i}hip/log.txt",
+            f"{i}x{i}hip/call_tree.yaml",
             4 if i == 7 else 5,
         )
 

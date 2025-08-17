@@ -27,9 +27,9 @@ class HipSeq10(BasicHip[Move]):
 
     def the_whole_shebang(self):
         self += wait
-        self._dedent().closing()
+        self.closing()
         self += stop
-        self._dedent().opening()
+        self.opening()
 
     def closing(self):
         self += [sto, b, a, sto, worm, worm, b]
@@ -172,7 +172,7 @@ class HipSeq10(BasicHip[Move]):
             return
         if layer >= 0:
             self.more_pistons(layer // 2)
-        self._dedent().row_high(layer)
+        self.row_high(layer)
 
     def row_high(self, layer: int, pistons_high: bool = False):
         """
@@ -180,7 +180,7 @@ class HipSeq10(BasicHip[Move]):
             _P___B -> B_____
         """
         self.full_extend(layer, pistons_high)
-        self._dedent().retract(layer)
+        self.retract(layer)
 
     def full_extend(self, layer: int, pistons_high: bool = False):
         self.extend(layer, pistons_high)
@@ -276,7 +276,7 @@ class HipSeq10(BasicHip[Move]):
         self.pull(layer - 2)
         if layer % 2 == 0:
             self.shift_pistons(layer // 2)
-        self._dedent().row_high(layer - 1, True)
+        self.row_high(layer - 1, True)
 
     def pull(self, layer: int):
         """
@@ -306,10 +306,10 @@ class HipSeq10(BasicHip[Move]):
 def main():
     # the whole shebang
     door = HipSeq10()
-    door._dedent().the_whole_shebang()
+    door.the_whole_shebang()
     print(len(door.moves))
     door._write_sequence("door_meta/10x10hip/sequence.txt")
-    door._write_log("door_meta/10x10hip/log.txt")
+    door._write_call_tree("door_meta/10x10hip/call_tree.yaml")
 
 
 if __name__ == "__main__":

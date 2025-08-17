@@ -148,7 +148,16 @@ class HipSeq6(BasicHip[Move]):
             case 1, _:
                 self += [bobs, bobs]
             case 2, True:
-                self += [bobs, ssto, bobs, bobs, a, bobs, bobs, bobs] # use this for contained fix
+                self += [
+                    bobs,
+                    ssto,
+                    bobs,
+                    bobs,
+                    a,
+                    bobs,
+                    bobs,
+                    bobs,
+                ]  # use this for contained fix
                 # self += [bobs, ssto, bobs, bobs, a, bobs]
             case 2, False:
                 self += [bobs, a, bobs]
@@ -281,4 +290,4 @@ if __name__ == "__main__":
     door = HipSeq6()
     door.the_whole_shebang()
     door._write_sequence("door_meta/6x6hip/sequence.txt")
-    door._write_log("door_meta/6x6hip/log.txt")
+    door._write_call_tree("door_meta/6x6hip/call_tree")
