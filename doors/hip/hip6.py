@@ -1,35 +1,34 @@
-from enum import Enum
 from doors.hip.basic_hip import BasicHip
+from typing import NewType
 
 
-class Move(Enum):
-    STOP = "stop"
-    WAIT = "wait"
-    A = "a"
-    B = "b"
-    C = "c"
-    D = "d"
-    E = "e"
-    SSTO = "ssto"
-    BOBS = "bobs"
-    WORM = "worm"
-    FOLD = "fold"
+Move = NewType(
+    "Move",
+    str,
+)
 
-
-stop = Move.STOP
-wait = Move.WAIT
-a = Move.A
-b = Move.B
-c = Move.C
-d = Move.D
-e = Move.E
-ssto = Move.SSTO
-bobs = Move.BOBS
-worm = Move.WORM
-fold = Move.FOLD
+stop = Move("stop")
+wait = Move("wait")
+a = Move("a")
+b = Move("b")
+c = Move("c")
+d = Move("d")
+e = Move("e")
+ssto = Move("ssto")
+bobs = Move("bobs")
+worm = Move("worm")
+fold = Move("fold")
 
 
 class HipSeq6(BasicHip[Move]):
+    """
+    Move generator for "standard" 6x6 door.
+    - piston stack 2 blocks under floor, worm storage (Arma 10x10 style)
+    - 2 obs
+    - 1-2 folds in the piston stack
+    - 4th piston stack layer is actually really jank, shifting the whole stack's parity
+    """
+
     piston_stack_depth = 4
     max_obs = 2
 
