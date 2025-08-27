@@ -1,6 +1,9 @@
 E
 E
 BAC
+BAC
 BA
 STO
+A
 BA
+STO

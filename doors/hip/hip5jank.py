@@ -1,66 +1,131 @@
-from typing_extensions import NewType
-from doors.hip.basic_hip import BasicDoor
-from typing import override
+from enum import Enum
 import collections
-
-Move = NewType("Move", str)
-
-A = Move("A")
-BA = Move("BA")
-BAC = Move("BAC")
-OBAC = Move("OBAC")
-FOBAC = Move("FOBAC")
-FOBACW = Move("FOBACW")
-STO = Move("STO")
-E = Move("E")
-WAIT = Move("WAIT")
-STOP = Move("STOP")
+from doors.debug import AutoLog, CallTree
+from doors.hip.basic_hip import write_call_tree, write_sequence
+from typing import NamedTuple
+from typing import Iterable
+from typing import Generator
+from typing import Sequence
 
 
-# pseudo-moves, to assert that a_parity is a specific value
-def up(move: Move) -> Move:
-    return Move(f"up({move})")
+class Move(Enum):
+    A = "A"
+    BA = "BA"
+    BACC = "BAC"
+    FOBAC = "OBAC"
+    FOBACW = "FOBACW"
+    STO = "STO"
+    E = "E"
+    WAIT = "WAIT"
+    STOP = "STOP"
+
+    def __str__(self):
+        return self.value
 
 
-def down(move: Move) -> Move:
-    return Move(f"down({move})")
+A = Move.A
+BA = Move.BA
+STO = Move.STO
+E = Move.E
+WAIT = Move.WAIT
+STOP = Move.STOP
 
 
-class Hip5JankSeq(BasicDoor[Move]):
+class Macro(NamedTuple):
+    name: str
+    moves: tuple[Move, ...]
+
+    def __str__(self):
+        return self.name
+
+
+BACC_0 = Macro("BACC_N", (Move.BACC, Move.WAIT))
+BACC_BA = Macro("BACC_BA", (Move.BACC, Move.BA))
+FOBAC_0 = Macro("FOBAC_N", (Move.FOBAC, Move.WAIT))
+FOBAC_BA = Macro("FOBAC_BA", (Move.FOBAC, Move.BA))
+FOBACW_0 = Macro("FOBACW_N", (Move.FOBACW, Move.WAIT))
+FOBACW_BA = Macro("FOBACW_BA", (Move.FOBACW, Move.BA))
+
+
+class WormState(Enum):
+    Down = 0
+    Up = 1
+    Folded = 2
+
+
+def flatten_moves(elements: Iterable[Move | Macro]) -> Generator[Move]:
+    for element in elements:
+        if isinstance(element, Move):
+            yield element
+        elif isinstance(element, Macro):
+            yield from element.moves
+
+
+class Hip5JankSeq(metaclass=AutoLog):
     def __init__(self):
-        super().__init__()
-        self.a_parity_up = False
-        self.move_count: collections.Counter[Move] = collections.Counter()
+        self.moves: list[Move] = []
+        self.call_tree = CallTree()
+        self.e_empty = False
+        self.worm_state = WormState.Down
 
-    @override
-    def _add(self, *moves: Move):
-        for move in moves:
-            if move.startswith("up"):
-                assert self.a_parity_up
-                move = Move(move[3:-1])
-            elif move.startswith("down"):
-                assert not self.a_parity_up
-                move = Move(move[5:-1])
-            if "A" in move:
-                self.a_parity_up = not self.a_parity_up
-            self.move_count[move] += 1
-            # Put stripped move in sequence
+    def _on_fold(self):
+        match self.e_empty, self.worm_state:
+            case True, WormState.Down:
+                self.worm_state = WormState.Folded
+                self.e_empty = False
+            case (True, WormState.Up) | (True, WormState.Folded):
+                pass
+            case False, WormState.Folded:
+                self.worm_state = WormState.Down
+                self.e_empty = True
+            case (False, WormState.Down) | (False, WormState.Up):
+                raise RuntimeError("Pushing fold into worm")
+
+    def _on_worm(self):
+        match self.worm_state:
+            case WormState.Down:
+                self.worm_state = WormState.Up
+            case WormState.Up:
+                self.worm_state = WormState.Down
+            case WormState.Folded:
+                pass
+
+    def _add(self, *elements: Move | Macro):
+        def pop_wait():
+            if self.moves and self.moves[-1] == Move.WAIT:
+                self.moves.pop()
+
+        for move in flatten_moves(elements):
+            match move:
+                case Move.WAIT:
+                    pop_wait()
+                case Move.E:
+                    self.e_empty = not self.e_empty
+                case Move.FOBAC:
+                    self._on_fold()
+                case Move.FOBACW:
+                    self._on_fold()
+                    self._on_worm()
+
             self.moves.append(move)
-        # Put pseudo-moves in call tree
-        self.call_tree.add_message(" ".join(moves))
+
+        self.call_tree.add_message(" ".join(map(str, elements)))
+
+    def __iadd__(self, other: Sequence[Move | Macro]):
+        self._add(*other)
+        return self
 
     def closing(self):
-        # first move must be E to not break stuff
-        self += [E, E, BAC, BA]
-        self += [STO, down(BA), STO, E]
+        self += []
 
 
 def main():
     door = Hip5JankSeq()
-    door.closing()
-    door._write_sequence("door_meta/5x5hip_jank/sequence.txt")
-    yaml = door._write_call_tree("door_meta/5x5hip_jank/call_tree")
-    print(yaml)
+    try:
+        door.closing()
+    finally:
+        write_sequence(door.moves, "door_meta/5x5hip_jank/sequence.txt")
+        write_call_tree(door.call_tree, "door_meta/5x5hip_jank/call_tree")
 
 
 if __name__ == "__main__":

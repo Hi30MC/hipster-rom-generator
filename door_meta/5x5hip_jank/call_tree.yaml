@@ -1,3 +1,3 @@
 closing():
-- E E BAC BA
-- STO down(BA)
+- E E BAC BAC BA
+- STO A down(BA) STO
