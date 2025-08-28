@@ -193,7 +193,7 @@ class Hip5JankSeq(metaclass=AutoLog):
 
     def row1(self):
         # start with E, because button powers E
-        self += [E, E, A, BACC, BA]
+        self += [E, A, BACC, BA]
         self.ba_sto()
 
     def dpe_retract(self):
