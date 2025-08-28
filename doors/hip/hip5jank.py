@@ -1,13 +1,8 @@
 from enum import Enum
-from typing import Iterable, NamedTuple, Protocol, Sequence, runtime_checkable
+from typing import Iterable
 
 from doors.debug import AutoLog, CallTree, skip_logging
 from doors.hip.basic_hip import write_call_tree, write_sequence
-
-
-@runtime_checkable
-class Macro(Protocol):
-    def moves(self, door: "Hip5JankSeq") -> Sequence["Move"]: ...
 
 
 class Move(Enum):
@@ -24,54 +19,27 @@ class Move(Enum):
     def __str__(self):
         return self.value
 
-    def moves(self, door: "Hip5JankSeq") -> Sequence["Move"]:
-        return (self,)
+    def __iter__(self):
+        return iter([self])
+
+
+Macro = Iterable[Move]
 
 
 A = Move.A
 BA = Move.BA
-STO = Move.STO
+STORAGE = Move.STO
 E = Move.E
 WAIT = Move.WAIT
 STOP = Move.STOP
 
 
-class MultiMove(NamedTuple):
-    name: str
-    the_moves: tuple[Move, ...]
-
-    def moves(self, door: "Hip5JankSeq") -> Sequence[Move]:
-        return self.the_moves
-
-
-BACC = MultiMove("BACC", (Move.BACC, Move.WAIT))
-BAC_BA = MultiMove("BAC_BA", (Move.BACC, Move.BA))
-FOBACC = MultiMove("FOBACC", (Move.FOBACC, Move.WAIT))
-FOBAC_BA = MultiMove("FOBAC_BA", (Move.FOBACC, Move.BA))
-FOBACCW = MultiMove("FOBACCW", (Move.FOBACCW, Move.WAIT))
-FOBACW_BA = MultiMove("FOBACW_BA", (Move.FOBACCW, Move.BA))
-
-
-class MoveAssertA(NamedTuple):
-    move: Move
-    expected_a_up: bool
-
-    def __str__(self):
-        return f"up({self.move})" if self.expected_a_up else f"down({self.move})"
-
-    def moves(self, door: "Hip5JankSeq") -> Sequence[Move]:
-        assert (
-            door.a_sand_high == self.expected_a_up
-        ), f"Expected A to be {'up' if self.expected_a_up else 'down'}"
-        return (self.move,)
-
-
-def up(move: Move):
-    return MoveAssertA(move, True)
-
-
-def down(move: Move):
-    return MoveAssertA(move, False)
+BACC = (Move.BACC, Move.WAIT)
+BAC_BA = (Move.BACC, Move.BA)
+FOBACC = (Move.FOBACC, Move.WAIT)
+FOBAC_BA = (Move.FOBACC, Move.BA)
+FOBACCW = (Move.FOBACCW, Move.WAIT)
+FOBACW_BA = (Move.FOBACCW, Move.BA)
 
 
 class WormState(Enum):
@@ -122,7 +90,7 @@ class Hip5JankSeq(metaclass=AutoLog):
 
         def flatten_moves(elements: Iterable[Macro]) -> Iterable[Move]:
             for element in elements:
-                yield from element.moves(self)
+                yield from element
 
         for move in flatten_moves(elements):
             match move:
@@ -144,8 +112,8 @@ class Hip5JankSeq(metaclass=AutoLog):
 
         self.call_tree.add_message(" ".join(map(str, row_message)))
 
-    def __iadd__(self, other: Sequence[Macro] | Macro):
-        moves = [other] if isinstance(other, Macro) else other
+    def __iadd__(self, other: list[Macro] | Macro):
+        moves = other if isinstance(other, list) else [other]
         self._add(*moves)
         return self
 
@@ -153,10 +121,10 @@ class Hip5JankSeq(metaclass=AutoLog):
         # first move needs to be E, for reasons
         # state after opening: piston right underneath floor
         self += [E, E, BACC, BA]
-        self += [STO, BAC_BA, BAC_BA, STO]
+        self += [STORAGE, BAC_BA, BAC_BA, STORAGE]
         self += [E, BA, FOBACC, BA, FOBACCW, BA, BA, FOBACCW]
         self += [A, E, BA, BACC, BA]
-        self += [STO, BAC_BA, BAC_BA, STO, BAC_BA]
+        self += [STORAGE, BAC_BA, BAC_BA, STORAGE, BAC_BA]
 
     @skip_logging
     def everything(self):
@@ -187,13 +155,13 @@ class Hip5JankSeq(metaclass=AutoLog):
         assert self.moves[-1] == Move.BA
         if not self.a_sand_high:
             # was high, need an extra BA
-            self += [BA, STO]
+            self += [BA, STORAGE]
         else:
-            self += STO
+            self += STORAGE
 
     def row1(self):
         # start with E, because button powers E
-        self += [E, A, BACC, BA]
+        self += [E, E, A, BACC, BA]
         self.ba_sto()
 
     def dpe_retract(self):
@@ -203,8 +171,11 @@ class Hip5JankSeq(metaclass=AutoLog):
     # note: tpe retract is just [FO]BAC_BA
 
     def row2(self):
-        # We can take a shortcut, powering the floor block on row 2, since storage parity dozen matter
-        self += [E, BA, STO, down(BA), STO]
+        # We can take a shortcut, powering the floor block on row 2:
+        # there's no storage block, so we can ignore parity
+        self += [E, BA, STORAGE]
+        assert not self.a_sand_high
+        self += [BA, STORAGE]
         # finish from pull0
         self += BACC
         self.dpe_retract()
@@ -221,7 +192,7 @@ class Hip5JankSeq(metaclass=AutoLog):
         self += [FOBAC_BA, BAC_BA]
         self += [FOBACC, BA, BA, BA, BA]
         if self.e_empty and self.worm_state == WormState.Down:
-            self += [STO, STO, BACC]
+            self += [STORAGE, STORAGE, BACC]
         else:
             self += FOBACC
 
@@ -232,7 +203,7 @@ class Hip5JankSeq(metaclass=AutoLog):
         self += [A, BAC_BA, BA]
         self += [FOBAC_BA, FOBACC, BA, BA]
         if not self.e_empty:
-            self += [STO, STO]
+            self += [STORAGE, STORAGE]
         else:
             self += FOBACC
 
@@ -246,10 +217,12 @@ class Hip5JankSeq(metaclass=AutoLog):
         self.row3_retract()
         self.dpe_retract()
         # ba parity doesn't matter here
-        self += STO
+        self += STORAGE
 
     def row5(self):
-        self += [E, BA, STO, up(BA)]
+        self += [E, BA, STORAGE]
+        assert self.a_sand_high
+        self += BA
         self.row4_obs_or_block(False)
         self.ba_sto()
         # pull 3

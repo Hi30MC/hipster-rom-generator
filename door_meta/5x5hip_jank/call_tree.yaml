@@ -3,7 +3,8 @@
     - E E A BACC WAIT BA
     - STO
   - row2():
-    - E BA STO BA STO
+    - E BA STO
+    - BA STO
     - BACC WAIT
     - dpe_retract():
       - ~~ A BA E BACC WAIT BA
@@ -38,7 +39,8 @@
       - ~~ A BA E BACC WAIT BA
     - STO
   - row5():
-    - E BA STO BA
+    - E BA STO
+    - BA
     - row4_obs_or_block(False):
       - FOBACC BA
       - BACC BA A
