@@ -8,9 +8,7 @@
       "formatter": {
         "external": {
           "command": ".venv/bin/black",
-          "arguments": [
-            "-"
-          ]
+          "arguments": ["-"]
         }
       }
     }

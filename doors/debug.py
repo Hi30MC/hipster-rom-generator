@@ -1,6 +1,8 @@
 import functools
 from typing import Union, NamedTuple
 from typing import Callable
+from typing import cast
+import dataclasses
 
 
 CallNode = Union["MessageNode", "MethodNode"]
@@ -60,10 +62,18 @@ class CallTree:
         return "\n".join(formatter.lines)
 
 
+def skip_logging[T: Callable](func: T) -> T:
+    func._skip_logging = True  # type: ignore
+    return func
+
+
 def log_calls(call_tree_attr: str = "call_tree"):
     """Decorator to log method calls"""
 
-    def decorator(fn: Callable):
+    def decorator[T: Callable](fn: T) -> T:
+        if getattr(fn, "_skip_logging", False):
+            return fn
+
         @functools.wraps(fn)
         def wrapper(self, *args, **kwargs):
             args_list = [str(arg) for arg in args] + [
@@ -80,7 +90,7 @@ def log_calls(call_tree_attr: str = "call_tree"):
 
             return result
 
-        return wrapper
+        return cast(T, wrapper)
 
     return decorator
 
@@ -95,7 +105,8 @@ class AutoLog(type):
         return super().__new__(cls, name, bases, attrs)
 
 
-class FormatOptions(NamedTuple):
+@dataclasses.dataclass
+class FormatOptions:
     indent_str: str = "  "
     method_formatter: Callable[[MethodCall], str | None] = str
     message_formatter: Callable[[str], str] = str
@@ -117,8 +128,6 @@ class FormatOptions(NamedTuple):
             indent_str="  ",
             method_formatter=lambda name: f"- {name}:",
             message_formatter=lambda msg: f"- {msg}",
-            # cut first 2 chars to de-indent
-            line_formatter=lambda msg: msg[2:],
         )
 
 

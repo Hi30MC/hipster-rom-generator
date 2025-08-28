@@ -13,7 +13,9 @@ def write_file(path: str, content: str):
 def write_call_tree(call_tree: CallTree, path: str):
     if not path.endswith(".yaml"):
         path += ".yaml"
-    content = call_tree.to_string(FormatOptions.yaml())
+    options = FormatOptions.yaml()
+    options.skip_empty_methods = True
+    content = call_tree.to_string(options)
     write_file(path, content)
     return content
 

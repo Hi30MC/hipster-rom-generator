@@ -1,0 +1,9 @@
+0 stop
+1 sto
+2 e
+3 wait
+4 a
+5 ba
+6 bacc
+7 fobacc
+10 fobacw

@@ -46,7 +46,7 @@ def parse_encoding(contents: str) -> dict[str, int]:
         if len(line.split()) == 2 and line.split()[1] != ""
     ]
 
-    return {name: int(ss) for ss, name in lines}
+    return {name.lower(): int(ss) for ss, name in lines}
 
 
 def parse_move_list(contents: str) -> list[str]:
@@ -71,6 +71,6 @@ class Sequence:
 def parse_sequence(encoding_file: str, sequence_file: str) -> Sequence:
     key = parse_encoding(encoding_file)
     moves = parse_move_list(sequence_file)
-    ss_list = [key[move] for move in moves]
+    ss_list = [key[move.lower()] for move in moves]
     wait_move = key.get("wait")
     return Sequence(ss_list, wait_move)
