@@ -23,7 +23,7 @@
   - E BA
   - row4_obs_or_block(extra_worm=True):
     - FOBACCW wait
-    - wait ~~ A BACC BA A BACC BA BA BA
+    - wait wait ~~ A BACC BA A BACC BA BA BA
     - OBACC wait
     - E BA
     - row3_pull():
@@ -47,7 +47,7 @@
   - E BA S wait BACC BA A BACC BA BA
   - row4_obs_or_block():
     - OBACC wait
-    - wait ~~ A BACC BA A BACC BA BA BA
+    - wait wait ~~ A BACC BA A BACC BA BA BA
     - FOBACC wait
     - E BA
     - row3_pull():
@@ -60,7 +60,7 @@
   - OBACC BA A BACC BA BA E BACC wait BA
   - row4_obs_or_block():
     - OBACC wait
-    - wait ~~ A BACC BA A BACC BA BA BA
+    - wait wait ~~ A BACC BA A BACC BA BA BA
     - OBACC wait
     - E BA
     - row3_pull():

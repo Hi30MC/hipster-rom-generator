@@ -61,6 +61,7 @@ E
 BA
 FOBACCW
 wait
+wait
 A
 BACC
 BA
@@ -138,6 +139,7 @@ BA
 BA
 OBACC
 wait
+wait
 A
 BACC
 BA
@@ -189,6 +191,7 @@ BACC
 wait
 BA
 OBACC
+wait
 wait
 A
 BACC
