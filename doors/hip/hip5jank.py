@@ -10,6 +10,7 @@ class Move(Enum):
     A = "A"
     BA = "BA"
     BACC = "BACC"
+    OBACC = "OBACC"
     FOBACC = "FOBACC"
     FOBACCW = "FOBACCW"
     S = "S"
@@ -38,13 +39,17 @@ SS = (Move.S, Move.S, Move.WAIT)
 A = Move.A
 BA = Move.BA
 BACC = (Move.BACC, Move.WAIT)
-BAC_BA = (Move.BACC, Move.BA)
+BAC_BCA = (Move.BACC, Move.BA)
+
+
+OBACC = (Move.OBACC, Move.WAIT)
+OBAC_BCA = (Move.OBACC, Move.BA)
 
 FOBACC = (Move.FOBACC, Move.WAIT)
-FOBAC_BA = (Move.FOBACC, Move.BA)
+# FOBAC_BA = (Move.FOBACC, Move.BA)
 
 FOBACCW = (Move.FOBACCW, Move.WAIT)
-FOBACW_BA = (Move.FOBACCW, Move.BA)
+# FOBACW_BA = (Move.FOBACCW, Move.BA)
 
 
 class WormState(Enum):
@@ -57,10 +62,6 @@ def low(door: "Hip5JankSeq"):
     assert not door.a_sand_high
 
 
-def high(door: "Hip5JankSeq"):
-    assert door.a_sand_high
-
-
 def e_empty(door: "Hip5JankSeq"):
     assert door.e_empty
 
@@ -70,7 +71,7 @@ def e_full(door: "Hip5JankSeq"):
 
 
 class Hip5JankSeq(metaclass=AutoLog):
-    initial_a_sand_high = False
+    initial_a_sand_high = True
 
     def __init__(self):
         self.moves: list[Move] = []
@@ -141,14 +142,9 @@ class Hip5JankSeq(metaclass=AutoLog):
         self._add(*moves)
         return self
 
-    def closing(self):
-        # first move needs to be E, for reasons
-        # state after opening: piston right underneath floor
-        self += [E, E, BACC, BA]
-        self += [S, BAC_BA, BAC_BA, S]
-        self += [E, BA, FOBACC, BA, FOBACCW, BA, BA, FOBACCW]
-        self += [A, E, BA, BACC, BA]
-        self += [S, BAC_BA, BAC_BA, S, BAC_BA]
+    def assert_retracted_state(self):
+        assert not self.e_empty
+        assert self.worm_state == WormState.Down
 
     @skip_logging
     def everything(self):
@@ -163,9 +159,13 @@ class Hip5JankSeq(metaclass=AutoLog):
         self.assert_retracted_state()
         assert self.a_sand_high == self.initial_a_sand_high
 
-    def assert_retracted_state(self):
-        assert not self.e_empty
-        assert self.worm_state == WormState.Down
+    def closing(self):
+        # state after opening: piston right underneath floor
+        self += [BAC_BCA, BA]
+        self += [S, BAC_BCA, A, BAC_BCA, BA]
+        self += [S, E, BA, FOBACCW, BA, FOBACCW, BA, BA, FOBACCW]
+        self += [A, A, E, BA, BACC, BA]
+        self += [S, BAC_BCA, A, BAC_BCA, BA, S, BAC_BCA]
 
     @skip_logging
     def opening(self):
@@ -177,81 +177,73 @@ class Hip5JankSeq(metaclass=AutoLog):
         self.row4()
         self.assert_retracted_state()
         self.row5()
-        self.assert_retracted_state()
-
-    def ba_sto(self):
-        assert self.moves[-1] == Move.BA
-        if not self.a_sand_high:
-            # was high, need an extra BA
-            self += [BA, S]
-        else:
-            self += S
-
-    def row1(self):
-        # start with E, because button powers E
-        self += [E, E, A, BACC, low, BA]
-        self.ba_sto()
 
     def dpe_retract(self):
         self += [A, BA, e_empty, E, BACC, BA]
 
-    # note: tpe retract is just [FO]BAC_BA
+    def row1(self):
+        self += [E, E, A, BACC, BA, S, A]
 
     def row2(self):
         # We can take a shortcut, powering the floor block on row 2:
-        # there's no storage block, so we can ignore parity
+        # so we
         self += [E, BA, S, low, BA, S]
-        # finish from pull0
         self += BACC
         self.dpe_retract()
-        self.ba_sto()
+        self += S
 
     def row3(self):
         self += [E, BA]
-        self.row3_retract()
+        self.row3_high()
+
+    def row3_high(self, extra_fold=False):
+        self.row3_retract(extra_fold)
         self.dpe_retract()
-        self.ba_sto()
+        self += S
 
-    def row3_retract(self):
-        self += [FOBAC_BA, A, BA, BA]
-        self += [FOBAC_BA, BAC_BA]
-        self += [FOBACC, BA, BA, BA, BA]
-        if self.e_empty and self.worm_state == WormState.Down:
-            self += [SS, BACC]
-        else:
+    def row3_pull(self):
+        self += [OBACC, BA, BA, OBACC, A, BA]  # parity fix
+        self += [OBACC, BA, BA, BA, BA, OBACC]
+
+    def row3_retract(self, extra_fold=False):
+        if extra_fold:
             self += FOBACC
-
-    def row4_obs_or_block(self, pistons_high):
-        self += FOBAC_BA
-        if not pistons_high:
-            self += [BAC_BA, A]
-        self += [A, BAC_BA, BA]
-        self += [FOBAC_BA, FOBACC, BA, BA]
-        if not self.e_empty:
-            self += SS
         else:
-            self += FOBACC
+            self += OBACC
+        self += [A, A, BA, BA]
+        self += [OBAC_BCA, A, BAC_BCA, BA]
+        self.row3_pull()
 
-        self += [e_full, E, BACC]
+    def row4_obs_or_block(self, extra_worm=False):
+        if extra_worm:
+            assert self.e_empty, "Extra worm needs e_empty"
+            self += FOBACCW
+        else:
+            self += OBACC
+        self += [BA, BAC_BCA, BAC_BCA, BA, BA]
+
+        if self.e_empty:
+            self += FOBACC
+        else:
+            self += OBACC
+        self += [e_full, E, BA, OBACC]
+        self.row3_pull()
         self.dpe_retract()
 
     def row4(self):
         self += [E, BA]
-        self.row4_obs_or_block(False)
-        self.row3_retract()
-        self.dpe_retract()
-        # ba parity doesn't matter here
-        self += S
+        self.row4_obs_or_block(extra_worm=True)
+        self.row3_high(extra_fold=True)
 
     def row5(self):
-        self += [E, BA, S, high, BA]
-        self.row4_obs_or_block(False)
-        self.ba_sto()
+        self += [E, BA, S, BAC_BCA, A, BAC_BCA, BA]
+        self.row4_obs_or_block()
+        self += S
         # pull 3
-        self += [E, BA, FOBAC_BA, A, BA, BA]
-        self += [FOBAC_BA, BAC_BA, E, BACC, BA]
-        self.row4_obs_or_block(True)
-        self.row3_retract()
+        self += [E, BA, OBACC, A, BA, BA]
+        self += [OBAC_BCA, A, BAC_BCA, BA, E, BACC, BA]
+        self.row4_obs_or_block()
+        self.row3_retract(extra_fold=True)
         self += [A, e_empty, E, BACC]
 
 
@@ -259,8 +251,8 @@ def main():
     door = Hip5JankSeq()
     try:
         door.everything()
-    except Exception as e:
-        print(f"An error occurred: {e}")
+    # except Exception as e:
+    #     print(f"An error occurred: {e}")
     finally:
         write_sequence(door.moves, "door_meta/5x5hip_jank/sequence.txt")
         write_call_tree(door.call_tree, "door_meta/5x5hip_jank/call_tree")
