@@ -223,7 +223,7 @@ class Hip5JankSeq(metaclass=AutoLog):
             self += FOBACCW
         else:
             self += OBACC
-        self += [WAIT, WAIT, A, BAC_BCA, A, BAC_BCA, BA, BA]
+        self += [WAIT, A, BAC_BCA, A, BAC_BCA, BA, BA]
         if self.e_empty:
             self += FOBACC
         else:
@@ -266,5 +266,5 @@ def main(method="everything", out_file="sequence.txt"):
 
 
 if __name__ == "__main__":
-    main(method="everything")
+    main(method="row4")
     # main(method="row4")
