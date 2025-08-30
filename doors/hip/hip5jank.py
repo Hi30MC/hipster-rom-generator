@@ -11,10 +11,10 @@ class Move(Enum):
     BACC = "BACC"
     FOBACC = "FOBACC"
     FOBACCW = "FOBACCW"
-    STO = "STO"
+    S = "S"
     E = "E"
-    WAIT = "WAIT"
-    STOP = "STOP"
+    WAIT = "wait"
+    HALT = "halt"
 
     def __str__(self):
         return self.value
@@ -26,18 +26,21 @@ class Move(Enum):
 Macro = Iterable[Move]
 
 
+WAIT = Move.WAIT
+HALT = Move.HALT
+
+E = Move.E
+S = (Move.S, Move.WAIT)
+SS = (Move.S, Move.S, Move.WAIT)
+
 A = Move.A
 BA = Move.BA
-STORAGE = Move.STO
-E = Move.E
-WAIT = Move.WAIT
-STOP = Move.STOP
-
-
 BACC = (Move.BACC, Move.WAIT)
 BAC_BA = (Move.BACC, Move.BA)
+
 FOBACC = (Move.FOBACC, Move.WAIT)
 FOBAC_BA = (Move.FOBACC, Move.BA)
+
 FOBACCW = (Move.FOBACCW, Move.WAIT)
 FOBACW_BA = (Move.FOBACCW, Move.BA)
 
@@ -49,7 +52,7 @@ class WormState(Enum):
 
 
 class Hip5JankSeq(metaclass=AutoLog):
-    initial_a_sand_high = True
+    initial_a_sand_high = False
 
     def __init__(self):
         self.moves: list[Move] = []
@@ -94,7 +97,7 @@ class Hip5JankSeq(metaclass=AutoLog):
 
         for move in flatten_moves(elements):
             match move:
-                case Move.A:
+                case Move.A | Move.S:
                     pop_wait()
                 case Move.E:
                     self.e_empty = not self.e_empty
@@ -121,24 +124,29 @@ class Hip5JankSeq(metaclass=AutoLog):
         # first move needs to be E, for reasons
         # state after opening: piston right underneath floor
         self += [E, E, BACC, BA]
-        self += [STORAGE, BAC_BA, BAC_BA, STORAGE]
+        self += [S, BAC_BA, BAC_BA, S]
         self += [E, BA, FOBACC, BA, FOBACCW, BA, BA, FOBACCW]
         self += [A, E, BA, BACC, BA]
-        self += [STORAGE, BAC_BA, BAC_BA, STORAGE, BAC_BA]
+        self += [S, BAC_BA, BAC_BA, S, BAC_BA]
 
     @skip_logging
     def everything(self):
-        self.opening()
-        self += STOP
-        self.closing()
-        self += STOP
+        self.assert_retracted_state()
+        assert self.a_sand_high == self.initial_a_sand_high
 
+        self.opening()
+        self += HALT
+        self.closing()
+        self += HALT
+
+        self.assert_retracted_state()
         assert self.a_sand_high == self.initial_a_sand_high
 
     def assert_retracted_state(self):
         assert not self.e_empty
         assert self.worm_state == WormState.Down
 
+    @skip_logging
     def opening(self):
         self.row1()
         self.row2()
@@ -150,18 +158,19 @@ class Hip5JankSeq(metaclass=AutoLog):
         self.row5()
         self.assert_retracted_state()
 
-    @skip_logging
     def ba_sto(self):
         assert self.moves[-1] == Move.BA
         if not self.a_sand_high:
             # was high, need an extra BA
-            self += [BA, STORAGE]
+            self += [BA, S]
         else:
-            self += STORAGE
+            self += S
 
     def row1(self):
         # start with E, because button powers E
-        self += [E, E, A, BACC, BA]
+        self += [E, E, A, BACC]
+        assert not self.a_sand_high
+        self += [BA]
         self.ba_sto()
 
     def dpe_retract(self):
@@ -173,9 +182,9 @@ class Hip5JankSeq(metaclass=AutoLog):
     def row2(self):
         # We can take a shortcut, powering the floor block on row 2:
         # there's no storage block, so we can ignore parity
-        self += [E, BA, STORAGE]
+        self += [E, BA, S]
         assert not self.a_sand_high
-        self += [BA, STORAGE]
+        self += [BA, S]
         # finish from pull0
         self += BACC
         self.dpe_retract()
@@ -192,7 +201,7 @@ class Hip5JankSeq(metaclass=AutoLog):
         self += [FOBAC_BA, BAC_BA]
         self += [FOBACC, BA, BA, BA, BA]
         if self.e_empty and self.worm_state == WormState.Down:
-            self += [STORAGE, STORAGE, BACC]
+            self += [SS, BACC]
         else:
             self += FOBACC
 
@@ -203,7 +212,7 @@ class Hip5JankSeq(metaclass=AutoLog):
         self += [A, BAC_BA, BA]
         self += [FOBAC_BA, FOBACC, BA, BA]
         if not self.e_empty:
-            self += [STORAGE, STORAGE]
+            self += SS
         else:
             self += FOBACC
 
@@ -217,10 +226,10 @@ class Hip5JankSeq(metaclass=AutoLog):
         self.row3_retract()
         self.dpe_retract()
         # ba parity doesn't matter here
-        self += STORAGE
+        self += S
 
     def row5(self):
-        self += [E, BA, STORAGE]
+        self += [E, BA, S]
         assert self.a_sand_high
         self += BA
         self.row4_obs_or_block(False)
@@ -238,6 +247,8 @@ def main():
     door = Hip5JankSeq()
     try:
         door.everything()
+    except Exception as e:
+        print(f"An error occurred: {e}")
     finally:
         write_sequence(door.moves, "door_meta/5x5hip_jank/sequence.txt")
         write_call_tree(door.call_tree, "door_meta/5x5hip_jank/call_tree")
