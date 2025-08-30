@@ -28,7 +28,7 @@ def main(info_dir: str, out_path: str | None):
     else:
         resolved_info_dir = f"door_meta/{info_dir}"
 
-    door_name = path.dirname(resolved_info_dir)
+    door_name = path.basename(resolved_info_dir)
 
     if out_path is None:
         out_path = door_name
