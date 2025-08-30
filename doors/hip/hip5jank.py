@@ -220,8 +220,7 @@ class Hip5JankSeq(metaclass=AutoLog):
             self += FOBACCW
         else:
             self += OBACC
-        self += [BA, BAC_BCA, BAC_BCA, BA, BA]
-
+        self += [A, BAC_BCA, A, BAC_BCA, BA, BA]
         if self.e_empty:
             self += FOBACC
         else:
@@ -234,7 +233,6 @@ class Hip5JankSeq(metaclass=AutoLog):
         self += [E, BA]
         self.row4_obs_or_block(extra_worm=True)
         self.row3_high(extra_fold=True)
-        self += A  # sand parity fix
 
     def row5(self):
         self += [E, BA, S, BAC_BCA, A, BAC_BCA, BA]
@@ -248,17 +246,18 @@ class Hip5JankSeq(metaclass=AutoLog):
         self += [A, e_empty, E, BACC]
 
 
-def main():
+def main(method="everything", out_file="sequence.txt"):
     door = Hip5JankSeq()
     try:
-        door.everything()
-    # except Exception as e:
-    #     print(f"An error occurred: {e}")
+        getattr(door, method)()
+    except Exception as e:
+        print("An error occurred:", e)
     finally:
-        write_sequence(door.moves, "door_meta/5x5hip_jank/sequence.txt")
-        write_call_tree(door.call_tree, "door_meta/5x5hip_jank/call_tree")
+        write_sequence(door.moves, f"door_meta/5x5hip_jank/{out_file}")
+        write_call_tree(door.call_tree, f"door_meta/5x5hip_jank/call_tree_{method}")
     print("Done")
 
 
 if __name__ == "__main__":
-    main()
+    main(method="everything")
+    # main(method="row4")

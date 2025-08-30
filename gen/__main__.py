@@ -11,28 +11,29 @@ def read_file(path: str) -> str:
 
 
 @click.command()
-@click.argument("door_name")
+@click.argument("info_dir")
 @click.argument("schem_file_name", required=False)
-def main(door_name: str, schem_file_name: str | None):
+def main(info_dir: str, schem_file_name: str | None):
     """
     Generate ROM from door information.
 
     \b
     INFO_DIR: Directory containing door information files
     OUT_PATH: Path to output file. Default: output_schematics/{door_name}/{door_name}.schem
+
     If OUT_PATH does not contain a file separator, the folder will be output_schematics/{door_name}.
     """
 
-    if path.pathsep in door_name:
-        info_dir = door_name
+    if path.pathsep in info_dir:
+        info_dir = info_dir
     else:
-        info_dir = f"door_meta/{door_name}"
+        info_dir = f"door_meta/{info_dir}"
 
     if schem_file_name is None:
-        schem_file_name = f"output_schematics/{door_name}/{door_name}.schem"
+        schem_file_name = f"output_schematics/{info_dir}/{info_dir}.schem"
     else:
         if path.pathsep not in schem_file_name:
-            schem_file_name = f"output_schematics/{door_name}/{schem_file_name}"
+            schem_file_name = f"output_schematics/{info_dir}/{schem_file_name}"
 
     sequence = parse_sequence(
         encoding_file=read_file(path.join(info_dir, "key.txt")),
