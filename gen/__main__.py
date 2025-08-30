@@ -12,43 +12,44 @@ def read_file(path: str) -> str:
 
 @click.command()
 @click.argument("info_dir")
-@click.argument("schem_file_name", required=False)
-def main(info_dir: str, schem_file_name: str | None):
+@click.argument("out_path", required=False)
+def main(info_dir: str, out_path: str | None):
     """
     Generate ROM from door information.
 
     \b
     INFO_DIR: Directory containing door information files
     OUT_PATH: Path to output file. Default: output_schematics/{door_name}/{door_name}.schem
-
     If OUT_PATH does not contain a file separator, the folder will be output_schematics/{door_name}.
     """
 
     if path.pathsep in info_dir:
-        info_dir = info_dir
+        resolved_info_dir = info_dir
     else:
-        info_dir = f"door_meta/{info_dir}"
+        resolved_info_dir = f"door_meta/{info_dir}"
 
-    if schem_file_name is None:
-        schem_file_name = f"output_schematics/{info_dir}/{info_dir}.schem"
-    else:
-        if path.pathsep not in schem_file_name:
-            schem_file_name = f"output_schematics/{info_dir}/{schem_file_name}"
+    door_name = path.dirname(resolved_info_dir)
+
+    if out_path is None:
+        out_path = door_name
+
+    if path.pathsep not in out_path:
+        out_path = f"output_schematics/{door_name}/{out_path}"
 
     sequence = parse_sequence(
-        encoding_file=read_file(path.join(info_dir, "key.txt")),
-        sequence_file=read_file(path.join(info_dir, "sequence.txt")),
+        encoding_file=read_file(path.join(resolved_info_dir, "key.txt")),
+        sequence_file=read_file(path.join(resolved_info_dir, "sequence.txt")),
     )
-    params = parse_params(read_file(path.join(info_dir, "params.json")))
+    params = parse_params(read_file(path.join(resolved_info_dir, "params.json")))
     schem = gen_rom(sequence, params)
 
-    if not schem_file_name.endswith(".schem"):
-        schem_file_name += ".schem"
+    if not out_path.endswith(".schem"):
+        out_path += ".schem"
     import os
 
-    os.makedirs(path.dirname(schem_file_name), exist_ok=True)
-    schem.save(schem_file_name)
-    print("Wrote file to", os.path.abspath(schem_file_name))
+    os.makedirs(path.dirname(out_path), exist_ok=True)
+    schem.save(out_path)
+    print("Wrote file to", os.path.abspath(out_path))
 
 
 if __name__ == "__main__":
