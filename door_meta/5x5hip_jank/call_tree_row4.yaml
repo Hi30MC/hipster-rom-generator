@@ -2,9 +2,9 @@
   - E BA
   - row4_obs_or_block(extra_worm=True):
     - FOBACCW wait
-    - BA BACC BA BACC BA BA BA
+    - wait ~~ A BACC BA A BACC BA BA BA
     - OBACC wait
-    - E BA OBACC wait
+    - E BA
     - row3_pull():
       - OBACC wait BA BA OBACC wait ~~ A BA
       - OBACC wait BA BA BA BA OBACC wait
@@ -21,4 +21,3 @@
     - dpe_retract():
       - ~~ A BA E BACC wait BA
     - S wait
-  - ~~ A

@@ -60,6 +60,7 @@ wait
 E
 BA
 FOBACCW
+wait
 A
 BACC
 BA
@@ -72,8 +73,6 @@ OBACC
 wait
 E
 BA
-OBACC
-wait
 OBACC
 wait
 BA
@@ -126,7 +125,7 @@ BACC
 wait
 BA
 S
-wait
+A
 E
 BA
 S
@@ -138,6 +137,7 @@ BACC
 BA
 BA
 OBACC
+wait
 A
 BACC
 BA
@@ -152,8 +152,6 @@ E
 BA
 OBACC
 wait
-OBACC
-wait
 BA
 BA
 OBACC
@@ -191,6 +189,7 @@ BACC
 wait
 BA
 OBACC
+wait
 A
 BACC
 BA
@@ -203,8 +202,6 @@ OBACC
 wait
 E
 BA
-OBACC
-wait
 OBACC
 wait
 BA
