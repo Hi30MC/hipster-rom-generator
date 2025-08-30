@@ -5,14 +5,14 @@ BACC
 wait
 BA
 S
-A
+wait
 E
 BA
 S
 wait
 BA
 S
-wait
+A
 BACC
 A
 BA
