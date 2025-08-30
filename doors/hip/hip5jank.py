@@ -215,12 +215,15 @@ class Hip5JankSeq(metaclass=AutoLog):
         self.row3_pull()
 
     def row4_obs_or_block(self, extra_worm=False):
+        if not self.a_sand_high:
+            self += A
+
         if extra_worm:
             assert self.e_empty, "Extra worm needs e_empty"
             self += FOBACCW
         else:
             self += OBACC
-        self += [WAIT, A, BAC_BCA, A, BAC_BCA, BA, BA]
+        self += [WAIT, WAIT, A, BAC_BCA, A, BAC_BCA, BA, BA]
         if self.e_empty:
             self += FOBACC
         else:
