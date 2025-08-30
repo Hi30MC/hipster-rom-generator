@@ -12,7 +12,7 @@ S
 wait
 BA
 S
-A
+wait
 BACC
 A
 BA
@@ -126,7 +126,7 @@ BACC
 wait
 BA
 S
-wait
+A
 E
 BA
 S

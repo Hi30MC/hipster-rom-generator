@@ -187,7 +187,7 @@ class Hip5JankSeq(metaclass=AutoLog):
     def row2(self):
         # We can take a shortcut, powering the floor block on row 2:
         # so we
-        self += [E, BA, S, low, BA, S, A]
+        self += [E, BA, S, low, BA, S]
         self += BACC
         self.dpe_retract()
         self += S
@@ -202,7 +202,7 @@ class Hip5JankSeq(metaclass=AutoLog):
         self += S
 
     def row3_pull(self):
-        self += [OBACC, BA, BA, OBACC, A, BA]  # parity fix
+        self += [OBACC, BA, BA, OBACC, A, BA]  # piston parity fix
         self += [OBACC, BA, BA, BA, BA, OBACC]
 
     def row3_retract(self, extra_fold=False):
@@ -234,6 +234,7 @@ class Hip5JankSeq(metaclass=AutoLog):
         self += [E, BA]
         self.row4_obs_or_block(extra_worm=True)
         self.row3_high(extra_fold=True)
+        self += A  # sand parity fix
 
     def row5(self):
         self += [E, BA, S, BAC_BCA, A, BAC_BCA, BA]
