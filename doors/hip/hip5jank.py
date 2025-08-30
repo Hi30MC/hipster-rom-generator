@@ -3,6 +3,7 @@ from typing import Iterable
 
 from doors.debug import AutoLog, CallTree, skip_logging
 from doors.hip.basic_hip import write_call_tree, write_sequence
+from typing import Callable
 
 
 class Move(Enum):
@@ -23,7 +24,8 @@ class Move(Enum):
         return iter([self])
 
 
-Macro = Iterable[Move]
+Moves = Iterable[Move]
+Macro = Iterable[Move] | Callable[["Hip5JankSeq"], None]
 
 
 WAIT = Move.WAIT
@@ -51,6 +53,22 @@ class WormState(Enum):
     Folded = 2
 
 
+def low(door: "Hip5JankSeq"):
+    assert not door.a_sand_high
+
+
+def high(door: "Hip5JankSeq"):
+    assert door.a_sand_high
+
+
+def e_empty(door: "Hip5JankSeq"):
+    assert door.e_empty
+
+
+def e_full(door: "Hip5JankSeq"):
+    assert not door.e_empty
+
+
 class Hip5JankSeq(metaclass=AutoLog):
     initial_a_sand_high = False
 
@@ -72,7 +90,7 @@ class Hip5JankSeq(metaclass=AutoLog):
                 self.worm_state = WormState.Down
                 self.e_empty = True
             case (False, WormState.Down) | (False, WormState.Up):
-                raise RuntimeError("Pushing fold into worm")
+                assert 0, "Pushing fold into worm"
 
     def _on_worm(self):
         match self.worm_state:
@@ -93,7 +111,10 @@ class Hip5JankSeq(metaclass=AutoLog):
 
         def flatten_moves(elements: Iterable[Macro]) -> Iterable[Move]:
             for element in elements:
-                yield from element
+                if callable(element):
+                    element(self)
+                else:
+                    yield from element
 
         for move in flatten_moves(elements):
             match move:
@@ -168,23 +189,18 @@ class Hip5JankSeq(metaclass=AutoLog):
 
     def row1(self):
         # start with E, because button powers E
-        self += [E, E, A, BACC]
-        assert not self.a_sand_high
-        self += [BA]
+        self += [E, E, A, BACC, low, BA]
         self.ba_sto()
 
     def dpe_retract(self):
-        assert self.e_empty
-        self += [A, BA, E, BACC, BA]
+        self += [A, BA, e_empty, E, BACC, BA]
 
     # note: tpe retract is just [FO]BAC_BA
 
     def row2(self):
         # We can take a shortcut, powering the floor block on row 2:
         # there's no storage block, so we can ignore parity
-        self += [E, BA, S]
-        assert not self.a_sand_high
-        self += [BA, S]
+        self += [E, BA, S, low, BA, S]
         # finish from pull0
         self += BACC
         self.dpe_retract()
@@ -216,8 +232,7 @@ class Hip5JankSeq(metaclass=AutoLog):
         else:
             self += FOBACC
 
-        assert not self.e_empty
-        self += [E, BACC]
+        self += [e_full, E, BACC]
         self.dpe_retract()
 
     def row4(self):
@@ -229,9 +244,7 @@ class Hip5JankSeq(metaclass=AutoLog):
         self += S
 
     def row5(self):
-        self += [E, BA, S]
-        assert self.a_sand_high
-        self += BA
+        self += [E, BA, S, high, BA]
         self.row4_obs_or_block(False)
         self.ba_sto()
         # pull 3
@@ -239,8 +252,7 @@ class Hip5JankSeq(metaclass=AutoLog):
         self += [FOBAC_BA, BAC_BA, E, BACC, BA]
         self.row4_obs_or_block(True)
         self.row3_retract()
-        assert self.e_empty
-        self += [A, E, BACC]
+        self += [A, e_empty, E, BACC]
 
 
 def main():
