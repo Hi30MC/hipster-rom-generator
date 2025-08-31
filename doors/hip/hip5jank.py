@@ -211,7 +211,7 @@ class Hip5JankSeq(metaclass=AutoLog):
         else:
             self += FOBACC
 
-        self += [A, A, BA, BA]
+        self += [WAIT, A, A, BA, BA]
 
         if is_special:
             self += FOBAC_BCA

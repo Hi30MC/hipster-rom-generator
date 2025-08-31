@@ -11,7 +11,7 @@
   - row3_high(True):
     - row3_retract(True):
       - FOBACCW wait
-      - ~~ A A BA BA
+      - wait ~~ A A BA BA
       - FOBACC BA
       - A BACC BA BA
       - row3_pull():
@@ -34,7 +34,7 @@
   - row3_high():
     - row3_retract(False):
       - FOBACC wait
-      - ~~ A A BA BA
+      - wait ~~ A A BA BA
       - OBACC BA
       - A BACC BA BA
       - row3_pull():
@@ -69,7 +69,7 @@
       - ~~ A BA E BACC wait BA
   - row3_retract():
     - FOBACC wait
-    - ~~ A A BA BA
+    - wait ~~ A A BA BA
     - OBACC BA
     - A BACC BA BA
     - row3_pull():
