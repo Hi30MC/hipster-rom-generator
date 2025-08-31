@@ -1,20 +1,20 @@
 - row4():
   - E BA
-  - row4_obs_or_block(extra_worm=True):
-    - FOBACCW wait
-    - wait ~~ A BACC BA A BACC BA BA BA
-    - OBACC wait
+  - row4_obs_or_block():
+    - OBACC wait wait ~~ A BACC BA A BACC BA BA BA
+    - FOBACC wait
     - E BA
     - row3_pull():
       - OBACC wait BA BA OBACC wait ~~ A BA
       - OBACC wait BA BA BA BA OBACC wait
     - dpe_retract():
       - ~~ A BA E BACC wait BA
-  - row3_high(extra_fold=True):
-    - row3_retract(True):
+  - row3_high():
+    - row3_retract(False):
       - FOBACC wait
       - ~~ A A BA BA
-      - OBACC BA A BACC BA BA
+      - OBACC BA
+      - A BACC BA BA
       - row3_pull():
         - OBACC wait BA BA OBACC wait ~~ A BA
         - OBACC wait BA BA BA BA OBACC wait

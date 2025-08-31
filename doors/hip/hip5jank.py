@@ -46,7 +46,7 @@ OBACC = (Move.OBACC, Move.WAIT)
 OBAC_BCA = (Move.OBACC, Move.BA)
 
 FOBACC = (Move.FOBACC, Move.WAIT)
-# FOBAC_BA = (Move.FOBACC, Move.BA)
+FOBAC_BCA = (Move.FOBACC, Move.BA)
 
 FOBACCW = (Move.FOBACCW, Move.WAIT)
 # FOBACW_BA = (Move.FOBACCW, Move.BA)
@@ -194,10 +194,10 @@ class Hip5JankSeq(metaclass=AutoLog):
 
     def row3(self):
         self += [E, BA]
-        self.row3_high()
+        self.row3_high(True)
 
-    def row3_high(self, extra_fold=False):
-        self.row3_retract(extra_fold)
+    def row3_high(self, is_special=False):
+        self.row3_retract(is_special)
         self.dpe_retract()
         self += S
 
@@ -205,25 +205,23 @@ class Hip5JankSeq(metaclass=AutoLog):
         self += [OBACC, BA, BA, OBACC, A, BA]  # piston parity fix
         self += [OBACC, BA, BA, BA, BA, OBACC]
 
-    def row3_retract(self, extra_fold=False):
-        if extra_fold:
-            self += FOBACC
-        else:
-            self += OBACC
-        self += [A, A, BA, BA]
-        self += [OBAC_BCA, A, BAC_BCA, BA]
-        self.row3_pull()
-
-    def row4_obs_or_block(self, extra_worm=False):
-        if not self.a_sand_high:
-            self += A
-
-        if extra_worm:
-            assert self.e_empty, "Extra worm needs e_empty"
+    def row3_retract(self, is_special: bool = False):
+        if is_special:
             self += FOBACCW
         else:
-            self += OBACC
-        self += [WAIT, A, BAC_BCA, A, BAC_BCA, BA, BA]
+            self += FOBACC
+
+        self += [A, A, BA, BA]
+
+        if is_special:
+            self += FOBAC_BCA
+        else:
+            self += OBAC_BCA
+        self += [A, BAC_BCA, BA]
+        self.row3_pull()
+
+    def row4_obs_or_block(self):
+        self += [OBACC, WAIT, A, BAC_BCA, A, BAC_BCA, BA, BA]
         if self.e_empty:
             self += FOBACC
         else:
@@ -234,8 +232,8 @@ class Hip5JankSeq(metaclass=AutoLog):
 
     def row4(self):
         self += [E, BA]
-        self.row4_obs_or_block(extra_worm=True)
-        self.row3_high(extra_fold=True)
+        self.row4_obs_or_block()
+        self.row3_high()
         self += A  # sand parity fix
 
     def row5(self):
@@ -246,7 +244,7 @@ class Hip5JankSeq(metaclass=AutoLog):
         self += [E, BA, OBACC, A, BA, BA]
         self += [OBAC_BCA, A, BAC_BCA, BA, E, BACC, BA]
         self.row4_obs_or_block()
-        self.row3_retract(extra_fold=True)
+        self.row3_retract()
         self += [A, e_empty, E, BACC]
 
 
@@ -266,5 +264,5 @@ def main(method="everything", out_file="sequence.txt"):
 
 
 if __name__ == "__main__":
-    main(method="row4")
+    main(method="everything")
     # main(method="row4")
