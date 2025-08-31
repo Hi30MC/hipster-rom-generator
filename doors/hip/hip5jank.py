@@ -59,10 +59,6 @@ class WormState(Enum):
     Folded = 2
 
 
-def low(door: "Hip5JankSeq"):
-    assert not door.a_sand_high
-
-
 def e_empty(door: "Hip5JankSeq"):
     assert door.e_empty
 
@@ -72,14 +68,11 @@ def e_full(door: "Hip5JankSeq"):
 
 
 class Hip5JankSeq(metaclass=AutoLog):
-    initial_a_sand_high = False
-
     def __init__(self):
         self.moves: list[Move] = []
         self.call_tree = CallTree()
         self.e_empty = False
         self.worm_state = WormState.Down
-        self.a_sand_high = self.initial_a_sand_high
 
     def _on_fold(self):
         match self.e_empty, self.worm_state:
@@ -130,9 +123,6 @@ class Hip5JankSeq(metaclass=AutoLog):
                     self._on_fold()
                     self._on_worm()
 
-            if "A" in move.value:
-                self.a_sand_high = not self.a_sand_high
-
             self.moves.append(move)
             row_message.append(move)
 
@@ -150,7 +140,6 @@ class Hip5JankSeq(metaclass=AutoLog):
     @skip_logging
     def everything(self):
         self.assert_retracted_state()
-        assert self.a_sand_high == self.initial_a_sand_high
 
         self.opening()
         self += HALT
@@ -158,7 +147,6 @@ class Hip5JankSeq(metaclass=AutoLog):
         self += HALT
 
         self.assert_retracted_state()
-        assert self.a_sand_high == self.initial_a_sand_high
 
     def closing(self):
         # state after opening: piston right underneath floor
@@ -169,7 +157,7 @@ class Hip5JankSeq(metaclass=AutoLog):
         self += [S, BAC_BCA]
         self += [E, FOBACCW, BA, BA, FOBACC]
         self += [A, A, E, BA, BACC, BA]
-        self += [S, BAC_BCA]
+        self += [S, A, BAC_BCA]
 
     @skip_logging
     def opening(self):
@@ -186,12 +174,12 @@ class Hip5JankSeq(metaclass=AutoLog):
         self += [A, BA, e_empty, E, BACC, BA]
 
     def row1(self):
-        self += [E, E, A, BACC, low, BA, S]
+        self += [E, E, A, BACC, BA, S]
 
     def row2(self):
         # We can take a shortcut, powering the floor block on row 2:
         # so we
-        self += [E, BA, S, low, BA, S]
+        self += [E, BA, S, BA, S]
         self += BACC
         self.dpe_retract()
         self += S

@@ -84,5 +84,5 @@
   - S wait BACC BA
   - E FOBACCW wait BA BA FOBACC wait
   - ~~ A A E BA BACC wait BA
-  - S wait BACC BA
+  - S wait ~~ A BACC BA
 - halt
