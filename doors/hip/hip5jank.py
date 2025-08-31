@@ -220,8 +220,9 @@ class Hip5JankSeq(metaclass=AutoLog):
         self += [A, BAC_BCA, BA]
         self.row3_pull()
 
-    def row4_obs_or_block(self):
-        self += [OBACC, WAIT, A, BAC_BCA, A, BAC_BCA, BA, BA]
+    def row4_obs_or_block(self, pistons_high=False):
+        a_moves = [] if pistons_high else [A]
+        self += [OBACC, WAIT, A, BAC_BCA, a_moves, BAC_BCA, BA, BA]
         if self.e_empty:
             self += FOBACC
         else:
@@ -234,7 +235,7 @@ class Hip5JankSeq(metaclass=AutoLog):
         self += [E, BA]
         self.row4_obs_or_block()
         self.row3_high()
-        # self += A  # sand parity fix
+        self += A  # sand parity fix
 
     def row5(self):
         self += [E, BA, S, BAC_BCA, A, BAC_BCA, BA]
@@ -243,7 +244,7 @@ class Hip5JankSeq(metaclass=AutoLog):
         # pull 3
         self += [E, BA, OBACC, A, A, BA, BA]
         self += [OBAC_BCA, A, BAC_BCA, BA, E, BACC, BA]
-        self.row4_obs_or_block()
+        self.row4_obs_or_block(True)
         self.row3_retract()
         self += [A, e_empty, E, BACC]
 
