@@ -234,14 +234,14 @@ class Hip5JankSeq(metaclass=AutoLog):
         self += [E, BA]
         self.row4_obs_or_block()
         self.row3_high()
-        self += A  # sand parity fix
+        # self += A  # sand parity fix
 
     def row5(self):
         self += [E, BA, S, BAC_BCA, A, BAC_BCA, BA]
         self.row4_obs_or_block()
         self += S
         # pull 3
-        self += [E, BA, OBACC, A, BA, BA]
+        self += [E, BA, OBACC, A, A, BA, BA]
         self += [OBAC_BCA, A, BAC_BCA, BA, E, BACC, BA]
         self.row4_obs_or_block()
         self.row3_retract()
