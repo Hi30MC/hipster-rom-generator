@@ -1,7 +1,8 @@
 E
 E
+A
 BACC
-BA
+wait
 BA
 S
 wait
