@@ -43,7 +43,6 @@
     - dpe_retract():
       - ~~ A BA E BACC wait BA
     - S wait
-  - ~~ A
 - row5():
   - E BA S wait BACC BA A BACC BA BA
   - row4_obs_or_block():
@@ -83,7 +82,7 @@
   - E BA FOBACC wait BA FOBACCW wait BA FOBACCW wait BA FOBACCW wait BA BA FOBACC wait
   - ~~ A A E BA BACC wait BA
   - S wait BACC BA
-  - E BA FOBACCW wait BA BA FOBACC wait
+  - E FOBACCW wait BA BA FOBACC wait
   - ~~ A A E BA BACC wait BA
   - S wait BACC BA
 - halt

@@ -127,7 +127,7 @@ BACC
 wait
 BA
 S
-A
+wait
 E
 BA
 S
@@ -295,7 +295,6 @@ wait
 BACC
 BA
 E
-BA
 FOBACCW
 wait
 BA
