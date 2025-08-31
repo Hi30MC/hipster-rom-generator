@@ -71,7 +71,7 @@ def e_full(door: "Hip5JankSeq"):
 
 
 class Hip5JankSeq(metaclass=AutoLog):
-    initial_a_sand_high = False
+    initial_a_sand_high = True
 
     def __init__(self):
         self.moves: list[Move] = []
@@ -182,7 +182,7 @@ class Hip5JankSeq(metaclass=AutoLog):
         self += [A, BA, e_empty, E, BACC, BA]
 
     def row1(self):
-        self += [E, E, A, BACC, low, BA, S]
+        self += [E, E, BACC, low, BA, S]
 
     def row2(self):
         # We can take a shortcut, powering the floor block on row 2:
@@ -234,7 +234,7 @@ class Hip5JankSeq(metaclass=AutoLog):
         self += [E, BA]
         self.row4_obs_or_block()
         self.row3_high()
-        self += A  # sand parity fix
+        # self += A  # sand parity fix
 
     def row5(self):
         self += [E, BA, S, BAC_BCA, A, BAC_BCA, BA]
