@@ -79,10 +79,11 @@
 - ~~ halt
 - closing():
   - BACC BA BA
-  - S wait BACC BA A BACC BA BA
-  - S wait E BA FOBACC wait
-  - BA FOBACCW wait BA FOBACCW wait BA FOBACCW wait BA FOBACCW wait
-  - BA BA FOBACCW wait
+  - S wait BACC BA A BACC BA BA S wait
+  - E BA FOBACC wait BA FOBACCW wait BA FOBACCW wait BA FOBACCW wait BA BA FOBACC wait
   - ~~ A A E BA BACC wait BA
-  - S wait BACC BA A BACC BA BA S wait BACC BA
+  - S wait BACC BA
+  - E BA FOBACCW wait BA BA FOBACC wait
+  - ~~ A A E BA BACC wait BA
+  - S wait BACC BA
 - halt

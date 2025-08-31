@@ -162,12 +162,13 @@ class Hip5JankSeq(metaclass=AutoLog):
     def closing(self):
         # state after opening: piston right underneath floor
         self += [BAC_BCA, BA]
-        self += [S, BAC_BCA, A, BAC_BCA, BA]
-        self += [S, E, BA, FOBACC]
-        self += [BA, FOBACCW] * 4
-        self += [BA, BA, FOBACCW]
+        self += [S, BAC_BCA, A, BAC_BCA, BA, S]
+        self += [E, BA, FOBACC, BA, FOBACCW, BA, FOBACCW, BA, FOBACCW, BA, BA, FOBACC]
         self += [A, A, E, BA, BACC, BA]
-        self += [S, BAC_BCA, A, BAC_BCA, BA, S, BAC_BCA]
+        self += [S, BAC_BCA]
+        self += [E, BA, FOBACCW, BA, BA, FOBACC]
+        self += [A, A, E, BA, BACC, BA]
+        self += [S, BAC_BCA]
 
     @skip_logging
     def opening(self):
