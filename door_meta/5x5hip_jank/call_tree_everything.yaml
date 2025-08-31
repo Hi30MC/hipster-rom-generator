@@ -1,5 +1,5 @@
 - row1():
-  - E E BACC wait BA S wait
+  - E E BACC BA BA S wait
 - row2():
   - E BA S wait BA S wait
   - BACC wait
@@ -43,6 +43,7 @@
     - dpe_retract():
       - ~~ A BA E BACC wait BA
     - S wait
+  - ~~ A
 - row5():
   - E BA S wait BACC BA A BACC BA BA
   - row4_obs_or_block():
