@@ -1,4 +1,5 @@
 from enum import Enum
+from collections import Counter
 from typing import Iterable
 
 from doors.debug import AutoLog, CallTree, skip_logging
@@ -238,7 +239,9 @@ class Hip5JankSeq(metaclass=AutoLog):
         self += [E, BA]
         self.row4_obs_or_block()
         self.row3_high()
-        # self += A  # sand parity fix
+        # ???
+        self.a_sand_high = not self.a_sand_high
+        self += A  # sand parity fix
 
     def row5(self):
         self += [E, BA, S, BAC_BCA, A, BAC_BCA, BA]
@@ -264,6 +267,11 @@ def main(method="everything", out_file="sequence.txt"):
     finally:
         write_sequence(door.moves, f"door_meta/5x5hip_jank/{out_file}")
         write_call_tree(door.call_tree, f"door_meta/5x5hip_jank/call_tree_{method}")
+
+        move_counts = Counter(door.moves)
+        print("Move Counts:")
+        for move, count in move_counts.items():
+            print(f"{move}: {count}")
     print("Done")
 
 
