@@ -183,7 +183,7 @@ class Hip5JankSeq(metaclass=AutoLog):
 
     def row1(self):
         self.e_empty = not self.e_empty
-        self += [E, E, E, A, BACC, low, BA, S]
+        self += [E, A, BACC, low, BA, S]
 
     def row2(self):
         # We can take a shortcut, powering the floor block on row 2:
@@ -265,5 +265,4 @@ def main(method="everything", out_file="sequence.txt"):
 
 
 if __name__ == "__main__":
-    # main(method="everything")
-    main(method="row5")
+    main()
