@@ -270,6 +270,12 @@ S
 wait
 E
 BA
+FOBACC
+wait
+BA
+FOBACCW
+wait
+BA
 FOBACCW
 wait
 BA
@@ -277,7 +283,7 @@ FOBACCW
 wait
 BA
 BA
-FOBACCW
+FOBACC
 A
 A
 E

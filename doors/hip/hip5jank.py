@@ -163,7 +163,21 @@ class Hip5JankSeq(metaclass=AutoLog):
         # state after opening: piston right underneath floor
         self += [BAC_BCA, BA]
         self += [S, BAC_BCA, A, BAC_BCA, BA]
-        self += [S, E, BA, FOBACCW, BA, FOBACCW, BA, BA, FOBACCW]
+        self += [
+            S,
+            E,
+            BA,
+            FOBACC,
+            BA,
+            FOBACCW,
+            BA,
+            FOBACCW,
+            BA,
+            FOBACCW,
+            BA,
+            BA,
+            FOBACC,
+        ]
         self += [A, A, E, BA, BACC, BA]
         self += [S, BAC_BCA, A, BAC_BCA, BA, S, BAC_BCA]
 
