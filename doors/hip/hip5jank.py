@@ -264,5 +264,5 @@ def main(method="everything", out_file="sequence.txt"):
 
 
 if __name__ == "__main__":
-    main(method="everything")
-    # main(method="row4")
+    # main(method="everything")
+    main(method="row5")
