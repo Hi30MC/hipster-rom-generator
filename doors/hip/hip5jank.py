@@ -119,7 +119,7 @@ class Hip5JankSeq(metaclass=AutoLog):
 
         for move in flatten_moves(elements):
             match move:
-                case Move.A | Move.S:
+                case Move.A | Move.S | Move.HALT:
                     pop_wait()
                 case Move.E:
                     self.e_empty = not self.e_empty
@@ -163,21 +163,9 @@ class Hip5JankSeq(metaclass=AutoLog):
         # state after opening: piston right underneath floor
         self += [BAC_BCA, BA]
         self += [S, BAC_BCA, A, BAC_BCA, BA]
-        self += [
-            S,
-            E,
-            BA,
-            FOBACC,
-            BA,
-            FOBACCW,
-            BA,
-            FOBACCW,
-            BA,
-            FOBACCW,
-            BA,
-            BA,
-            FOBACC,
-        ]
+        self += [S, E, BA, FOBACC]
+        self += [BA, FOBACCW] * 4
+        self += [BA, BA, FOBACCW]
         self += [A, A, E, BA, BACC, BA]
         self += [S, BAC_BCA, A, BAC_BCA, BA, S, BAC_BCA]
 

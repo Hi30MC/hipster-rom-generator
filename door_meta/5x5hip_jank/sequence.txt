@@ -253,7 +253,6 @@ OBACC
 A
 E
 BACC
-wait
 halt
 BACC
 BA
@@ -282,8 +281,11 @@ BA
 FOBACCW
 wait
 BA
+FOBACCW
+wait
 BA
-FOBACC
+BA
+FOBACCW
 A
 A
 E

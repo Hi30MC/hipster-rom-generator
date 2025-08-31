@@ -76,11 +76,13 @@
       - OBACC wait BA BA OBACC wait ~~ A BA
       - OBACC wait BA BA BA BA OBACC wait
   - ~~ A E BACC wait
-- halt
+- ~~ halt
 - closing():
   - BACC BA BA
   - S wait BACC BA A BACC BA BA
-  - S wait E BA FOBACC wait BA FOBACCW wait BA FOBACCW wait BA FOBACCW wait BA BA FOBACC wait
+  - S wait E BA FOBACC wait
+  - BA FOBACCW wait BA FOBACCW wait BA FOBACCW wait BA FOBACCW wait
+  - BA BA FOBACCW wait
   - ~~ A A E BA BACC wait BA
   - S wait BACC BA A BACC BA BA S wait BACC BA
 - halt
