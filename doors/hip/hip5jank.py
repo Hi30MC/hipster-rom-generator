@@ -168,7 +168,7 @@ class Hip5JankSeq(metaclass=AutoLog):
         self.assert_retracted_state()
         self.row4()
         self.assert_retracted_state()
-        self.row5()
+        # self.row5()
 
     def dpe_retract(self):
         self += [A, BA, e_empty, E, BACC, BA]
@@ -251,6 +251,7 @@ def main(method="everything", out_file="sequence.txt"):
 
         print(traceback.format_exc())
     finally:
+        print(len(door.moves))
         write_sequence(door.moves, f"door_meta/5x5hip_jank/{out_file}")
         write_call_tree(door.call_tree, f"door_meta/5x5hip_jank/call_tree_{method}")
 
