@@ -7,6 +7,7 @@ from typing import Annotated, Literal
 class CartRomParams(BaseModel):
     cart_pos: list[float] = [0.5, 0, 0.5]
     min_carts: int = 1
+    origin: list[int] | None = None
 
 
 class Rom1(CartRomParams):
@@ -24,13 +25,18 @@ class Rom27(CartRomParams):
         return self.min_carts * self.min_items_per_cart
 
 
+class Rom26(CartRomParams):
+    rom_type: Literal["cart26"]
+    medium: Literal["shulker", "disc"]
+
+
 class Rom729(CartRomParams):
     rom_type: Literal["cart729"]
     min_shulkers_per_cart: int = 0
     min_discs_per_shulker: int = 0
 
 
-RomParams = Rom1 | Rom27 | Rom729
+RomParams = Rom1 | Rom27 | Rom26 | Rom729
 RomParamsAnnotated = Annotated[RomParams, Field(discriminator="rom_type")]
 
 

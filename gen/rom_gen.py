@@ -4,7 +4,7 @@ from nbtlib import File
 
 from gen.encode import encode_rom1, encode_rom27, encode_rom729
 from gen.schem_types import Minecart, Schematic
-from .params import Rom1, Rom27, Rom729, RomParams, Sequence
+from .params import Rom1, Rom26, Rom27, Rom729, RomParams, Sequence
 
 
 def gen_rom(sequence: Sequence, params: RomParams) -> File:
@@ -12,14 +12,18 @@ def gen_rom(sequence: Sequence, params: RomParams) -> File:
         return gen_rom1(sequence, params)
     elif isinstance(params, Rom27):
         return gen_rom27(sequence, params)
+    elif isinstance(params, Rom26):
+        return gen_rom26(sequence, params)
     elif isinstance(params, Rom729):
         return gen_rom729(sequence, params)
     raise NotImplementedError
 
 
-def carts_schem(carts: list[Minecart]) -> File:
+def carts_schem(carts: list[Minecart], origin: list[int] | None) -> File:
     out = Schematic.empty()
     out.set_entities(carts)
+    if origin:
+        out.set_origin(origin)
     return File(out, gzipped=True)
 
 
@@ -43,6 +47,16 @@ def gen_rom27(sequence: Sequence, params: Rom27) -> File:
 
     carts = encode_rom27(partitions, cart_pos=params.cart_pos, medium=params.medium)
     return carts_schem(carts)
+
+
+def gen_rom26(sequence: Sequence, params: Rom26) -> File:
+    min_items = ((len(sequence.ss_list) + 25) // 26) * 26
+    ss_list = sequence.with_min_items(min_items)
+    assert sequence.wait_move is not None
+    partitions = partition_rom26(ss_list, sequence.wait_move)
+
+    carts = encode_rom27(partitions, cart_pos=params.cart_pos, medium=params.medium)
+    return carts_schem(carts, params.origin)
 
 
 def gen_rom729(sequence: Sequence, params: Rom729) -> File:
@@ -127,6 +141,13 @@ def partition_rom27_optimized(
                 queue.append(wait_move)
             queue += segments.popleft()
 
+    return result
+
+
+def partition_rom26(ss_list: list[int], wait_move: int) -> list[list[int]]:
+    result = []
+    for i in range(0, len(ss_list), 26):
+        result.append([wait_move] + ss_list[i : i + 26])
     return result
 
 

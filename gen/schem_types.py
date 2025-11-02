@@ -100,7 +100,7 @@ class Minecart(CompoundSchema):
                     "Air": 300,
                     "OnGround": 0,
                     "PortalCooldown": 0,
-                    "Rotation": [90, 0],
+                    "Rotation": [0, 0],
                     "FallDistance": 0,
                     "Pos": List[Double](pos),
                     "Fire": -1,
@@ -124,7 +124,17 @@ class Schematic(CompoundSchema):
             {
                 "Version": Int,
                 "DataVersion": Int,
-                "Metadata": Compound,
+                "Metadata": schema(
+                    "",
+                    {
+                        "WorldEdit": schema(
+                            "",
+                            {
+                                "Origin": List[Int],
+                            },
+                        ),
+                    },
+                ),
                 "Width": Short,
                 "Height": Short,
                 "Length": Short,
@@ -149,6 +159,7 @@ class Schematic(CompoundSchema):
                 "Schematic": {
                     "Version": 3,
                     "DataVersion": 4189,
+                    "Metadata": {"WorldEdit": {"Origin": [0, 0, 0]}},
                     # "Metadata": {
                     #     "Date": 0,
                     #     "WorldEdit": {
@@ -179,3 +190,6 @@ class Schematic(CompoundSchema):
 
     def set_entities(self, entities: list[Minecart]):
         self["Schematic"]["Entities"] = entities
+
+    def set_origin(self, pos: list[int]):
+        self["Schematic"]["Metadata"]["WorldEdit"]["Origin"] = List[Int](pos)

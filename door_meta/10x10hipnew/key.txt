@@ -1,0 +1,12 @@
+1 wait
+4 worm
+5 f
+6 e
+7 fold
+8 d
+9 a
+10 c
+12 obs
+13 b
+14 bsto
+15 TS
