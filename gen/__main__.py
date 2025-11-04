@@ -33,7 +33,7 @@ def main(info_dir: str, out_path: str | None):
     if out_path is None:
         out_path = door_name
 
-    if path.pathsep not in out_path:
+    if path.sep not in out_path:
         out_path = f"output_schematics/{door_name}/{out_path}"
 
     sequence = parse_sequence(

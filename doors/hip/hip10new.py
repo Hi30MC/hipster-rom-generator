@@ -361,11 +361,20 @@ class HipSeq10(BasicHip[Move]):
 
 
 def main():
+    import sys
+
     door = HipSeq10()
+
+    # Default method call
+    method_call = "the_whole_shebang()"
+
+    # Check if a method was provided via command line
+    if len(sys.argv) > 1:
+        method_call = sys.argv[1]
+
     try:
-        door.the_whole_shebang()
-        # door.full_row(10)
-        # door.post_process()
+        # Execute the method call
+        eval(f"door.{method_call}")
     finally:
         print(len(door.moves))
         door._write_sequence("door_meta/10x10hipnew/sequence.txt")

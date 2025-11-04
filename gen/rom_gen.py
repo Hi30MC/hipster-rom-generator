@@ -19,10 +19,11 @@ def gen_rom(sequence: Sequence, params: RomParams) -> File:
     raise NotImplementedError
 
 
-def carts_schem(carts: list[Minecart], origin: list[int] | None) -> File:
+def carts_schem(carts: list[Minecart], origin: list[int] | None = None) -> File:
     out = Schematic.empty()
     out.set_entities(carts)
     if origin:
+        print(origin)
         out.set_origin(origin)
     return File(out, gzipped=True)
 

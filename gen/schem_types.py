@@ -9,6 +9,8 @@ from nbtlib.tag import (
     List,
     Short,
     String,
+    Long,
+    IntArray,
 )
 from typing import Literal, Sequence
 
@@ -127,10 +129,14 @@ class Schematic(CompoundSchema):
                 "Metadata": schema(
                     "",
                     {
+                        "Date": Long,
                         "WorldEdit": schema(
                             "",
                             {
-                                "Origin": List[Int],
+                                "Origin": IntArray,
+                                "Version": String,
+                                "EditingPlatform": String,
+                                "Platforms": Compound,
                             },
                         ),
                     },
@@ -138,7 +144,7 @@ class Schematic(CompoundSchema):
                 "Width": Short,
                 "Height": Short,
                 "Length": Short,
-                "Offset": List[Int],
+                "Offset": IntArray,
                 "Blocks": schema(
                     "",
                     {
@@ -158,26 +164,30 @@ class Schematic(CompoundSchema):
             {
                 "Schematic": {
                     "Version": 3,
-                    "DataVersion": 4189,
-                    "Metadata": {"WorldEdit": {"Origin": [0, 0, 0]}},
-                    # "Metadata": {
-                    #     "Date": 0,
-                    #     "WorldEdit": {
-                    #         "Version": "7.3.10",
-                    #         "EditingPlatform": "enginehub:fabric",
-                    #         "Origin": [0, 0, 0],
-                    #         "Platforms": {
-                    #             "enginehub:fabric": {
-                    #                 "Name": "Fabric-Official",
-                    #                 "Version": "7.3.10+7004-768a436",
-                    #             }
-                    #         },
-                    #     },
-                    # },
+                    "DataVersion": 4440,
+                    # "Metadata": {"WorldEdit": {"Origin": [0, 0, 0]}},
+                    "Metadata": {
+                        "Date": Long(1762225249744),
+                        "WorldEdit": {
+                            "Version": "7.3.16",
+                            "EditingPlatform": "enginehub:fabric",
+                            "Origin": IntArray([0, 0, 0]),
+                            "Platforms": Compound(
+                                {
+                                    "enginehub:fabric": Compound(
+                                        {
+                                            "Name": String("Fabric-Official"),
+                                            "Version": String("7.3.16+cbf4bd5"),
+                                        }
+                                    )
+                                }
+                            ),
+                        },
+                    },
                     "Width": 1,
                     "Height": 1,
                     "Length": 1,
-                    "Offset": [0, 0, 0],
+                    "Offset": IntArray([0, 0, 0]),
                     "Blocks": {
                         "Palette": {"air": Int(0)},
                         "Data": [0],
@@ -192,4 +202,4 @@ class Schematic(CompoundSchema):
         self["Schematic"]["Entities"] = entities
 
     def set_origin(self, pos: list[int]):
-        self["Schematic"]["Metadata"]["WorldEdit"]["Origin"] = List[Int](pos)
+        self["Schematic"]["Metadata"]["WorldEdit"]["Origin"] = IntArray(pos)
