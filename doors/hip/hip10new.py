@@ -3,12 +3,8 @@ from typing import NewType
 
 from doors.hip.hip789 import worm
 
-Move = NewType(
-    "Move",
-    str,
-)
+Move = NewType("Move", str)
 
-SENTINAL = Move("SENTINAL")
 wait = Move("wait")
 a = Move("a")
 b = Move("b")
@@ -49,7 +45,8 @@ class HipSeq10(BasicHip[Move]):
             f, fold, worm, worm,
             a, bsto,
             b, TS, a, bsto,
-            worm, worm, d, fold, f, b, a, fold, fold, d, c]
+            worm, worm,
+            b, d, fold, f, b, a, fold, fold, d, c]
         # fmt: on
         self.stack_state[0] = True
 
@@ -88,21 +85,21 @@ class HipSeq10(BasicHip[Move]):
         self += fold
         self += [f, d, c, c, b]
 
-        self.full_row(6)
-        self += [a, b, bsto]
-        self += [d, fold, fold, fold]
-        self += [worm, worm]
-        self += fold
-        self += [d, c, c, b]
+        # self.full_row(6)
+        # self += [a, b, bsto]
+        # self += [d, fold, fold, fold]
+        # self += [worm, worm]
+        # self += fold
+        # self += [d, c, c, b]
 
-        for row in [7, 8, 9]:
-            self.full_row(row)
-            self.storage_moves(a, b, bsto)
+        # for row in [7, 8, 9]:
+        #     self.full_row(row)
+        #     self.storage_moves(a, b, bsto)
 
-        self.full_row(10)
-        last_6 = self.moves[-6:]
-        assert last_6 == [a, b, a, c, b, b]
-        self.moves[-6:] = [a, b, c, b]
+        # self.full_row(10)
+        # last_6 = self.moves[-6:]
+        # assert last_6 == [a, b, a, c, b, b]
+        # self.moves[-6:] = [a, b, c, b]
 
     def more_pistons(self, layer: int):
         if any(self.stack_state[:layer]):
@@ -353,32 +350,23 @@ class HipSeq10(BasicHip[Move]):
     def _add(self, *moves: Move):
         self.call_tree.add_message(" ".join(map(str, moves)))
         for move in moves:
-            if move in (fold, obs):
+            last_move = self.moves[-1] if self.moves else None
+            if move in (fold, obs) and last_move != wait:
+                self.moves.append(wait)
+            if move == bsto and last_move == a:
                 self.moves.append(wait)
             self.moves.append(move)
             if move in (bsto, TS, obs):
-                self.moves.extend([wait, wait])
+                self.moves.append(wait)
 
 
 def main():
-    import sys
-
     door = HipSeq10()
-
-    # Default method call
-    method_call = "the_whole_shebang()"
-
-    # Check if a method was provided via command line
-    if len(sys.argv) > 1:
-        method_call = sys.argv[1]
-
-    try:
-        # Execute the method call
-        eval(f"door.{method_call}")
-    finally:
-        print(len(door.moves))
-        door._write_sequence("door_meta/10x10hipnew/sequence.txt")
-        door._write_call_tree("door_meta/10x10hipnew/call_tree.yaml")
+    door.stack_state[0] = True
+    door.opening()
+    print(len(door.moves))
+    door._write_sequence("door_meta/10x10hipnew/sequence.txt")
+    door._write_call_tree("door_meta/10x10hipnew/call_tree.yaml")
 
 
 if __name__ == "__main__":
