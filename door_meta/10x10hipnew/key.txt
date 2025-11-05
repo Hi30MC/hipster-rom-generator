@@ -8,5 +8,5 @@
 10 c
 12 obs
 13 b
-14 bsto
+14 sto
 15 TS
