@@ -22,13 +22,17 @@ class HipSeq10(BasicHip[Move]):
     piston_stack_depth = 6
     max_obs = 3
 
-    fold_toggle = False
+    fold_toggle = False  # true -> false triggers fold
+    a_toggle = False  # true -> false is slow
+
     fpull_primed = False
+    last_obs_is_block = False
 
     def the_whole_shebang(self):
         self.closing()
         self.stop()
         self.opening()
+        # todo: verify toggles
 
     def closing(self):
         # fmt: off
@@ -55,51 +59,61 @@ class HipSeq10(BasicHip[Move]):
         self += [wait] * 26
 
     def storage_moves(self, *moves: Move):
+        self.call_tree.add_message("-b")
         assert self.moves[-1] == b
         self.moves.pop()
         self += list(moves)
 
-    def only_sto(self):
+    def _only_sto(self):
         if self.moves[-1] == b:
             self.moves.pop()
             self += bsto
         else:
             self += [b, bsto]
 
+    def _fold2(self):
+        if self.moves[-2:] == [fold, fold]:
+            del self.moves[-2:]
+            if self.moves[-1] == wait:
+                self.moves.pop()
+            self.call_tree.add_message("-fold2")
+            return
+        if self.fold_toggle:
+            self += wait
+        self += [fold, fold]
+
     def opening(self):
-        self += a
-        self.retract(1)
-        self.only_sto()
+        # self += a
+        # self.retract(1)
+        # self.only_sto()
 
-        self.full_row(2)
-        self.storage_moves(a, bsto)
+        # self.full_row(2)
+        # self.storage_moves(a, bsto)
 
-        for row in [3, 4]:
-            self.full_row(row)
-            self.storage_moves(a, b, bsto)
+        # for row in [3, 4]:
+        #     self.full_row(row)
+        #     self.storage_moves(a, b, bsto)
 
-        self.full_row(5)
-        self += [a, b, bsto]
-        self += [d, fold, fold, fold]
-        self += [worm, worm]
-        self += fold
-        self += [f, d, c, c, b]
+        # self.full_row(5)
+        # self.storage_moves(a, b, bsto)
+        # self += [d, fold, fold, fold]
+        # self += [worm, worm]
+        # self += [fold, f]
 
         # self.full_row(6)
-        # self += [a, b, bsto]
+        # self.storage_moves(a, b, bsto)
         # self += [d, fold, fold, fold]
         # self += [worm, worm]
         # self += fold
-        # self += [d, c, c, b]
 
         # for row in [7, 8, 9]:
         #     self.full_row(row)
         #     self.storage_moves(a, b, bsto)
 
-        # self.full_row(10)
-        # last_6 = self.moves[-6:]
-        # assert last_6 == [a, b, a, c, b, b]
-        # self.moves[-6:] = [a, b, c, b]
+        self.full_row(10)
+        last_4 = self.moves[-4:]
+        assert last_4 == [a, c, b, b]
+        self.moves[-4:] = [a, b, c, b]
 
     def more_pistons(self, layer: int):
         if any(self.stack_state[:layer]):
@@ -115,7 +129,8 @@ class HipSeq10(BasicHip[Move]):
             case 1:
                 self += d
             case 2:
-                self += [d, fold, fold]
+                self += d
+                self._fold2()
             case 3:
                 self += e
             case 4:
@@ -143,13 +158,14 @@ class HipSeq10(BasicHip[Move]):
             case 1:
                 self += [d, c]
             case 2:
-                self += [d, c, c, b, b, fold, fold]
+                self._fold2()
             case 3:
                 self += [e, d]
+                self._fold2()
             case 4:
                 self += [f, e]
             case 5:
-                self += [d, fold, d, c, c, b, b]
+                self += [d, wait, fold, d, c, c, b, b]
             case _:
                 raise NotImplementedError
 
@@ -163,7 +179,8 @@ class HipSeq10(BasicHip[Move]):
             case 2:
                 self += [obs, a, obs]
             case 3:
-                self.only_sto()
+                self._only_sto()
+                self.last_obs_is_block = True
             case _:
                 raise NotImplementedError
 
@@ -171,12 +188,14 @@ class HipSeq10(BasicHip[Move]):
         if self.num_obs_out <= 0:
             raise ValueError("Retracting more observers than there are.")
         self.num_obs_out -= 1
+        if self.last_obs_is_block:
+            self += bsto
+            self.last_obs_is_block = False
+            return
         match self.num_obs_out:
             case 0 | 1:
-                self.only_sto()
-                self.only_sto()
-            case 2:
-                self += bsto
+                self._only_sto()
+                self._only_sto()
             case _:
                 raise NotImplementedError
 
@@ -196,14 +215,18 @@ class HipSeq10(BasicHip[Move]):
         Does row, but with layer of pistons already up.
             _P___B -> B_____
         """
-        self.full_extend(layer, pistons_high)
+        self.full_extend(layer, pistons_high, no_row_2_opt=True)
         self.retract(layer)
 
-    def full_extend(self, layer: int, pistons_high: bool = False):
-        self.extend(layer, pistons_high)
+    def full_extend(
+        self, layer: int, pistons_high: bool = False, no_row_2_opt: bool = False
+    ):
+        self.extend(layer, pistons_high, no_row_2_opt=no_row_2_opt)
         self.extra_pulses(layer, pistons_high)
 
-    def extend(self, layer: int, pistons_high: bool = False):
+    def extend(
+        self, layer: int, pistons_high: bool = False, no_row_2_opt: bool = False
+    ):
         match layer:
             case -1:
                 self += b
@@ -213,6 +236,10 @@ class HipSeq10(BasicHip[Move]):
                 if not pistons_high:
                     self += b
                 self += a
+            case 2 if not no_row_2_opt:
+                self += [bsto, b]
+                self.last_obs_is_block = True
+                self.num_obs_out += 1
             case _ if 2 <= layer < 9:
                 if not pistons_high:
                     self += b
@@ -239,9 +266,8 @@ class HipSeq10(BasicHip[Move]):
                 self += [bsto, b]  # block
                 assert self.fpull_primed
                 self.fpull_primed = False
-                self += worm
                 self.more_obs()
-                self += fold
+                self += [worm, fold, fold]
                 self.more_pistons(2 // 2)
                 self += b
                 self.more_obs()  # actually a block
@@ -254,15 +280,21 @@ class HipSeq10(BasicHip[Move]):
             case (-1, _) | (0, _) | (1, _):
                 return
             case 2, _:
-                self += b
+                if self.last_obs_is_block:
+                    self += a
+                else:
+                    self += b
             case 3, _:
                 self += a
             case 4, _:
                 self += a
             case 5, False:
-                self += [b] * 5
+                if self.last_obs_is_block:
+                    self += [a] * 2
+                else:
+                    self += [b] * 5
             case 5, True:
-                if self.num_obs_out == 3:
+                if self.last_obs_is_block:
                     self += [a] * 2
                 else:
                     self += [b] * 3
@@ -301,11 +333,11 @@ class HipSeq10(BasicHip[Move]):
             self.retract(2)  # piston-obs
             self.less_obs()  # first obs
             self.full_row(3)  # remove the sandwich
-            self.storage_moves(a, bsto)  # and eat it
+            self.storage_moves(a, b, bsto)  # and eat it
             self.retract(layer - 4, no_recurse_first=layer >= 9)
             self.less_obs()  # first obs
             self.full_row(7)
-            self.storage_moves(a, bsto)  # and eat it
+            self.storage_moves(a, b, bsto)  # and eat it
             self.pull(layer - 2)
             if layer % 2 == 0:
                 self.shift_pistons(layer // 2)
@@ -335,7 +367,7 @@ class HipSeq10(BasicHip[Move]):
             return
 
         self.more_pistons(layer // 2)
-        self.full_extend(layer)
+        self.full_extend(layer, no_row_2_opt=True)
 
         # retract layer below (obs)
         self.retract(layer - 3)
@@ -349,20 +381,35 @@ class HipSeq10(BasicHip[Move]):
 
     def _add(self, *moves: Move):
         self.call_tree.add_message(" ".join(map(str, moves)))
+
         for move in moves:
             last_move = self.moves[-1] if self.moves else None
-            if move in (fold, obs) and last_move != wait:
+
+            if move == obs and last_move not in [wait, fold, obs]:
                 self.moves.append(wait)
-            if move == bsto and last_move == a:
+
+            if (move == bsto or move == b) and (
+                (last_move == a and not self.a_toggle) or last_move == obs
+            ):
                 self.moves.append(wait)
+
+            if move == a and not self.a_toggle:
+                self.moves.append(wait)
+
             self.moves.append(move)
-            if move in (bsto, TS, obs):
+
+            if move == bsto:
                 self.moves.append(wait)
+
+            if move == fold:
+                self.fold_toggle = not self.fold_toggle
+            if move == a:
+                self.a_toggle = not self.a_toggle
 
 
 def main():
     door = HipSeq10()
-    door.stack_state[0] = True
+    # door.stack_state[0] = True
     door.opening()
     print(len(door.moves))
     door._write_sequence("door_meta/10x10hipnew/sequence.txt")

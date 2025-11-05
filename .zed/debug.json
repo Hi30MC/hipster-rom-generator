@@ -1,0 +1,11 @@
+[
+  {
+    "adapter": "Debugpy",
+    "label": "run module '…gen/__main__.py'",
+    "request": "launch",
+    "python": "$ZED_CUSTOM_PYTHON_ACTIVE_ZED_TOOLCHAIN",
+    "args": ["10x10hipnew", "./tmp.schem"],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "module": "gen"
+  }
+]

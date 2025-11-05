@@ -23,7 +23,6 @@ def carts_schem(carts: list[Minecart], origin: list[int] | None = None) -> File:
     out = Schematic.empty()
     out.set_entities(carts)
     if origin:
-        print(origin)
         out.set_origin(origin)
     return File(out, gzipped=True)
 
@@ -147,8 +146,19 @@ def partition_rom27_optimized(
 
 def partition_rom26(ss_list: list[int], wait_move: int) -> list[list[int]]:
     result = []
-    for i in range(0, len(ss_list), 26):
+    i = 0
+    while i < len(ss_list):
         result.append([wait_move] + ss_list[i : i + 26])
+        i += 26
+        if i + 26 <= len(ss_list) and all(
+            ss_list[j] == wait_move for j in range(i, i + 26)
+        ):
+            pass
+        else:
+            while i < len(ss_list) and ss_list[i] == wait_move:
+                i += 1
+    while len(result[-1]) < 27:
+        result[-1].append(wait_move)
     return result
 
 
