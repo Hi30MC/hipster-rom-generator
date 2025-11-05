@@ -267,7 +267,7 @@ class HipSeq10(BasicHip[Move]):
                 assert self.fpull_primed
                 self.fpull_primed = False
                 self.more_obs()
-                self += [worm, fold, fold]
+                self += [worm, fold]
                 self.more_pistons(2 // 2)
                 self += b
                 self.more_obs()  # actually a block
