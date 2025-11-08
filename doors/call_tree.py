@@ -138,14 +138,20 @@ class TextFormatter:
         self.options = options
         self.lines: list[str] = []
 
-    def _add_method_message(self, method: MethodNode, depth: int):
+    def _add_method_message(self, method: MethodNode, depth: int, do_append: bool):
         call_name = method.call_name
         if call_name is None:
             return
-        self._add_line(self.options.method_formatter(call_name), depth)
+        if do_append and self.lines:
+            self.lines[-1] += self.options.method_formatter(call_name)
+        else:
+            self._add_line(self.options.method_formatter(call_name), depth)
 
-    def _add_message(self, message: MessageNode, depth: int):
-        self._add_line(self.options.message_formatter(message.message), depth)
+    def _add_message(self, node: MessageNode, depth: int, do_append: bool):
+        if do_append and self.lines:
+            self.lines[-1] += " " + node.message
+        else:
+            self._add_line(self.options.message_formatter(node.message), depth)
 
     def _add_line(self, content: str | None, depth: int):
         if content is None:
@@ -153,21 +159,27 @@ class TextFormatter:
         line = self.options.get_indent(depth - 1) + content
         self.lines.append(self.options.line_formatter(line))
 
-    def visit_node(self, node: MethodNode, depth: int = 0):
+    def visit_node(self, node: MethodNode, depth: int = 0, do_append: bool = False):
         if self.options.skip_empty_methods and not node.children:
             return
-        self._add_method_message(node, depth)
+        self._add_method_message(node, depth, do_append)
+
+        new_depth = depth + 1
+        do_append = False
         if (
             self.options.collapse_simple_methods
             and node.children
             and all(isinstance(child, MessageNode) for child in node.children)
             and sum(len(child.message) for child in node.children) < 50
         ):
-            joined_messages = " ".join(child.message for child in node.children)
-            self.lines[-1] += " " + joined_messages
-            return
+            do_append = True
+
+        if self.options.collapse_simple_methods and len(node.children) == 1:
+            # new_depth = depth
+            do_append = True
+
         for child in node.children:
             if isinstance(child, MethodNode):
-                self.visit_node(child, depth + 1)
+                self.visit_node(child, new_depth, do_append)
             elif isinstance(child, MessageNode):
-                self._add_message(child, depth + 1)
+                self._add_message(child, new_depth, do_append)

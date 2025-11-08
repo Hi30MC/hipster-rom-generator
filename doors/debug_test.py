@@ -35,6 +35,18 @@ class DebuggedClass:
         self.simple_method(5)
         self._log("Ending operation")
 
+    @log_calls()
+    def a(self):
+        self.b()
+
+    @log_calls()
+    def b(self):
+        self.c()
+
+    @log_calls()
+    def c(self):
+        self._log("Inside method c")
+
 
 class TestSeqDebug(unittest.TestCase):
     def setUp(self):
@@ -108,6 +120,17 @@ complex_method():
 - Middle of operation
 - simple_method(5):
 - Ending operation
+        """.strip()
+        self.assertEqual(output.strip(), expected_output)
+
+    def test_simple_nested_yaml(self):
+        obj = DebuggedClass()
+        obj.a()
+
+        output = obj.call_tree.to_string(FormatOptions.yaml())
+        expected_output = """
+simple_method(5):
+- Inside method_with_logging
         """.strip()
         self.assertEqual(output.strip(), expected_output)
 

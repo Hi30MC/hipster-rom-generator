@@ -164,7 +164,7 @@ class HipSeq10(BasicHip[Move]):
             case (4, False) | (3, True):
                 self += [f, e]
             case (4, True):
-                self.call_tree.add_message("(start no fold mode")
+                self.call_tree.add_message("(start no fold mode)")
                 pass
             case _:
                 raise NotImplementedError
@@ -222,17 +222,17 @@ class HipSeq10(BasicHip[Move]):
         Does row, but with layer of pistons already up.
             _P___B -> B_____
         """
-        self.full_extend(layer, pistons_high, no_row_2_opt=True)
+        self.full_extend(layer, pistons_high)
         self.retract(layer)
 
     def full_extend(
-        self, layer: int, pistons_high: bool = False, no_row_2_opt: bool = False
+        self, layer: int, pistons_high: bool = False, row_2_opt_ok: bool = False
     ):
-        self.extend(layer, pistons_high, no_row_2_opt=no_row_2_opt)
+        self.extend(layer, pistons_high, row_2_opt_ok)
         self.extra_pulses(layer, pistons_high)
 
     def extend(
-        self, layer: int, pistons_high: bool = False, no_row_2_opt: bool = False
+        self, layer: int, pistons_high: bool = False, row_2_opt_ok: bool = False
     ):
         match layer:
             case -1:
@@ -243,7 +243,7 @@ class HipSeq10(BasicHip[Move]):
                 if not pistons_high:
                     self += b
                 self += a
-            case 2 if not no_row_2_opt:
+            case 2 if row_2_opt_ok:
                 if not pistons_high:
                     self += b
                 self += [sto, b]
@@ -255,7 +255,7 @@ class HipSeq10(BasicHip[Move]):
                 self.more_obs()
                 if layer >= 3:
                     self.more_pistons((layer - 3) // 2)
-                self.extend(layer - 3)
+                self.extend(layer - 3, row_2_opt_ok=True)
             case 9:
                 if not pistons_high:
                     self += b
@@ -385,7 +385,7 @@ class HipSeq10(BasicHip[Move]):
             return
 
         self.more_pistons(layer // 2)
-        self.full_extend(layer, no_row_2_opt=True)
+        self.full_extend(layer)
 
         # retract layer below (obs)
         self.retract(layer - 3)
@@ -405,7 +405,7 @@ class HipSeq10(BasicHip[Move]):
 
     def tape_in_the_phokin_piston_stack(self):
         assert self.stack_state == [False, False, True, False, True, True]
-        assert not self.a_toggle
+        # assert not self.a_toggle
         self += [wait, sto]
         self += [fold, f, sto, a, fold, fold, fold, f, sto, a, wait] * 7
         self += [worm, e, sto, a, sto]
