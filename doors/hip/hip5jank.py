@@ -2,7 +2,7 @@ from enum import Enum
 from collections import Counter
 from typing import Iterable
 
-from doors.debug import AutoLog, CallTree, skip_logging
+from doors.call_tree import AutoLog, CallTree, skip_logging
 from doors.hip.basic_hip import write_call_tree, write_sequence
 from typing import Callable
 

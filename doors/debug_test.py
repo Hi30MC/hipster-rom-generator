@@ -1,9 +1,9 @@
 import unittest
 import io
 import sys
-from doors.debug import log_calls
-from doors.debug import FormatOptions
-from doors.debug import CallTree
+from doors.call_tree import log_calls
+from doors.call_tree import FormatOptions
+from doors.call_tree import CallTree
 
 
 class DebuggedClass:

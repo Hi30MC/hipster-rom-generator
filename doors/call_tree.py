@@ -112,6 +112,7 @@ class FormatOptions:
     message_formatter: Callable[[str], str] = str
     line_formatter: Callable[[str], str] = str
     skip_empty_methods: bool = False
+    collapse_simple_methods: bool = True
 
     def get_indent(self, depth: int) -> str:
         return self.indent_str * depth
@@ -156,7 +157,15 @@ class TextFormatter:
         if self.options.skip_empty_methods and not node.children:
             return
         self._add_method_message(node, depth)
-
+        if (
+            self.options.collapse_simple_methods
+            and node.children
+            and all(isinstance(child, MessageNode) for child in node.children)
+            and sum(len(child.message) for child in node.children) < 50
+        ):
+            joined_messages = " ".join(child.message for child in node.children)
+            self.lines[-1] += " " + joined_messages
+            return
         for child in node.children:
             if isinstance(child, MethodNode):
                 self.visit_node(child, depth + 1)

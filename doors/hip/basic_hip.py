@@ -1,6 +1,6 @@
 import os
-from doors.debug import FormatOptions, AutoLog
-from doors.debug import CallTree
+from doors.call_tree import FormatOptions, AutoLog
+from doors.call_tree import CallTree
 
 
 def write_file(path: str, content: str):
